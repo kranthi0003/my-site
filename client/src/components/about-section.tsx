@@ -130,11 +130,7 @@ export default function AboutSection() {
                       <span className="font-medium">Passed Away</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">No. of Sisters:</span>
-                      <span className="font-medium">0</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">No. of Brothers:</span>
+                      <span className="text-muted-foreground">Siblings:</span>
                       <span className="font-medium">0</span>
                     </div>
                   </div>
