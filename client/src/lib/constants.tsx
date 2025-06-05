@@ -31,18 +31,11 @@ export const PROFILE_DATA = {
   // Education & Experience
   education: [
     {
-      degree: "Master of Science in Computer Science",
-      institution: "Stanford University",
-      period: "2020 - 2022",
-      gpa: "GPA: 3.8/4.0",
-      specialization: "Specialized in Artificial Intelligence and Machine Learning"
-    },
-    {
-      degree: "Bachelor of Technology in Software Engineering",
-      institution: "University of California, Berkeley",
-      period: "2016 - 2020",
-      gpa: "Magna Cum Laude",
-      specialization: "Dean's List for 6 consecutive semesters"
+      degree: "Bachelor of Engineering in Computer Science",
+      institution: "Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      period: "2017 - 2021",
+      gpa: "First Class",
+      specialization: "Computer Science and Engineering"
     }
   ],
 
@@ -62,9 +55,9 @@ export const PROFILE_DATA = {
   ],
 
   skills: {
-    technical: "Python, JavaScript, React, Node.js, AWS, Docker",
-    certifications: "AWS Solutions Architect, Google Cloud Professional",
-    leadership: "Team Lead for 5+ developers, Mentoring Program"
+    technical: "Software Development, Database Technologies, Cloud Computing, Distributed Systems",
+    certifications: "Computer Science Engineering Graduate",
+    leadership: "4+ years industry experience, Cross-functional collaboration"
   },
 
   // Interests & Hobbies
