@@ -11,7 +11,7 @@ export const PROFILE_DATA = {
   
   // About section
   aboutDescription: "An experienced software engineer with 4 years in the technology industry, passionate about creating innovative solutions while maintaining strong family values and commitment to meaningful relationships.",
-  aboutImage: profilePhoto,
+  aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
   personalValues: [
     {
