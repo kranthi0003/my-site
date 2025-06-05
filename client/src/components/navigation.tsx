@@ -44,19 +44,21 @@ export default function Navigation() {
             KK
           </div>
           
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className={`transition-all duration-200 font-medium relative group ${
+                className={`transition-all duration-300 font-semibold relative group px-4 py-2 rounded-full ${
                   isScrolled 
-                    ? 'text-muted-foreground hover:text-primary' 
-                    : 'text-white/80 hover:text-white'
+                    ? 'text-primary hover:text-accent hover:bg-accent/10' 
+                    : 'text-white/90 hover:text-accent hover:bg-white/10'
                 }`}
               >
                 {item.label}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
+                <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-6 transition-all duration-300 ${
+                  isScrolled ? 'bg-accent' : 'bg-accent'
+                }`}></span>
               </button>
             ))}
           </div>
@@ -77,14 +79,14 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg border-t border-border/20 z-40">
-            <div className="container mx-auto px-6 py-6">
-              <div className="flex flex-col space-y-4">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-primary/95 backdrop-blur-md shadow-xl border-t border-accent/30 z-40">
+            <div className="container mx-auto px-6 py-8">
+              <div className="flex flex-col space-y-6">
                 {navItems.map((item) => (
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-left text-muted-foreground hover:text-primary transition-colors duration-200 font-medium py-2 px-3 rounded-lg hover:bg-primary/5"
+                    className="text-left text-white hover:text-accent transition-colors duration-300 font-semibold py-4 px-6 rounded-xl hover:bg-white/10 border border-transparent hover:border-accent/30 text-lg"
                   >
                     {item.label}
                   </button>
