@@ -78,7 +78,14 @@
   }
   
   .photo-overlay {
-    background: linear-gradient(45deg, rgba(44,62,80,0.8), rgba(52,152,219,0.6));
+    background: linear-gradient(45deg, rgba(255,127,0,0.8), rgba(144,238,144,0.6));
+  }
+  
+  .tamil-pattern {
+    background-image: radial-gradient(circle at 25% 25%, hsl(var(--accent)) 2px, transparent 2px),
+                      radial-gradient(circle at 75% 75%, hsl(var(--primary)) 2px, transparent 2px);
+    background-size: 30px 30px;
+    opacity: 0.1;
   }
 }
 

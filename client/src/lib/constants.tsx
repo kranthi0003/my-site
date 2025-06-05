@@ -69,24 +69,24 @@ export const PROFILE_DATA = {
   // Interests & Hobbies
   interests: [
     {
-      title: "Photography",
-      description: "Capturing beautiful moments and landscapes during travels",
-      icon: "Camera"
+      title: "Tamil Culture (தமிழ் கலாச்சாரம்)",
+      description: "Learning Tamil language, appreciating classical music, and understanding traditions",
+      icon: "Heart"
     },
     {
-      title: "Reading",
-      description: "Philosophy, technology trends, and personal development books",
-      icon: "Book"
+      title: "Technology & Innovation",
+      description: "Staying updated with latest tech trends and building innovative solutions",
+      icon: "Code"
     },
     {
-      title: "Fitness",
-      description: "Regular running, yoga, and maintaining a healthy lifestyle",
-      icon: "Activity"
+      title: "Family Time",
+      description: "Spending quality time with family and building meaningful relationships",
+      icon: "Users"
     },
     {
-      title: "Music",
-      description: "Playing guitar and enjoying diverse musical genres",
-      icon: "Music"
+      title: "Travel & Culture",
+      description: "Exploring different cultures, especially South Indian traditions and heritage",
+      icon: "MapPin"
     }
   ],
 

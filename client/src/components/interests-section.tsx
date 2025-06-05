@@ -1,12 +1,12 @@
-import { Camera, Book, Activity, Music } from "lucide-react";
+import { Heart, Code, Users, MapPin } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 
 export default function InterestsSection() {
   const iconMap = {
-    Camera,
-    Book,
-    Activity,
-    Music
+    Heart,
+    Code,
+    Users,
+    MapPin
   };
 
   return (
