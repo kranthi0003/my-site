@@ -198,7 +198,7 @@ export default function AboutSection() {
                             <tr>
                               <td className="px-1 py-2 text-muted-foreground">Plot 2</td>
                               <td className="px-1 py-2 font-medium">200 Sqyd</td>
-                              <td className="px-1 py-2 font-medium text-blue-700">₹35L</td>
+                              <td className="px-1 py-2 font-medium text-blue-700">₹50L</td>
                               <td className="px-1 py-2 font-medium text-blue-600">Inherited</td>
                               <td className="px-1 py-2">
                                 <a href="https://maps.app.goo.gl/FiM7HLAqr1Xq8bSs5" 
