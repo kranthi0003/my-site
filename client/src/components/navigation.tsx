@@ -77,23 +77,19 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className={`md:hidden mt-4 pb-4 border-t transition-colors duration-300 ${
-            isScrolled ? 'border-border' : 'border-white/20'
-          }`}>
-            <div className="flex flex-col space-y-4 pt-4">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item.href)}
-                  className={`text-left transition-colors duration-200 font-medium ${
-                    isScrolled 
-                      ? 'text-muted-foreground hover:text-primary' 
-                      : 'text-white/80 hover:text-white'
-                  }`}
-                >
-                  {item.label}
-                </button>
-              ))}
+          <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md shadow-lg border-t border-border/20 z-40">
+            <div className="container mx-auto px-6 py-6">
+              <div className="flex flex-col space-y-4">
+                {navItems.map((item) => (
+                  <button
+                    key={item.href}
+                    onClick={() => handleNavClick(item.href)}
+                    className="text-left text-muted-foreground hover:text-primary transition-colors duration-200 font-medium py-2 px-3 rounded-lg hover:bg-primary/5"
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         )}
