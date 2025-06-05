@@ -168,20 +168,30 @@ export default function AboutSection() {
                       <span className="font-medium">Couchbase</span>
                     </div>
                     <div className="border-t pt-3 mt-3">
-                      <h4 className="font-semibold text-primary mb-2">Assets</h4>
-                      <div className="space-y-2 text-xs">
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Property 1:</span>
-                          <span className="font-medium">200 Sqyd Vizag (Purchased @22)</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Property 2:</span>
-                          <span className="font-medium">200 Sqyd (Inherited)</span>
-                        </div>
-                        <div className="flex justify-between">
-                          <span className="text-muted-foreground">Future Investment:</span>
-                          <span className="font-medium">1000 sqft flat in Vizag (2025)</span>
-                        </div>
+                      <h4 className="font-semibold text-primary mb-3">Assets</h4>
+                      <div className="overflow-hidden rounded-lg border">
+                        <table className="w-full text-xs">
+                          <thead className="bg-gray-50">
+                            <tr>
+                              <th className="px-3 py-2 text-left font-medium text-gray-700">Property</th>
+                              <th className="px-3 py-2 text-left font-medium text-gray-700">Details</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-gray-200">
+                            <tr>
+                              <td className="px-3 py-2 text-muted-foreground">Plot 1</td>
+                              <td className="px-3 py-2 font-medium">200 Sqyd, Vizag (Purchased at age 22)</td>
+                            </tr>
+                            <tr>
+                              <td className="px-3 py-2 text-muted-foreground">Plot 2</td>
+                              <td className="px-3 py-2 font-medium">200 Sqyd (Inherited)</td>
+                            </tr>
+                            <tr>
+                              <td className="px-3 py-2 text-muted-foreground">Future Investment</td>
+                              <td className="px-3 py-2 font-medium">1000 sqft flat in Vizag (2025)</td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </div>
                   </div>
