@@ -14,16 +14,16 @@ export const PROFILE_DATA = {
   
   personalValues: [
     {
-      title: "Personal Values",
-      description: "I believe in honesty, respect, and the importance of family. My goal is to build a relationship based on mutual understanding, trust, and shared aspirations for the future."
+      title: "Personal Values (மதிப்புகள்)",
+      description: "I deeply respect Tamil culture and traditions. I believe in honesty, respect for elders, and the paramount importance of family. My goal is to build relationships based on mutual understanding, trust, and shared cultural appreciation."
     },
     {
       title: "Life Philosophy",
       description: "I approach life with optimism and dedication. Whether in my career, relationships, or personal growth, I strive for excellence while maintaining a balanced and humble perspective."
     },
     {
-      title: "Future Goals",
-      description: "I aspire to build a loving family while continuing to grow professionally. I believe in supporting each other's dreams and creating a harmonious home filled with love and understanding."
+      title: "Future Goals (எதிர்கால இலக்குகள்)",
+      description: "I aspire to build a loving family while honoring both cultures. I believe in supporting each other's dreams, celebrating Tamil traditions, and creating a harmonious home filled with love, understanding, and cultural richness."
     }
   ],
 

@@ -22,6 +22,9 @@ export default function HeroSection() {
             {/* Text Content */}
             <div className="text-center lg:text-left space-y-8 animate-fade-in">
               <div className="space-y-6">
+                <div className="text-xl md:text-2xl mb-4 font-medium opacity-90" style={{ fontFamily: 'Noto Sans Tamil, sans-serif' }}>
+                  வணக்கம் (Vanakkam) 🙏
+                </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   Hello, I'm
                   <span className="block text-white font-extrabold mt-2">{PROFILE_DATA.name}</span>

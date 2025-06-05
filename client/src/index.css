@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +14,11 @@
   --card-foreground: 212 27% 24%;
   --border: 214 15% 91%; /* #E9ECEF */
   --input: 214 15% 91%;
-  --primary: 212 27% 24%; /* #2C3E50 */
+  --primary: 14 100% 57%; /* Tamil saffron/orange #FF7F00 */
   --primary-foreground: 0 0% 98%;
-  --secondary: 204 76% 57%; /* #3498DB */
+  --secondary: 120 73% 75%; /* Temple green #90EE90 */
   --secondary-foreground: 0 0% 98%;
-  --accent: 43 74% 66%; /* #E8B86D */
+  --accent: 39 100% 50%; /* Gold accent #FFD700 */
   --accent-foreground: 212 27% 24%;
   --destructive: 0 84% 60%;
   --destructive-foreground: 60 9% 98%;
