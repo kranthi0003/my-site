@@ -16,13 +16,13 @@ export default function HeroSection() {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-          <div className="lg:w-1/2 text-center lg:text-left animate-fade-in">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-16">
+          <div className="lg:w-1/2 text-center lg:text-left animate-fade-in order-2 lg:order-1">
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Hello, I'm
               <span className="text-white block text-5xl lg:text-7xl font-extrabold">{PROFILE_DATA.name}</span>
             </h1>
-            <p className="text-lg lg:text-xl mb-8 opacity-90 leading-relaxed max-w-lg">
+            <p className="text-lg lg:text-xl mb-8 opacity-90 leading-relaxed max-w-lg lg:max-w-none">
               {PROFILE_DATA.tagline}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -44,10 +44,10 @@ export default function HeroSection() {
             </div>
           </div>
           
-          <div className="lg:w-1/2 flex justify-center animate-slide-up">
+          <div className="lg:w-1/2 flex justify-center animate-slide-up order-1 lg:order-2">
             <div className="relative">
               {/* Profile image with better styling */}
-              <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+              <div className="relative w-72 h-72 lg:w-80 lg:h-80">
                 <img
                   src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600"
                   alt={`${PROFILE_DATA.name} - Professional Portrait`}
@@ -58,7 +58,7 @@ export default function HeroSection() {
               </div>
               
               {/* Floating icon */}
-              <div className="absolute -bottom-4 -right-4 bg-accent rounded-full p-4 shadow-lg animate-pulse">
+              <div className="absolute -bottom-4 -right-4 bg-accent rounded-full p-4 shadow-lg">
                 <Code className="text-primary text-2xl" size={32} />
               </div>
               
