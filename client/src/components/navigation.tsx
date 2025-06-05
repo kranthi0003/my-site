@@ -32,20 +32,31 @@ export default function Navigation() {
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-sm' : 'bg-transparent'
+      isScrolled 
+        ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-border/20' 
+        : 'bg-white/10 backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-bold text-primary">Personal Profile</div>
+          <div className={`text-xl font-bold transition-colors duration-300 ${
+            isScrolled ? 'text-primary' : 'text-white'
+          }`}>
+            Personal Profile
+          </div>
           
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => handleNavClick(item.href)}
-                className="text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
+                className={`transition-all duration-200 font-medium relative group ${
+                  isScrolled 
+                    ? 'text-muted-foreground hover:text-primary' 
+                    : 'text-white/80 hover:text-white'
+                }`}
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-300"></span>
               </button>
             ))}
           </div>
@@ -53,7 +64,11 @@ export default function Navigation() {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className={`md:hidden transition-colors duration-300 ${
+              isScrolled 
+                ? 'text-primary hover:bg-primary/10' 
+                : 'text-white hover:bg-white/10'
+            }`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -62,13 +77,19 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 pb-4 border-t border-border">
+          <div className={`md:hidden mt-4 pb-4 border-t transition-colors duration-300 ${
+            isScrolled ? 'border-border' : 'border-white/20'
+          }`}>
             <div className="flex flex-col space-y-4 pt-4">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-left text-muted-foreground hover:text-primary transition-colors duration-200 font-medium"
+                  className={`text-left transition-colors duration-200 font-medium ${
+                    isScrolled 
+                      ? 'text-muted-foreground hover:text-primary' 
+                      : 'text-white/80 hover:text-white'
+                  }`}
                 >
                   {item.label}
                 </button>
