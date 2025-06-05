@@ -81,7 +81,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-lg font-semibold">LinkedIn</h3>
                 <a href={PROFILE_DATA.contact.linkedin} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline">
-                  LinkedIn Profile
+                  akkiran003
                 </a>
               </div>
             </div>
@@ -93,7 +93,7 @@ export default function ContactSection() {
               <div>
                 <h3 className="text-lg font-semibold">Instagram</h3>
                 <a href={PROFILE_DATA.contact.instagram} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline">
-                  Instagram Profile
+                  kranthi.kirannn
                 </a>
               </div>
             </div>
