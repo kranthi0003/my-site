@@ -18,11 +18,6 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
           <div className="lg:w-1/2 text-center lg:text-left animate-fade-in">
-            <div className="mb-4">
-              <span className="inline-block bg-accent/20 text-accent px-4 py-2 rounded-full text-sm font-medium">
-                Family Introduction Bio
-              </span>
-            </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Hello, I'm
               <span className="text-white block text-5xl lg:text-7xl font-extrabold">{PROFILE_DATA.name}</span>
