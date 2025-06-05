@@ -2,14 +2,14 @@
 // Replace all values with actual personal information
 
 export const PROFILE_DATA = {
-  name: "John Anderson",
-  tagline: "Software Engineer & Technology Enthusiast committed to building meaningful connections and creating a positive impact.",
+  name: "Kranthi Kiran Akkumahanthi",
+  tagline: "Software Engineer with 4 years of experience, committed to building meaningful connections and creating a positive impact.",
   
   // Hero section image - Replace with actual professional headshot
   profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600",
   
   // About section
-  aboutDescription: "A passionate technology professional with strong family values and a commitment to personal growth and meaningful relationships.",
+  aboutDescription: "An experienced software engineer with 4 years in the technology industry, passionate about creating innovative solutions while maintaining strong family values and commitment to meaningful relationships.",
   aboutImage: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
   
   personalValues: [
@@ -47,16 +47,10 @@ export const PROFILE_DATA = {
 
   experience: [
     {
-      position: "Senior Software Engineer",
-      company: "Google Inc.",
-      period: "2022 - Present",
-      description: "Leading development of cloud-based solutions serving millions of users"
-    },
-    {
-      position: "Software Development Intern",
-      company: "Microsoft Corporation",
-      period: "Summer 2021",
-      description: "Contributed to Azure platform improvements and optimization"
+      position: "Software Engineer",
+      company: "Technology Industry",
+      period: "4+ Years Experience",
+      description: "Experienced in developing and maintaining software solutions with a focus on quality, efficiency, and user satisfaction"
     }
   ],
 
@@ -141,9 +135,9 @@ export const PROFILE_DATA = {
 
   // Contact Information - Replace with actual contact details
   contact: {
-    email: "john.anderson@email.com",
-    phone: "+1 (555) 123-4567",
-    location: "San Francisco, California",
-    linkedin: "linkedin.com/in/johnanderson"
+    email: "your.email@example.com",
+    phone: "+91 XXXXX XXXXX",
+    location: "India",
+    linkedin: "linkedin.com/in/kranthikiran"
   }
 };
