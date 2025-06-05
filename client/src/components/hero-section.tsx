@@ -25,7 +25,7 @@ export default function HeroSection() {
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
               Hello, I'm
-              <span className="text-accent block text-5xl lg:text-7xl">{PROFILE_DATA.name}</span>
+              <span className="text-white block text-5xl lg:text-7xl font-extrabold">{PROFILE_DATA.name}</span>
             </h1>
             <p className="text-lg lg:text-xl mb-8 opacity-90 leading-relaxed max-w-lg">
               {PROFILE_DATA.tagline}
