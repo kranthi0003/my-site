@@ -135,9 +135,10 @@ export const PROFILE_DATA = {
 
   // Contact Information - Replace with actual contact details
   contact: {
-    email: "your.email@example.com",
-    phone: "+91 XXXXX XXXXX",
-    location: "India",
-    linkedin: "linkedin.com/in/kranthikiran"
+    email: "kranthikiranakkumahanthi@gmail.com",
+    phone: "+91 9398857319",
+    location: "Bangalore",
+    linkedin: "https://www.linkedin.com/in/akkiran003/",
+    instagram: "https://www.instagram.com/kranthi.kirannn/"
   }
 };

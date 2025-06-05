@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { useToast } from "@/hooks/use-toast";
 import { PROFILE_DATA } from "@/lib/constants";
 
@@ -80,7 +80,21 @@ export default function ContactSection() {
               </div>
               <div>
                 <h3 className="text-lg font-semibold">LinkedIn</h3>
-                <p className="opacity-90">{PROFILE_DATA.contact.linkedin}</p>
+                <a href={PROFILE_DATA.contact.linkedin} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline">
+                  LinkedIn Profile
+                </a>
+              </div>
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="bg-accent p-3 rounded-full">
+                <FaInstagram className="text-primary text-xl" size={24} />
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold">Instagram</h3>
+                <a href={PROFILE_DATA.contact.instagram} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline">
+                  Instagram Profile
+                </a>
               </div>
             </div>
           </div>
