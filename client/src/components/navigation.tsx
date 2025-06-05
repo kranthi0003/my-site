@@ -36,7 +36,7 @@ export default function Navigation() {
         ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-border/20' 
         : 'bg-white/10 backdrop-blur-sm'
     }`}>
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 ${
             isScrolled ? 'bg-primary text-white shadow-lg' : 'bg-white/20 text-white border-2 border-white/30'

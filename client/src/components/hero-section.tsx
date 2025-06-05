@@ -18,7 +18,7 @@ export default function HeroSection() {
       </div>
       
       <div className="container mx-auto px-6 relative z-10 min-h-screen flex items-center">
-        <div className="w-full pt-20 pb-16">
+        <div className="w-full pt-40 pb-16">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             
             {/* Text Content */}
