@@ -157,7 +157,7 @@ export default function AboutSection() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Stock Options:</span>
-                      <span className="font-medium">10k USD</span>
+                      <span className="font-medium">INR 8.3 Lakh (10k USD)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Working With:</span>
