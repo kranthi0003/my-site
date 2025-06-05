@@ -59,13 +59,14 @@ export default function HeroSection() {
             {/* Profile Image */}
             <div className="flex justify-center lg:justify-end animate-slide-up">
               <div className="relative">
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-3">
                   <img
                     src={profilePhoto}
                     alt={`${PROFILE_DATA.name} - Professional Portrait`}
                     className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-white/20"
+                    style={{ objectPosition: 'center 15%' }}
                   />
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/20"></div>
+                  <div className="absolute inset-3 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/20"></div>
                 </div>
                 
                 {/* Floating badge */}
