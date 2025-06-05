@@ -173,22 +173,26 @@ export default function AboutSection() {
                         <table className="w-full text-xs">
                           <thead className="bg-gray-50">
                             <tr>
-                              <th className="px-3 py-2 text-left font-medium text-gray-700">Property</th>
-                              <th className="px-3 py-2 text-left font-medium text-gray-700">Details</th>
+                              <th className="px-2 py-2 text-left font-medium text-gray-700">Property</th>
+                              <th className="px-2 py-2 text-left font-medium text-gray-700">Details</th>
+                              <th className="px-2 py-2 text-left font-medium text-gray-700">Source</th>
                             </tr>
                           </thead>
                           <tbody className="divide-y divide-gray-200">
                             <tr>
-                              <td className="px-3 py-2 text-muted-foreground">Plot 1</td>
-                              <td className="px-3 py-2 font-medium">200 Sqyd, Vizag (Purchased at age 22)</td>
+                              <td className="px-2 py-2 text-muted-foreground">Plot 1</td>
+                              <td className="px-2 py-2 font-medium">200 Sqyd, Vizag</td>
+                              <td className="px-2 py-2 font-medium text-green-600">Self</td>
                             </tr>
                             <tr>
-                              <td className="px-3 py-2 text-muted-foreground">Plot 2</td>
-                              <td className="px-3 py-2 font-medium">200 Sqyd (Inherited)</td>
+                              <td className="px-2 py-2 text-muted-foreground">Plot 2</td>
+                              <td className="px-2 py-2 font-medium">200 Sqyd</td>
+                              <td className="px-2 py-2 font-medium text-blue-600">Inherited</td>
                             </tr>
                             <tr>
-                              <td className="px-3 py-2 text-muted-foreground">Future Investment</td>
-                              <td className="px-3 py-2 font-medium">1000 sqft flat in Vizag (2025)</td>
+                              <td className="px-2 py-2 text-muted-foreground">Flat</td>
+                              <td className="px-2 py-2 font-medium">1000 sqft, Vizag</td>
+                              <td className="px-2 py-2 font-medium text-orange-600">In Progress (This Year)</td>
                             </tr>
                           </tbody>
                         </table>
