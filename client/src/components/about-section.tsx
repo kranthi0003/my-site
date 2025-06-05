@@ -16,7 +16,7 @@ export default function AboutSection() {
             <div className="w-8 h-8 bg-primary/20 rounded-full"></div>
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">About Me</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {PROFILE_DATA.aboutDescription}
           </p>
         </div>
