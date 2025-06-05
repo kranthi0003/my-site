@@ -3,7 +3,7 @@
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran Akkumahanthi",
-  tagline: "Software Engineer with 4 years of experience, committed to building meaningful connections and creating a positive impact.",
+  tagline: "Software Engineer with 4 years of experience at Amazon and Couchbase, passionate about distributed systems and cloud technologies, committed to building meaningful connections.",
   
   // Hero section image - Replace with actual professional headshot
   profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600",
@@ -48,9 +48,15 @@ export const PROFILE_DATA = {
   experience: [
     {
       position: "Software Engineer",
-      company: "Technology Industry",
-      period: "4+ Years Experience",
-      description: "Experienced in developing and maintaining software solutions with a focus on quality, efficiency, and user satisfaction"
+      company: "Couchbase",
+      period: "April 2024 - Present",
+      description: "Currently working on database and cloud technologies in Bangalore"
+    },
+    {
+      position: "Software Engineer",
+      company: "Amazon",
+      period: "2020 - March 2024 (3.5 years)",
+      description: "Developed and maintained large-scale distributed systems and cloud solutions in Hyderabad"
     }
   ],
 
