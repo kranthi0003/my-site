@@ -105,7 +105,7 @@ export default function AboutSection() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Mother Tongue:</span>
-                      <span className="font-medium">Telugu</span>
+                      <span className="font-medium">Telugu (learning Tamil)</span>
                     </div>
                   </div>
                 </CardContent>
