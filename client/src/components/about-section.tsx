@@ -39,31 +39,175 @@ export default function AboutSection() {
             </div>
           </div>
           
-          <div className="space-y-6 animate-fade-in">
-            {PROFILE_DATA.personalValues.map((value, index) => (
-              <Card key={index} className="bg-white/80 backdrop-blur-sm p-6 card-hover border-l-4 border-l-accent shadow-lg">
-                <CardContent className="p-0">
-                  <div className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mt-1">
-                      <div className="w-6 h-6 bg-primary/20 rounded-full"></div>
+          <div className="animate-fade-in">
+            {/* Personal Details Grid */}
+            <div className="grid md:grid-cols-2 gap-8">
+              
+              {/* Basics & Lifestyle */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-primary mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-primary/20 rounded-full"></div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-primary mb-3">{value.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed text-sm">
-                        {value.description}
-                      </p>
+                    Basics & Lifestyle
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Age:</span>
+                      <span className="font-medium">25</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Date of Birth:</span>
+                      <span className="font-medium">03-Sep-1999</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Height:</span>
+                      <span className="font-medium">5' 10" (177cm)</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Marital Status:</span>
+                      <span className="font-medium">Never Married</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Diet:</span>
+                      <span className="font-medium">Non-Veg</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Grew up in:</span>
+                      <span className="font-medium">India</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-            ))}
-            
-            {/* Additional highlight */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-primary/5 to-secondary/5 rounded-xl border border-primary/10">
-              <h4 className="text-lg font-semibold text-primary mb-2">Looking Forward</h4>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                I believe that the right partnership is built on mutual respect, shared values, and genuine care for each other's happiness and growth.
-              </p>
+
+              {/* Religious Background */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-secondary mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-secondary/20 rounded-full"></div>
+                    </div>
+                    Religious Background
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Religion:</span>
+                      <span className="font-medium">Hindu</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Community:</span>
+                      <span className="font-medium">Patnaick</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Gothra:</span>
+                      <span className="font-medium">Bharadwaj</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Mother Tongue:</span>
+                      <span className="font-medium">Telugu</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Family Details */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-accent mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-accent/20 rounded-full"></div>
+                    </div>
+                    Family Details
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Mother's Details:</span>
+                      <span className="font-medium">Homemaker</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Father's Details:</span>
+                      <span className="font-medium">Passed Away</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">No. of Sisters:</span>
+                      <span className="font-medium">0</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">No. of Brothers:</span>
+                      <span className="font-medium">0</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Family Financial Status:</span>
+                      <span className="font-medium">High</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Education & Career */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-primary mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-primary/20 rounded-full"></div>
+                    </div>
+                    Education & Career
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Highest Qualification:</span>
+                      <span className="font-medium">B.E / B.Tech - Engineering</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">College Attended:</span>
+                      <span className="font-medium">Gayatri Vidya Parishad College</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Working As:</span>
+                      <span className="font-medium">Software Developer</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Working With:</span>
+                      <span className="font-medium">Private Company</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Employer Name:</span>
+                      <span className="font-medium">Couchbase</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Annual Income:</span>
+                      <span className="font-medium">INR 30-50 Lakh</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Astro Details */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg md:col-span-2">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-secondary mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-secondary/20 rounded-full"></div>
+                    </div>
+                    Astro Details
+                  </h3>
+                  <div className="grid md:grid-cols-3 gap-6 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Date of Birth:</span>
+                      <span className="font-medium">03-Sep-1999</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Time of Birth:</span>
+                      <span className="font-medium">22:20 hours</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">City of Birth:</span>
+                      <span className="font-medium">Visakhapatnam, India</span>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
