@@ -205,6 +205,14 @@ export default function AboutSection() {
                       <span className="text-muted-foreground">City of Birth:</span>
                       <span className="font-medium">Visakhapatnam, India</span>
                     </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Rashi:</span>
+                      <span className="font-medium">Gemini</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Star:</span>
+                      <span className="font-medium">Ardra</span>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
