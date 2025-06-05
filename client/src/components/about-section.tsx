@@ -212,7 +212,7 @@ export default function AboutSection() {
                             <tr>
                               <td className="px-1 py-2 text-muted-foreground">Flat</td>
                               <td className="px-1 py-2 font-medium">1000 sqft, Vizag</td>
-                              <td className="px-1 py-2 font-medium text-orange-700">₹45L (approx)</td>
+                              <td className="px-1 py-2 font-medium text-orange-700">₹45L</td>
                               <td className="px-1 py-2 font-medium text-green-600">Self</td>
                               <td className="px-1 py-2">
                                 <a href="https://maps.app.goo.gl/eSPeB7kyGfCrdcfE6" 
