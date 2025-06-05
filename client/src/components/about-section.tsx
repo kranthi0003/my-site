@@ -168,7 +168,7 @@ export default function AboutSection() {
                       <span className="font-medium">Couchbase</span>
                     </div>
                     <div className="border-t pt-3 mt-3">
-                      <h4 className="font-semibold text-primary mb-3">Assets</h4>
+                      <h4 className="font-semibold text-primary mb-3">Assets (Vizag)</h4>
                       <div className="overflow-hidden rounded-lg border">
                         <table className="w-full text-xs">
                           <thead className="bg-gray-50">
@@ -183,7 +183,7 @@ export default function AboutSection() {
                           <tbody className="divide-y divide-gray-200">
                             <tr>
                               <td className="px-1 py-2 text-muted-foreground">Plot 1</td>
-                              <td className="px-1 py-2 font-medium">200 Sqyd, Vizag</td>
+                              <td className="px-1 py-2 font-medium">200 Sqyd</td>
                               <td className="px-1 py-2 font-medium text-green-700">₹40L</td>
                               <td className="px-1 py-2 font-medium text-green-600">Self</td>
                               <td className="px-1 py-2">
@@ -211,7 +211,7 @@ export default function AboutSection() {
                             </tr>
                             <tr>
                               <td className="px-1 py-2 text-muted-foreground">Flat</td>
-                              <td className="px-1 py-2 font-medium">1000 sqft, Vizag</td>
+                              <td className="px-1 py-2 font-medium">1000 sqft</td>
                               <td className="px-1 py-2 font-medium text-orange-700">₹45L</td>
                               <td className="px-1 py-2 font-medium text-green-600">Self</td>
                               <td className="px-1 py-2">
