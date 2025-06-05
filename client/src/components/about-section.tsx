@@ -3,7 +3,7 @@ import { PROFILE_DATA } from "@/lib/constants";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-gradient-to-br from-white to-muted/30 relative">
+    <section id="about" className="pt-24 pb-20 bg-gradient-to-br from-white to-muted/30 relative">
       {/* Background decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
