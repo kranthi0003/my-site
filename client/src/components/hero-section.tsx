@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Code } from "lucide-react";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 import { PROFILE_DATA } from "@/lib/constants";
+import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
 
 export default function HeroSection() {
   const scrollTo = useSmoothScroll();
@@ -60,7 +61,7 @@ export default function HeroSection() {
               <div className="relative">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                   <img
-                    src="/attached_assets/IMG_20220826_165143_835_1749135163637.jpg"
+                    src={profilePhoto}
                     alt={`${PROFILE_DATA.name} - Professional Portrait`}
                     className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-white/20"
                   />

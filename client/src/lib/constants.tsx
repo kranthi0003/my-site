@@ -1,16 +1,17 @@
 // This file contains all the personal data for the bio website
 // Replace all values with actual personal information
+import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran Akkumahanthi",
   tagline: "Software Engineer with 4 years of experience at Amazon and Couchbase, passionate about distributed systems and cloud technologies, committed to building meaningful connections.",
   
   // Hero section image - Your professional headshot
-  profileImage: "/attached_assets/IMG_20220826_165143_835_1749135163637.jpg",
+  profileImage: profilePhoto,
   
   // About section
   aboutDescription: "An experienced software engineer with 4 years in the technology industry, passionate about creating innovative solutions while maintaining strong family values and commitment to meaningful relationships.",
-  aboutImage: "/attached_assets/IMG_20220826_165143_835_1749135163637.jpg",
+  aboutImage: profilePhoto,
   
   personalValues: [
     {
