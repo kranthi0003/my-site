@@ -137,6 +137,32 @@ export default function AboutSection() {
                       <span className="text-muted-foreground">No. of Brothers:</span>
                       <span className="font-medium">0</span>
                     </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Financial Background */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-accent mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-accent/20 rounded-full"></div>
+                    </div>
+                    Financial Background
+                  </h3>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Annual Income:</span>
+                      <span className="font-medium">INR 30-50 Lakh</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Working With:</span>
+                      <span className="font-medium">Private Company</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Current Employer:</span>
+                      <span className="font-medium">Couchbase</span>
+                    </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Family Financial Status:</span>
                       <span className="font-medium">High</span>
@@ -144,8 +170,6 @@ export default function AboutSection() {
                   </div>
                 </CardContent>
               </Card>
-
-
 
               {/* Astro Details */}
               <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg md:col-span-2">
