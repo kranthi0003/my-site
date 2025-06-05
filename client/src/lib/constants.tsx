@@ -10,21 +10,21 @@ export const PROFILE_DATA = {
   profileImage: profilePhoto,
   
   // About section
-  aboutDescription: "A dedicated software engineer and responsible breadwinner with proven experience at leading technology companies. I take pride in my ability to provide financial stability and security for my family while maintaining deep respect for Tamil culture and traditions. Having worked at prestigious companies like Amazon and Couchbase, I am committed to building a prosperous future grounded in strong values, cultural respect, and unwavering dedication to family welfare.",
+  aboutDescription: "A dedicated software engineer with proven experience at leading technology companies like Amazon and Couchbase. I am passionate about building innovative solutions while maintaining deep respect for Tamil culture and traditions. My approach to life centers on responsibility, family values, and creating meaningful relationships built on trust and mutual respect.",
   aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
   personalValues: [
     {
-      title: "Family Responsibility (குடும்ப பொறுப்பு)",
-      description: "As the primary breadwinner, I take immense pride in providing financial security and stability for my family. I understand the sacred duty of caring for loved ones and ensuring their comfort and well-being. My career achievements at top companies reflect my commitment to creating a prosperous foundation for our future together."
+      title: "Personal Values (மதிப்புகள்)",
+      description: "I deeply respect Tamil culture and traditions. I believe in honesty, respect for elders, and the paramount importance of family. My goal is to build relationships based on mutual understanding, trust, and shared cultural appreciation."
     },
     {
-      title: "Cultural Respect (பண்பாட்டு மரியாதை)",
-      description: "I hold deep reverence for Tamil traditions, customs, and values. From respecting elders to honoring festivals and maintaining cultural practices, I believe these traditions form the backbone of a strong family. I am eager to learn more about Tamil heritage and incorporate these beautiful traditions into our life together."
+      title: "Life Philosophy",
+      description: "I approach life with dedication and a strong sense of responsibility. Whether in my career, relationships, or personal growth, I strive for excellence while maintaining a balanced and humble perspective."
     },
     {
-      title: "Future Vision (எதிர்கால பார்வை)",
-      description: "My vision is to build a harmonious household where Tamil culture thrives alongside modern progress. I am committed to ensuring our family's financial prosperity while maintaining the warmth, respect, and traditional values that make Tamil families so special. Together, we will create a home filled with love, cultural richness, and lasting happiness."
+      title: "Future Goals (எதிர்கால இலக்குகள்)",
+      description: "I aspire to build a loving family while honoring both cultures. I believe in supporting each other's dreams, celebrating Tamil traditions, and creating a harmonious home filled with love, understanding, and cultural richness."
     }
   ],
 
