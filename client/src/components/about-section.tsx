@@ -173,37 +173,41 @@ export default function AboutSection() {
                         <table className="w-full text-xs">
                           <thead className="bg-gray-50">
                             <tr>
-                              <th className="px-2 py-2 text-left font-medium text-gray-700">Property</th>
-                              <th className="px-2 py-2 text-left font-medium text-gray-700">Details</th>
-                              <th className="px-2 py-2 text-left font-medium text-gray-700">Source</th>
-                              <th className="px-2 py-2 text-left font-medium text-gray-700">Location</th>
+                              <th className="px-1 py-2 text-left font-medium text-gray-700">Property</th>
+                              <th className="px-1 py-2 text-left font-medium text-gray-700">Details</th>
+                              <th className="px-1 py-2 text-left font-medium text-gray-700">Value</th>
+                              <th className="px-1 py-2 text-left font-medium text-gray-700">Source</th>
+                              <th className="px-1 py-2 text-left font-medium text-gray-700">Location</th>
                             </tr>
                           </thead>
                           <tbody className="divide-y divide-gray-200">
                             <tr>
-                              <td className="px-2 py-2 text-muted-foreground">Plot 1</td>
-                              <td className="px-2 py-2 font-medium">200 Sqyd, Vizag</td>
-                              <td className="px-2 py-2 font-medium text-green-600">Self</td>
-                              <td className="px-2 py-2">
+                              <td className="px-1 py-2 text-muted-foreground">Plot 1</td>
+                              <td className="px-1 py-2 font-medium">200 Sqyd, Vizag</td>
+                              <td className="px-1 py-2 font-medium text-green-700">₹40L</td>
+                              <td className="px-1 py-2 font-medium text-green-600">Self</td>
+                              <td className="px-1 py-2">
                                 <a href="https://maps.app.goo.gl/FYcjGMRJYVY43MgYA" 
                                    target="_blank" 
                                    rel="noopener noreferrer"
-                                   className="text-blue-600 hover:text-blue-800 underline">
-                                  View Map
+                                   className="text-blue-600 hover:text-blue-800 underline text-xs">
+                                  Map
                                 </a>
                               </td>
                             </tr>
                             <tr>
-                              <td className="px-2 py-2 text-muted-foreground">Plot 2</td>
-                              <td className="px-2 py-2 font-medium">200 Sqyd</td>
-                              <td className="px-2 py-2 font-medium text-blue-600">Inherited</td>
-                              <td className="px-2 py-2 text-muted-foreground">-</td>
+                              <td className="px-1 py-2 text-muted-foreground">Plot 2</td>
+                              <td className="px-1 py-2 font-medium">200 Sqyd</td>
+                              <td className="px-1 py-2 text-muted-foreground">-</td>
+                              <td className="px-1 py-2 font-medium text-blue-600">Inherited</td>
+                              <td className="px-1 py-2 text-muted-foreground">-</td>
                             </tr>
                             <tr>
-                              <td className="px-2 py-2 text-muted-foreground">Flat</td>
-                              <td className="px-2 py-2 font-medium">1000 sqft, Vizag</td>
-                              <td className="px-2 py-2 font-medium text-orange-600">In Progress (This Year)</td>
-                              <td className="px-2 py-2 text-muted-foreground">TBD</td>
+                              <td className="px-1 py-2 text-muted-foreground">Flat</td>
+                              <td className="px-1 py-2 font-medium">1000 sqft, Vizag</td>
+                              <td className="px-1 py-2 text-muted-foreground">TBD</td>
+                              <td className="px-1 py-2 font-medium text-orange-600">In Progress</td>
+                              <td className="px-1 py-2 text-muted-foreground">TBD</td>
                             </tr>
                           </tbody>
                         </table>
