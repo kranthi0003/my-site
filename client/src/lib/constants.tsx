@@ -5,12 +5,12 @@ export const PROFILE_DATA = {
   name: "Kranthi Kiran Akkumahanthi",
   tagline: "Software Engineer with 4 years of experience at Amazon and Couchbase, passionate about distributed systems and cloud technologies, committed to building meaningful connections.",
   
-  // Hero section image - Replace with actual professional headshot
-  profileImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600",
+  // Hero section image - Your professional headshot
+  profileImage: "/attached_assets/IMG_20220826_165143_835_1749135163637.jpg",
   
   // About section
   aboutDescription: "An experienced software engineer with 4 years in the technology industry, passionate about creating innovative solutions while maintaining strong family values and commitment to meaningful relationships.",
-  aboutImage: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+  aboutImage: "/attached_assets/IMG_20220826_165143_835_1749135163637.jpg",
   
   personalValues: [
     {

@@ -60,7 +60,7 @@ export default function HeroSection() {
               <div className="relative">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                   <img
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&h=600"
+                    src="/attached_assets/IMG_20220826_165143_835_1749135163637.jpg"
                     alt={`${PROFILE_DATA.name} - Professional Portrait`}
                     className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-white/20"
                   />
