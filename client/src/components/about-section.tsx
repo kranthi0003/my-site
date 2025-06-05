@@ -152,8 +152,12 @@ export default function AboutSection() {
                   </h3>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Annual Income:</span>
-                      <span className="font-medium">INR 30-50 Lakh</span>
+                      <span className="text-muted-foreground">Base Salary:</span>
+                      <span className="font-medium">INR 28 LPA</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Stock Options:</span>
+                      <span className="font-medium">10k USD</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Working With:</span>
