@@ -167,9 +167,22 @@ export default function AboutSection() {
                       <span className="text-muted-foreground">Current Employer:</span>
                       <span className="font-medium">Couchbase</span>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Family Financial Status:</span>
-                      <span className="font-medium">High</span>
+                    <div className="border-t pt-3 mt-3">
+                      <h4 className="font-semibold text-primary mb-2">Assets</h4>
+                      <div className="space-y-2 text-xs">
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Property 1:</span>
+                          <span className="font-medium">200 Sqyd Vizag (Purchased @22)</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Property 2:</span>
+                          <span className="font-medium">200 Sqyd (Inherited)</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span className="text-muted-foreground">Future Investment:</span>
+                          <span className="font-medium">1000 sqft flat in Vizag (2025)</span>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
