@@ -38,17 +38,10 @@ export default function Navigation() {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className={`flex items-center space-x-3 transition-colors duration-300 ${
-            isScrolled ? 'text-primary' : 'text-white'
+          <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 ${
+            isScrolled ? 'bg-primary text-white shadow-lg' : 'bg-white/20 text-white border-2 border-white/30'
           }`}>
-            <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm transition-colors duration-300 ${
-              isScrolled ? 'bg-primary text-white' : 'bg-white/20 text-white border border-white/30'
-            }`}>
-              KK
-            </div>
-            <div className="text-xl font-bold">
-              Kranthi Kiran
-            </div>
+            KK
           </div>
           
           <div className="hidden md:flex space-x-8">
