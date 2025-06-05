@@ -20,44 +20,20 @@ export default function HeroSection() {
       
       <div className="container mx-auto px-6 relative z-10 min-h-screen flex items-center">
         <div className="w-full pt-40 pb-16">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            
-            {/* Text Content */}
-            <div className="text-center lg:text-left space-y-12 animate-fade-in">
-              <div className="space-y-10">
-                <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, sans-serif', letterSpacing: '1px' }}>
-                  வணக்கம் (Vanakkam) 🙏
-                </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed">
-                  <span className="block mb-4 text-white/90">Hello, I'm</span>
-                  <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
-                </h1>
-                <p className="text-lg md:text-xl opacity-90 leading-relaxed max-w-2xl mx-auto lg:mx-0 mt-10 bg-black/20 backdrop-blur-sm p-6 rounded-2xl">
-                  {PROFILE_DATA.tagline}
-                </p>
+          <div className="text-center space-y-12 animate-fade-in">
+            {/* Tamil Greeting and Name */}
+            <div className="space-y-8">
+              <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, sans-serif', letterSpacing: '1px' }}>
+                வணக்கம் (Vanakkam) 🙏
               </div>
-              
-              <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start mt-12">
-                <Button
-                  onClick={() => scrollTo('about')}
-                  className="bg-accent text-primary px-10 py-5 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
-                  size="lg"
-                >
-                  Learn More About Me
-                </Button>
-                <Button
-                  onClick={() => scrollTo('contact')}
-                  variant="outline"
-                  className="border-2 border-white text-white bg-transparent px-10 py-5 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg text-lg"
-                  size="lg"
-                >
-                  Get In Touch
-                </Button>
-              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed">
+                <span className="block mb-4 text-white/90">Hello, I'm</span>
+                <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
+              </h1>
             </div>
             
             {/* Profile Image */}
-            <div className="flex justify-center lg:justify-end animate-slide-up">
+            <div className="flex justify-center animate-slide-up">
               <div className="relative">
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-3">
                   <img
@@ -79,7 +55,31 @@ export default function HeroSection() {
                 <div className="absolute -bottom-2 -left-8 w-8 h-8 bg-accent/30 rounded-full"></div>
               </div>
             </div>
-            
+
+            {/* Tagline and Buttons - Now below the photo */}
+            <div className="space-y-8">
+              <p className="text-lg md:text-xl opacity-90 leading-relaxed max-w-4xl mx-auto bg-black/20 backdrop-blur-sm p-6 rounded-2xl">
+                {PROFILE_DATA.tagline}
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                <Button
+                  onClick={() => scrollTo('about')}
+                  className="bg-accent text-primary px-10 py-5 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+                  size="lg"
+                >
+                  Learn More About Me
+                </Button>
+                <Button
+                  onClick={() => scrollTo('contact')}
+                  variant="outline"
+                  className="border-2 border-white text-white bg-transparent px-10 py-5 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg text-lg"
+                  size="lg"
+                >
+                  Get In Touch
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
         
