@@ -7,7 +7,7 @@ export default function HeroSection() {
   const scrollTo = useSmoothScroll();
 
   return (
-    <section id="home" className="hero-gradient min-h-screen flex items-center text-white relative overflow-hidden">
+    <section id="home" className="hero-gradient min-h-screen flex items-center text-white relative overflow-hidden pt-20">
       {/* Background decorative elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-32 h-32 bg-white rounded-full"></div>
