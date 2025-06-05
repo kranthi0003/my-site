@@ -42,7 +42,7 @@ export default function HeroSection() {
                 <Button
                   onClick={() => scrollTo('contact')}
                   variant="outline"
-                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg"
+                  className="border-2 border-white text-white bg-transparent px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg"
                   size="lg"
                 >
                   Get In Touch
