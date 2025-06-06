@@ -55,20 +55,22 @@ export default function HeroSection() {
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/10 via-transparent to-orange-400/10 scale-110 blur-sm -z-10"></div>
                 </div>
                 
-                {/* Rotating Sun Animation - Following Photo Border */}
-                <div className="absolute inset-4 animate-spin" style={{ animationDuration: '30s' }}>
-                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-6 h-6 relative">
-                    {/* Simple Round Sun */}
-                    <div className="relative w-full h-full bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 rounded-full shadow-lg">
-                      {/* Outer glow */}
-                      <div className="absolute inset-0 rounded-full bg-yellow-300/30 animate-pulse scale-110"></div>
-                      
-                      {/* Moon orbiting the sun */}
-                      <div className="absolute inset-0 animate-spin" style={{ animationDuration: '12s' }}>
-                        <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1.5 h-1.5 bg-gray-100 rounded-full shadow-sm border border-gray-200"></div>
-                      </div>
-                    </div>
+                {/* Floating Celestial Elements */}
+                <div className="absolute inset-0">
+                  {/* Sun - floating in top right */}
+                  <div className="absolute top-8 right-8 w-5 h-5 bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 rounded-full shadow-lg animate-pulse">
+                    <div className="absolute inset-0 rounded-full bg-yellow-300/20 scale-125"></div>
                   </div>
+                  
+                  {/* Moon - floating in bottom left with gentle drift */}
+                  <div className="absolute bottom-8 left-8 w-4 h-4 bg-gradient-to-br from-gray-100 to-gray-300 rounded-full shadow-md animate-bounce" style={{ animationDuration: '3s' }}>
+                    <div className="absolute top-0.5 left-0.5 w-1 h-1 bg-gray-200 rounded-full opacity-60"></div>
+                  </div>
+                  
+                  {/* Subtle Stars */}
+                  <div className="absolute top-16 left-12 w-1 h-1 bg-white rounded-full animate-pulse opacity-60"></div>
+                  <div className="absolute bottom-16 right-12 w-1 h-1 bg-white rounded-full animate-pulse opacity-40" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute top-24 right-20 w-0.5 h-0.5 bg-white rounded-full animate-pulse opacity-50" style={{ animationDelay: '2s' }}></div>
                 </div>
               </div>
             </div>
