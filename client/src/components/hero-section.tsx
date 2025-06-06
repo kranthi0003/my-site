@@ -61,8 +61,25 @@ export default function HeroSection() {
                 
                 {/* Rotating Sun Animation */}
                 <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s' }}>
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-400 rounded-full shadow-lg flex items-center justify-center">
-                    <div className="w-3 h-3 bg-yellow-300 rounded-full"></div>
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 rounded-full shadow-lg flex items-center justify-center relative">
+                    {/* Sun rays */}
+                    <div className="absolute inset-0 rounded-full bg-yellow-300/30 animate-pulse"></div>
+                    <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-0.5 h-2 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0.5 h-2 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -left-1 top-1/2 transform -translate-y-1/2 w-2 h-0.5 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-0.5 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -top-0.5 -left-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -top-0.5 -right-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -bottom-0.5 -left-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
+                    <div className="absolute -bottom-0.5 -right-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
+                    
+                    {/* Core sun */}
+                    <div className="w-4 h-4 bg-gradient-to-br from-yellow-200 to-yellow-400 rounded-full"></div>
+                    
+                    {/* Moon orbiting the sun */}
+                    <div className="absolute inset-0 animate-spin" style={{ animationDuration: '8s' }}>
+                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-100 rounded-full shadow-sm border border-gray-200"></div>
+                    </div>
                   </div>
                 </div>
                 
