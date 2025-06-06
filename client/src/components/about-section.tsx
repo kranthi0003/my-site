@@ -27,7 +27,7 @@ export default function AboutSection() {
               {/* 2x2 Grid of Selfies */}
               <div className="grid grid-cols-2 gap-3 w-80 h-80">
                 {/* Top Left - 2022 */}
-                <div className="relative">
+                <div className="relative aspect-square">
                   <img
                     src="/attached_assets/Snapchat-1059745354.jpg"
                     alt="Selfie from 2022"
@@ -41,7 +41,7 @@ export default function AboutSection() {
                 </div>
                 
                 {/* Top Right - 2023 */}
-                <div className="relative">
+                <div className="relative aspect-square">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2023"
@@ -55,7 +55,7 @@ export default function AboutSection() {
                 </div>
                 
                 {/* Bottom Left - 2024 */}
-                <div className="relative">
+                <div className="relative aspect-square">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2024"
@@ -69,7 +69,7 @@ export default function AboutSection() {
                 </div>
                 
                 {/* Bottom Right - 2025 */}
-                <div className="relative">
+                <div className="relative aspect-square">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2025"
