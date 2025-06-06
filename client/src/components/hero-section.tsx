@@ -59,26 +59,38 @@ export default function HeroSection() {
                   <Code className="text-primary text-2xl" size={28} />
                 </div>
                 
-                {/* Rotating Sun Animation */}
-                <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s' }}>
-                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-8 h-8 bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 rounded-full shadow-lg flex items-center justify-center relative">
-                    {/* Sun rays */}
-                    <div className="absolute inset-0 rounded-full bg-yellow-300/30 animate-pulse"></div>
-                    <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-0.5 h-2 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -bottom-1 left-1/2 transform -translate-x-1/2 w-0.5 h-2 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -left-1 top-1/2 transform -translate-y-1/2 w-2 h-0.5 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -right-1 top-1/2 transform -translate-y-1/2 w-2 h-0.5 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -top-0.5 -left-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -top-0.5 -right-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -bottom-0.5 -left-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
-                    <div className="absolute -bottom-0.5 -right-0.5 w-1 h-1 bg-yellow-300 rounded-full"></div>
-                    
-                    {/* Core sun */}
-                    <div className="w-4 h-4 bg-gradient-to-br from-yellow-200 to-yellow-400 rounded-full"></div>
-                    
-                    {/* Moon orbiting the sun */}
-                    <div className="absolute inset-0 animate-spin" style={{ animationDuration: '8s' }}>
-                      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-100 rounded-full shadow-sm border border-gray-200"></div>
+                {/* Rotating Sun Animation - Following Photo Border */}
+                <div className="absolute inset-4 animate-spin" style={{ animationDuration: '30s' }}>
+                  <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-10 h-10 relative">
+                    {/* Enhanced Sun with Better Design */}
+                    <div className="relative w-full h-full bg-gradient-to-br from-yellow-200 via-yellow-400 to-orange-500 rounded-full shadow-xl flex items-center justify-center">
+                      {/* Outer glow */}
+                      <div className="absolute inset-0 rounded-full bg-yellow-300/40 animate-pulse scale-110"></div>
+                      
+                      {/* Main sun rays (8 rays) */}
+                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-gradient-to-t from-yellow-400 to-yellow-200 rounded-full"></div>
+                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-gradient-to-b from-yellow-400 to-yellow-200 rounded-full"></div>
+                      <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-gradient-to-l from-yellow-400 to-yellow-200 rounded-full"></div>
+                      <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-gradient-to-r from-yellow-400 to-yellow-200 rounded-full"></div>
+                      
+                      {/* Diagonal rays */}
+                      <div className="absolute -top-1.5 -left-1.5 w-3 h-1 bg-gradient-to-tl from-yellow-400 to-yellow-200 rounded-full rotate-45"></div>
+                      <div className="absolute -top-1.5 -right-1.5 w-3 h-1 bg-gradient-to-tr from-yellow-400 to-yellow-200 rounded-full -rotate-45"></div>
+                      <div className="absolute -bottom-1.5 -left-1.5 w-3 h-1 bg-gradient-to-bl from-yellow-400 to-yellow-200 rounded-full -rotate-45"></div>
+                      <div className="absolute -bottom-1.5 -right-1.5 w-3 h-1 bg-gradient-to-br from-yellow-400 to-yellow-200 rounded-full rotate-45"></div>
+                      
+                      {/* Sun core with face-like features */}
+                      <div className="w-6 h-6 bg-gradient-to-br from-yellow-100 via-yellow-300 to-yellow-400 rounded-full border border-yellow-500/30 flex items-center justify-center">
+                        <div className="w-4 h-4 bg-gradient-to-br from-yellow-200 to-orange-300 rounded-full"></div>
+                      </div>
+                      
+                      {/* Moon orbiting the sun */}
+                      <div className="absolute inset-0 animate-spin" style={{ animationDuration: '12s' }}>
+                        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-gradient-to-br from-gray-100 to-gray-300 rounded-full shadow-lg border border-gray-200">
+                          {/* Moon crater effect */}
+                          <div className="absolute top-0.5 left-0.5 w-1 h-1 bg-gray-200 rounded-full opacity-60"></div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
