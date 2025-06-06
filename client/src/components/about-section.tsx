@@ -23,11 +23,11 @@ export default function AboutSection() {
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-slide-up flex justify-center">
-            <div className="relative max-w-md">
-              {/* 2x2 Grid of Selfies */}
-              <div className="grid grid-cols-2 gap-3 w-80 h-80">
-                {/* Top Left - 2022 */}
-                <div className="relative aspect-square">
+            <div className="relative w-full max-w-3xl">
+              {/* 4 Panel Side by Side Selfies */}
+              <div className="flex gap-3 w-full max-w-2xl">
+                {/* 2022 */}
+                <div className="relative flex-1 aspect-[3/4]">
                   <img
                     src="/attached_assets/Snapchat-1059745354.jpg"
                     alt="Selfie from 2022"
@@ -40,8 +40,8 @@ export default function AboutSection() {
                   </div>
                 </div>
                 
-                {/* Top Right - 2023 */}
-                <div className="relative aspect-square">
+                {/* 2023 */}
+                <div className="relative flex-1 aspect-[3/4]">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2023"
@@ -54,8 +54,8 @@ export default function AboutSection() {
                   </div>
                 </div>
                 
-                {/* Bottom Left - 2024 */}
-                <div className="relative aspect-square">
+                {/* 2024 */}
+                <div className="relative flex-1 aspect-[3/4]">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2024"
@@ -68,8 +68,8 @@ export default function AboutSection() {
                   </div>
                 </div>
                 
-                {/* Bottom Right - 2025 */}
-                <div className="relative aspect-square">
+                {/* 2025 */}
+                <div className="relative flex-1 aspect-[3/4]">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2025"
