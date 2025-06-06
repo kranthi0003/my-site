@@ -32,6 +32,7 @@ export default function AboutSection() {
                     src="/attached_assets/Snapchat-1059745354.jpg"
                     alt="Selfie from 2022"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-primary/10"></div>
                   <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
@@ -45,7 +46,7 @@ export default function AboutSection() {
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2023"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
-                    style={{ objectPosition: 'center 20%' }}
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-accent/10"></div>
                   <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
@@ -59,7 +60,7 @@ export default function AboutSection() {
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2024"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
-                    style={{ objectPosition: 'center 10%' }}
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-secondary/10"></div>
                   <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
@@ -73,7 +74,7 @@ export default function AboutSection() {
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
                     alt="Selfie from 2025"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
-                    style={{ objectPosition: 'center 30%' }}
+                    style={{ objectPosition: 'center center' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-yellow-400/10"></div>
                   <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
