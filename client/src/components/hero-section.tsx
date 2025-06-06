@@ -32,54 +32,17 @@ export default function HeroSection() {
               </h1>
             </div>
             
-            {/* Profile Images Grid */}
+            {/* Profile Image */}
             <div className="flex justify-center animate-slide-up">
               <div className="relative">
-                {/* 2x2 Grid Container */}
-                <div className="grid grid-cols-2 gap-3 w-80 h-80 lg:w-96 lg:h-96 p-3">
-                  {/* Top Left */}
-                  <div className="relative">
-                    <img
-                      src={profilePhoto}
-                      alt={`${PROFILE_DATA.name} - Selfie 1`}
-                      className="w-full h-full rounded-2xl object-cover shadow-xl border-2 border-white/20 transform hover:scale-105 transition-transform duration-300"
-                      style={{ objectPosition: 'center 15%' }}
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-primary/10"></div>
-                  </div>
-                  
-                  {/* Top Right */}
-                  <div className="relative">
-                    <img
-                      src={profilePhoto}
-                      alt={`${PROFILE_DATA.name} - Selfie 2`}
-                      className="w-full h-full rounded-2xl object-cover shadow-xl border-2 border-white/20 transform hover:scale-105 transition-transform duration-300"
-                      style={{ objectPosition: 'center 20%' }}
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-accent/10"></div>
-                  </div>
-                  
-                  {/* Bottom Left */}
-                  <div className="relative">
-                    <img
-                      src={profilePhoto}
-                      alt={`${PROFILE_DATA.name} - Selfie 3`}
-                      className="w-full h-full rounded-2xl object-cover shadow-xl border-2 border-white/20 transform hover:scale-105 transition-transform duration-300"
-                      style={{ objectPosition: 'center 10%' }}
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-yellow-400/10"></div>
-                  </div>
-                  
-                  {/* Bottom Right */}
-                  <div className="relative">
-                    <img
-                      src={profilePhoto}
-                      alt={`${PROFILE_DATA.name} - Selfie 4`}
-                      className="w-full h-full rounded-2xl object-cover shadow-xl border-2 border-white/20 transform hover:scale-105 transition-transform duration-300"
-                      style={{ objectPosition: 'center 25%' }}
-                    />
-                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-transparent via-transparent to-white/10"></div>
-                  </div>
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-3">
+                  <img
+                    src={profilePhoto}
+                    alt={`${PROFILE_DATA.name} - Professional Portrait`}
+                    className="w-full h-full rounded-full object-cover shadow-2xl border-4 border-white/20"
+                    style={{ objectPosition: 'center 15%' }}
+                  />
+                  <div className="absolute inset-3 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/20"></div>
                 </div>
                 
                 {/* Floating badge */}
@@ -90,7 +53,6 @@ export default function HeroSection() {
                 {/* Decorative elements */}
                 <div className="absolute -top-6 -left-6 w-12 h-12 bg-white/20 rounded-full"></div>
                 <div className="absolute -bottom-2 -left-8 w-8 h-8 bg-accent/30 rounded-full"></div>
-                <div className="absolute top-1/2 -right-8 w-6 h-6 bg-yellow-400/40 rounded-full"></div>
               </div>
             </div>
 

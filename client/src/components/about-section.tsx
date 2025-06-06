@@ -23,19 +23,61 @@ export default function AboutSection() {
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-slide-up flex justify-center">
-            <div className="relative max-w-sm">
-              <img
-                src="/attached_assets/IMG_5243_1749135607534.JPG"
-                alt="Personal lifestyle photo"
-                className="rounded-2xl shadow-2xl w-full h-auto max-h-80 object-cover transform hover:scale-105 transition-transform duration-500"
-              />
-              {/* Overlay gradient */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 via-transparent to-accent/10"></div>
+            <div className="relative max-w-md">
+              {/* 2x2 Grid of Selfies */}
+              <div className="grid grid-cols-2 gap-3 w-80 h-80">
+                {/* Top Left */}
+                <div className="relative">
+                  <img
+                    src="/attached_assets/IMG_5243_1749135607534.JPG"
+                    alt="Selfie 1"
+                    className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-primary/10"></div>
+                </div>
+                
+                {/* Top Right */}
+                <div className="relative">
+                  <img
+                    src="/attached_assets/IMG_5243_1749135607534.JPG"
+                    alt="Selfie 2"
+                    className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 20%' }}
+                  />
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-accent/10"></div>
+                </div>
+                
+                {/* Bottom Left */}
+                <div className="relative">
+                  <img
+                    src="/attached_assets/IMG_5243_1749135607534.JPG"
+                    alt="Selfie 3"
+                    className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 10%' }}
+                  />
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-secondary/10"></div>
+                </div>
+                
+                {/* Bottom Right */}
+                <div className="relative">
+                  <img
+                    src="/attached_assets/IMG_5243_1749135607534.JPG"
+                    alt="Selfie 4"
+                    className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
+                    style={{ objectPosition: 'center 30%' }}
+                  />
+                  <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-yellow-400/10"></div>
+                </div>
+              </div>
               
               {/* Floating badge */}
               <div className="absolute -top-4 -right-4 bg-white shadow-lg rounded-full px-4 py-2">
                 <span className="text-primary font-semibold text-sm">Family Oriented</span>
               </div>
+              
+              {/* Additional decorative elements */}
+              <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-primary/20 rounded-full"></div>
+              <div className="absolute top-1/2 -right-6 w-4 h-4 bg-accent/30 rounded-full"></div>
             </div>
           </div>
           
