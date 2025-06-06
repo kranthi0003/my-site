@@ -79,14 +79,14 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-slate-800/95 backdrop-blur-md shadow-xl border-t border-amber-500/30 z-40">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-orange-400/95 to-amber-500/95 backdrop-blur-md shadow-xl border-t border-orange-300/30 z-40">
             <div className="container mx-auto px-6 py-8">
               <div className="flex flex-col space-y-6">
                 {navItems.map((item) => (
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-left text-white hover:text-amber-200 transition-colors duration-300 font-semibold py-4 px-6 rounded-xl hover:bg-amber-500/10 border border-transparent hover:border-amber-500/30 text-lg"
+                    className="text-left text-white hover:text-orange-100 transition-colors duration-300 font-semibold py-4 px-6 rounded-xl hover:bg-white/10 border border-transparent hover:border-white/20 text-lg"
                   >
                     {item.label}
                   </button>
