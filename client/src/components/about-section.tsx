@@ -26,58 +26,69 @@ export default function AboutSection() {
           <div className="relative w-full max-w-6xl">
             <div className="p-6 bg-white rounded-xl shadow-xl border border-gray-100">
               <div className="space-y-6">
-                {/* Photos Row */}
-                <div className="flex gap-4 w-full justify-center">
-                  {/* 2022 */}
-                  <div className="flex-1 aspect-[4/5]">
-                    <img
-                      src="/attached_assets/Snapchat-1059745354.jpg"
-                      alt="2022 Selfie"
-                      className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
-                    />
-                  </div>
+                {/* Top Row - 2022 & 2023 */}
+                <div className="space-y-3">
+                  <div className="flex gap-4 w-full justify-center">
+                    {/* 2022 */}
+                    <div className="flex-1 aspect-[4/5]">
+                      <img
+                        src="/attached_assets/Snapchat-1059745354.jpg"
+                        alt="2022 Selfie"
+                        className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
+                      />
+                    </div>
 
-                  {/* 2023 */}
-                  <div className="flex-1 aspect-[4/5]">
-                    <img
-                      src="/attached_assets/Snapchat-1445693840.jpg"
-                      alt="2023 Selfie"
-                      className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
-                    />
+                    {/* 2023 */}
+                    <div className="flex-1 aspect-[4/5]">
+                      <img
+                        src="/attached_assets/Snapchat-1445693840.jpg"
+                        alt="2023 Selfie"
+                        className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
+                      />
+                    </div>
                   </div>
-
-                  {/* 2024 */}
-                  <div className="flex-1 aspect-[4/5]">
-                    <img
-                      src="/attached_assets/Snapchat-240699289.jpg"
-                      alt="2024 Selfie"
-                      className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
-                    />
-                  </div>
-
-                  {/* 2025 */}
-                  <div className="flex-1 aspect-[4/5]">
-                    <img
-                      src="/attached_assets/Snapchat-520859973.jpg"
-                      alt="2025 Selfie"
-                      className="w-full h-full object-cover rounded-lg shadow-lg filter contrast-[0.95] brightness-[1.05]"
-                    />
+                  
+                  {/* Top Row Year Labels */}
+                  <div className="flex gap-4 w-full justify-center">
+                    <div className="flex-1 text-center">
+                      <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2022</span>
+                    </div>
+                    <div className="flex-1 text-center">
+                      <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2023</span>
+                    </div>
                   </div>
                 </div>
-                
-                {/* Year Labels Row */}
-                <div className="flex gap-4 w-full justify-center">
-                  <div className="flex-1 text-center">
-                    <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2022</span>
+
+                {/* Bottom Row - 2024 & 2025 */}
+                <div className="space-y-3">
+                  <div className="flex gap-4 w-full justify-center">
+                    {/* 2024 */}
+                    <div className="flex-1 aspect-[4/5]">
+                      <img
+                        src="/attached_assets/Snapchat-240699289.jpg"
+                        alt="2024 Selfie"
+                        className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
+                      />
+                    </div>
+
+                    {/* 2025 */}
+                    <div className="flex-1 aspect-[4/5]">
+                      <img
+                        src="/attached_assets/Snapchat-520859973.jpg"
+                        alt="2025 Selfie"
+                        className="w-full h-full object-cover rounded-lg shadow-lg filter contrast-[0.95] brightness-[1.05]"
+                      />
+                    </div>
                   </div>
-                  <div className="flex-1 text-center">
-                    <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2023</span>
-                  </div>
-                  <div className="flex-1 text-center">
-                    <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2024</span>
-                  </div>
-                  <div className="flex-1 text-center">
-                    <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2025</span>
+                  
+                  {/* Bottom Row Year Labels */}
+                  <div className="flex gap-4 w-full justify-center">
+                    <div className="flex-1 text-center">
+                      <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2024</span>
+                    </div>
+                    <div className="flex-1 text-center">
+                      <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2025</span>
+                    </div>
                   </div>
                 </div>
               </div>
