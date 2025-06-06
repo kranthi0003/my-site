@@ -35,49 +35,33 @@ export default function HeroSection() {
             {/* Profile Image */}
             <div className="flex justify-center animate-slide-up">
               <div className="relative">
-                {/* Ornate Frame Container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-6">
-                  {/* Outer Decorative Frame */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-white/20 to-white/10 rounded-full shadow-2xl backdrop-blur-sm border border-white/30"></div>
-                  
-                  {/* Inner Frame Ring */}
-                  <div className="absolute inset-3 bg-gradient-to-br from-accent/20 via-transparent to-primary/20 rounded-full border-2 border-white/40"></div>
+                {/* Elegant Frame Container */}
+                <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-4">
+                  {/* Subtle Outer Frame */}
+                  <div className="absolute inset-0 bg-white/10 rounded-full shadow-2xl backdrop-blur-sm border border-white/20"></div>
                   
                   {/* Photo Container */}
-                  <div className="relative inset-6 w-full h-full">
+                  <div className="relative w-full h-full p-3">
                     <img
                       src={profilePhoto}
                       alt={`${PROFILE_DATA.name} - Professional Portrait`}
-                      className="w-full h-full rounded-full object-cover shadow-xl border-3 border-white/50"
+                      className="w-full h-full rounded-full object-cover shadow-xl border-4 border-white/30"
                       style={{ objectPosition: 'center 15%' }}
                     />
                     
-                    {/* Inner Glow Effect */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/10"></div>
+                    {/* Subtle Inner Glow */}
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/5"></div>
                   </div>
-                  
-                  {/* Corner Ornaments */}
-                  <div className="absolute top-2 left-2 w-4 h-4 bg-accent/60 rounded-full shadow-lg"></div>
-                  <div className="absolute top-2 right-2 w-4 h-4 bg-yellow-400/60 rounded-full shadow-lg"></div>
-                  <div className="absolute bottom-2 left-2 w-4 h-4 bg-primary/60 rounded-full shadow-lg"></div>
-                  <div className="absolute bottom-2 right-2 w-4 h-4 bg-white/60 rounded-full shadow-lg"></div>
-                  
-                  {/* Mid-edge Decorative Elements */}
-                  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1 w-3 h-6 bg-gradient-to-b from-accent to-transparent rounded-full"></div>
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1 w-3 h-6 bg-gradient-to-t from-accent to-transparent rounded-full"></div>
-                  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1 w-6 h-3 bg-gradient-to-r from-accent to-transparent rounded-full"></div>
-                  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1 w-6 h-3 bg-gradient-to-l from-accent to-transparent rounded-full"></div>
                 </div>
                 
                 {/* Floating badge */}
-                <div className="absolute -bottom-4 -right-4 bg-accent rounded-full p-4 shadow-xl border-2 border-white/30">
+                <div className="absolute -bottom-4 -right-4 bg-accent rounded-full p-4 shadow-xl">
                   <Code className="text-primary text-2xl" size={28} />
                 </div>
                 
-                {/* Enhanced Decorative elements */}
-                <div className="absolute -top-8 -left-8 w-12 h-12 bg-white/20 rounded-full shadow-lg border border-white/30"></div>
-                <div className="absolute -bottom-6 -left-10 w-8 h-8 bg-accent/40 rounded-full shadow-lg"></div>
-                <div className="absolute -top-4 -right-10 w-6 h-6 bg-yellow-400/40 rounded-full shadow-lg"></div>
+                {/* Minimal Decorative elements */}
+                <div className="absolute -top-6 -left-6 w-12 h-12 bg-white/20 rounded-full"></div>
+                <div className="absolute -bottom-2 -left-8 w-8 h-8 bg-accent/30 rounded-full"></div>
               </div>
             </div>
 
