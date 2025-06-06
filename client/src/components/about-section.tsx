@@ -24,33 +24,41 @@ export default function AboutSection() {
         {/* 4 Panel Side by Side Selfies */}
         <div className="animate-slide-up flex justify-center mb-16">
           <div className="relative w-full max-w-6xl">
-            <div className="p-6 bg-white rounded-xl shadow-xl border border-gray-100">
+            <div className="p-6 bg-white rounded-xl shadow-xl border border-gray-100 relative">
+              {/* Year tags positioned in frame margins */}
+              <div className="absolute top-2 left-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                2022
+              </div>
+              <div className="absolute top-2 right-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                2023
+              </div>
+              <div className="absolute bottom-2 left-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                2024
+              </div>
+              <div className="absolute bottom-2 right-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                2025
+              </div>
+              
               <div className="space-y-6">
                 {/* Top Row - 2022 & 2023 */}
                 <div className="space-y-3">
                   <div className="flex gap-4 w-full justify-center">
                     {/* 2022 */}
-                    <div className="flex-1 aspect-[4/5] relative">
+                    <div className="flex-1 aspect-[4/5]">
                       <img
                         src="/attached_assets/Snapchat-1059745354.jpg"
                         alt="2022 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                       />
-                      <div className="absolute top-1 left-1 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
-                        2022
-                      </div>
                     </div>
 
                     {/* 2023 */}
-                    <div className="flex-1 aspect-[4/5] relative">
+                    <div className="flex-1 aspect-[4/5]">
                       <img
                         src="/attached_assets/Snapchat-1445693840.jpg"
                         alt="2023 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                       />
-                      <div className="absolute top-1 right-1 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
-                        2023
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -59,27 +67,21 @@ export default function AboutSection() {
                 <div className="space-y-3">
                   <div className="flex gap-4 w-full justify-center">
                     {/* 2024 */}
-                    <div className="flex-1 aspect-[4/5] relative">
+                    <div className="flex-1 aspect-[4/5]">
                       <img
                         src="/attached_assets/Snapchat-240699289.jpg"
                         alt="2024 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
                       />
-                      <div className="absolute bottom-1 left-1 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
-                        2024
-                      </div>
                     </div>
 
                     {/* 2025 */}
-                    <div className="flex-1 aspect-[4/5] relative">
+                    <div className="flex-1 aspect-[4/5]">
                       <img
                         src="/attached_assets/Snapchat-520859973.jpg"
                         alt="2025 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter contrast-[0.95] brightness-[1.05]"
                       />
-                      <div className="absolute bottom-1 right-1 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
-                        2025
-                      </div>
                     </div>
                   </div>
                 </div>
