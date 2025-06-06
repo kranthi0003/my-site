@@ -67,16 +67,16 @@ export default function AboutSection() {
               {/* Year Labels Row */}
               <div className="flex gap-3 w-full justify-center">
                 <div className="flex-1 text-center">
-                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-semibold text-sm px-3 py-2 rounded-md shadow-md">2022</span>
+                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2022</span>
                 </div>
                 <div className="flex-1 text-center">
-                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-semibold text-sm px-3 py-2 rounded-md shadow-md">2023</span>
+                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2023</span>
                 </div>
                 <div className="flex-1 text-center">
-                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-semibold text-sm px-3 py-2 rounded-md shadow-md">2024</span>
+                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2024</span>
                 </div>
                 <div className="flex-1 text-center">
-                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-semibold text-sm px-3 py-2 rounded-md shadow-md">2025</span>
+                  <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2025</span>
                 </div>
               </div>
             </div>
