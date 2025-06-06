@@ -26,47 +26,59 @@ export default function AboutSection() {
             <div className="relative max-w-md">
               {/* 2x2 Grid of Selfies */}
               <div className="grid grid-cols-2 gap-3 w-80 h-80">
-                {/* Top Left */}
+                {/* Top Left - 2022 */}
                 <div className="relative">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
-                    alt="Selfie 1"
+                    alt="Selfie from 2022"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-primary/10"></div>
+                  <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
+                    <span className="text-primary font-bold text-xs">2022</span>
+                  </div>
                 </div>
                 
-                {/* Top Right */}
+                {/* Top Right - 2023 */}
                 <div className="relative">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
-                    alt="Selfie 2"
+                    alt="Selfie from 2023"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center 20%' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-accent/10"></div>
+                  <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
+                    <span className="text-accent font-bold text-xs">2023</span>
+                  </div>
                 </div>
                 
-                {/* Bottom Left */}
+                {/* Bottom Left - 2024 */}
                 <div className="relative">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
-                    alt="Selfie 3"
+                    alt="Selfie from 2024"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center 10%' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-secondary/10"></div>
+                  <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
+                    <span className="text-secondary font-bold text-xs">2024</span>
+                  </div>
                 </div>
                 
-                {/* Bottom Right */}
+                {/* Bottom Right - 2025 */}
                 <div className="relative">
                   <img
                     src="/attached_assets/IMG_5243_1749135607534.JPG"
-                    alt="Selfie 4"
+                    alt="Selfie from 2025"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center 30%' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-yellow-400/10"></div>
+                  <div className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm rounded-full px-2 py-1">
+                    <span className="text-yellow-600 font-bold text-xs">2025</span>
+                  </div>
                 </div>
               </div>
               
