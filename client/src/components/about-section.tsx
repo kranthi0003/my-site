@@ -11,6 +11,7 @@ export default function AboutSection() {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
+        <div>
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
             <div className="w-8 h-8 bg-primary/20 rounded-full"></div>
@@ -21,11 +22,10 @@ export default function AboutSection() {
           </p>
         </div>
         
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="animate-slide-up flex justify-center">
-            <div className="relative w-full max-w-3xl">
-              {/* 4 Panel Side by Side Selfies */}
-              <div className="flex gap-3 w-full max-w-2xl">
+        {/* 4 Panel Side by Side Selfies */}
+        <div className="animate-slide-up flex justify-center mb-16">
+          <div className="relative w-full max-w-4xl">
+            <div className="flex gap-3 w-full justify-center">
                 {/* 2022 */}
                 <div className="relative flex-1 aspect-[3/4]">
                   <img
@@ -81,18 +81,17 @@ export default function AboutSection() {
                     <span className="text-white font-semibold text-xs">2025</span>
                   </div>
                 </div>
-              </div>
-              
-
-              
-              {/* Additional decorative elements */}
-              <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-primary/20 rounded-full"></div>
-              <div className="absolute top-1/2 -right-6 w-4 h-4 bg-accent/30 rounded-full"></div>
             </div>
+            
+            {/* Additional decorative elements */}
+            <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-primary/20 rounded-full"></div>
+            <div className="absolute top-1/2 -right-6 w-4 h-4 bg-accent/30 rounded-full"></div>
           </div>
-          
-          <div className="animate-fade-in">
-            {/* Personal Details Grid */}
+        </div>
+        
+        {/* Personal Details Grid */}
+        <div className="animate-fade-in">
+          <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Basics & Lifestyle */}
@@ -314,6 +313,7 @@ export default function AboutSection() {
               </Card>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
