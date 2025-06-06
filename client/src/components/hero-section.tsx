@@ -63,8 +63,8 @@ export default function HeroSection() {
                   </div>
                   
                   {/* Moon - floating in bottom left with gentle drift */}
-                  <div className="absolute bottom-8 left-8 w-4 h-4 bg-gradient-to-br from-gray-100 to-gray-300 rounded-full shadow-md animate-bounce" style={{ animationDuration: '3s' }}>
-                    <div className="absolute top-0.5 left-0.5 w-1 h-1 bg-gray-200 rounded-full opacity-60"></div>
+                  <div className="absolute bottom-8 left-8 w-3 h-3 bg-gradient-to-br from-gray-100 to-gray-300 rounded-full shadow-md animate-bounce" style={{ animationDuration: '3s' }}>
+                    <div className="absolute top-0.5 left-0.5 w-0.5 h-0.5 bg-gray-200 rounded-full opacity-60"></div>
                   </div>
                   
                   {/* Subtle Stars */}
