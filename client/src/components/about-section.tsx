@@ -43,7 +43,7 @@ export default function AboutSection() {
                 {/* 2023 */}
                 <div className="relative flex-1 aspect-[3/4]">
                   <img
-                    src="/attached_assets/Snapchat-520859973.jpg"
+                    src="/attached_assets/Snapchat-1445693840.jpg"
                     alt="Selfie from 2023"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                     style={{ objectPosition: 'center top' }}
