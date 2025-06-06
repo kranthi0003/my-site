@@ -82,10 +82,7 @@ export default function AboutSection() {
                 </div>
               </div>
               
-              {/* Floating badge */}
-              <div className="absolute -top-4 -right-4 bg-white shadow-lg rounded-full px-4 py-2">
-                <span className="text-primary font-semibold text-sm">Family Oriented</span>
-              </div>
+
               
               {/* Additional decorative elements */}
               <div className="absolute -bottom-3 -left-3 w-6 h-6 bg-primary/20 rounded-full"></div>
