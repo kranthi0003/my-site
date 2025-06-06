@@ -28,38 +28,38 @@ export default function AboutSection() {
               {/* Photos Row */}
               <div className="flex gap-3 w-full justify-center">
                 {/* 2022 */}
-                <div className="flex-1 aspect-[3/4]">
+                <div className="flex-1 aspect-[3/4] p-2 bg-white rounded-xl shadow-xl border border-gray-100">
                   <img
                     src="/attached_assets/Snapchat-1059745354.jpg"
                     alt="2022 Selfie"
-                    className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
+                    className="w-full h-full object-cover rounded-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                   />
                 </div>
 
                 {/* 2023 */}
-                <div className="flex-1 aspect-[3/4]">
+                <div className="flex-1 aspect-[3/4] p-2 bg-white rounded-xl shadow-xl border border-gray-100">
                   <img
                     src="/attached_assets/Snapchat-1445693840.jpg"
                     alt="2023 Selfie"
-                    className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
+                    className="w-full h-full object-cover rounded-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                   />
                 </div>
 
                 {/* 2024 */}
-                <div className="flex-1 aspect-[3/4]">
+                <div className="flex-1 aspect-[3/4] p-2 bg-white rounded-xl shadow-xl border border-gray-100">
                   <img
                     src="/attached_assets/Snapchat-240699289.jpg"
                     alt="2024 Selfie"
-                    className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
+                    className="w-full h-full object-cover rounded-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
                   />
                 </div>
 
                 {/* 2025 */}
-                <div className="flex-1 aspect-[3/4]">
+                <div className="flex-1 aspect-[3/4] p-2 bg-white rounded-xl shadow-xl border border-gray-100">
                   <img
                     src="/attached_assets/Snapchat-520859973.jpg"
                     alt="2025 Selfie"
-                    className="w-full h-full object-cover rounded-lg shadow-lg filter contrast-[0.95] brightness-[1.05]"
+                    className="w-full h-full object-cover rounded-lg filter contrast-[0.95] brightness-[1.05]"
                   />
                 </div>
               </div>
