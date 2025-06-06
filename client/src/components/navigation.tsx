@@ -79,7 +79,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-orange-400/95 to-amber-500/95 backdrop-blur-md shadow-xl border-t border-orange-300/30 z-40">
+          <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-orange-300/90 to-orange-400/90 backdrop-blur-md shadow-xl border-t border-orange-200/30 z-40">
             <div className="container mx-auto px-6 py-8">
               <div className="flex flex-col space-y-6">
                 {navItems.map((item) => (
