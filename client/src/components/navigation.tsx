@@ -51,13 +51,13 @@ export default function Navigation() {
                 onClick={() => handleNavClick(item.href)}
                 className={`transition-all duration-300 font-semibold relative group px-4 py-2 rounded-full ${
                   isScrolled 
-                    ? 'text-primary hover:text-accent hover:bg-accent/10' 
+                    ? 'text-slate-700 hover:text-orange-600 hover:bg-orange-100/20' 
                     : 'text-white/90 hover:text-accent hover:bg-white/10'
                 }`}
               >
                 {item.label}
                 <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-6 transition-all duration-300 ${
-                  isScrolled ? 'bg-accent' : 'bg-accent'
+                  isScrolled ? 'bg-orange-600' : 'bg-accent'
                 }`}></span>
               </button>
             ))}
@@ -68,7 +68,7 @@ export default function Navigation() {
             size="icon"
             className={`md:hidden transition-colors duration-300 ${
               isScrolled 
-                ? 'text-primary hover:bg-primary/10' 
+                ? 'text-slate-700 hover:bg-slate-100/20' 
                 : 'text-white hover:bg-white/10'
             }`}
             onClick={() => setIsOpen(!isOpen)}
