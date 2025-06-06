@@ -24,7 +24,7 @@ export default function HeroSection() {
             {/* Tamil Greeting and Name */}
             <div className="space-y-8">
               <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Telugu, sans-serif', letterSpacing: '1px' }}>
-                నమస్కారం (Namaskaram) 🙏
+                వణక్కం (Vanakkam) 🙏
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed">
                 <span className="block mb-4 text-white/90">Hello, I'm</span>
