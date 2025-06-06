@@ -32,7 +32,7 @@ export default function AboutSection() {
                     alt="2022 Selfie"
                     className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                   />
-                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                  <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
                     <span className="text-white font-semibold text-xs">2022</span>
                   </div>
                 </div>
@@ -44,7 +44,7 @@ export default function AboutSection() {
                     alt="2023 Selfie"
                     className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                   />
-                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                  <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
                     <span className="text-white font-semibold text-xs">2023</span>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ export default function AboutSection() {
                     alt="2024 Selfie"
                     className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
                   />
-                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                  <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
                     <span className="text-white font-semibold text-xs">2024</span>
                   </div>
                 </div>
@@ -68,7 +68,7 @@ export default function AboutSection() {
                     alt="2025 Selfie"
                     className="w-full h-full object-cover rounded-lg shadow-lg filter contrast-[0.95] brightness-[1.05]"
                   />
-                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                  <div className="absolute bottom-1.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
                     <span className="text-white font-semibold text-xs">2025</span>
                   </div>
                 </div>
