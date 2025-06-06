@@ -38,10 +38,13 @@ export default function Navigation() {
     }`}>
       <div className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
-          <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-300 ${
-            isScrolled ? 'bg-primary text-white shadow-lg' : 'bg-white/20 text-white border-2 border-white/30'
+          <div className={`w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-300 relative overflow-hidden ${
+            isScrolled ? 'bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-xl' : 'bg-gradient-to-br from-white/30 to-white/10 text-white border-2 border-white/40 shadow-lg backdrop-blur-sm'
           }`}>
-            KK
+            <div className="relative z-10 font-extrabold tracking-tight">KK</div>
+            <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
+              isScrolled ? 'bg-gradient-to-br from-orange-400/20 to-red-400/20' : 'bg-gradient-to-br from-white/10 to-transparent'
+            }`}></div>
           </div>
           
           <div className="hidden md:flex space-x-6">
