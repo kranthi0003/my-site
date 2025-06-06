@@ -46,7 +46,7 @@ export default function AboutSection() {
                     src="/attached_assets/Snapchat-240699289.jpg"
                     alt="Selfie from 2023"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
-                    style={{ objectPosition: 'center top', filter: 'saturate(0.9) brightness(1.05) contrast(1.1)' }}
+                    style={{ objectPosition: 'center top', filter: 'saturate(0.8) brightness(1.1) contrast(0.95) hue-rotate(-5deg)' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-accent/5"></div>
                   <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
