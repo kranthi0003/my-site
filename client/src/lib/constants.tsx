@@ -10,7 +10,7 @@ export const PROFILE_DATA = {
   profileImage: profilePhoto,
   
   // About section
-  aboutDescription: "I'm a dedicated software engineer with enriching experience at reputed tech companies like Amazon and Couchbase. While I take pride in my career and the innovations I contribute to, I believe that true success lies in living with humility, responsibility, and respect for our roots. Raised with strong family values and deep appreciation for different cultures and traditions, I strive to balance modern aspirations with the simplicity and warmth that make life meaningful. My goal is to build not just a future—but a home filled with mutual respect, care, and understanding.",
+  aboutDescription: "Software engineer with enriching experience at Amazon and Couchbase. I believe true success comes from humility, responsibility, and respect for our roots. Raised with strong family values, I balance modern aspirations with traditional warmth. My goal is to build a home filled with mutual respect, care, and understanding.",
   aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
   personalValues: [
