@@ -37,21 +37,22 @@ export default function HeroSection() {
               <div className="relative">
                 {/* Elegant Frame Container */}
                 <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-4">
-                  {/* Subtle Outer Frame */}
-                  <div className="absolute inset-0 bg-white/10 rounded-full shadow-2xl backdrop-blur-sm border border-white/20"></div>
-                  
-                  {/* Photo Container */}
-                  <div className="relative w-full h-full p-3">
-                    <img
-                      src={profilePhoto}
-                      alt={`${PROFILE_DATA.name} - Professional Portrait`}
-                      className="w-full h-full rounded-full object-cover shadow-xl border-4 border-white/30"
-                      style={{ objectPosition: 'center 15%' }}
-                    />
-                    
-                    {/* Subtle Inner Glow */}
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-br from-transparent via-transparent to-primary/5"></div>
+                  {/* Elegant Multi-Layer Frame */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-200/20 via-orange-300/15 to-amber-400/20 p-2">
+                    <div className="w-full h-full rounded-full bg-gradient-to-br from-white/70 via-white/50 to-white/30 p-1">
+                      <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border border-white/60">
+                        <img
+                          src={profilePhoto}
+                          alt={`${PROFILE_DATA.name} - Professional Portrait`}
+                          className="w-full h-full object-cover"
+                          style={{ objectPosition: 'center 15%' }}
+                        />
+                      </div>
+                    </div>
                   </div>
+                  
+                  {/* Soft Outer Glow */}
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-300/10 via-transparent to-orange-400/10 scale-110 blur-sm -z-10"></div>
                 </div>
                 
                 {/* Rotating Sun Animation - Following Photo Border */}
