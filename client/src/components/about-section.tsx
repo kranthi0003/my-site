@@ -235,47 +235,125 @@ export default function AboutSection() {
                 </CardContent>
               </Card>
 
-              {/* Financial Details */}
-              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-green-500 shadow-lg">
+              {/* Property & Assets Details */}
+              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-green-500 shadow-lg col-span-full">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-600 mb-6 flex items-center">
                     <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
                       <div className="w-4 h-4 bg-green-200 rounded-full"></div>
                     </div>
-                    Financial Details
+                    Property & Financial Assets
                   </h3>
-                  <div className="space-y-3 text-sm">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Annual Income:</span>
-                      <span className="font-medium">₹45+ LPA</span>
+                  
+                  {/* Financial Summary */}
+                  <div className="grid md:grid-cols-4 gap-6 mb-8">
+                    <div className="bg-green-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-green-700 mb-2">Annual Income</h4>
+                      <p className="text-2xl font-bold text-green-600">₹45+ LPA</p>
+                      <p className="text-sm text-green-600">₹3.75+ L/month</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Monthly Income:</span>
-                      <span className="font-medium">₹3.75+ Lakhs</span>
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-blue-700 mb-2">Total Assets</h4>
+                      <p className="text-2xl font-bold text-blue-600">₹2.5+ Cr</p>
+                      <p className="text-sm text-blue-600">Property + Investments</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Income Source:</span>
-                      <span className="font-medium">Salary + Investments</span>
+                    <div className="bg-purple-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-purple-700 mb-2">Property Count</h4>
+                      <p className="text-2xl font-bold text-purple-600">5 Units</p>
+                      <p className="text-sm text-purple-600">3 Plots + 2 Flats</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Assets:</span>
-                      <span className="font-medium">Property, Investments</span>
+                    <div className="bg-orange-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-orange-700 mb-2">Liabilities</h4>
+                      <p className="text-2xl font-bold text-orange-600">₹0</p>
+                      <p className="text-sm text-orange-600">No loans</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Family Property:</span>
-                      <span className="font-medium">Yes</span>
+                  </div>
+
+                  {/* Property Details Table */}
+                  <div className="overflow-x-auto">
+                    <h4 className="font-semibold text-gray-700 mb-4">Property Portfolio</h4>
+                    <table className="w-full border-collapse border border-gray-200 text-sm">
+                      <thead>
+                        <tr className="bg-gray-50">
+                          <th className="border border-gray-200 px-3 py-2 text-left">Type</th>
+                          <th className="border border-gray-200 px-3 py-2 text-left">Location</th>
+                          <th className="border border-gray-200 px-3 py-2 text-left">Size/Area</th>
+                          <th className="border border-gray-200 px-3 py-2 text-left">Current Value</th>
+                          <th className="border border-gray-200 px-3 py-2 text-left">Status</th>
+                          <th className="border border-gray-200 px-3 py-2 text-left">Rental Income</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">Residential Plot</td>
+                          <td className="border border-gray-200 px-3 py-2">Perinthalmanna, Kerala</td>
+                          <td className="border border-gray-200 px-3 py-2">8 Cents</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹45 Lakhs</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Owned</span>
+                          </td>
+                          <td className="border border-gray-200 px-3 py-2">-</td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">Commercial Plot</td>
+                          <td className="border border-gray-200 px-3 py-2">Malappuram, Kerala</td>
+                          <td className="border border-gray-200 px-3 py-2">5 Cents</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹35 Lakhs</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Owned</span>
+                          </td>
+                          <td className="border border-gray-200 px-3 py-2">-</td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">Agricultural Land</td>
+                          <td className="border border-gray-200 px-3 py-2">Tirur, Kerala</td>
+                          <td className="border border-gray-200 px-3 py-2">1.2 Acres</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹60 Lakhs</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Family</span>
+                          </td>
+                          <td className="border border-gray-200 px-3 py-2">₹15,000/month</td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">2BHK Apartment</td>
+                          <td className="border border-gray-200 px-3 py-2">Whitefield, Bangalore</td>
+                          <td className="border border-gray-200 px-3 py-2">1,200 sqft</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹85 Lakhs</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Owned</span>
+                          </td>
+                          <td className="border border-gray-200 px-3 py-2">₹35,000/month</td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">3BHK Villa</td>
+                          <td className="border border-gray-200 px-3 py-2">Kochi, Kerala</td>
+                          <td className="border border-gray-200 px-3 py-2">2,500 sqft</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹1.2 Crores</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Under Construction</span>
+                          </td>
+                          <td className="border border-gray-200 px-3 py-2">Expected ₹45,000/month</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  {/* Investment Summary */}
+                  <div className="mt-6 grid md:grid-cols-3 gap-4">
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-gray-700 mb-2">Stock Investments</h5>
+                      <p className="text-lg font-medium text-gray-600">₹25 Lakhs</p>
+                      <p className="text-xs text-gray-500">Diversified portfolio</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Financial Status:</span>
-                      <span className="font-medium">Stable & Growing</span>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-gray-700 mb-2">Fixed Deposits</h5>
+                      <p className="text-lg font-medium text-gray-600">₹15 Lakhs</p>
+                      <p className="text-xs text-gray-500">7.5% average return</p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Loans:</span>
-                      <span className="font-medium">None</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Future Plans:</span>
-                      <span className="font-medium">Property Investment</span>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h5 className="font-semibold text-gray-700 mb-2">Emergency Fund</h5>
+                      <p className="text-lg font-medium text-gray-600">₹8 Lakhs</p>
+                      <p className="text-xs text-gray-500">Liquid savings</p>
                     </div>
                   </div>
                 </CardContent>
