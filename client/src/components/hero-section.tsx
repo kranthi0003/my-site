@@ -59,6 +59,13 @@ export default function HeroSection() {
                   <Code className="text-primary text-2xl" size={28} />
                 </div>
                 
+                {/* Rotating Sun Animation */}
+                <div className="absolute inset-0 animate-spin" style={{ animationDuration: '20s' }}>
+                  <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-6 h-6 bg-yellow-400 rounded-full shadow-lg flex items-center justify-center">
+                    <div className="w-3 h-3 bg-yellow-300 rounded-full"></div>
+                  </div>
+                </div>
+                
                 {/* Minimal Decorative elements */}
                 <div className="absolute -top-6 -left-6 w-12 h-12 bg-white/20 rounded-full"></div>
                 <div className="absolute -bottom-2 -left-8 w-8 h-8 bg-accent/30 rounded-full"></div>
