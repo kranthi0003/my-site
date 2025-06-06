@@ -54,11 +54,6 @@ export default function HeroSection() {
                   </div>
                 </div>
                 
-                {/* Floating badge */}
-                <div className="absolute -bottom-4 -right-4 bg-accent rounded-full p-4 shadow-xl">
-                  <Code className="text-primary text-2xl" size={28} />
-                </div>
-                
                 {/* Rotating Sun Animation - Following Photo Border */}
                 <div className="absolute inset-4 animate-spin" style={{ animationDuration: '30s' }}>
                   <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-6 h-6 relative">
@@ -74,10 +69,6 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
-                
-                {/* Minimal Decorative elements */}
-                <div className="absolute -top-6 -left-6 w-12 h-12 bg-white/20 rounded-full"></div>
-                <div className="absolute -bottom-2 -left-8 w-8 h-8 bg-accent/30 rounded-full"></div>
               </div>
             </div>
 
