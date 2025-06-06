@@ -34,8 +34,8 @@ export default function AboutSection() {
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-primary/10"></div>
-                  <div className="absolute top-2 left-2 bg-gradient-to-r from-primary to-primary/80 shadow-lg rounded-lg px-3 py-1.5 border border-white/20">
-                    <span className="text-white font-bold text-sm tracking-wide">2022</span>
+                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-primary to-primary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                    <span className="text-white font-semibold text-xs">2022</span>
                   </div>
                 </div>
                 
@@ -48,8 +48,8 @@ export default function AboutSection() {
                     style={{ objectPosition: 'center 20%' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-accent/10"></div>
-                  <div className="absolute top-2 left-2 bg-gradient-to-r from-accent to-accent/80 shadow-lg rounded-lg px-3 py-1.5 border border-white/20">
-                    <span className="text-white font-bold text-sm tracking-wide">2023</span>
+                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-accent to-accent/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                    <span className="text-white font-semibold text-xs">2023</span>
                   </div>
                 </div>
                 
@@ -62,8 +62,8 @@ export default function AboutSection() {
                     style={{ objectPosition: 'center 10%' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-secondary/10"></div>
-                  <div className="absolute top-2 left-2 bg-gradient-to-r from-secondary to-secondary/80 shadow-lg rounded-lg px-3 py-1.5 border border-white/20">
-                    <span className="text-white font-bold text-sm tracking-wide">2024</span>
+                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-secondary to-secondary/80 shadow-md rounded-md px-2 py-1 border border-white/20">
+                    <span className="text-white font-semibold text-xs">2024</span>
                   </div>
                 </div>
                 
@@ -76,8 +76,8 @@ export default function AboutSection() {
                     style={{ objectPosition: 'center 30%' }}
                   />
                   <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-transparent via-transparent to-yellow-400/10"></div>
-                  <div className="absolute top-2 left-2 bg-gradient-to-r from-yellow-500 to-yellow-600 shadow-lg rounded-lg px-3 py-1.5 border border-white/20">
-                    <span className="text-white font-bold text-sm tracking-wide">2025</span>
+                  <div className="absolute top-1.5 left-1.5 bg-gradient-to-r from-yellow-500 to-yellow-600 shadow-md rounded-md px-2 py-1 border border-white/20">
+                    <span className="text-white font-semibold text-xs">2025</span>
                   </div>
                 </div>
               </div>
