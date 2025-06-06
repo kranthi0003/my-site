@@ -36,7 +36,7 @@ export default function AboutSection() {
                         alt="2022 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                       />
-                      <div className="absolute top-2 left-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                      <div className="absolute -top-2 -left-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded z-10">
                         2022
                       </div>
                     </div>
@@ -48,7 +48,7 @@ export default function AboutSection() {
                         alt="2023 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.1] contrast-[0.95] brightness-[1.05]"
                       />
-                      <div className="absolute top-2 right-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                      <div className="absolute -top-2 -right-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded z-10">
                         2023
                       </div>
                     </div>
@@ -65,7 +65,7 @@ export default function AboutSection() {
                         alt="2024 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter sepia-[0.05] contrast-[0.98] brightness-[1.02]"
                       />
-                      <div className="absolute bottom-2 left-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                      <div className="absolute -bottom-2 -left-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded z-10">
                         2024
                       </div>
                     </div>
@@ -77,7 +77,7 @@ export default function AboutSection() {
                         alt="2025 Selfie"
                         className="w-full h-full object-cover rounded-lg shadow-lg filter contrast-[0.95] brightness-[1.05]"
                       />
-                      <div className="absolute bottom-2 right-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded">
+                      <div className="absolute -bottom-2 -right-2 bg-primary/90 text-white text-xs px-1.5 py-0.5 rounded z-10">
                         2025
                       </div>
                     </div>
