@@ -29,7 +29,7 @@ export default function AboutSection() {
                 {/* Top Left - 2022 */}
                 <div className="relative">
                   <img
-                    src="/attached_assets/IMG_5243_1749135607534.JPG"
+                    src="/attached_assets/Snapchat-1059745354.jpg"
                     alt="Selfie from 2022"
                     className="w-full h-full rounded-xl object-cover shadow-lg transform hover:scale-105 transition-transform duration-300"
                   />
