@@ -22,12 +22,12 @@ export default function AboutSection() {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="animate-slide-up">
-            <div className="relative">
+          <div className="animate-slide-up flex justify-center">
+            <div className="relative max-w-sm">
               <img
                 src="/attached_assets/IMG_5243_1749135607534.JPG"
                 alt="Personal lifestyle photo"
-                className="rounded-2xl shadow-2xl w-full h-auto transform hover:scale-105 transition-transform duration-500"
+                className="rounded-2xl shadow-2xl w-full h-auto max-h-80 object-cover transform hover:scale-105 transition-transform duration-500"
               />
               {/* Overlay gradient */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/10 via-transparent to-accent/10"></div>
