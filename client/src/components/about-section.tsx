@@ -23,13 +23,13 @@ export default function AboutSection() {
         
         {/* 4 Panel Side by Side Selfies */}
         <div className="animate-slide-up flex justify-center mb-16">
-          <div className="relative w-full max-w-4xl">
-            <div className="p-4 bg-white rounded-xl shadow-xl border border-gray-100">
-              <div className="space-y-4">
+          <div className="relative w-full max-w-6xl">
+            <div className="p-6 bg-white rounded-xl shadow-xl border border-gray-100">
+              <div className="space-y-6">
                 {/* Photos Row */}
-                <div className="flex gap-3 w-full justify-center">
+                <div className="flex gap-4 w-full justify-center">
                   {/* 2022 */}
-                  <div className="flex-1 aspect-[3/4]">
+                  <div className="flex-1 aspect-[4/5]">
                     <img
                       src="/attached_assets/Snapchat-1059745354.jpg"
                       alt="2022 Selfie"
@@ -38,7 +38,7 @@ export default function AboutSection() {
                   </div>
 
                   {/* 2023 */}
-                  <div className="flex-1 aspect-[3/4]">
+                  <div className="flex-1 aspect-[4/5]">
                     <img
                       src="/attached_assets/Snapchat-1445693840.jpg"
                       alt="2023 Selfie"
@@ -47,7 +47,7 @@ export default function AboutSection() {
                   </div>
 
                   {/* 2024 */}
-                  <div className="flex-1 aspect-[3/4]">
+                  <div className="flex-1 aspect-[4/5]">
                     <img
                       src="/attached_assets/Snapchat-240699289.jpg"
                       alt="2024 Selfie"
@@ -56,7 +56,7 @@ export default function AboutSection() {
                   </div>
 
                   {/* 2025 */}
-                  <div className="flex-1 aspect-[3/4]">
+                  <div className="flex-1 aspect-[4/5]">
                     <img
                       src="/attached_assets/Snapchat-520859973.jpg"
                       alt="2025 Selfie"
@@ -66,7 +66,7 @@ export default function AboutSection() {
                 </div>
                 
                 {/* Year Labels Row */}
-                <div className="flex gap-3 w-full justify-center">
+                <div className="flex gap-4 w-full justify-center">
                   <div className="flex-1 text-center">
                     <span className="bg-gradient-to-r from-primary to-primary/80 text-white font-medium text-xs px-2 py-1 rounded shadow-sm">2022</span>
                   </div>
