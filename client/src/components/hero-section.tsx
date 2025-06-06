@@ -88,7 +88,7 @@ export default function HeroSection() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
                   onClick={() => scrollTo('about')}
-                  className="bg-accent text-primary px-10 py-5 rounded-full font-semibold hover:bg-accent/90 transition-all duration-300 transform hover:scale-105 shadow-lg text-lg"
+                  className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-10 py-5 rounded-full font-bold hover:from-orange-600 hover:to-red-600 transition-all duration-300 transform hover:scale-105 shadow-xl text-lg border-0"
                   size="lg"
                 >
                   Learn More About Me
@@ -96,7 +96,7 @@ export default function HeroSection() {
                 <Button
                   onClick={() => scrollTo('contact')}
                   variant="outline"
-                  className="border-2 border-white text-white bg-transparent px-10 py-5 rounded-full font-semibold hover:bg-white hover:text-primary transition-all duration-300 shadow-lg text-lg"
+                  className="border-3 border-white text-white bg-white/10 backdrop-blur-sm px-10 py-5 rounded-full font-bold hover:bg-white hover:text-orange-600 transition-all duration-300 shadow-xl text-lg hover:border-orange-200"
                   size="lg"
                 >
                   Get In Touch
