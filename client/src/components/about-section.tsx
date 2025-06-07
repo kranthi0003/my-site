@@ -444,70 +444,70 @@ export default function AboutSection() {
                   </h3>
                   
                   {/* Financial Summary */}
-                  <div className="grid md:grid-cols-4 gap-6 mb-8">
-                    <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-green-700 mb-2">Salary</h4>
-                      <p className="text-2xl font-bold text-green-600">₹30+ LPA</p>
-                      <p className="text-sm text-green-600">₹2L/month</p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-gray-50/50 p-4 rounded-lg border border-gray-100">
+                      <h4 className="font-medium text-gray-700 mb-2">Salary</h4>
+                      <p className="text-xl font-semibold text-gray-800">₹30+ LPA</p>
+                      <p className="text-sm text-gray-600">₹2L/month</p>
                     </div>
-                    <div className="bg-purple-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-purple-700 mb-2">Property Count</h4>
-                      <p className="text-2xl font-bold text-purple-600">3 Units</p>
-                      <p className="text-sm text-purple-600">2 Residential plots + 2BHK flat</p>
+                    <div className="bg-gray-50/50 p-4 rounded-lg border border-gray-100">
+                      <h4 className="font-medium text-gray-700 mb-2">Property Count</h4>
+                      <p className="text-xl font-semibold text-gray-800">3 Units</p>
+                      <p className="text-sm text-gray-600">2 Residential plots + 2BHK flat</p>
                     </div>
                   </div>
 
                   {/* Property Details Cards */}
                   <div>
                     <h4 className="font-semibold text-gray-700 mb-6">Property Portfolio</h4>
-                    <div className="space-y-4">
+                    <div className="space-y-3">
                       {/* Property 1 */}
-                      <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-lg p-5">
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                      <div className="bg-gray-50/30 border border-gray-100 rounded-lg p-4">
+                        <div className="flex justify-between items-center">
                           <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-2">
-                              <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Plot</span>
-                              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Self</span>
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Plot</span>
+                              <span className="text-xs text-gray-600">Self</span>
                             </div>
-                            <h5 className="font-semibold text-gray-900 text-lg">Tagarapuvalasa, Vizag</h5>
-                            <p className="text-gray-600">200 Square Yards</p>
+                            <h5 className="font-medium text-gray-900">Tagarapuvalasa, Vizag</h5>
+                            <p className="text-sm text-gray-600">200 Square Yards</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-green-600">₹40 Lakhs</p>
+                            <p className="font-semibold text-gray-800">₹40 Lakhs</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Property 2 */}
-                      <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-lg p-5">
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                      <div className="bg-gray-50/30 border border-gray-100 rounded-lg p-4">
+                        <div className="flex justify-between items-center">
                           <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-2">
-                              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Plot</span>
-                              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Inherited</span>
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">Plot</span>
+                              <span className="text-xs text-gray-600">Inherited</span>
                             </div>
-                            <h5 className="font-semibold text-gray-900 text-lg">Simhachalam, Vizag</h5>
-                            <p className="text-gray-600">250 Square Yards</p>
+                            <h5 className="font-medium text-gray-900">Simhachalam, Vizag</h5>
+                            <p className="text-sm text-gray-600">250 Square Yards</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-blue-600">₹50 Lakhs</p>
+                            <p className="font-semibold text-gray-800">₹50 Lakhs</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Property 3 */}
-                      <div className="bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-200 rounded-lg p-5">
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                      <div className="bg-gray-50/30 border border-gray-100 rounded-lg p-4">
+                        <div className="flex justify-between items-center">
                           <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-2">
-                              <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">2BHK Flat</span>
-                              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Self</span>
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs text-gray-600 bg-gray-100 px-2 py-1 rounded">2BHK Flat</span>
+                              <span className="text-xs text-gray-600">Self</span>
                             </div>
-                            <h5 className="font-semibold text-gray-900 text-lg">PMPalem, Vizag</h5>
-                            <p className="text-gray-600">1,100 Square Feet</p>
+                            <h5 className="font-medium text-gray-900">PMPalem, Vizag</h5>
+                            <p className="text-sm text-gray-600">1,100 Square Feet</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-purple-600">₹45 Lakhs</p>
+                            <p className="font-semibold text-gray-800">₹45 Lakhs</p>
                           </div>
                         </div>
                       </div>
@@ -516,40 +516,40 @@ export default function AboutSection() {
 
                   {/* Investment Portfolio */}
                   <div className="mt-8">
-                    <h4 className="font-semibold text-gray-700 mb-6">Investment Portfolio</h4>
-                    <div className="space-y-4">
+                    <h4 className="font-semibold text-gray-700 mb-4">Investment Portfolio</h4>
+                    <div className="space-y-2">
                       {/* Stock Investments */}
-                      <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-lg p-4">
+                      <div className="bg-gray-50/30 border border-gray-100 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-semibold text-orange-800 text-lg">Stock Investments</h5>
+                            <h5 className="font-medium text-gray-800">Stock Investments</h5>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-orange-600">₹25 Lakhs</p>
+                            <p className="font-semibold text-gray-800">₹25 Lakhs</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Fixed Deposits */}
-                      <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-lg p-4">
+                      <div className="bg-gray-50/30 border border-gray-100 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-semibold text-emerald-800 text-lg">Fixed Deposits</h5>
+                            <h5 className="font-medium text-gray-800">Fixed Deposits</h5>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-emerald-600">₹15 Lakhs</p>
+                            <p className="font-semibold text-gray-800">₹15 Lakhs</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Provident Fund */}
-                      <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-lg p-4">
+                      <div className="bg-gray-50/30 border border-gray-100 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-semibold text-cyan-800 text-lg">Provident Fund</h5>
+                            <h5 className="font-medium text-gray-800">Provident Fund</h5>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-cyan-600">₹8 Lakhs</p>
+                            <p className="font-semibold text-gray-800">₹8 Lakhs</p>
                           </div>
                         </div>
                       </div>
