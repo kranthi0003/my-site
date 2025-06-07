@@ -241,51 +241,57 @@ export default function AboutSection() {
               </Card>
 
               {/* Education & Career */}
-              <Card className="w-full bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-accent mb-6 flex items-center">
-                    <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3">
-                      <div className="w-4 h-4 bg-accent/20 rounded-full"></div>
+              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-accent/3 backdrop-blur-sm border border-accent/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+                {/* Card number badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                  <span className="text-sm font-bold text-white">3</span>
+                </div>
+                
+                <CardContent className="p-8 relative">
+                  <h3 className="text-2xl font-bold text-accent mb-8 flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent/25 to-accent/15 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300 shadow-lg border border-accent/10">
+                      <div className="w-6 h-6 bg-gradient-to-br from-accent to-accent/80 rounded-xl"></div>
                     </div>
                     Education & Career
                   </h3>
-                  <div className="space-y-5 text-base">
-                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Qualification</span>
-                        <p className="font-semibold text-gray-900">B.Tech (CSE)</p>
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Qualification</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">B.Tech (CSE)</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">College</span>
-                        <p className="font-semibold text-gray-900">GVPCOE, Vizag</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">College</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">GVPCOE, Vizag</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Year of Passing</span>
-                        <p className="font-semibold text-gray-900">2021</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Year of Passing</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">2021</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Experience</span>
-                        <p className="font-semibold text-gray-900">4+ years</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Experience</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">4+ years</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Salary</span>
-                        <p className="font-semibold text-gray-900">₹30+ LPA</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Salary</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">₹30+ LPA</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Work Location</span>
-                        <p className="font-semibold text-gray-900">Bangalore</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Work Location</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Bangalore</p>
                       </div>
                     </div>
                     
-                    <div className="pt-2 border-t border-gray-100">
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Current Company</span>
-                        <p className="font-semibold text-gray-900">Couchbase</p>
-                      </div>
-                      
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Previous Companies</span>
-                        <p className="font-semibold text-gray-900">Amazon, Groww</p>
+                    <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-5 rounded-xl border border-accent/10">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                          <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Current Company</span>
+                          <p className="font-bold text-gray-900 text-lg mt-1">Couchbase</p>
+                        </div>
+                        <div>
+                          <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Previous Companies</span>
+                          <p className="font-bold text-gray-900 text-lg mt-1">Amazon, Groww</p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -293,31 +299,36 @@ export default function AboutSection() {
               </Card>
 
               {/* Astrology Details */}
-              <Card className="w-full bg-white/80 backdrop-blur-sm border-l-4 border-l-purple-500 shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-purple-600 mb-6 flex items-center">
-                    <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                      <div className="w-4 h-4 bg-purple-200 rounded-full"></div>
+              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-purple-500/3 backdrop-blur-sm border border-purple-500/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+                {/* Card number badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                  <span className="text-sm font-bold text-white">4</span>
+                </div>
+                
+                <CardContent className="p-8 relative">
+                  <h3 className="text-2xl font-bold text-purple-600 mb-8 flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-purple-500/25 to-purple-500/15 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300 shadow-lg border border-purple-500/10">
+                      <div className="w-6 h-6 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl"></div>
                     </div>
                     Astrology Details
                   </h3>
-                  <div className="space-y-5 text-base">
-                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Gothram</span>
-                        <p className="font-semibold text-gray-900">Bharadwaja</p>
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Gothram</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Bharadwaja</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Star</span>
-                        <p className="font-semibold text-gray-900">Ardra</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Star</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Ardra</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Rasi</span>
-                        <p className="font-semibold text-gray-900">Mithuna (Gemini)</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Rasi</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Mithuna (Gemini)</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Time of Birth</span>
-                        <p className="font-semibold text-gray-900">10:20 PM</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Time of Birth</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">10:20 PM</p>
                       </div>
                     </div>
                   </div>
