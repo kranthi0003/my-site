@@ -80,7 +80,7 @@ export default function HeroSection() {
             </div>
 
             {/* Tagline under photo */}
-            <div className="text-center relative">
+            <div className="text-center relative -mt-4">
               <p className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent whitespace-nowrap relative z-10">
                 Traveller by soul, Techie by skill
               </p>
@@ -88,7 +88,7 @@ export default function HeroSection() {
             </div>
 
             {/* Buttons - Now below the photo */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
                   onClick={() => scrollTo('about')}
