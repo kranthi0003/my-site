@@ -163,18 +163,6 @@ export default function AboutSection() {
                         <p className="font-semibold text-gray-900">Patnaik (OC)</p>
                       </div>
                       <div>
-                        <span className="text-muted-foreground text-sm font-medium">Gothram</span>
-                        <p className="font-semibold text-gray-900">Bharadwaja</p>
-                      </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Star</span>
-                        <p className="font-semibold text-gray-900">Ardra</p>
-                      </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Rasi</span>
-                        <p className="font-semibold text-gray-900">Mithuna (Gemini)</p>
-                      </div>
-                      <div>
                         <span className="text-muted-foreground text-sm font-medium">Native</span>
                         <p className="font-semibold text-gray-900">Visakhapatnam</p>
                       </div>
@@ -247,6 +235,34 @@ export default function AboutSection() {
                     <div>
                       <span className="text-muted-foreground text-sm font-medium">Previous Companies</span>
                       <p className="font-semibold text-gray-900">Amazon, Groww</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Astrology Details */}
+              <Card className="w-full bg-white/80 backdrop-blur-sm border-l-4 border-l-purple-500 shadow-lg">
+                <CardContent className="p-8">
+                  <h3 className="text-xl font-semibold text-purple-600 mb-6 flex items-center">
+                    <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
+                      <div className="w-4 h-4 bg-purple-200 rounded-full"></div>
+                    </div>
+                    Astrology Details
+                  </h3>
+                  <div className="space-y-5 text-base">
+                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Gothram</span>
+                        <p className="font-semibold text-gray-900">Bharadwaja</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Star</span>
+                        <p className="font-semibold text-gray-900">Ardra</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Rasi</span>
+                        <p className="font-semibold text-gray-900">Mithuna (Gemini)</p>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
