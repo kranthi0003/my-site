@@ -136,16 +136,16 @@ export default function AboutSection() {
 
         {/* Memory Years Grid */}
         <div className="animate-fade-in mb-16">
-          {/* Simple Frame Container */}
-          <div className="relative max-w-3xl mx-auto p-4 bg-white rounded-2xl shadow-lg border-2 border-primary/20">
+          {/* Simple Frame Container with overflow visible for tags */}
+          <div className="relative max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow-lg border-2 border-primary/20 overflow-visible">
             <div className="grid grid-cols-2 gap-4">
               {PROFILE_DATA.memoryYears.map((memory, index) => {
-                // Define tag position for each year
+                // Define tag position for each year - positioned at the edge but visible
                 const tagPositions = {
-                  "2022": "-top-2 -left-2",
-                  "2023": "-top-2 -right-2", 
-                  "2024": "-bottom-2 -left-2",
-                  "2025": "-bottom-2 -right-2"
+                  "2022": "top-0 left-0",
+                  "2023": "top-0 right-0", 
+                  "2024": "bottom-0 left-0",
+                  "2025": "bottom-0 right-0"
                 };
 
                 return (
@@ -154,8 +154,8 @@ export default function AboutSection() {
                     className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
                     style={{ animationDelay: `${index * 0.1}s` }}
                   >
-                    {/* Year Badge positioned at photo corners */}
-                    <div className={`absolute ${tagPositions[memory.year as keyof typeof tagPositions]} z-30`}>
+                    {/* Year Badge positioned at photo corners but fully visible */}
+                    <div className={`absolute ${tagPositions[memory.year as keyof typeof tagPositions]} z-30 transform -translate-x-1/2 -translate-y-1/2`}>
                       <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-lg">
                         {memory.year}
                       </div>
