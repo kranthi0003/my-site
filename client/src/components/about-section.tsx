@@ -362,7 +362,7 @@ export default function AboutSection() {
                       <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-lg p-4">
                         <div className="flex justify-between items-center">
                           <div>
-                            <span className="bg-orange-600 text-white px-4 py-2 rounded-lg text-sm font-medium">Stock Investments</span>
+                            <h5 className="font-semibold text-orange-800 text-lg">Stock Investments</h5>
                           </div>
                           <div className="text-right">
                             <p className="text-2xl font-bold text-orange-600">₹25 Lakhs</p>
@@ -374,7 +374,7 @@ export default function AboutSection() {
                       <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-lg p-4">
                         <div className="flex justify-between items-center">
                           <div>
-                            <span className="bg-emerald-600 text-white px-4 py-2 rounded-lg text-sm font-medium">Fixed Deposits</span>
+                            <h5 className="font-semibold text-emerald-800 text-lg">Fixed Deposits</h5>
                           </div>
                           <div className="text-right">
                             <p className="text-2xl font-bold text-emerald-600">₹15 Lakhs</p>
@@ -386,7 +386,7 @@ export default function AboutSection() {
                       <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-lg p-4">
                         <div className="flex justify-between items-center">
                           <div>
-                            <span className="bg-cyan-600 text-white px-4 py-2 rounded-lg text-sm font-medium">Emergency Fund</span>
+                            <h5 className="font-semibold text-cyan-800 text-lg">Emergency Fund</h5>
                           </div>
                           <div className="text-right">
                             <p className="text-2xl font-bold text-cyan-600">₹8 Lakhs</p>
