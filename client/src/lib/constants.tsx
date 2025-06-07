@@ -10,21 +10,29 @@ export const PROFILE_DATA = {
   profileImage: profilePhoto,
   
   // About section
-  aboutDescription: "Experienced Software Engineer building scalable solutions at Couchbase. Previously worked at Amazon and Groww. Passionate about technology, family values, and creating meaningful connections.",
+  aboutDescription: "I'm Kranthi Kiran, a software engineer with a passion for building meaningful and scalable tech solutions — but before all that, I'm someone shaped by simple beginnings and steady values.",
   aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
-  personalValues: [
+  personalStory: [
     {
-      title: "Personal Values (மதிப்புகள்)",
-      description: "I deeply respect Tamil culture and traditions. I believe in honesty, respect for elders, and the paramount importance of family. My goal is to build relationships based on mutual understanding, trust, and shared cultural appreciation."
+      title: "Early Life & Foundation",
+      description: "I was born and brought up in Visakhapatnam (Vizag), a city that gave me both roots and inspiration. I studied at St. Aloysius High School (ICSE), where I was lucky to have great teachers who encouraged curiosity, consistency, and quiet ambition."
+    },
+    {
+      title: "Resilience & Growth", 
+      description: "In 2015, my family went through a difficult time with the passing of my father. It was a period of adjustment and reflection. My mother, with incredible patience and quiet strength, made sure I had the space and support to continue my education without compromise. I've always drawn inspiration from her resilience."
+    },
+    {
+      title: "Academic Excellence",
+      description: "With focus and gratitude, I completed my 12th grade with 98%, and later pursued Computer Science Engineering at GVPCOE (JNTUK) in Vizag. Those years were filled with learning — not just technical knowledge, but teamwork, self-discipline, and the small wins that come from persistence."
+    },
+    {
+      title: "Professional Journey",
+      description: "My first opportunity came with Amazon in Hyderabad, where I grew in both depth and responsibility. Wanting to explore more challenging roles, I later moved to Bangalore. Currently, I'm working at Couchbase, focusing on scalable backend engineering — building systems that are reliable, efficient, and designed to scale with confidence."
     },
     {
       title: "Life Philosophy",
-      description: "I approach life with dedication and a strong sense of responsibility. Whether in my career, relationships, or personal growth, I strive for excellence while maintaining a balanced and humble perspective."
-    },
-    {
-      title: "Future Goals (எதிர்கால இலக்குகள்)",
-      description: "I aspire to build a loving family while honoring both cultures. I believe in supporting each other's dreams, celebrating Tamil traditions, and creating a harmonious home filled with love, understanding, and cultural richness."
+      description: "Outside of engineering, I enjoy traveling, exploring new cultures, and spending time with people who matter. I'm passionate about technology, but also deeply value the relationships and moments that make life meaningful. I believe that growth — whether personal or professional — comes from staying curious, staying kind, and being open to learning, always."
     }
   ],
 
