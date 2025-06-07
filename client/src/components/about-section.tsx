@@ -66,7 +66,7 @@ export default function AboutSection() {
                       {/* Animated gradient border wrapper */}
                       <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-700 animate-glow-pulse"></div>
                       
-                      <Card className="relative h-full bg-white/95 backdrop-blur-md shadow-2xl border-2 border-transparent bg-gradient-to-br from-white via-white/95 to-primary/5 hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] overflow-hidden rounded-xl">
+                      <Card className="relative h-96 bg-white/95 backdrop-blur-md shadow-2xl border-2 border-transparent bg-gradient-to-br from-white via-white/95 to-primary/5 hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] overflow-hidden rounded-xl">
                         {/* Calm background elements */}
                         <div className="absolute inset-0 opacity-10">
                           <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-br from-primary/30 to-transparent rounded-full"></div>
