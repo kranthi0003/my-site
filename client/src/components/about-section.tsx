@@ -32,7 +32,7 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden bg-gradient-to-br from-background via-background/95 to-primary/5">
+    <section id="about" className="py-24 relative overflow-hidden tamil-bg-about">
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>

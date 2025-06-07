@@ -102,6 +102,91 @@
                 linear-gradient(-45deg, transparent 45%, #FFD700 47%, #FFD700 53%, transparent 55%);
     background-size: 10px 10px;
   }
+
+  .tamil-bg-about {
+    background: linear-gradient(135deg, rgba(255,248,240,0.7) 0%, rgba(255,253,248,0.9) 100%);
+    position: relative;
+  }
+  
+  .tamil-bg-about::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(210,105,30,0.04) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, rgba(255,215,0,0.03) 1.5px, transparent 1.5px),
+      linear-gradient(45deg, transparent 49%, rgba(210,105,30,0.02) 50%, transparent 51%);
+    background-size: 60px 60px, 40px 40px, 80px 80px;
+    opacity: 0.6;
+  }
+
+  .tamil-bg-background {
+    background: linear-gradient(120deg, rgba(255,250,240,0.8) 0%, rgba(250,245,235,0.9) 100%);
+    position: relative;
+  }
+  
+  .tamil-bg-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(210,105,30,0.05) 1px, transparent 1px),
+      radial-gradient(circle at 80% 20%, rgba(255,215,0,0.04) 1px, transparent 1px),
+      linear-gradient(60deg, transparent 48%, rgba(255,215,0,0.02) 50%, transparent 52%);
+    background-size: 50px 50px, 70px 70px, 100px 100px;
+    opacity: 0.7;
+  }
+
+  .tamil-bg-family {
+    background: linear-gradient(150deg, rgba(255,245,238,0.8) 0%, rgba(255,250,245,0.9) 100%);
+    position: relative;
+  }
+  
+  .tamil-bg-family::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 30% 70%, rgba(210,105,30,0.03) 1.5px, transparent 1.5px),
+      radial-gradient(circle at 70% 30%, rgba(255,215,0,0.03) 1px, transparent 1px),
+      linear-gradient(30deg, transparent 48%, rgba(210,105,30,0.015) 50%, transparent 52%);
+    background-size: 45px 45px, 65px 65px, 90px 90px;
+    opacity: 0.8;
+  }
+
+  .tamil-bg-interests {
+    background: linear-gradient(110deg, rgba(255,252,245,0.8) 0%, rgba(255,248,240,0.9) 100%);
+    position: relative;
+  }
+  
+  .tamil-bg-interests::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 40% 60%, rgba(255,215,0,0.04) 1px, transparent 1px),
+      radial-gradient(circle at 60% 40%, rgba(210,105,30,0.03) 1.5px, transparent 1.5px),
+      linear-gradient(75deg, transparent 49%, rgba(255,215,0,0.02) 50%, transparent 51%);
+    background-size: 55px 55px, 75px 75px, 110px 110px;
+    opacity: 0.6;
+  }
+
+  .tamil-bg-gallery {
+    background: linear-gradient(100deg, rgba(255,249,242,0.8) 0%, rgba(255,251,246,0.9) 100%);
+    position: relative;
+  }
+  
+  .tamil-bg-gallery::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 15% 85%, rgba(210,105,30,0.04) 1px, transparent 1px),
+      radial-gradient(circle at 85% 15%, rgba(255,215,0,0.03) 1.5px, transparent 1.5px),
+      linear-gradient(15deg, transparent 49%, rgba(210,105,30,0.02) 50%, transparent 51%);
+    background-size: 35px 35px, 80px 80px, 120px 120px;
+    opacity: 0.7;
+  }
 }
 
 @layer utilities {

@@ -18,7 +18,7 @@ export default function GallerySection({}: GallerySectionProps) {
   };
 
   return (
-    <section id="gallery" className="pt-24 pb-20 bg-gradient-to-br from-muted/20 to-white relative overflow-hidden">
+    <section id="gallery" className="pt-24 pb-20 tamil-bg-gallery relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-72 h-72 bg-secondary/5 rounded-full blur-3xl"></div>
