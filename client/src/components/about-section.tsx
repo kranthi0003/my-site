@@ -445,14 +445,14 @@ export default function AboutSection() {
                   {/* Financial Summary */}
                   <div className="grid md:grid-cols-2 gap-6 mb-8">
                     <div className="bg-gradient-to-br from-green-50/60 to-emerald-50/40 p-4 rounded-lg border border-green-100/60">
-                      <h4 className="font-medium text-green-700 mb-2">Salary</h4>
-                      <p className="text-xl font-bold text-green-800">₹30+ LPA</p>
-                      <p className="text-sm text-green-600">₹2L/month</p>
+                      <h4 className="font-semibold text-green-800 mb-2">Salary</h4>
+                      <p className="text-xl font-bold text-green-900">₹30+ LPA</p>
+                      <p className="text-sm font-medium text-green-700">₹2L/month</p>
                     </div>
                     <div className="bg-gradient-to-br from-blue-50/60 to-sky-50/40 p-4 rounded-lg border border-blue-100/60">
-                      <h4 className="font-medium text-blue-700 mb-2">Property Count</h4>
-                      <p className="text-xl font-bold text-blue-800">3 Units</p>
-                      <p className="text-sm text-blue-600">2 Residential plots + 2BHK flat</p>
+                      <h4 className="font-semibold text-blue-800 mb-2">Property Count</h4>
+                      <p className="text-xl font-bold text-blue-900">3 Units</p>
+                      <p className="text-sm font-medium text-blue-700">2 Residential plots + 2BHK flat</p>
                     </div>
                   </div>
 
@@ -465,14 +465,14 @@ export default function AboutSection() {
                         <div className="flex justify-between items-center">
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs text-purple-700 bg-purple-100/60 px-2 py-1 rounded">Plot</span>
-                              <span className="text-xs text-purple-600">Self</span>
+                              <span className="text-xs font-medium text-purple-800 bg-purple-100/60 px-2 py-1 rounded">Plot</span>
+                              <span className="text-xs font-medium text-purple-700">Self</span>
                             </div>
-                            <h5 className="font-medium text-purple-900">Tagarapuvalasa, Vizag</h5>
-                            <p className="text-sm text-purple-600">200 Square Yards</p>
+                            <h5 className="font-semibold text-purple-900">Tagarapuvalasa, Vizag</h5>
+                            <p className="text-sm font-medium text-purple-700">200 Square Yards</p>
                           </div>
                           <div className="text-right">
-                            <p className="font-semibold text-purple-800">₹40 Lakhs</p>
+                            <p className="font-bold text-purple-900">₹40 Lakhs</p>
                           </div>
                         </div>
                       </div>
@@ -482,14 +482,14 @@ export default function AboutSection() {
                         <div className="flex justify-between items-center">
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs text-orange-700 bg-orange-100/60 px-2 py-1 rounded">Plot</span>
-                              <span className="text-xs text-orange-600">Inherited</span>
+                              <span className="text-xs font-medium text-orange-800 bg-orange-100/60 px-2 py-1 rounded">Plot</span>
+                              <span className="text-xs font-medium text-orange-700">Inherited</span>
                             </div>
-                            <h5 className="font-medium text-orange-900">Simhachalam, Vizag</h5>
-                            <p className="text-sm text-orange-600">250 Square Yards</p>
+                            <h5 className="font-semibold text-orange-900">Simhachalam, Vizag</h5>
+                            <p className="text-sm font-medium text-orange-700">250 Square Yards</p>
                           </div>
                           <div className="text-right">
-                            <p className="font-semibold text-orange-800">₹50 Lakhs</p>
+                            <p className="font-bold text-orange-900">₹50 Lakhs</p>
                           </div>
                         </div>
                       </div>
@@ -499,14 +499,14 @@ export default function AboutSection() {
                         <div className="flex justify-between items-center">
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs text-teal-700 bg-teal-100/60 px-2 py-1 rounded">2BHK Flat</span>
-                              <span className="text-xs text-teal-600">Self</span>
+                              <span className="text-xs font-medium text-teal-800 bg-teal-100/60 px-2 py-1 rounded">2BHK Flat</span>
+                              <span className="text-xs font-medium text-teal-700">Self</span>
                             </div>
-                            <h5 className="font-medium text-teal-900">PMPalem, Vizag</h5>
-                            <p className="text-sm text-teal-600">1,100 Square Feet</p>
+                            <h5 className="font-semibold text-teal-900">PMPalem, Vizag</h5>
+                            <p className="text-sm font-medium text-teal-700">1,100 Square Feet</p>
                           </div>
                           <div className="text-right">
-                            <p className="font-semibold text-teal-800">₹45 Lakhs</p>
+                            <p className="font-bold text-teal-900">₹45 Lakhs</p>
                           </div>
                         </div>
                       </div>
@@ -521,10 +521,10 @@ export default function AboutSection() {
                       <div className="bg-gradient-to-br from-rose-50/40 to-pink-50/30 border border-rose-100/50 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-medium text-rose-800">Stock Investments</h5>
+                            <h5 className="font-semibold text-rose-900">Stock Investments</h5>
                           </div>
                           <div className="text-right">
-                            <p className="font-bold text-rose-800">₹25 Lakhs</p>
+                            <p className="font-bold text-rose-900">₹25 Lakhs</p>
                           </div>
                         </div>
                       </div>
@@ -533,10 +533,10 @@ export default function AboutSection() {
                       <div className="bg-gradient-to-br from-emerald-50/40 to-green-50/30 border border-emerald-100/50 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-medium text-emerald-800">Fixed Deposits</h5>
+                            <h5 className="font-semibold text-emerald-900">Fixed Deposits</h5>
                           </div>
                           <div className="text-right">
-                            <p className="font-bold text-emerald-800">₹15 Lakhs</p>
+                            <p className="font-bold text-emerald-900">₹15 Lakhs</p>
                           </div>
                         </div>
                       </div>
@@ -545,10 +545,10 @@ export default function AboutSection() {
                       <div className="bg-gradient-to-br from-indigo-50/40 to-blue-50/30 border border-indigo-100/50 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-medium text-indigo-800">Provident Fund</h5>
+                            <h5 className="font-semibold text-indigo-900">Provident Fund</h5>
                           </div>
                           <div className="text-right">
-                            <p className="font-bold text-indigo-800">₹8 Lakhs</p>
+                            <p className="font-bold text-indigo-900">₹8 Lakhs</p>
                           </div>
                         </div>
                       </div>
