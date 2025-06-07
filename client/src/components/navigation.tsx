@@ -51,31 +51,15 @@ export default function Navigation() {
       }`}>
         <div className="container mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
-            <div className={`w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-500 relative overflow-hidden group cursor-pointer ${
+            <div className={`w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-300 relative overflow-hidden ${
               isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
             } ${
-              isScrolled ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 text-white shadow-2xl hover:shadow-orange-500/25' : 'bg-gradient-to-br from-white/40 via-orange-100/30 to-white/20 text-white border-2 border-white/50 shadow-xl backdrop-blur-md hover:border-white/70'
+              isScrolled ? 'bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-xl' : 'bg-gradient-to-br from-white/30 to-white/10 text-white border-2 border-white/40 shadow-lg backdrop-blur-sm'
             }`}>
-              {/* Animated ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-orange-400 via-red-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-spin" style={{ animationDuration: '3s' }}></div>
-              
-              {/* Inner glow */}
-              <div className={`absolute inset-1 rounded-full transition-all duration-300 ${
-                isScrolled ? 'bg-gradient-to-br from-orange-300/30 via-red-300/20 to-orange-400/30' : 'bg-gradient-to-br from-white/20 via-orange-100/10 to-white/10'
+              <div className="relative z-10 font-extrabold tracking-tight">KK</div>
+              <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
+                isScrolled ? 'bg-gradient-to-br from-orange-400/20 to-red-400/20' : 'bg-gradient-to-br from-white/10 to-transparent'
               }`}></div>
-              
-              {/* Letters with enhanced styling */}
-              <div className="relative z-10 flex items-center justify-center">
-                <span className="font-black text-2xl tracking-tighter leading-none transform group-hover:scale-110 transition-transform duration-300" style={{ 
-                  fontFamily: 'system-ui, -apple-system, sans-serif',
-                  textShadow: isScrolled ? '0 2px 4px rgba(0,0,0,0.3)' : '0 2px 8px rgba(0,0,0,0.5)'
-                }}>
-                  K<span className="relative -ml-1">K</span>
-                </span>
-              </div>
-              
-              {/* Subtle shine effect */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
             </div>
             
             <div className="hidden md:flex space-x-6">
@@ -129,25 +113,41 @@ export default function Navigation() {
             
             <div className="px-6 pb-8">
               <div className="flex flex-col items-center mb-8">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 flex items-center justify-center font-bold text-white shadow-2xl mb-4 relative overflow-hidden group border-4 border-white/30">
-                  {/* Animated ring */}
-                  <div className="absolute inset-0 rounded-full border-2 border-transparent bg-gradient-to-r from-orange-400 via-red-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300 animate-spin" style={{ animationDuration: '3s' }}></div>
-                  
-                  {/* Inner glow */}
-                  <div className="absolute inset-1 rounded-full bg-gradient-to-br from-orange-300/30 via-red-300/20 to-orange-400/30"></div>
-                  
-                  {/* Letters */}
-                  <div className="relative z-10 flex items-center justify-center">
-                    <span className="font-black text-3xl tracking-tighter leading-none transform group-hover:scale-110 transition-transform duration-300" style={{ 
-                      fontFamily: 'system-ui, -apple-system, sans-serif',
-                      textShadow: '0 2px 4px rgba(0,0,0,0.3)'
-                    }}>
-                      K<span className="relative -ml-1.5">K</span>
-                    </span>
+                <div className="relative group mb-4">
+                  {/* Stamp/Badge Container */}
+                  <div className="relative px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 shadow-2xl transform rotate-12 group-hover:rotate-6 transition-transform duration-300" style={{
+                    clipPath: 'polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%)'
+                  }}>
+                    {/* Stamp perforations */}
+                    <div className="absolute -top-1 left-0 right-0 h-2" style={{
+                      background: 'radial-gradient(circle at 10px 50%, transparent 4px, #ea580c 4px)',
+                      backgroundSize: '20px 100%'
+                    }}></div>
+                    <div className="absolute -bottom-1 left-0 right-0 h-2" style={{
+                      background: 'radial-gradient(circle at 10px 50%, transparent 4px, #ea580c 4px)',
+                      backgroundSize: '20px 100%'
+                    }}></div>
+                    
+                    {/* Border stamp effect */}
+                    <div className="absolute inset-1 border-2 border-dashed border-orange-200/60"></div>
+                    
+                    {/* Letters */}
+                    <div className="relative z-10 flex items-center justify-center px-3 py-2">
+                      <span className="font-black text-3xl leading-none text-white" style={{ 
+                        fontFamily: 'system-ui, -apple-system, sans-serif',
+                        textShadow: '0 2px 4px rgba(0,0,0,0.3)',
+                        letterSpacing: '2px'
+                      }}>
+                        KK
+                      </span>
+                    </div>
+                    
+                    {/* Shine effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
                   </div>
                   
-                  {/* Subtle shine effect */}
-                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
+                  {/* Shadow */}
+                  <div className="absolute inset-0 bg-black/20 blur-sm transform translate-x-1 translate-y-1 -rotate-12 group-hover:-rotate-6 transition-transform duration-300 -z-10"></div>
                 </div>
                 <h3 className="text-slate-800 font-bold text-lg">Kranthi Kiran</h3>
                 <p className="text-slate-700 text-sm">Software Engineer</p>
