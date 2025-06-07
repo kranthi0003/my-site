@@ -39,6 +39,8 @@ export default function Navigation() {
       <div className="container mx-auto px-6 py-6">
         <div className="flex justify-between items-center">
           <div className={`w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-300 relative overflow-hidden ${
+            isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
+          } ${
             isScrolled ? 'bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-xl' : 'bg-gradient-to-br from-white/30 to-white/10 text-white border-2 border-white/40 shadow-lg backdrop-blur-sm'
           }`}>
             <div className="relative z-10 font-extrabold tracking-tight">KK</div>
