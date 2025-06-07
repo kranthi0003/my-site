@@ -27,8 +27,9 @@ export default function HeroSection() {
                 வணக்கம் (నమస్కారం) 🙏
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed">
-                <span className="block mb-4 text-white/90">Hello, I'm</span>
-                <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
+                <span className="block mb-4 text-white/90">Hi, I'm</span>
+                <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">Kranthi Kiran</span>
+                <span className="block text-2xl md:text-3xl lg:text-4xl font-medium text-white/80 mt-2">Software Engineer at Couchbase</span>
               </h1>
             </div>
             
