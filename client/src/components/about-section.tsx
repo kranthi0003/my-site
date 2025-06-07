@@ -354,22 +354,60 @@ export default function AboutSection() {
                     </div>
                   </div>
 
-                  {/* Investment Summary */}
-                  <div className="mt-6 grid md:grid-cols-3 gap-4">
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h5 className="font-semibold text-gray-700 mb-2">Stock Investments</h5>
-                      <p className="text-lg font-medium text-gray-600">₹25 Lakhs</p>
-                      <p className="text-xs text-gray-500">Diversified portfolio</p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h5 className="font-semibold text-gray-700 mb-2">Fixed Deposits</h5>
-                      <p className="text-lg font-medium text-gray-600">₹15 Lakhs</p>
-                      <p className="text-xs text-gray-500">7.5% average return</p>
-                    </div>
-                    <div className="bg-gray-50 p-4 rounded-lg">
-                      <h5 className="font-semibold text-gray-700 mb-2">Emergency Fund</h5>
-                      <p className="text-lg font-medium text-gray-600">₹8 Lakhs</p>
-                      <p className="text-xs text-gray-500">Liquid savings</p>
+                  {/* Investment Portfolio */}
+                  <div className="mt-8">
+                    <h4 className="font-semibold text-gray-700 mb-6">Investment Portfolio</h4>
+                    <div className="space-y-4">
+                      {/* Stock Investments */}
+                      <div className="bg-gradient-to-r from-orange-50 to-amber-50 border border-orange-200 rounded-lg p-5">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-medium">Stocks</span>
+                              <span className="bg-orange-100 text-orange-800 px-3 py-1 rounded-full text-sm">Diversified Portfolio</span>
+                            </div>
+                            <h5 className="font-semibold text-gray-900 text-lg">Stock Market Investments</h5>
+                            <p className="text-gray-600">Equity investments across sectors</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-orange-600">₹25 Lakhs</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Fixed Deposits */}
+                      <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 rounded-lg p-5">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium">Fixed Deposits</span>
+                              <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm">7.5% Average Return</span>
+                            </div>
+                            <h5 className="font-semibold text-gray-900 text-lg">Fixed Deposit Investments</h5>
+                            <p className="text-gray-600">Secure bank deposits with guaranteed returns</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-emerald-600">₹15 Lakhs</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Emergency Fund */}
+                      <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-lg p-5">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-cyan-600 text-white px-3 py-1 rounded-full text-sm font-medium">Emergency Fund</span>
+                              <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm">Liquid Savings</span>
+                            </div>
+                            <h5 className="font-semibold text-gray-900 text-lg">Emergency & Liquid Funds</h5>
+                            <p className="text-gray-600">Readily accessible savings for emergencies</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-cyan-600">₹8 Lakhs</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
