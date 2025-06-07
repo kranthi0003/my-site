@@ -43,10 +43,7 @@ export default function AboutSection() {
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
             <div className="w-8 h-8 bg-primary/20 rounded-full"></div>
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">My Story</h2>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {PROFILE_DATA.aboutDescription}
-          </p>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">About Me</h2>
         </div>
         
         {/* Personal Story Carousel */}
