@@ -187,6 +187,53 @@
     background-size: 35px 35px, 80px 80px, 120px 120px;
     opacity: 0.7;
   }
+
+  /* Tamil Cultural Symbols */
+  .kolam-pattern {
+    background-image: 
+      radial-gradient(circle at 0% 0%, rgba(210,105,30,0.1) 2px, transparent 2px),
+      radial-gradient(circle at 50% 50%, rgba(255,215,0,0.08) 1px, transparent 1px),
+      radial-gradient(circle at 100% 100%, rgba(210,105,30,0.06) 1.5px, transparent 1.5px);
+    background-size: 30px 30px, 15px 15px, 45px 45px;
+  }
+
+  .temple-motif {
+    background-image: 
+      linear-gradient(45deg, transparent 30%, rgba(210,105,30,0.05) 32%, rgba(210,105,30,0.05) 35%, transparent 37%),
+      linear-gradient(-45deg, transparent 30%, rgba(255,215,0,0.04) 32%, rgba(255,215,0,0.04) 35%, transparent 37%),
+      radial-gradient(circle at 25% 25%, rgba(210,105,30,0.03) 1px, transparent 1px);
+    background-size: 40px 40px, 40px 40px, 20px 20px;
+  }
+
+  .lotus-pattern {
+    background-image: 
+      radial-gradient(ellipse at center, rgba(255,215,0,0.06) 3px, transparent 3px),
+      radial-gradient(ellipse at 50% 20%, rgba(210,105,30,0.04) 2px, transparent 2px),
+      radial-gradient(ellipse at 50% 80%, rgba(210,105,30,0.04) 2px, transparent 2px);
+    background-size: 60px 40px, 30px 20px, 30px 20px;
+  }
+
+  .paisley-motif {
+    background-image: 
+      radial-gradient(ellipse 8px 12px at 30% 70%, rgba(210,105,30,0.05) 50%, transparent 50%),
+      radial-gradient(ellipse 6px 10px at 70% 30%, rgba(255,215,0,0.04) 50%, transparent 50%);
+    background-size: 50px 50px, 35px 35px;
+  }
+
+  .tamil-script-bg {
+    background-image: 
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D2691E' stroke-width='0.5' opacity='0.1'%3E%3Cpath d='M15 15c5 0 10 5 10 10s-5 10-10 10' /%3E%3Cpath d='M45 15c-5 0-10 5-10 10s5 10 10 10' /%3E%3Ccircle cx='30' cy='30' r='3' /%3E%3C/g%3E%3C/svg%3E");
+    background-size: 60px 60px;
+  }
+
+  .rangoli-dots {
+    background-image: 
+      radial-gradient(circle at 20% 20%, rgba(210,105,30,0.08) 1px, transparent 1px),
+      radial-gradient(circle at 40% 60%, rgba(255,215,0,0.06) 1px, transparent 1px),
+      radial-gradient(circle at 60% 40%, rgba(210,105,30,0.04) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(255,215,0,0.05) 1px, transparent 1px);
+    background-size: 25px 25px, 35px 35px, 45px 45px, 55px 55px;
+  }
 }
 
 @layer utilities {

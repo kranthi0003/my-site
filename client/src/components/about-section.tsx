@@ -32,11 +32,17 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden tamil-bg-about">
-      {/* Background Elements */}
+    <section id="about" className="py-24 relative overflow-hidden tamil-bg-about kolam-pattern">
+      {/* Background Elements with Tamil Cultural Symbols */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"></div>
+        
+        {/* Tamil Cultural Decorative Elements */}
+        <div className="absolute top-32 left-20 w-16 h-16 temple-motif opacity-20 rounded-full"></div>
+        <div className="absolute bottom-32 right-24 w-20 h-20 kolam-pattern opacity-15 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-12 h-12 lotus-pattern opacity-25 rounded-full"></div>
+        <div className="absolute top-3/4 right-1/3 w-14 h-14 paisley-motif opacity-20 rounded-full"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">

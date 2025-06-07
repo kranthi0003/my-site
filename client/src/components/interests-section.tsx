@@ -11,7 +11,7 @@ export default function InterestsSection() {
   };
 
   return (
-    <section className="py-20 tamil-bg-interests">
+    <section className="py-20 tamil-bg-interests paisley-motif">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">Interests & Hobbies</h2>

@@ -4,7 +4,7 @@ import { PROFILE_DATA } from "@/lib/constants";
 export default function Footer() {
   return (
     <footer className="bg-primary text-white py-8 relative">
-      <div className="absolute inset-0 tamil-pattern"></div>
+      <div className="absolute inset-0 tamil-pattern lotus-pattern"></div>
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="space-y-3">
           <p className="text-lg" style={{ fontFamily: 'Noto Sans Tamil, sans-serif' }}>

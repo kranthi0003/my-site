@@ -5,7 +5,7 @@ import { PROFILE_DATA } from "@/lib/constants";
 
 export default function BackgroundSection() {
   return (
-    <section id="background" className="pt-24 pb-20 tamil-bg-background">
+    <section id="background" className="pt-24 pb-20 tamil-bg-background temple-motif">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">

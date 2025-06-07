@@ -44,7 +44,7 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 tamil-script-bg ${
         isScrolled 
           ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-orange-200/40' 
           : 'bg-gradient-to-r from-orange-50/10 via-white/15 to-orange-50/10 backdrop-blur-lg'
