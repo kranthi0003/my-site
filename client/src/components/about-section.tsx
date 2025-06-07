@@ -157,11 +157,16 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               
               {/* Basics & Lifestyle */}
-              <Card className="w-full bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-primary mb-6 flex items-center">
-                    <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
-                      <div className="w-4 h-4 bg-primary/20 rounded-full"></div>
+              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-primary/3 backdrop-blur-sm border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+                {/* Card number badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                  <span className="text-sm font-bold text-white">1</span>
+                </div>
+                
+                <CardContent className="p-8 relative">
+                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-primary/80 rounded-lg"></div>
                     </div>
                     Basics & Lifestyle
                   </h3>
@@ -207,11 +212,16 @@ export default function AboutSection() {
               </Card>
 
               {/* Personal & Family */}
-              <Card className="w-full bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg">
-                <CardContent className="p-8">
-                  <h3 className="text-xl font-semibold text-secondary mb-6 flex items-center">
-                    <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
-                      <div className="w-4 h-4 bg-secondary/20 rounded-full"></div>
+              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-secondary/3 backdrop-blur-sm border border-secondary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+                {/* Card number badge */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                  <span className="text-sm font-bold text-white">2</span>
+                </div>
+                
+                <CardContent className="p-8 relative">
+                  <h3 className="text-xl font-bold text-secondary mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-5 h-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-lg"></div>
                     </div>
                     Personal & Family
                   </h3>
