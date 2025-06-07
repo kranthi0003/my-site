@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { User, Heart, Award, Briefcase, Star } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 
@@ -30,34 +31,37 @@ export default function AboutSection() {
           </p>
         </div>
         
-        {/* Personal Story Timeline */}
+        {/* Personal Story Carousel */}
         <div className="animate-slide-up mb-16">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {PROFILE_DATA.personalStory.map((story, index) => {
-              const IconComponent = iconMap[story.title as keyof typeof iconMap];
-              
-              return (
-                <Card key={index} className={`group h-full bg-white/90 backdrop-blur-sm shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 hover:scale-105 ${
-                  index % 3 === 0 ? 'animate-slide-in-left' : 
-                  index % 3 === 1 ? 'animate-scale-in' : 'animate-slide-in-right'
-                }`} style={{ animationDelay: `${index * 0.2}s` }}>
-                  <CardContent className="p-8 h-full flex flex-col">
-                    <div className="flex items-center mb-6">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                        <IconComponent className="text-primary" size={20} />
-                      </div>
-                      <h3 className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
-                        {story.title}
-                      </h3>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed flex-grow text-sm">
-                      {story.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              );
-            })}
-          </div>
+          <Carousel className="w-full max-w-4xl mx-auto" opts={{ align: "start", loop: true }}>
+            <CarouselContent>
+              {PROFILE_DATA.personalStory.map((story, index) => {
+                const IconComponent = iconMap[story.title as keyof typeof iconMap];
+                
+                return (
+                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                    <Card className="group h-full bg-white/90 backdrop-blur-sm shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 hover:scale-105 mx-2">
+                      <CardContent className="p-8 h-full flex flex-col">
+                        <div className="flex items-center mb-6">
+                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                            <IconComponent className="text-primary" size={20} />
+                          </div>
+                          <h3 className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
+                            {story.title}
+                          </h3>
+                        </div>
+                        <p className="text-muted-foreground leading-relaxed flex-grow text-sm">
+                          {story.description}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
         </div>
         
         {/* Personal Details Grid */}
