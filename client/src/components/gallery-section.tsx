@@ -84,15 +84,7 @@ export default function GallerySection({}: GallerySectionProps) {
           ))}
         </div>
 
-        {/* Call to action */}
-        <div className="text-center mt-16">
-          <div className="inline-block bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10">
-            <h3 className="text-2xl font-semibold text-primary mb-4">Creating Memories Together</h3>
-            <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              These moments capture the essence of my journey so far. I look forward to creating many more beautiful memories with the right person by my side.
-            </p>
-          </div>
-        </div>
+
 
         {/* Enhanced Mobile-Friendly Lightbox */}
         {selectedImage && (

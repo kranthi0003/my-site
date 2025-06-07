@@ -5,7 +5,7 @@ import AboutSection from "@/components/about-section";
 import BackgroundSection from "@/components/background-section";
 import InterestsSection from "@/components/interests-section";
 import GallerySection from "@/components/gallery-section";
-import FamilySection from "@/components/family-section";
+
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import Lightbox from "@/components/lightbox";
@@ -20,7 +20,7 @@ export default function Home() {
         <BackgroundSection />
         <InterestsSection />
         <GallerySection />
-        <FamilySection />
+
         <ContactSection />
       </main>
       <Footer />

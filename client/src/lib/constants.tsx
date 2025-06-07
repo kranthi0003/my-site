@@ -146,26 +146,7 @@ export const PROFILE_DATA = {
     }
   ],
 
-  // Family Background
-  familyBackground: [
-    {
-      title: "Family Values",
-      description: "Our family believes in respect, unity, and supporting one another through all of life's journey. We maintain strong bonds and celebrate both traditions and progress.",
-      icon: "Home"
-    },
-    {
-      title: "Family Structure",
-      description: "I am blessed with loving parents who are both retired educators, and one younger sister who is currently pursuing her medical degree. We are a close-knit family.",
-      icon: "Users"
-    },
-    {
-      title: "Traditions",
-      description: "We celebrate cultural traditions while embracing modern values. Family gatherings, festivals, and milestone celebrations are important parts of our lives.",
-      icon: "Heart"
-    }
-  ],
 
-  familyImage: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
 
   // Contact Information - Replace with actual contact details
   contact: {
