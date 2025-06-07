@@ -249,20 +249,20 @@ export default function AboutSection() {
               </Card>
 
               {/* Education & Career */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-primary/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-yellow-600/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
                 {/* Enhanced border wrapper */}
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-primary/20 to-primary/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/15 via-transparent to-primary/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-yellow-600/40 via-yellow-600/20 to-yellow-600/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[2px] bg-gradient-to-br from-yellow-600/15 via-transparent to-yellow-600/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
                 
                 {/* Card number badge */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
                   <span className="text-sm font-bold text-white">3</span>
                 </div>
                 
                 <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-primary/80 rounded-lg"></div>
+                  <h3 className="text-xl font-bold text-yellow-700 mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-yellow-600/20 to-yellow-600/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-5 h-5 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-lg"></div>
                     </div>
                     Education & Career
                   </h3>
