@@ -139,25 +139,30 @@ export default function AboutSection() {
           {/* Simple Frame Container with overflow visible for tags */}
           <div className="relative max-w-4xl mx-auto p-3 bg-white rounded-2xl shadow-lg border border-primary/20">
             <div className="grid grid-cols-2 gap-6 relative">
-              {PROFILE_DATA.memoryYears.map((memory, index) => (
-                <div
-                  key={memory.year}
-                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                >
-                  {/* Photo */}
-                  <div className="aspect-[4/5] overflow-hidden">
-                    <img
-                      src={memory.photo}
-                      alt={`${memory.year} memory`}
-                      className="w-full h-full object-cover object-[center_top] transition-all duration-500 group-hover:scale-105"
-                    />
-                  </div>
+              {PROFILE_DATA.memoryYears.map((memory, index) => {
+                // Special positioning for 2024 photo
+                const objectPosition = memory.year === "2024" ? "object-center" : "object-[center_top]";
+                
+                return (
+                  <div
+                    key={memory.year}
+                    className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {/* Photo */}
+                    <div className="aspect-[4/5] overflow-hidden">
+                      <img
+                        src={memory.photo}
+                        alt={`${memory.year} memory`}
+                        className={`w-full h-full object-cover ${objectPosition} transition-all duration-500 group-hover:scale-105`}
+                      />
+                    </div>
 
-                  {/* Simple hover overlay */}
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
-                </div>
-              ))}
+                    {/* Simple hover overlay */}
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                  </div>
+                );
+              })}
               
               {/* Year Tags positioned at grid corners - outside photos */}
               <div className="absolute -top-3 -left-3 z-40">
