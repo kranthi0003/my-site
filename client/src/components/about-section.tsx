@@ -136,33 +136,59 @@ export default function AboutSection() {
 
         {/* Memory Years Grid */}
         <div className="animate-fade-in mb-16">
-          <div className="grid grid-cols-2 gap-4 max-w-3xl mx-auto">
-            {PROFILE_DATA.memoryYears.map((memory, index) => (
-              <div
-                key={memory.year}
-                className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Year Badge */}
-                <div className="absolute top-3 left-3 z-20">
-                  <div className="bg-primary text-white px-3 py-1.5 rounded-md font-bold text-sm shadow-md">
-                    {memory.year}
+          {/* Frame Container */}
+          <div className="relative max-w-4xl mx-auto p-6 bg-gradient-to-br from-white to-orange-50/30 rounded-3xl shadow-2xl border-4 border-gradient-to-r from-primary/20 via-secondary/10 to-primary/20">
+            {/* Decorative corner elements */}
+            <div className="absolute top-2 left-2 w-6 h-6 border-l-4 border-t-4 border-primary/40 rounded-tl-lg"></div>
+            <div className="absolute top-2 right-2 w-6 h-6 border-r-4 border-t-4 border-primary/40 rounded-tr-lg"></div>
+            <div className="absolute bottom-2 left-2 w-6 h-6 border-l-4 border-b-4 border-primary/40 rounded-bl-lg"></div>
+            <div className="absolute bottom-2 right-2 w-6 h-6 border-r-4 border-b-4 border-primary/40 rounded-br-lg"></div>
+            
+            <div className="grid grid-cols-2 gap-4">
+              {PROFILE_DATA.memoryYears.map((memory, index) => {
+                // Define tag position for each year
+                const tagPosition = {
+                  "2022": "top-2 left-2",
+                  "2023": "top-2 right-2", 
+                  "2024": "bottom-2 left-2",
+                  "2025": "bottom-2 right-2"
+                };
+
+                return (
+                  <div
+                    key={memory.year}
+                    className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
+                    style={{ animationDelay: `${index * 0.1}s` }}
+                  >
+                    {/* Year Badge - Repositioned and Smaller */}
+                    <div className={`absolute ${tagPosition[memory.year as keyof typeof tagPosition]} z-20`}>
+                      <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-md">
+                        {memory.year}
+                      </div>
+                    </div>
+
+                    {/* Photo */}
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={memory.photo}
+                        alt={`${memory.year} memory`}
+                        className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                      />
+                    </div>
+
+                    {/* Simple hover overlay */}
+                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
                   </div>
-                </div>
+                );
+              })}
+            </div>
 
-                {/* Photo */}
-                <div className="aspect-square overflow-hidden">
-                  <img
-                    src={memory.photo}
-                    alt={`${memory.year} memory`}
-                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-                  />
-                </div>
-
-                {/* Simple hover overlay */}
-                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+            {/* Frame Title */}
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <div className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                Journey Through Years
               </div>
-            ))}
+            </div>
           </div>
         </div>
         
