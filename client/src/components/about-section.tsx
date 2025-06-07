@@ -81,15 +81,13 @@ export default function AboutSection() {
                           {/* Header with Enhanced Icon and Title */}
                           <div className="flex items-start mb-4">
                             <div className="relative mr-4 flex-shrink-0">
-                              {/* Glowing icon container */}
-                              <div className="w-14 h-14 bg-gradient-to-br from-primary/25 via-secondary/20 to-accent/25 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl border border-white/20">
-                                <IconComponent className="text-primary group-hover:text-white transition-colors duration-300" size={24} />
+                              {/* Simple icon container */}
+                              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center transition-colors duration-300 border border-primary/20">
+                                <IconComponent className="text-primary" size={20} />
                               </div>
-                              {/* Enhanced glow effect */}
-                              <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-secondary/15 to-accent/20 rounded-2xl blur-md opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
                               
-                              {/* Chapter number badge */}
-                              <div className="absolute -top-2 -right-2 w-7 h-7 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300">
+                              {/* Simple number badge */}
+                              <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center border-2 border-white">
                                 <span className="text-xs font-bold text-white">{index + 1}</span>
                               </div>
                             </div>
