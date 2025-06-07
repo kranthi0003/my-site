@@ -40,9 +40,6 @@ export default function AboutSection() {
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-6">
-            <div className="w-8 h-8 bg-primary/20 rounded-full"></div>
-          </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">About Me</h2>
         </div>
         
