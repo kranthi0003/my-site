@@ -141,7 +141,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-2 gap-6 relative">
               {PROFILE_DATA.memoryYears.map((memory, index) => {
                 // Special positioning for 2024 photo
-                const objectPosition = memory.year === "2024" ? "object-center" : "object-[center_top]";
+                const objectPosition = memory.year === "2024" ? "object-[center_75%]" : "object-[center_top]";
                 
                 return (
                   <div
