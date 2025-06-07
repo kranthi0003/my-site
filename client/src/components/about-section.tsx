@@ -439,7 +439,7 @@ export default function AboutSection() {
                         <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
                       </svg>
                     </div>
-                    Assets
+                    Income from Assets
                   </h3>
                   
                   {/* Financial Summary */}
@@ -529,11 +529,11 @@ export default function AboutSection() {
                         </div>
                       </div>
 
-                      {/* Fixed Deposits */}
+                      {/* FD/PF */}
                       <div className="bg-gradient-to-br from-emerald-50/40 to-green-50/30 border border-emerald-100/50 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-semibold text-emerald-900">Fixed Deposits</h5>
+                            <h5 className="font-semibold text-emerald-900">FD/PF</h5>
                           </div>
                           <div className="text-right">
                             <p className="font-bold text-emerald-900">₹15 Lakhs</p>
@@ -541,14 +541,14 @@ export default function AboutSection() {
                         </div>
                       </div>
 
-                      {/* Provident Fund */}
+                      {/* Insurance */}
                       <div className="bg-gradient-to-br from-indigo-50/40 to-blue-50/30 border border-indigo-100/50 rounded-lg p-3">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-semibold text-indigo-900">Provident Fund</h5>
+                            <h5 className="font-semibold text-indigo-900">Insurance</h5>
                           </div>
                           <div className="text-right">
-                            <p className="font-bold text-indigo-900">₹8 Lakhs</p>
+                            <p className="font-bold text-indigo-900">₹1 CR</p>
                           </div>
                         </div>
                       </div>
