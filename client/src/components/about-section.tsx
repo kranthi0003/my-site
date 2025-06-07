@@ -114,8 +114,8 @@ export default function AboutSection() {
                 );
               })}
             </CarouselContent>
-            {current > 1 && <CarouselPrevious className="-left-6 w-12 h-12 bg-white/95 border-2 border-primary/30 shadow-xl hover:bg-primary/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 z-10" />}
-            {current < count && <CarouselNext className="-right-6 w-12 h-12 bg-white/95 border-2 border-primary/30 shadow-xl hover:bg-primary/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 z-10" />}
+            {current > 1 && <CarouselPrevious className="-left-4 w-8 h-8 bg-white/95 border-2 border-primary/30 shadow-lg hover:bg-primary/10 hover:border-primary/50 hover:scale-105 transition-all duration-300 z-10" />}
+            {current < count && <CarouselNext className="-right-4 w-8 h-8 bg-white/95 border-2 border-primary/30 shadow-lg hover:bg-primary/10 hover:border-primary/50 hover:scale-105 transition-all duration-300 z-10" />}
           </Carousel>
           
           {/* Fixed Navigation Dots */}
@@ -439,7 +439,7 @@ export default function AboutSection() {
                         <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
                       </svg>
                     </div>
-                    Income from Assets
+                    Income/Assets
                   </h3>
                   
                   {/* Financial Summary */}
