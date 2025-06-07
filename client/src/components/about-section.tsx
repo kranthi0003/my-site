@@ -136,8 +136,8 @@ export default function AboutSection() {
         
         {/* Personal Details Grid */}
         <div className="animate-fade-in">
-          <div className="container mx-auto px-2 sm:px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               
               {/* Basics & Lifestyle */}
               <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-primary/3 backdrop-blur-sm border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
@@ -147,48 +147,48 @@ export default function AboutSection() {
                 </div>
                 
                 <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-primary/80 rounded-lg"></div>
+                  <h3 className="text-2xl font-bold text-primary mb-8 flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary/25 to-primary/15 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300 shadow-lg border border-primary/10">
+                      <div className="w-6 h-6 bg-gradient-to-br from-primary to-primary/80 rounded-xl"></div>
                     </div>
                     Basics & Lifestyle
                   </h3>
-                  <div className="space-y-5 text-base">
-                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Age</span>
-                        <p className="font-semibold text-gray-900">25</p>
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Age</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">25</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Date of Birth</span>
-                        <p className="font-semibold text-gray-900">03-Sep-1999</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Date of Birth</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">03-Sep-1999</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Height</span>
-                        <p className="font-semibold text-gray-900">5' 10" (177cm)</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Height</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">5' 10" (177cm)</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Weight</span>
-                        <p className="font-semibold text-gray-900">75kg</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Weight</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">75kg</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Work</span>
-                        <p className="font-semibold text-gray-900">Software Engineer</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Work</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Software Engineer</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Diet</span>
-                        <p className="font-semibold text-gray-900">Non-vegetarian</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Diet</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Non-vegetarian</p>
                       </div>
                     </div>
                     
-                    <div className="pt-2 border-t border-gray-100">
-                      <span className="text-muted-foreground text-sm font-medium">Languages</span>
-                      <p className="font-semibold text-gray-900 mt-1">Telugu, Hindi, English<br/><span className="text-primary">(learning Tamil)</span></p>
+                    <div className="bg-gradient-to-r from-primary/5 to-secondary/5 p-5 rounded-xl border border-primary/10">
+                      <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Languages</span>
+                      <p className="font-bold text-gray-900 text-lg mt-2">Telugu, Hindi, English<br/><span className="text-primary font-medium">(learning Tamil)</span></p>
                     </div>
                     
-                    <div>
-                      <span className="text-muted-foreground text-sm font-medium">Smoking/Drinking</span>
-                      <p className="font-semibold text-gray-900">No</p>
+                    <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                      <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Smoking/Drinking</span>
+                      <p className="font-bold text-gray-900 text-lg mt-1">No</p>
                     </div>
                   </div>
                 </CardContent>
@@ -202,37 +202,37 @@ export default function AboutSection() {
                 </div>
                 
                 <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-secondary mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-lg"></div>
+                  <h3 className="text-2xl font-bold text-secondary mb-8 flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-br from-secondary/25 to-secondary/15 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-105 transition-transform duration-300 shadow-lg border border-secondary/10">
+                      <div className="w-6 h-6 bg-gradient-to-br from-secondary to-secondary/80 rounded-xl"></div>
                     </div>
                     Personal & Family
                   </h3>
-                  <div className="space-y-5 text-base">
-                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Caste</span>
-                        <p className="font-semibold text-gray-900">Patnaik (OC)</p>
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-secondary/20 transition-colors duration-300">
+                        <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Caste</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Patnaik (OC)</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Native</span>
-                        <p className="font-semibold text-gray-900">Visakhapatnam</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-secondary/20 transition-colors duration-300">
+                        <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Native</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Visakhapatnam</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Siblings</span>
-                        <p className="font-semibold text-gray-900">0</p>
+                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-secondary/20 transition-colors duration-300 sm:col-span-2">
+                        <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Siblings</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Only Child</p>
                       </div>
                     </div>
                     
-                    <div className="pt-2 border-t border-gray-100">
-                      <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                    <div className="bg-gradient-to-r from-secondary/5 to-accent/5 p-5 rounded-xl border border-secondary/10">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <span className="text-muted-foreground text-sm font-medium">Father's Occupation</span>
-                          <p className="font-semibold text-gray-900">Passed away</p>
+                          <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Father's Occupation</span>
+                          <p className="font-bold text-gray-900 text-lg mt-1">Passed away</p>
                         </div>
                         <div>
-                          <span className="text-muted-foreground text-sm font-medium">Mother's Occupation</span>
-                          <p className="font-semibold text-gray-900">Homemaker</p>
+                          <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Mother's Occupation</span>
+                          <p className="font-bold text-gray-900 text-lg mt-1">Homemaker</p>
                         </div>
                       </div>
                     </div>
