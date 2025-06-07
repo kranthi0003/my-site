@@ -63,21 +63,20 @@ export default function Navigation() {
               }`}></div>
             </div>
             
-            <div className="hidden md:flex space-x-3">
+            <div className="hidden md:flex space-x-1">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`transition-all duration-400 font-bold relative group px-4 py-2 rounded-2xl backdrop-blur-md hover:scale-105 transform ${
+                  className={`transition-all duration-300 font-medium relative group px-5 py-2.5 hover:scale-[1.02] transform ${
                     isScrolled 
-                      ? 'text-slate-800 hover:text-white bg-gradient-to-r from-orange-50/80 to-white/60 border border-orange-200/40 hover:from-orange-500 hover:to-red-500 hover:border-orange-400 shadow-lg hover:shadow-xl' 
-                      : 'text-white/95 hover:text-white bg-gradient-to-r from-white/20 to-white/10 border border-white/30 hover:from-white/30 hover:to-white/20 hover:border-white/60 shadow-lg hover:shadow-xl'
+                      ? 'text-slate-700 hover:text-orange-600 bg-transparent hover:bg-orange-50/70' 
+                      : 'text-white/90 hover:text-white bg-transparent hover:bg-white/10'
                   }`}
                 >
-                  <span className="relative z-10">{item.label}</span>
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-                  <span className={`absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0.5 rounded-full group-hover:w-8 transition-all duration-400 ${
-                    isScrolled ? 'bg-gradient-to-r from-orange-500 to-red-500' : 'bg-gradient-to-r from-white to-orange-200'
+                  <span className="relative z-10 tracking-wide">{item.label}</span>
+                  <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-full transition-all duration-300 ${
+                    isScrolled ? 'bg-orange-500' : 'bg-white'
                   }`}></span>
                 </button>
               ))}
