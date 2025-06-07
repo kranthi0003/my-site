@@ -10,7 +10,7 @@ export const PROFILE_DATA = {
   profileImage: profilePhoto,
   
   // About section
-  aboutDescription: "With enriching experience at Amazon and Couchbase, I believe true success comes from humility, responsibility, and respect for our roots. Raised with strong family values, I balance modern aspirations with traditional warmth. My goal is to build a home filled with mutual respect, care, and understanding.",
+  aboutDescription: "Through my journey at Amazon and Couchbase, I've learned that true success stems from humility, hard work, and honoring our heritage. Rooted in strong family values from Visakhapatnam, I embrace both modern opportunities and traditional wisdom. I aspire to create a loving home built on mutual respect, understanding, and shared dreams.",
   aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
   personalValues: [
