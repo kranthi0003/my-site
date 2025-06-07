@@ -81,7 +81,7 @@ export default function HeroSection() {
 
             {/* Tagline under photo */}
             <div className="text-center relative -mt-4">
-              <p className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent whitespace-nowrap relative z-10">
+              <p className="text-lg md:text-xl lg:text-2xl font-bold bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent whitespace-nowrap relative z-10 px-4">
                 Traveller by heart, Techie by skill
               </p>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-300/10 to-transparent blur-lg"></div>
