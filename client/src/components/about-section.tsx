@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
-import { User, Heart, Award, Briefcase, Star } from "lucide-react";
+import { Home, Zap, GraduationCap, Rocket, Lightbulb } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 
 export default function AboutSection() {
@@ -23,11 +23,11 @@ export default function AboutSection() {
   }, [api]);
 
   const iconMap = {
-    "Early Life & Foundation": User,
-    "Resilience & Growth": Heart,
-    "Academic Excellence": Award,
-    "Professional Journey": Briefcase,
-    "Life Philosophy": Star
+    "Early Life & Foundation": Home,
+    "Resilience & Growth": Zap,
+    "Academic Excellence": GraduationCap,
+    "Professional Journey": Rocket,
+    "Life Philosophy": Lightbulb
   };
 
   return (
@@ -95,25 +95,9 @@ export default function AboutSection() {
                             </div>
                             
                             <div className="flex-1 min-w-0">
-                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2 mb-2">
+                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2">
                                 {story.title}
                               </h3>
-                              {/* Progress indicator */}
-                              <div className="flex items-center space-x-1 mb-1">
-                                {Array.from({ length: 5 }, (_, i) => (
-                                  <div 
-                                    key={i}
-                                    className={`h-1 rounded-full transition-all duration-500 ${
-                                      i <= index 
-                                        ? 'bg-gradient-to-r from-primary to-secondary w-3 group-hover:w-4' 
-                                        : 'bg-gray-200 w-2'
-                                    }`}
-                                  ></div>
-                                ))}
-                              </div>
-                              <p className="text-xs text-muted-foreground font-medium">
-                                Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
-                              </p>
                             </div>
                           </div>
 
