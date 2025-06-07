@@ -23,7 +23,7 @@ export default function AboutSection() {
   }, [api]);
 
   const iconMap = {
-    "Early Life & Foundation": Home,
+    "Foundation": Home,
     "Resilience & Growth": Zap,
     "Academic Excellence": GraduationCap,
     "Professional Journey": Rocket,

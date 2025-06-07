@@ -15,7 +15,7 @@ export const PROFILE_DATA = {
   
   personalStory: [
     {
-      title: "Early Life & Foundation",
+      title: "Foundation",
       description: "I was born and brought up in Visakhapatnam (Vizag), a city that gave me both roots and inspiration. I studied at St. Aloysius High School (ICSE), where I was lucky to have great teachers who encouraged curiosity, consistency, and quiet ambition."
     },
     {
