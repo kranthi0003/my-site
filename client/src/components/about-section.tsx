@@ -297,49 +297,61 @@ export default function AboutSection() {
 
                   </div>
 
-                  {/* Property Details Table */}
-                  <div className="overflow-x-auto">
-                    <h4 className="font-semibold text-gray-700 mb-4">Property Portfolio</h4>
-                    <table className="w-full border-collapse border border-gray-200 text-sm">
-                      <thead>
-                        <tr className="bg-gray-50">
-                          <th className="border border-gray-200 px-3 py-2 text-left">Type</th>
-                          <th className="border border-gray-200 px-3 py-2 text-left">Location</th>
-                          <th className="border border-gray-200 px-3 py-2 text-left">Size/Area</th>
-                          <th className="border border-gray-200 px-3 py-2 text-left">Current Value</th>
-                          <th className="border border-gray-200 px-3 py-2 text-left">Source</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">Plot</td>
-                          <td className="border border-gray-200 px-3 py-2">Tagarapuvalasa, Vizag</td>
-                          <td className="border border-gray-200 px-3 py-2">200 Sqyds</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹40 Lakhs</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Self</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">Plot</td>
-                          <td className="border border-gray-200 px-3 py-2">Simhachalam, Vizag</td>
-                          <td className="border border-gray-200 px-3 py-2">250 Sqyds</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹50 Lakhs</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Inherited</span>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">Flat</td>
-                          <td className="border border-gray-200 px-3 py-2">PMPalem, Vizag</td>
-                          <td className="border border-gray-200 px-3 py-2">1100 sqft</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹45 Lakhs</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Self</span>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  {/* Property Details Cards */}
+                  <div>
+                    <h4 className="font-semibold text-gray-700 mb-6">Property Portfolio</h4>
+                    <div className="space-y-4">
+                      {/* Property 1 */}
+                      <div className="bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 rounded-lg p-5">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm font-medium">Plot</span>
+                              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Self</span>
+                            </div>
+                            <h5 className="font-semibold text-gray-900 text-lg">Tagarapuvalasa, Vizag</h5>
+                            <p className="text-gray-600">200 Square Yards</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-green-600">₹40 Lakhs</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Property 2 */}
+                      <div className="bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-200 rounded-lg p-5">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">Plot</span>
+                              <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">Inherited</span>
+                            </div>
+                            <h5 className="font-semibold text-gray-900 text-lg">Simhachalam, Vizag</h5>
+                            <p className="text-gray-600">250 Square Yards</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-blue-600">₹50 Lakhs</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Property 3 */}
+                      <div className="bg-gradient-to-r from-purple-50 to-violet-50 border border-purple-200 rounded-lg p-5">
+                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                          <div className="flex-1">
+                            <div className="flex items-center gap-3 mb-2">
+                              <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium">2BHK Flat</span>
+                              <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">Self</span>
+                            </div>
+                            <h5 className="font-semibold text-gray-900 text-lg">PMPalem, Vizag</h5>
+                            <p className="text-gray-600">1,100 Square Feet</p>
+                          </div>
+                          <div className="text-right">
+                            <p className="text-2xl font-bold text-purple-600">₹45 Lakhs</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Investment Summary */}
