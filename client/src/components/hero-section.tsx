@@ -20,7 +20,7 @@ export default function HeroSection() {
       
       {/* Separate Namaskaram greeting positioned higher */}
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center pt-24 animate-fade-in">
+        <div className="text-center pt-32 animate-fade-in">
           <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, Noto Sans Telugu, sans-serif', letterSpacing: '1px' }}>
             வணக்கம் (నమస్కారం) 🙏
           </div>
