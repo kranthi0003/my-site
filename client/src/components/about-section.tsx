@@ -208,18 +208,18 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               
               {/* Basics & Lifestyle */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-orange-50/25 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-orange-100/40">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white to-slate-50/40 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-slate-200/60">
                 {/* Subtle border wrapper */}
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-orange-200/25 via-orange-100/15 to-orange-200/25 rounded-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-slate-200/30 via-slate-100/20 to-slate-200/30 rounded-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
                 
                 {/* Card number badge - light but visible */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-orange-300/70 to-orange-400/70 rounded-full flex items-center justify-center shadow-sm border border-white/90 group-hover:scale-110 transition-transform duration-300 z-10">
-                  <span className="text-sm font-semibold text-orange-700">1</span>
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-slate-300/80 to-slate-400/80 rounded-full flex items-center justify-center shadow-sm border border-white/90 group-hover:scale-110 transition-transform duration-300 z-10">
+                  <span className="text-sm font-semibold text-slate-700">1</span>
                 </div>
                 
                 <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-orange-800/80 mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-orange-100/90 to-orange-50/70 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-orange-200/50">
+                  <h3 className="text-xl font-bold text-slate-800/90 mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-slate-100/90 to-slate-50/70 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-slate-200/50">
                       <svg className="w-5 h-5 text-orange-600/80" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V21C3 22.11 3.89 23 5 23H19C20.11 23 21 22.11 21 21V9H21ZM19 21H5V3H13V9H19V21Z"/>
                       </svg>
@@ -423,18 +423,18 @@ export default function AboutSection() {
               </Card>
 
               {/* Property & Assets Details */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-amber-50/25 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-amber-100/40 col-span-full">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white to-slate-50/40 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-slate-200/60 col-span-full">
                 {/* Subtle border wrapper */}
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-amber-200/25 via-amber-100/15 to-amber-200/25 rounded-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-slate-200/30 via-slate-100/20 to-slate-200/30 rounded-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
                 
                 {/* Card number badge - light but visible */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-amber-300/70 to-amber-400/70 rounded-full flex items-center justify-center shadow-sm border border-white/90 group-hover:scale-110 transition-transform duration-300 z-10">
-                  <span className="text-sm font-semibold text-amber-700">5</span>
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-slate-300/80 to-slate-400/80 rounded-full flex items-center justify-center shadow-sm border border-white/90 group-hover:scale-110 transition-transform duration-300 z-10">
+                  <span className="text-sm font-semibold text-slate-700">5</span>
                 </div>
                 
                 <CardContent className="p-6 relative">
-                  <h3 className="text-xl font-bold text-amber-800/80 mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-amber-100/90 to-amber-50/70 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-amber-200/50">
+                  <h3 className="text-xl font-bold text-slate-800/90 mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-slate-100/90 to-slate-50/70 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-slate-200/50">
                       <svg className="w-5 h-5 text-amber-600/80" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
                       </svg>
