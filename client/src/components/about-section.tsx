@@ -287,7 +287,7 @@ export default function AboutSection() {
                     <div className="bg-green-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-green-700 mb-2">Salary</h4>
                       <p className="text-2xl font-bold text-green-600">₹30+ LPA</p>
-                      <p className="text-sm text-green-600">₹2+ L/month</p>
+                      <p className="text-sm text-green-600">₹2L/month</p>
                     </div>
                     <div className="bg-purple-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-purple-700 mb-2">Property Count</h4>
