@@ -8,6 +8,7 @@ export default function AboutSection() {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const [activeTab, setActiveTab] = useState('basics');
 
   useEffect(() => {
     if (!api) {
@@ -134,12 +135,10 @@ export default function AboutSection() {
           </div>
         </div>
         
-        {/* Personal Details Grid */}
+        {/* Personal Details Grid with Enhanced Styling */}
         <div className="animate-fade-in">
           <div className="container mx-auto px-2 sm:px-4">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-              
-              {/* Basics & Lifestyle */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               <Card className="group relative w-full bg-gradient-to-br from-white via-orange-50/30 to-white backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] rounded-2xl overflow-hidden">
                 {/* Gradient border effect */}
                 <div className="absolute inset-0 bg-gradient-to-r from-orange-200/40 via-orange-300/30 to-orange-200/40 rounded-2xl p-[1px] group-hover:p-[2px] transition-all duration-500">
