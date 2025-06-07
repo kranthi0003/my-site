@@ -79,6 +79,13 @@ export default function HeroSection() {
               </div>
             </div>
 
+            {/* Tagline under photo */}
+            <div className="text-center">
+              <p className="text-xl md:text-2xl font-medium text-white/90 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block">
+                Dreamer by choice, Software Engineer by profession
+              </p>
+            </div>
+
             {/* Buttons - Now below the photo */}
             <div className="space-y-8">
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
