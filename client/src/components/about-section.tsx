@@ -263,6 +263,10 @@ export default function AboutSection() {
                         <span className="text-muted-foreground text-sm font-medium">Rasi</span>
                         <p className="font-semibold text-gray-900">Mithuna (Gemini)</p>
                       </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Time of Birth</span>
+                        <p className="font-semibold text-gray-900">10:20 PM, Saturday</p>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
