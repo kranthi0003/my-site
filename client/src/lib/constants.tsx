@@ -101,28 +101,20 @@ export const PROFILE_DATA = {
   // Photo Gallery - Replace with actual personal photos
   galleryImages: [
     {
-      url: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Professional workspace with modern tech setup"
+      url: "@assets/IMG_5243_1749135607534.JPG",
+      alt: "Personal lifestyle photo"
     },
     {
-      url: "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Hiking trail with mountain views showcasing outdoor lifestyle"
+      url: "@assets/Snapchat-1059745354.jpg",
+      alt: "Candid moment"
     },
     {
-      url: "https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Family celebration dinner with warm atmosphere"
+      url: "@assets/Snapchat-1445693840.jpg",
+      alt: "Travel memory"
     },
     {
-      url: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "European architecture and travel exploration"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=MnwxMijA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Playing acoustic guitar in cozy indoor setting"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400",
-      alt: "Community volunteer work and social service activities"
+      url: "@assets/Snapchat-240699289.jpg",
+      alt: "Life experience"
     }
   ],
 
