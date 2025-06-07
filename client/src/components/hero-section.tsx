@@ -70,24 +70,46 @@ export default function HeroSection() {
                 
                 {/* Orbiting Celestial Elements */}
                 <div className="absolute inset-0">
-                  {/* Sun orbiting outside photo border - slower */}
+                  {/* Sun orbiting outside photo border - slower with enhanced effects */}
                   <div className="absolute inset-1 animate-spin" style={{ animationDuration: '25s' }}>
-                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 rounded-full shadow-lg">
-                      <div className="absolute inset-0 rounded-full bg-yellow-300/20 scale-125 animate-pulse"></div>
+                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-gradient-to-br from-yellow-300 via-yellow-400 to-orange-400 rounded-full shadow-lg shadow-yellow-400/50">
+                      <div className="absolute inset-0 rounded-full bg-yellow-300/30 scale-125 animate-pulse"></div>
+                      <div className="absolute inset-0 rounded-full bg-yellow-400/20 scale-150 animate-ping opacity-75"></div>
+                      <div className="absolute inset-0.5 rounded-full bg-yellow-200 animate-spin" style={{ animationDuration: '3s' }}></div>
+                      {/* Sun rays */}
+                      <div className="absolute -inset-2">
+                        <div className="absolute top-0 left-1/2 w-0.5 h-2 bg-yellow-300 rounded-full transform -translate-x-1/2 opacity-70"></div>
+                        <div className="absolute bottom-0 left-1/2 w-0.5 h-2 bg-yellow-300 rounded-full transform -translate-x-1/2 opacity-70"></div>
+                        <div className="absolute left-0 top-1/2 w-2 h-0.5 bg-yellow-300 rounded-full transform -translate-y-1/2 opacity-70"></div>
+                        <div className="absolute right-0 top-1/2 w-2 h-0.5 bg-yellow-300 rounded-full transform -translate-y-1/2 opacity-70"></div>
+                      </div>
                     </div>
                   </div>
                   
-                  {/* Moon orbiting outside photo border - faster, reverse direction */}
+                  {/* Moon orbiting outside photo border - faster, reverse direction with phases */}
                   <div className="absolute inset-1 animate-spin" style={{ animationDuration: '15s', animationDirection: 'reverse' }}>
-                    <div className="absolute top-1/2 -right-3 transform -translate-y-1/2 w-3 h-3 bg-gradient-to-br from-gray-100 to-gray-300 rounded-full shadow-md">
+                    <div className="absolute top-1/2 -right-3 transform -translate-y-1/2 w-3 h-3 bg-gradient-to-br from-gray-100 to-gray-300 rounded-full shadow-md shadow-gray-400/30">
+                      <div className="absolute inset-0 rounded-full bg-gray-100/40 scale-125 animate-pulse" style={{ animationDuration: '4s' }}></div>
                       <div className="absolute top-0.5 left-0.5 w-0.5 h-0.5 bg-gray-200 rounded-full opacity-60"></div>
+                      {/* Moon craters */}
+                      <div className="absolute top-1 left-1 w-0.5 h-0.5 bg-gray-400 rounded-full opacity-40"></div>
+                      <div className="absolute bottom-1 right-0.5 w-0.25 h-0.25 bg-gray-400 rounded-full opacity-30"></div>
+                      {/* Moon glow */}
+                      <div className="absolute inset-0 rounded-full bg-white/10 scale-150 blur-sm"></div>
                     </div>
                   </div>
                   
-                  {/* Twinkling Stars */}
-                  <div className="absolute top-16 left-12 w-1 h-1 bg-white rounded-full animate-pulse opacity-60"></div>
-                  <div className="absolute bottom-16 right-12 w-1 h-1 bg-white rounded-full animate-pulse opacity-40" style={{ animationDelay: '1s' }}></div>
-                  <div className="absolute top-24 right-20 w-0.5 h-0.5 bg-white rounded-full animate-pulse opacity-50" style={{ animationDelay: '2s' }}></div>
+                  {/* Enhanced Twinkling Stars */}
+                  <div className="absolute top-16 left-12 w-1 h-1 bg-white rounded-full animate-pulse opacity-60 shadow-white/50"></div>
+                  <div className="absolute bottom-16 right-12 w-1 h-1 bg-white rounded-full animate-pulse opacity-40 shadow-white/30" style={{ animationDelay: '1s' }}></div>
+                  <div className="absolute top-24 right-20 w-0.5 h-0.5 bg-white rounded-full animate-pulse opacity-50 shadow-white/40" style={{ animationDelay: '2s' }}></div>
+                  <div className="absolute top-12 right-8 w-0.5 h-0.5 bg-yellow-200 rounded-full animate-pulse opacity-70" style={{ animationDelay: '3s' }}></div>
+                  <div className="absolute bottom-20 left-16 w-0.75 h-0.75 bg-blue-200 rounded-full animate-pulse opacity-50" style={{ animationDelay: '4s' }}></div>
+                  
+                  {/* Shooting star */}
+                  <div className="absolute top-8 left-8 w-20 h-0.5 bg-gradient-to-r from-white to-transparent opacity-0 animate-pulse" style={{ animationDelay: '10s', animationDuration: '6s' }}>
+                    <div className="absolute left-0 top-0 w-1 h-1 bg-white rounded-full shadow-white/50"></div>
+                  </div>
                 </div>
               </div>
             </div>
