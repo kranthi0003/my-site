@@ -265,7 +265,7 @@ export default function AboutSection() {
                       </div>
                       <div>
                         <span className="text-muted-foreground text-sm font-medium">Time of Birth</span>
-                        <p className="font-semibold text-gray-900">10:20 PM, Saturday</p>
+                        <p className="font-semibold text-gray-900">10:20 PM</p>
                       </div>
                     </div>
                   </div>
