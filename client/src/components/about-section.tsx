@@ -101,7 +101,7 @@ export default function AboutSection() {
 
                           {/* Story Content - scrollable if needed */}
                           <div className="flex-1 mb-3 overflow-y-auto">
-                            <p className="text-muted-foreground leading-relaxed text-xs group-hover:text-foreground/90 transition-all duration-500 transform group-hover:translate-y-[-2px]">
+                            <p className="text-gray-700 leading-relaxed text-sm group-hover:text-gray-900 transition-all duration-500">
                               {story.description}
                             </p>
                           </div>
