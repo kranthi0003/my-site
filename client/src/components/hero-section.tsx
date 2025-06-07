@@ -81,9 +81,12 @@ export default function HeroSection() {
 
             {/* Tagline and Buttons - Now below the photo */}
             <div className="space-y-8">
-              <p className="text-lg md:text-xl opacity-90 leading-relaxed max-w-4xl mx-auto bg-black/20 backdrop-blur-sm p-6 rounded-2xl">
-                {PROFILE_DATA.tagline}
-              </p>
+              <div className="relative">
+                <p className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed max-w-4xl mx-auto bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent p-6 rounded-2xl shadow-2xl border border-white/30 backdrop-blur-md bg-white/10">
+                  {PROFILE_DATA.tagline}
+                </p>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 via-yellow-300/20 to-orange-400/20 rounded-2xl blur-xl -z-10"></div>
+              </div>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
