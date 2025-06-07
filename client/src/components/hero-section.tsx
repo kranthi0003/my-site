@@ -18,14 +18,20 @@ export default function HeroSection() {
         <div className="absolute bottom-20 left-10 w-10 h-10 tamil-ornament rounded-full"></div>
       </div>
       
+      {/* Separate Namaskaram greeting positioned higher */}
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center pt-24 animate-fade-in">
+          <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, Noto Sans Telugu, sans-serif', letterSpacing: '1px' }}>
+            வணக்கம் (నమస్కారం) 🙏
+          </div>
+        </div>
+      </div>
+
       <div className="container mx-auto px-6 relative z-10 min-h-screen flex items-center">
-        <div className="w-full pt-40 pb-16">
+        <div className="w-full pt-20 pb-16">
           <div className="text-center space-y-12 animate-fade-in">
-            {/* Tamil Greeting and Name */}
+            {/* Name section */}
             <div className="space-y-4">
-              <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, Noto Sans Telugu, sans-serif', letterSpacing: '1px' }}>
-                வணக்கம் (నమస్కారం) 🙏
-              </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="block mb-2 text-white/90">Hello, I'm</span>
                 <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
