@@ -140,55 +140,73 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               
               {/* Basics & Lifestyle */}
-              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-primary/3 backdrop-blur-sm border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-orange-50/30 to-white backdrop-blur-sm border-0 shadow-2xl hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] rounded-2xl overflow-hidden">
+                {/* Gradient border effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-200/40 via-orange-300/30 to-orange-200/40 rounded-2xl p-[1px] group-hover:p-[2px] transition-all duration-500">
+                  <div className="h-full w-full bg-white rounded-2xl"></div>
+                </div>
+                
+                {/* Modern accent bar */}
+                <div className="absolute left-0 top-0 h-full w-1.5 bg-gradient-to-b from-orange-400 to-orange-600 rounded-r-full"></div>
+                
                 {/* Card number badge */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                <div className="absolute top-6 right-6 w-10 h-10 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-xl border-2 border-white/80 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 z-10">
                   <span className="text-sm font-bold text-white">1</span>
                 </div>
                 
-                <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-primary/80 rounded-lg"></div>
+                <CardContent className="p-8 relative z-10">
+                  <div className="flex items-center mb-8">
+                    <div className="w-12 h-12 bg-gradient-to-br from-orange-100 to-orange-200 rounded-2xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-500 shadow-lg">
+                      <div className="w-6 h-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl"></div>
                     </div>
-                    Basics & Lifestyle
-                  </h3>
-                  <div className="space-y-5 text-base">
-                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Age</span>
-                        <p className="font-semibold text-gray-900">25</p>
+                    <h3 className="text-xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
+                      Basics & Lifestyle
+                    </h3>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <div className="grid grid-cols-2 gap-6">
+                      <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Age</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">25</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Date of Birth</span>
-                        <p className="font-semibold text-gray-900">03-Sep-1999</p>
+                      <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Date of Birth</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">03-Sep-1999</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Height</span>
-                        <p className="font-semibold text-gray-900">5' 10" (177cm)</p>
+                      <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Height</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">5' 10" (177cm)</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Weight</span>
-                        <p className="font-semibold text-gray-900">75kg</p>
+                      <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Weight</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">75kg</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Work</span>
-                        <p className="font-semibold text-gray-900">Software Engineer</p>
+                      <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Work</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Software Engineer</p>
                       </div>
-                      <div>
-                        <span className="text-muted-foreground text-sm font-medium">Diet</span>
-                        <p className="font-semibold text-gray-900">Non-vegetarian</p>
+                      <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Diet</span>
+                        <p className="font-bold text-gray-900 text-lg mt-1">Non-vegetarian</p>
+                      </div>
+                    </div>
+                    
+                    <div className="pt-4 border-t border-gradient-to-r from-transparent via-orange-200/50 to-transparent">
+                      <div className="group/item hover:bg-orange-50/50 p-4 rounded-xl transition-colors duration-300">
+                        <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Languages</span>
+                        <div className="mt-2 flex flex-wrap gap-2">
+                          <span className="px-3 py-1 bg-gradient-to-r from-orange-100 to-orange-200 text-orange-800 text-sm font-semibold rounded-full">Telugu</span>
+                          <span className="px-3 py-1 bg-gradient-to-r from-orange-100 to-orange-200 text-orange-800 text-sm font-semibold rounded-full">Hindi</span>
+                          <span className="px-3 py-1 bg-gradient-to-r from-orange-100 to-orange-200 text-orange-800 text-sm font-semibold rounded-full">English</span>
+                          <span className="px-3 py-1 bg-gradient-to-r from-orange-300 to-orange-400 text-white text-sm font-semibold rounded-full">Tamil (learning)</span>
+                        </div>
                       </div>
                     </div>
                     
-                    <div className="pt-2 border-t border-gray-100">
-                      <span className="text-muted-foreground text-sm font-medium">Languages</span>
-                      <p className="font-semibold text-gray-900 mt-1">Telugu, Hindi, English<br/><span className="text-primary">(learning Tamil)</span></p>
-                    </div>
-                    
-                    <div>
-                      <span className="text-muted-foreground text-sm font-medium">Smoking/Drinking</span>
-                      <p className="font-semibold text-gray-900">No</p>
+                    <div className="group/item hover:bg-orange-50/50 p-3 rounded-xl transition-colors duration-300">
+                      <span className="text-orange-600 text-sm font-semibold uppercase tracking-wide">Smoking/Drinking</span>
+                      <p className="font-bold text-gray-900 text-lg mt-1">No</p>
                     </div>
                   </div>
                 </CardContent>
