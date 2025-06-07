@@ -36,7 +36,7 @@ export default function GallerySection({}: GallerySectionProps) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 gap-8 max-w-4xl mx-auto">
           {PROFILE_DATA.galleryImages.map((image, index) => (
             <div
               key={index}
