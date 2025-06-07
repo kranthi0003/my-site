@@ -106,21 +106,7 @@ export default function AboutSection() {
                             </p>
                           </div>
                           
-                          {/* Clean Footer */}
-                          <div className="mt-auto pt-4 border-t border-gray-100">
-                            <div className="flex justify-center space-x-2">
-                              {PROFILE_DATA.personalStory.map((_, i) => (
-                                <div 
-                                  key={i} 
-                                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                    i === index 
-                                      ? 'bg-gradient-to-r from-primary to-secondary scale-125 shadow-md' 
-                                      : 'bg-gray-300 hover:bg-gray-400'
-                                  }`}
-                                ></div>
-                              ))}
-                            </div>
-                          </div>
+
                         </CardContent>
                       </Card>
                     </div>
@@ -131,6 +117,21 @@ export default function AboutSection() {
             {current > 1 && <CarouselPrevious className="-left-6 w-12 h-12 bg-white/95 border-2 border-primary/30 shadow-xl hover:bg-primary/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 z-10" />}
             {current < count && <CarouselNext className="-right-6 w-12 h-12 bg-white/95 border-2 border-primary/30 shadow-xl hover:bg-primary/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 z-10" />}
           </Carousel>
+          
+          {/* Fixed Navigation Dots */}
+          <div className="flex justify-center space-x-2 mt-6">
+            {PROFILE_DATA.personalStory.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => api?.scrollTo(i)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  i === current - 1
+                    ? 'bg-gradient-to-r from-primary to-secondary scale-125 shadow-md' 
+                    : 'bg-gray-300 hover:bg-gray-400'
+                }`}
+              ></button>
+            ))}
+          </div>
         </div>
         
         {/* Personal Details Grid */}
