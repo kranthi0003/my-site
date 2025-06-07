@@ -49,7 +49,7 @@ export default function HeroSection() {
             <div className="flex justify-center animate-slide-up">
               <div className="relative">
                 {/* Elegant Frame Container */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 p-4">
+                <div className="relative w-64 h-64 lg:w-80 lg:h-80 p-4">
                   {/* Elegant Multi-Layer Frame */}
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-200/20 via-orange-300/15 to-amber-400/20 p-2">
                     <div className="w-full h-full rounded-full bg-gradient-to-br from-white/70 via-white/50 to-white/30 p-1">
