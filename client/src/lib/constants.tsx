@@ -19,11 +19,11 @@ export const PROFILE_DATA = {
       description: "I was born and brought up in Visakhapatnam (Vizag), a city that gave me both roots and inspiration. I studied at St. Aloysius High School (ICSE), where I was lucky to have great teachers who encouraged curiosity, consistency, and quiet ambition."
     },
     {
-      title: "Resilience & Growth", 
+      title: "Resilience", 
       description: "In 2015, my family went through a difficult time with the passing of my father. It was a period of adjustment and reflection. My mother, with incredible patience and quiet strength, made sure I had the space and support to continue my education without compromise. I've always drawn inspiration from her resilience."
     },
     {
-      title: "Academic Excellence",
+      title: "Growth",
       description: "With focus and gratitude, I completed my 12th grade with 98%, and later pursued Computer Science Engineering at GVPCOE (JNTUK) in Vizag. Those years were filled with learning — not just technical knowledge, but teamwork, self-discipline, and the small wins that come from persistence."
     },
     {

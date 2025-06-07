@@ -24,8 +24,8 @@ export default function AboutSection() {
 
   const iconMap = {
     "Foundation": Home,
-    "Resilience & Growth": Zap,
-    "Academic Excellence": GraduationCap,
+    "Resilience": Zap,
+    "Growth": GraduationCap,
     "Professional Journey": Rocket,
     "Life Philosophy": Lightbulb
   };
