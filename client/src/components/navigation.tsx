@@ -96,7 +96,7 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden fixed top-full left-0 right-0 bottom-0 bg-gradient-to-b from-orange-200/95 to-orange-300/95 backdrop-blur-xl shadow-2xl border-t border-orange-200/40 z-40 overflow-y-auto">
+          <div className="md:hidden fixed top-24 left-0 right-0 bottom-0 bg-gradient-to-b from-orange-200/95 to-orange-300/95 backdrop-blur-xl shadow-2xl border-t border-orange-200/40 z-40 overflow-y-auto">
             <div className="container mx-auto px-6 py-8">
               {/* Profile section in mobile menu */}
               <div className="flex flex-col items-center mb-12">
