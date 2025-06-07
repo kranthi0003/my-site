@@ -285,9 +285,9 @@ export default function AboutSection() {
                   {/* Financial Summary */}
                   <div className="grid md:grid-cols-4 gap-6 mb-8">
                     <div className="bg-green-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-green-700 mb-2">Annual Income</h4>
-                      <p className="text-2xl font-bold text-green-600">₹45+ LPA</p>
-                      <p className="text-sm text-green-600">₹3.75+ L/month</p>
+                      <h4 className="font-semibold text-green-700 mb-2">Salary</h4>
+                      <p className="text-2xl font-bold text-green-600">₹30+ LPA</p>
+                      <p className="text-sm text-green-600">₹2.5+ L/month</p>
                     </div>
                     <div className="bg-blue-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-blue-700 mb-2">Total Assets</h4>
