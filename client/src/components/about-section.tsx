@@ -249,20 +249,20 @@ export default function AboutSection() {
               </Card>
 
               {/* Education & Career */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-accent/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-primary/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
                 {/* Enhanced border wrapper */}
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-accent/40 via-accent/20 to-accent/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute -inset-[2px] bg-gradient-to-br from-accent/15 via-transparent to-accent/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-primary/20 to-primary/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/15 via-transparent to-primary/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
                 
                 {/* Card number badge */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
                   <span className="text-sm font-bold text-white">3</span>
                 </div>
                 
                 <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-accent mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-accent/20 to-accent/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-accent to-accent/80 rounded-lg"></div>
+                  <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-primary/80 rounded-lg"></div>
                     </div>
                     Education & Career
                   </h3>
@@ -310,20 +310,20 @@ export default function AboutSection() {
               </Card>
 
               {/* Astrology Details */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-purple-500/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-orange-500/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
                 {/* Enhanced border wrapper */}
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-purple-500/40 via-purple-500/20 to-purple-500/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute -inset-[2px] bg-gradient-to-br from-purple-500/15 via-transparent to-purple-500/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-orange-500/40 via-orange-500/20 to-orange-500/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[2px] bg-gradient-to-br from-orange-500/15 via-transparent to-orange-500/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
                 
                 {/* Card number badge */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
                   <span className="text-sm font-bold text-white">4</span>
                 </div>
                 
                 <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-purple-600 mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-purple-500/20 to-purple-500/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg"></div>
+                  <h3 className="text-xl font-bold text-orange-600 mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-orange-500/20 to-orange-500/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-5 h-5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg"></div>
                     </div>
                     Astrology Details
                   </h3>
@@ -351,20 +351,20 @@ export default function AboutSection() {
               </Card>
 
               {/* Property & Assets Details */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-green-500/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent col-span-full">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-amber-500/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent col-span-full">
                 {/* Enhanced border wrapper */}
-                <div className="absolute -inset-[1px] bg-gradient-to-r from-green-500/40 via-green-500/20 to-green-500/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
-                <div className="absolute -inset-[2px] bg-gradient-to-br from-green-500/15 via-transparent to-green-500/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-amber-500/40 via-amber-500/20 to-amber-500/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[2px] bg-gradient-to-br from-amber-500/15 via-transparent to-amber-500/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
                 
                 {/* Card number badge */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
+                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
                   <span className="text-sm font-bold text-white">5</span>
                 </div>
                 
                 <CardContent className="p-6 relative">
-                  <h3 className="text-xl font-bold text-green-600 mb-6 flex items-center">
-                    <div className="w-10 h-10 bg-gradient-to-br from-green-500/20 to-green-500/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-green-500 to-green-600 rounded-lg"></div>
+                  <h3 className="text-xl font-bold text-amber-600 mb-6 flex items-center">
+                    <div className="w-10 h-10 bg-gradient-to-br from-amber-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
+                      <div className="w-5 h-5 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg"></div>
                     </div>
                     Assets & Income
                   </h3>
