@@ -63,20 +63,25 @@ export default function AboutSection() {
                 return (
                   <CarouselItem key={index} className="basis-full">
                     <div className="relative group mx-2">
-                      {/* Animated gradient border wrapper */}
-                      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-700 animate-glow-pulse"></div>
+                      {/* Smart gradient border system */}
+                      <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-secondary/30 to-accent/40 rounded-xl opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
+                      <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 rounded-xl blur-[1px] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       
-                      <Card className="relative h-96 bg-white/95 backdrop-blur-md shadow-2xl border-2 border-transparent bg-gradient-to-br from-white via-white/95 to-primary/5 hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] overflow-hidden rounded-xl">
-                        {/* Calm background elements */}
-                        <div className="absolute inset-0 opacity-10">
-                          <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-br from-primary/30 to-transparent rounded-full"></div>
-                          <div className="absolute bottom-6 left-6 w-4 h-4 bg-gradient-to-br from-secondary/30 to-transparent rounded-full"></div>
-                          <div className="absolute top-1/3 right-12 w-2 h-2 bg-gradient-to-br from-accent/40 to-transparent rounded-full"></div>
-                          <div className="absolute bottom-1/3 left-12 w-3 h-3 bg-gradient-to-br from-primary/20 to-transparent rounded-full"></div>
+                      <Card className="relative h-96 bg-gradient-to-br from-white via-white/98 to-primary/3 backdrop-blur-sm shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden rounded-xl ring-1 ring-primary/10 hover:ring-primary/20">
+                        {/* Smart inner border highlight */}
+                        <div className="absolute inset-[1px] rounded-xl bg-gradient-to-br from-white/80 via-transparent to-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
+                        
+                        {/* Sophisticated background pattern */}
+                        <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500">
+                          <div className="absolute top-6 right-6 w-8 h-8 border border-primary/20 rounded-full"></div>
+                          <div className="absolute bottom-8 left-8 w-6 h-6 border border-secondary/20 rounded-full"></div>
+                          <div className="absolute top-1/3 right-16 w-3 h-3 bg-gradient-to-br from-accent/30 to-transparent rounded-full"></div>
+                          <div className="absolute bottom-1/3 left-16 w-4 h-4 bg-gradient-to-br from-primary/25 to-transparent rounded-full"></div>
+                          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-primary/10 rounded-full"></div>
                         </div>
                         
-                        {/* Shimmer effect overlay */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
+                        {/* Premium shimmer effect */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
                         
                         <CardContent className="relative p-5 h-full flex flex-col z-10">
                           {/* Header with Icon and Title */}
