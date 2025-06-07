@@ -80,10 +80,11 @@ export default function HeroSection() {
             </div>
 
             {/* Tagline under photo */}
-            <div className="text-center">
-              <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent px-8 py-4 rounded-2xl backdrop-blur-md bg-white/15 border border-white/20 shadow-xl whitespace-nowrap">
+            <div className="text-center relative">
+              <p className="text-xl md:text-2xl lg:text-3xl font-bold bg-gradient-to-r from-white via-yellow-200 to-white bg-clip-text text-transparent whitespace-nowrap relative z-10">
                 Traveller by soul, Techie by skill
               </p>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-yellow-300/10 to-transparent blur-lg"></div>
             </div>
 
             {/* Buttons - Now below the photo */}
