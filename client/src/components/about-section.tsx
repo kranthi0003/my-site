@@ -94,11 +94,11 @@ export default function AboutSection() {
         
         {/* Personal Details Grid */}
         <div className="animate-fade-in">
-          <div className="container mx-auto px-6">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="container mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
               
               {/* Basics & Lifestyle */}
-              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
+              <Card className="w-full max-w-sm bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-primary mb-6 flex items-center">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
@@ -148,7 +148,7 @@ export default function AboutSection() {
               </Card>
 
               {/* Personal & Family */}
-              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg">
+              <Card className="w-full max-w-sm bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-secondary mb-6 flex items-center">
                     <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
@@ -202,7 +202,7 @@ export default function AboutSection() {
               </Card>
 
               {/* Education & Career */}
-              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
+              <Card className="w-full max-w-sm bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-accent mb-6 flex items-center">
                     <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3">
@@ -248,7 +248,7 @@ export default function AboutSection() {
               </Card>
 
               {/* Property & Assets Details */}
-              <Card className="bg-white/80 backdrop-blur-sm border-l-4 border-l-green-500 shadow-lg col-span-full">
+              <Card className="w-full bg-white/80 backdrop-blur-sm border-l-4 border-l-green-500 shadow-lg col-span-full">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-green-600 mb-6 flex items-center">
                     <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
