@@ -102,7 +102,7 @@ export default function HeroSection() {
                   className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-12 py-6 rounded-2xl font-bold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl text-lg border-0 overflow-hidden group"
                   size="lg"
                 >
-                  <span className="relative z-10">Learn More About Me</span>
+                  <span className="relative z-10">Peek Into My World 👀</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Button>
                 <Button
@@ -111,7 +111,7 @@ export default function HeroSection() {
                   className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-12 py-6 rounded-2xl font-bold hover:bg-white/20 hover:border-white hover:shadow-2xl transition-all duration-500 text-lg group overflow-hidden"
                   size="lg"
                 >
-                  <span className="relative z-10">Get In Touch</span>
+                  <span className="relative z-10">Say Hello! 👋</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </Button>
               </div>
