@@ -20,7 +20,7 @@ export const PROFILE_DATA = {
     },
     {
       title: "Resilience", 
-      description: "In 2015, my family went through a difficult time with the passing of my father. It was a period of adjustment and reflection. My mother, with incredible patience and quiet strength, made sure I had the space and support to continue my education without compromise. I've always drawn inspiration from her resilience."
+      description: "In 2015, we faced a difficult chapter with the loss of my father. It was a time of change, filled with quiet challenges. Through it all, my mother stood strong — balancing responsibilities while making sure my education stayed on track. Her steady support and silent strength continue to inspire me, and they've shaped much of who I am today."
     },
     {
       title: "Growth",
