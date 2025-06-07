@@ -490,7 +490,6 @@ export default function AboutSection() {
         {/* Call to Action */}
         <div className="text-center animate-fade-in mt-16">
           <div className="inline-block bg-gradient-to-r from-primary/5 to-secondary/5 rounded-2xl p-8 border border-primary/10">
-            <h3 className="text-2xl font-bold text-primary mb-4">Building Meaningful Connections</h3>
             <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Every step of my journey has shaped who I am today. I believe in authentic relationships built on understanding, respect, and shared values. Let's connect and see where our paths might align.
             </p>
