@@ -40,7 +40,11 @@ export default function GallerySection({}: GallerySectionProps) {
           {PROFILE_DATA.galleryImages.map((image, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-2xl shadow-xl cursor-pointer card-hover group bg-white"
+              className={`relative overflow-hidden rounded-2xl shadow-xl cursor-pointer card-hover group bg-white ${
+                index % 3 === 0 ? 'animate-slide-in-left' : 
+                index % 3 === 1 ? 'animate-scale-in' : 'animate-slide-in-right'
+              }`}
+              style={{ animationDelay: `${index * 0.1}s` }}
               onClick={() => openLightbox(image.url)}
             >
               <div className="aspect-[4/3] overflow-hidden">
