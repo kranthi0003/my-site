@@ -20,9 +20,9 @@ export default function HeroSection() {
       
       <div className="container mx-auto px-6 relative z-10 min-h-screen flex items-center">
         <div className="w-full pt-40 pb-16">
-          <div className="text-center space-y-12 animate-fade-in">
+          <div className="text-center space-y-8 animate-fade-in">
             {/* Tamil Greeting and Name */}
-            <div className="space-y-4">
+            <div className="space-y-3">
               <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, Noto Sans Telugu, sans-serif', letterSpacing: '1px' }}>
                 வணக்கம் (నమస్కారం) 🙏
               </div>
