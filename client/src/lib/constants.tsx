@@ -4,7 +4,7 @@ import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran",
-  tagline: "Through my journey at Amazon and Couchbase, I've learned that true success stems from humility, hard work, and honoring our heritage. Rooted in strong family values from Visakhapatnam, I embrace both modern opportunities and traditional wisdom. I aspire to create a loving home built on mutual respect, understanding, and shared dreams.",
+  tagline: "Where Revolution Meets Light",
   
   // Hero section image - Your professional headshot
   profileImage: profilePhoto,
