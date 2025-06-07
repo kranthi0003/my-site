@@ -133,6 +133,53 @@ export default function AboutSection() {
             ))}
           </div>
         </div>
+
+        {/* Memory Years Grid */}
+        <div className="animate-fade-in mb-16">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl font-bold text-primary mb-4">Journey Through Years</h3>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Each year has brought new experiences, growth, and memories worth cherishing
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {PROFILE_DATA.memoryYears.map((memory, index) => (
+              <div
+                key={memory.year}
+                className="group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] bg-white border-2 border-transparent hover:border-primary/20"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {/* Year Badge */}
+                <div className="absolute top-4 left-4 z-20">
+                  <div className="bg-gradient-to-r from-primary to-secondary text-white px-4 py-2 rounded-full font-bold text-lg shadow-lg">
+                    {memory.year}
+                  </div>
+                </div>
+
+                {/* Photo */}
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={memory.photo}
+                    alt={`${memory.year} - ${memory.title}`}
+                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
+                  />
+                </div>
+
+                {/* Overlay Content */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h4 className="text-xl font-bold mb-2">{memory.title}</h4>
+                    <p className="text-white/90">{memory.description}</p>
+                  </div>
+                </div>
+
+                {/* Subtle border glow */}
+                <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 opacity-0 group-hover:opacity-30 transition-opacity duration-500"></div>
+              </div>
+            ))}
+          </div>
+        </div>
         
         {/* Personal Details Grid */}
         <div className="animate-fade-in">
