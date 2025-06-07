@@ -4,7 +4,7 @@ import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran",
-  tagline: "Software Engineer with 4+ years of experience at Couchbase, Amazon, and Groww, passionate about distributed systems and cloud technologies, committed to building meaningful connections.",
+  tagline: "Experienced Software Engineer building scalable solutions at Couchbase. Previously worked at Amazon and Groww. Passionate about technology, family values, and creating meaningful connections.",
   
   // Hero section image - Your professional headshot
   profileImage: profilePhoto,
