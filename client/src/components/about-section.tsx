@@ -1,9 +1,27 @@
+import { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, CarouselApi } from "@/components/ui/carousel";
 import { User, Heart, Award, Briefcase, Star } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 
 export default function AboutSection() {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap() + 1);
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1);
+    });
+  }, [api]);
+
   const iconMap = {
     "Early Life & Foundation": User,
     "Resilience & Growth": Heart,
@@ -33,7 +51,11 @@ export default function AboutSection() {
         
         {/* Personal Story Carousel */}
         <div className="animate-slide-up mb-16">
-          <Carousel className="w-full max-w-4xl mx-auto" opts={{ align: "start", loop: false }}>
+          <Carousel 
+            setApi={setApi}
+            className="w-full max-w-4xl mx-auto" 
+            opts={{ align: "start", loop: false }}
+          >
             <CarouselContent>
               {PROFILE_DATA.personalStory.map((story, index) => {
                 const IconComponent = iconMap[story.title as keyof typeof iconMap];
@@ -67,8 +89,8 @@ export default function AboutSection() {
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
-            <CarouselNext className="right-4" />
+            {current > 1 && <CarouselPrevious className="left-4" />}
+            {current < count && <CarouselNext className="right-4" />}
           </Carousel>
         </div>
         
