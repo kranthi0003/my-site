@@ -44,38 +44,40 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-white/90 backdrop-blur-md shadow-lg border-b border-orange-200/30' 
-          : 'bg-white/10 backdrop-blur-sm'
+          ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-orange-200/40' 
+          : 'bg-gradient-to-r from-orange-50/10 via-white/15 to-orange-50/10 backdrop-blur-lg'
       }`}>
         <div className="container mx-auto px-6 py-6">
           <div className="flex justify-between items-center">
-            <div className={`w-14 h-14 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-300 relative overflow-hidden ${
+            <div className={`w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-500 relative overflow-hidden group hover:scale-105 ${
               isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
             } ${
-              isScrolled ? 'bg-gradient-to-br from-orange-500 to-red-500 text-white shadow-xl' : 'bg-gradient-to-br from-white/30 to-white/10 text-white border-2 border-white/40 shadow-lg backdrop-blur-sm'
+              isScrolled ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 text-white shadow-2xl hover:shadow-orange-500/30' : 'bg-gradient-to-br from-white/40 to-white/20 text-white border-2 border-white/50 shadow-xl backdrop-blur-md hover:border-white/70'
             }`}>
-              <div className="relative z-10 font-extrabold tracking-tight">KK</div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10 font-black text-xl tracking-tight">KK</div>
               <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
-                isScrolled ? 'bg-gradient-to-br from-orange-400/20 to-red-400/20' : 'bg-gradient-to-br from-white/10 to-transparent'
+                isScrolled ? 'bg-gradient-to-br from-orange-300/30 to-red-300/30' : 'bg-gradient-to-br from-white/15 to-transparent'
               }`}></div>
             </div>
             
-            <div className="hidden md:flex space-x-6">
+            <div className="hidden md:flex space-x-3">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`transition-all duration-300 font-semibold relative group px-4 py-2 rounded-full ${
+                  className={`transition-all duration-400 font-bold relative group px-5 py-3 rounded-2xl backdrop-blur-md hover:scale-105 transform ${
                     isScrolled 
-                      ? 'text-slate-700 hover:text-orange-600 hover:bg-orange-100/20' 
-                      : 'text-white/90 hover:text-white hover:bg-white/10'
+                      ? 'text-slate-800 hover:text-white bg-gradient-to-r from-orange-50/80 to-white/60 border border-orange-200/40 hover:from-orange-500 hover:to-red-500 hover:border-orange-400 shadow-lg hover:shadow-xl' 
+                      : 'text-white/95 hover:text-white bg-gradient-to-r from-white/20 to-white/10 border border-white/30 hover:from-white/30 hover:to-white/20 hover:border-white/60 shadow-lg hover:shadow-xl'
                   }`}
                 >
-                  {item.label}
-                  <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-6 transition-all duration-300 ${
-                    isScrolled ? 'bg-orange-600' : 'bg-white'
+                  <span className="relative z-10">{item.label}</span>
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-transparent via-white/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
+                  <span className={`absolute -bottom-0.5 left-1/2 transform -translate-x-1/2 w-0 h-0.5 rounded-full group-hover:w-8 transition-all duration-400 ${
+                    isScrolled ? 'bg-gradient-to-r from-orange-500 to-red-500' : 'bg-gradient-to-r from-white to-orange-200'
                   }`}></span>
                 </button>
               ))}
@@ -84,10 +86,10 @@ export default function Navigation() {
             <Button
               variant="ghost"
               size="icon"
-              className={`md:hidden transition-colors duration-300 ${
+              className={`md:hidden transition-all duration-400 rounded-2xl backdrop-blur-md hover:scale-110 transform border ${
                 isScrolled 
-                  ? 'text-slate-700 hover:bg-slate-100/20' 
-                  : 'text-white hover:bg-white/10'
+                  ? 'text-slate-800 bg-gradient-to-r from-orange-50/80 to-white/60 border-orange-200/40 hover:from-orange-500 hover:to-red-500 hover:text-white hover:border-orange-400 shadow-lg hover:shadow-xl' 
+                  : 'text-white bg-gradient-to-r from-white/20 to-white/10 border-white/30 hover:from-white/30 hover:to-white/20 hover:border-white/60 shadow-lg hover:shadow-xl'
               }`}
               onClick={() => setIsOpen(!isOpen)}
             >
@@ -98,72 +100,50 @@ export default function Navigation() {
       </nav>
 
       {isOpen && (
-        <div className="md:hidden fixed inset-0 z-50 bg-gradient-to-b from-orange-200/95 to-orange-300/95 backdrop-blur-xl">
+        <div className="md:hidden fixed inset-0 z-50 bg-gradient-to-br from-orange-100/96 via-orange-200/96 to-orange-300/96 backdrop-blur-2xl">
           <div className="h-full overflow-y-auto">
             <div className="flex justify-end p-6">
               <Button
                 variant="ghost"
                 size="icon"
                 onClick={() => setIsOpen(false)}
-                className="text-slate-700 hover:bg-white/20 rounded-xl w-10 h-10 transition-all duration-300"
+                className="text-slate-800 bg-gradient-to-r from-white/60 to-orange-50/80 hover:from-red-500 hover:to-orange-500 hover:text-white border border-orange-200/50 hover:border-red-400 rounded-2xl w-12 h-12 transition-all duration-400 hover:scale-110 shadow-lg hover:shadow-xl backdrop-blur-md"
               >
                 <X className="h-6 w-6" />
               </Button>
             </div>
             
             <div className="px-6 pb-8">
-              <div className="flex flex-col items-center mb-8">
-                <div className="relative group mb-4">
-                  {/* Stamp/Badge Container */}
-                  <div className="relative px-6 py-3 bg-gradient-to-r from-orange-500 to-red-500 shadow-2xl transform rotate-12 group-hover:rotate-6 transition-transform duration-300" style={{
-                    clipPath: 'polygon(0% 0%, 85% 0%, 100% 50%, 85% 100%, 0% 100%)'
-                  }}>
-                    {/* Stamp perforations */}
-                    <div className="absolute -top-1 left-0 right-0 h-2" style={{
-                      background: 'radial-gradient(circle at 10px 50%, transparent 4px, #ea580c 4px)',
-                      backgroundSize: '20px 100%'
-                    }}></div>
-                    <div className="absolute -bottom-1 left-0 right-0 h-2" style={{
-                      background: 'radial-gradient(circle at 10px 50%, transparent 4px, #ea580c 4px)',
-                      backgroundSize: '20px 100%'
-                    }}></div>
-                    
-                    {/* Border stamp effect */}
-                    <div className="absolute inset-1 border-2 border-dashed border-orange-200/60"></div>
-                    
-                    {/* Letters */}
-                    <div className="relative z-10 flex items-center justify-center px-3 py-2">
-                      <span className="font-black text-3xl leading-none text-white" style={{ 
-                        fontFamily: 'system-ui, -apple-system, sans-serif',
-                        textShadow: '0 2px 4px rgba(0,0,0,0.3)',
-                        letterSpacing: '2px'
-                      }}>
-                        KK
-                      </span>
-                    </div>
-                    
-                    {/* Shine effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
-                  </div>
-                  
-                  {/* Shadow */}
-                  <div className="absolute inset-0 bg-black/20 blur-sm transform translate-x-1 translate-y-1 -rotate-12 group-hover:-rotate-6 transition-transform duration-300 -z-10"></div>
+              <div className="flex flex-col items-center mb-10">
+                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 flex items-center justify-center font-bold text-2xl text-white shadow-2xl mb-4 border-4 border-white/40 hover:scale-105 transition-transform duration-300 group">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <span className="relative z-10 font-black">KK</span>
                 </div>
-                <h3 className="text-slate-800 font-bold text-lg">Kranthi Kiran</h3>
-                <p className="text-slate-700 text-sm">Software Engineer</p>
+                <h3 className="text-slate-800 font-black text-xl mb-2">Kranthi Kiran</h3>
+                <p className="text-slate-700 text-base font-semibold">Software Engineer</p>
               </div>
               
-              <div className="flex flex-col space-y-3">
-                {navItems.map((item) => (
+              <div className="flex flex-col space-y-4">
+                {navItems.map((item, index) => (
                   <button
                     key={item.href}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-left text-slate-800 hover:text-slate-900 font-semibold py-4 px-6 rounded-xl hover:bg-white/30 border border-white/20 hover:border-white/40 text-lg transition-all duration-200"
+                    className="group text-left text-slate-800 hover:text-white font-bold py-5 px-8 rounded-2xl bg-gradient-to-r from-white/60 to-orange-50/80 hover:from-orange-500 hover:to-red-500 border-2 border-orange-200/50 hover:border-orange-400 text-xl transition-all duration-400 hover:scale-105 shadow-lg hover:shadow-2xl backdrop-blur-md relative overflow-hidden"
+                    style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    {item.label}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 opacity-0 group-hover:opacity-100"></div>
+                    <div className="flex items-center space-x-4 relative z-10">
+                      <div className="w-2 h-2 rounded-full bg-gradient-to-r from-orange-500 to-red-500 group-hover:scale-150 transition-transform duration-300"></div>
+                      <span className="group-hover:translate-x-1 transition-transform duration-300">{item.label}</span>
+                    </div>
                   </button>
                 ))}
               </div>
+              
+              {/* Subtle decorative elements */}
+              <div className="absolute top-20 right-8 w-16 h-16 bg-gradient-to-br from-orange-300/20 to-transparent rounded-full opacity-40"></div>
+              <div className="absolute bottom-16 left-8 w-8 h-8 bg-gradient-to-br from-red-300/30 to-transparent rounded-full opacity-50"></div>
+              <div className="absolute top-1/3 left-6 w-4 h-4 bg-gradient-to-br from-orange-400/40 to-transparent rounded-full opacity-60"></div>
             </div>
           </div>
         </div>
