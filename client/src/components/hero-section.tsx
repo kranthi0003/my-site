@@ -71,20 +71,23 @@ export default function HeroSection() {
                 
                 {/* Refined Celestial Elements */}
                 <div className="absolute inset-0">
-                  {/* Elegant Sun - simplified and cleaner */}
-                  <div className="absolute inset-1 animate-spin" style={{ animationDuration: '30s' }}>
-                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-br from-amber-300 to-orange-400 rounded-full shadow-md shadow-amber-400/40">
-                      <div className="absolute inset-0.5 rounded-full bg-gradient-to-br from-yellow-200 to-amber-300"></div>
-                      <div className="absolute inset-0 rounded-full bg-amber-200/60 scale-110 animate-pulse" style={{ animationDuration: '4s' }}></div>
+                  {/* Sun and Moon on same line */}
+                  <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex items-center gap-8">
+                    {/* Elegant Sun - simplified and cleaner */}
+                    <div className="animate-spin" style={{ animationDuration: '30s' }}>
+                      <div className="w-4 h-4 bg-gradient-to-br from-amber-300 to-orange-400 rounded-full shadow-md shadow-amber-400/40">
+                        <div className="absolute inset-0.5 rounded-full bg-gradient-to-br from-yellow-200 to-amber-300"></div>
+                        <div className="absolute inset-0 rounded-full bg-amber-200/60 scale-110 animate-pulse" style={{ animationDuration: '4s' }}></div>
+                      </div>
                     </div>
-                  </div>
-                  
-                  {/* Refined Moon - cleaner with subtle details */}
-                  <div className="absolute inset-1 animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
-                    <div className="absolute top-1/2 -right-2 transform -translate-y-1/2 w-2.5 h-2.5 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full shadow-sm shadow-slate-400/30">
-                      <div className="absolute inset-0 rounded-full bg-white/20 scale-110 animate-pulse" style={{ animationDuration: '5s' }}></div>
-                      <div className="absolute top-0.5 left-0.5 w-0.5 h-0.5 bg-slate-300 rounded-full opacity-40"></div>
-                      <div className="absolute bottom-0.5 right-0.5 w-0.25 h-0.25 bg-slate-400 rounded-full opacity-30"></div>
+                    
+                    {/* Refined Moon - cleaner with subtle details */}
+                    <div className="animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
+                      <div className="w-2.5 h-2.5 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full shadow-sm shadow-slate-400/30">
+                        <div className="absolute inset-0 rounded-full bg-white/20 scale-110 animate-pulse" style={{ animationDuration: '5s' }}></div>
+                        <div className="absolute top-0.5 left-0.5 w-0.5 h-0.5 bg-slate-300 rounded-full opacity-40"></div>
+                        <div className="absolute bottom-0.5 right-0.5 w-0.25 h-0.25 bg-slate-400 rounded-full opacity-30"></div>
+                      </div>
                     </div>
                   </div>
                   
