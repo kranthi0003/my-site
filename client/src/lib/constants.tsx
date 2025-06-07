@@ -122,13 +122,13 @@ export const PROFILE_DATA = {
   memoryYears: [
     {
       year: "2022",
-      photo: "/attached_assets/Snapchat-240699289.jpg",
+      photo: "/attached_assets/Snapchat-1059745354.jpg",
       title: "New Beginnings",
       description: "Starting fresh with new opportunities"
     },
     {
       year: "2023", 
-      photo: "/attached_assets/IMG_5243_1749135607534.JPG",
+      photo: "/attached_assets/Snapchat-240699289.jpg",
       title: "Growth Journey",
       description: "Expanding horizons and experiences"
     },
@@ -140,7 +140,7 @@ export const PROFILE_DATA = {
     },
     {
       year: "2025",
-      photo: "/attached_assets/Snapchat-1059745354.jpg",
+      photo: "/attached_assets/IMG_5243_1749135607534.JPG",
       title: "Looking Forward",
       description: "Excited for what's ahead"
     }
