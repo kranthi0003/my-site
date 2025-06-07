@@ -97,30 +97,40 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden fixed inset-0 z-50 bg-gradient-to-b from-orange-200/95 to-orange-300/95 backdrop-blur-xl">
-          <div className="pt-24 px-6 h-full overflow-y-auto">
-            {/* Profile section */}
-            <div className="flex flex-col items-center mb-8">
-              <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center font-bold text-xl text-white shadow-xl mb-3">
-                KK
-              </div>
-              <h3 className="text-slate-800 font-bold text-lg">Kranthi Kiran</h3>
-              <p className="text-slate-700 text-sm">Software Engineer</p>
+          <div className="h-full overflow-y-auto">
+            <div className="flex justify-end p-6">
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={() => setIsOpen(false)}
+                className="text-slate-700 hover:bg-white/20 rounded-full w-10 h-10"
+              >
+                <X className="h-6 w-6" />
+              </Button>
             </div>
             
-            {/* Navigation items */}
-            <div className="flex flex-col space-y-3">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => handleNavClick(item.href)}
-                  className="text-left text-slate-800 hover:text-slate-900 font-semibold py-4 px-6 rounded-xl hover:bg-white/20 border border-white/20 hover:border-white/40 text-lg transition-all duration-200"
-                >
-                  {item.label}
-                </button>
-              ))}
+            <div className="px-6 pb-8">
+              <div className="flex flex-col items-center mb-8">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center font-bold text-xl text-white shadow-xl mb-3">
+                  KK
+                </div>
+                <h3 className="text-slate-800 font-bold text-lg">Kranthi Kiran</h3>
+                <p className="text-slate-700 text-sm">Software Engineer</p>
+              </div>
+              
+              <div className="flex flex-col space-y-3">
+                {navItems.map((item) => (
+                  <button
+                    key={item.href}
+                    onClick={() => handleNavClick(item.href)}
+                    className="text-left text-slate-800 hover:text-slate-900 font-semibold py-4 px-6 rounded-xl hover:bg-white/20 border border-white/20 hover:border-white/40 text-lg transition-all duration-200"
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
         </div>
