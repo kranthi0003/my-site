@@ -24,7 +24,9 @@ export default function InterestsSection() {
             const IconComponent = iconMap[interest.icon as keyof typeof iconMap];
             
             return (
-              <div key={index} className="bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-2xl text-center card-hover">
+              <div key={index} className={`bg-gradient-to-br from-primary/5 to-secondary/5 p-6 rounded-2xl text-center card-hover animate-float ${
+                index % 2 === 0 ? 'animate-slide-in-left' : 'animate-slide-in-right'
+              }`} style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="text-primary text-2xl" size={24} />
                 </div>

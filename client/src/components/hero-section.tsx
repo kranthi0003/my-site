@@ -76,13 +76,6 @@ export default function HeroSection() {
                       <div className="absolute inset-0 rounded-full bg-yellow-300/30 scale-125 animate-pulse"></div>
                       <div className="absolute inset-0 rounded-full bg-yellow-400/20 scale-150 animate-ping opacity-75"></div>
                       <div className="absolute inset-0.5 rounded-full bg-yellow-200 animate-spin" style={{ animationDuration: '3s' }}></div>
-                      {/* Sun rays */}
-                      <div className="absolute -inset-2">
-                        <div className="absolute top-0 left-1/2 w-0.5 h-2 bg-yellow-300 rounded-full transform -translate-x-1/2 opacity-70"></div>
-                        <div className="absolute bottom-0 left-1/2 w-0.5 h-2 bg-yellow-300 rounded-full transform -translate-x-1/2 opacity-70"></div>
-                        <div className="absolute left-0 top-1/2 w-2 h-0.5 bg-yellow-300 rounded-full transform -translate-y-1/2 opacity-70"></div>
-                        <div className="absolute right-0 top-1/2 w-2 h-0.5 bg-yellow-300 rounded-full transform -translate-y-1/2 opacity-70"></div>
-                      </div>
                     </div>
                   </div>
                   
