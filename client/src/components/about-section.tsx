@@ -62,7 +62,7 @@ export default function AboutSection() {
                       <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-secondary/30 to-accent/40 rounded-xl opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
                       <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 rounded-xl blur-[1px] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
                       
-                      <Card className="relative h-96 bg-gradient-to-br from-white via-white/98 to-primary/3 backdrop-blur-sm shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden rounded-xl ring-1 ring-primary/10 hover:ring-primary/20">
+                      <Card className="relative min-h-[320px] md:h-96 bg-gradient-to-br from-white via-white/98 to-primary/3 backdrop-blur-sm shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] overflow-hidden rounded-xl ring-1 ring-primary/10 hover:ring-primary/20">
                         {/* Smart inner border highlight */}
                         <div className="absolute inset-[1px] rounded-xl bg-gradient-to-br from-white/80 via-transparent to-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                         
@@ -78,35 +78,34 @@ export default function AboutSection() {
                         {/* Premium shimmer effect */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
                         
-                        <CardContent className="relative p-5 h-full flex flex-col z-10">
+                        <CardContent className="relative p-4 md:p-5 h-full flex flex-col justify-between z-10">
                           {/* Header with Enhanced Icon and Title */}
-                          <div className="flex items-center mb-4">
-                            <div className="relative mr-4 flex-shrink-0">
+                          <div className="flex items-center mb-3 md:mb-4">
+                            <div className="relative mr-3 md:mr-4 flex-shrink-0">
                               {/* Simple icon container */}
-                              <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center transition-colors duration-300 border border-primary/20">
-                                <IconComponent className="text-primary" size={20} />
+                              <div className="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-xl flex items-center justify-center transition-colors duration-300 border border-primary/20">
+                                <IconComponent className="text-primary" size={18} />
                               </div>
                               
                               {/* Simple number badge */}
-                              <div className="absolute -top-1 -right-1 w-6 h-6 bg-primary rounded-full flex items-center justify-center border-2 border-white">
+                              <div className="absolute -top-1 -right-1 w-5 h-5 md:w-6 md:h-6 bg-primary rounded-full flex items-center justify-center border-2 border-white">
                                 <span className="text-xs font-bold text-white">{index + 1}</span>
                               </div>
                             </div>
                             
                             <div className="flex-1 min-w-0">
-                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2 leading-tight">
+                              <h3 className="text-base md:text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2 leading-tight">
                                 {story.title}
                               </h3>
                             </div>
                           </div>
 
-                          {/* Story Content - scrollable if needed */}
-                          <div className="flex-1 mb-3 overflow-y-auto">
-                            <p className="text-gray-700 leading-relaxed text-sm group-hover:text-gray-900 transition-all duration-500">
+                          {/* Story Content - responsive spacing */}
+                          <div className="flex-1 flex flex-col justify-center">
+                            <p className="text-gray-700 leading-relaxed text-sm md:text-base group-hover:text-gray-900 transition-all duration-500 text-justify">
                               {story.description}
                             </p>
                           </div>
-                          
 
                         </CardContent>
                       </Card>
