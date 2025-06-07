@@ -81,7 +81,7 @@ export default function HeroSection() {
 
             {/* Tagline under photo */}
             <div className="text-center">
-              <p className="text-xl md:text-2xl font-medium text-white/90 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block">
+              <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white bg-gradient-to-r from-orange-400 via-yellow-300 to-orange-400 bg-clip-text text-transparent px-8 py-4 rounded-2xl backdrop-blur-md bg-white/15 border border-white/20 shadow-xl whitespace-nowrap">
                 Traveller by soul, Techie by skill
               </p>
             </div>
