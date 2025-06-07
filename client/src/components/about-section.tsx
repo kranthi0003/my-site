@@ -153,9 +153,11 @@ export default function AboutSection() {
                 <CardContent className="p-8 relative">
                   <h3 className="text-xl font-bold text-primary mb-6 flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-primary/20 to-primary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary to-primary/80 rounded-lg"></div>
+                      <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1H5C3.89 1 3 1.89 3 3V21C3 22.11 3.89 23 5 23H19C20.11 23 21 22.11 21 21V9H21ZM19 21H5V3H13V9H19V21Z"/>
+                      </svg>
                     </div>
-                    Basics & Lifestyle
+                    Basics
                   </h3>
                   <div className="space-y-5 text-base">
                     <div className="grid grid-cols-2 gap-y-4 gap-x-6">
@@ -212,9 +214,11 @@ export default function AboutSection() {
                 <CardContent className="p-8 relative">
                   <h3 className="text-xl font-bold text-secondary mb-6 flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-secondary/20 to-secondary/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-lg"></div>
+                      <svg className="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M16 4C18.21 4 20 5.79 20 8C20 10.21 18.21 12 16 12C13.79 12 12 10.21 12 8C12 5.79 13.79 4 16 4ZM16 14C20.42 14 24 15.58 24 17.5V20H8V17.5C8 15.58 11.58 14 16 14ZM8 12C10.21 12 12 10.21 12 8C12 5.79 10.21 4 8 4C5.79 4 4 5.79 4 8C4 10.21 5.79 12 8 12ZM8 14C3.58 14 0 15.58 0 17.5V20H6V17.5C6 16.38 6.65 15.37 7.62 14.74C7.1 14.26 6.55 14 8 14Z"/>
+                      </svg>
                     </div>
-                    Personal & Family
+                    Family
                   </h3>
                   <div className="space-y-5 text-base">
                     <div className="grid grid-cols-2 gap-y-4 gap-x-6">
@@ -262,9 +266,11 @@ export default function AboutSection() {
                 <CardContent className="p-8 relative">
                   <h3 className="text-xl font-bold text-yellow-700 mb-6 flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-yellow-600/20 to-yellow-600/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-yellow-600 to-yellow-700 rounded-lg"></div>
+                      <svg className="w-5 h-5 text-yellow-700" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                      </svg>
                     </div>
-                    Education & Career
+                    Career
                   </h3>
                   <div className="space-y-5 text-base">
                     <div className="grid grid-cols-2 gap-y-4 gap-x-6">
@@ -323,9 +329,11 @@ export default function AboutSection() {
                 <CardContent className="p-8 relative">
                   <h3 className="text-xl font-bold text-orange-600 mb-6 flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-orange-500/20 to-orange-500/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-orange-500 to-orange-600 rounded-lg"></div>
+                      <svg className="w-5 h-5 text-orange-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/>
+                      </svg>
                     </div>
-                    Astrology Details
+                    Astrology
                   </h3>
                   <div className="space-y-5 text-base">
                     <div className="grid grid-cols-2 gap-y-4 gap-x-6">
@@ -364,9 +372,11 @@ export default function AboutSection() {
                 <CardContent className="p-6 relative">
                   <h3 className="text-xl font-bold text-amber-600 mb-6 flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-amber-500/20 to-amber-500/10 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-md">
-                      <div className="w-5 h-5 bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg"></div>
+                      <svg className="w-5 h-5 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
+                      </svg>
                     </div>
-                    Assets & Income
+                    Assets
                   </h3>
                   
                   {/* Financial Summary */}
