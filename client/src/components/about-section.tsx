@@ -78,35 +78,35 @@ export default function AboutSection() {
                         {/* Shimmer effect overlay */}
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
                         
-                        <CardContent className="relative p-6 h-full flex flex-col justify-between z-10">
+                        <CardContent className="relative p-5 h-full flex flex-col z-10">
                           {/* Header with Icon and Title */}
-                          <div className="flex items-center mb-4">
-                            <div className="relative mr-4">
-                              <div className="w-12 h-12 bg-gradient-to-br from-primary/20 via-primary/15 to-primary/10 rounded-full flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-700 animate-float shadow-lg">
-                                <IconComponent className="text-primary group-hover:text-primary/90 transition-colors duration-300" size={20} />
+                          <div className="flex items-center mb-3">
+                            <div className="relative mr-3">
+                              <div className="w-10 h-10 bg-gradient-to-br from-primary/20 via-primary/15 to-primary/10 rounded-full flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-700 animate-float shadow-lg">
+                                <IconComponent className="text-primary group-hover:text-primary/90 transition-colors duration-300" size={18} />
                               </div>
                               <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full blur opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
                             </div>
                             <div className="flex-1">
-                              <h3 className="text-xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 transform group-hover:translate-x-1">
+                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 transform group-hover:translate-x-1 line-clamp-2">
                                 {story.title}
                               </h3>
-                              <div className="w-0 group-hover:w-16 h-0.5 bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-500 mt-1"></div>
+                              <div className="w-0 group-hover:w-12 h-0.5 bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-500 mt-1"></div>
                             </div>
                           </div>
 
-                          {/* Story Content with typing effect */}
-                          <div className="flex-grow mb-4">
-                            <p className="text-muted-foreground leading-relaxed text-sm group-hover:text-foreground/90 transition-all duration-500 transform group-hover:translate-y-[-2px]">
+                          {/* Story Content - scrollable if needed */}
+                          <div className="flex-1 mb-3 overflow-y-auto">
+                            <p className="text-muted-foreground leading-relaxed text-xs group-hover:text-foreground/90 transition-all duration-500 transform group-hover:translate-y-[-2px]">
                               {story.description}
                             </p>
                           </div>
                           
                           {/* Enhanced Footer */}
-                          <div className="flex items-center justify-between pt-4 border-t border-gradient-to-r from-transparent via-gray-200/50 to-transparent relative">
-                            <div className="flex items-center space-x-3">
+                          <div className="flex items-center justify-between pt-3 border-t border-gradient-to-r from-transparent via-gray-200/50 to-transparent relative mt-auto">
+                            <div className="flex items-center space-x-2">
                               <div className="relative">
-                                <div className="w-7 h-7 bg-gradient-to-br from-primary/15 to-secondary/15 rounded-full flex items-center justify-center animate-pulse border border-primary/20">
+                                <div className="w-6 h-6 bg-gradient-to-br from-primary/15 to-secondary/15 rounded-full flex items-center justify-center animate-pulse border border-primary/20">
                                   <span className="text-xs font-bold text-primary">{index + 1}</span>
                                 </div>
                                 <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 animate-ping"></div>
@@ -115,11 +115,11 @@ export default function AboutSection() {
                                 Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
                               </span>
                             </div>
-                            <div className="flex space-x-1.5">
+                            <div className="flex space-x-1">
                               {PROFILE_DATA.personalStory.map((_, i) => (
                                 <div 
                                   key={i} 
-                                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
                                     i === index 
                                       ? 'bg-gradient-to-r from-primary to-secondary scale-110' 
                                       : 'bg-gray-300 hover:bg-gray-400'
