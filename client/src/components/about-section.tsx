@@ -62,61 +62,79 @@ export default function AboutSection() {
                 
                 return (
                   <CarouselItem key={index} className="basis-full">
-                    <Card className="group h-full bg-white/90 backdrop-blur-sm shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 hover:scale-105 mx-2 relative overflow-hidden">
-                      {/* Animated background elements */}
-                      <div className="absolute inset-0 opacity-20">
-                        <div className="absolute top-4 right-4 w-6 h-6 bg-primary/30 rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
-                        <div className="absolute bottom-6 left-6 w-4 h-4 bg-secondary/40 rounded-full animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
-                        <div className="absolute top-1/2 right-8 w-2 h-2 bg-accent/50 rounded-full animate-ping" style={{ animationDelay: '2s', animationDuration: '5s' }}></div>
-                      </div>
+                    <div className="relative group mx-2">
+                      {/* Animated gradient border wrapper */}
+                      <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-700 animate-glow-pulse"></div>
                       
-                      <CardContent className="p-6 h-full flex flex-col justify-between">
-                        {/* Header with Icon and Title */}
-                        <div className="flex items-center mb-4">
-                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 animate-float">
-                            <IconComponent className="text-primary" size={20} />
-                          </div>
-                          <h3 className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors flex-1">
-                            {story.title}
-                          </h3>
-                        </div>
-
-                        {/* Story Content */}
-                        <div className="flex-grow mb-4">
-                          <p className="text-muted-foreground leading-relaxed text-sm group-hover:text-foreground/80 transition-colors duration-300">
-                            {story.description}
-                          </p>
+                      <Card className="relative h-full bg-white/95 backdrop-blur-md shadow-2xl border-2 border-transparent bg-gradient-to-br from-white via-white/95 to-primary/5 hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] overflow-hidden rounded-xl">
+                        {/* Dynamic background elements */}
+                        <div className="absolute inset-0 opacity-15">
+                          <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary/40 to-transparent rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
+                          <div className="absolute bottom-6 left-6 w-6 h-6 bg-gradient-to-br from-secondary/40 to-transparent rounded-full animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
+                          <div className="absolute top-1/3 right-12 w-3 h-3 bg-gradient-to-br from-accent/50 to-transparent rounded-full animate-ping" style={{ animationDelay: '2s', animationDuration: '5s' }}></div>
+                          <div className="absolute bottom-1/3 left-12 w-4 h-4 bg-gradient-to-br from-primary/30 to-transparent rounded-full animate-pulse" style={{ animationDelay: '3s', animationDuration: '6s' }}></div>
                         </div>
                         
-                        {/* Footer - Fixed positioning */}
-                        <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-                          <div className="flex items-center space-x-2">
-                            <div className="w-6 h-6 bg-primary/10 rounded-full flex items-center justify-center animate-pulse">
-                              <span className="text-xs font-bold text-primary">{index + 1}</span>
+                        {/* Shimmer effect overlay */}
+                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 opacity-0 group-hover:opacity-100"></div>
+                        
+                        <CardContent className="relative p-6 h-full flex flex-col justify-between z-10">
+                          {/* Header with Icon and Title */}
+                          <div className="flex items-center mb-4">
+                            <div className="relative mr-4">
+                              <div className="w-12 h-12 bg-gradient-to-br from-primary/20 via-primary/15 to-primary/10 rounded-full flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-700 animate-float shadow-lg">
+                                <IconComponent className="text-primary group-hover:text-primary/90 transition-colors duration-300" size={20} />
+                              </div>
+                              <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full blur opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
                             </div>
-                            <span className="text-xs text-muted-foreground">
-                              Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
-                            </span>
+                            <div className="flex-1">
+                              <h3 className="text-xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 transform group-hover:translate-x-1">
+                                {story.title}
+                              </h3>
+                              <div className="w-0 group-hover:w-16 h-0.5 bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-500 mt-1"></div>
+                            </div>
                           </div>
-                          <div className="flex space-x-1">
-                            {PROFILE_DATA.personalStory.map((_, i) => (
-                              <div 
-                                key={i} 
-                                className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                                  i === index 
-                                    ? 'bg-primary scale-125 animate-pulse' 
-                                    : 'bg-gray-300'
-                                }`}
-                                style={{ animationDelay: `${i * 100}ms` }}
-                              ></div>
-                            ))}
+
+                          {/* Story Content with typing effect */}
+                          <div className="flex-grow mb-4">
+                            <p className="text-muted-foreground leading-relaxed text-sm group-hover:text-foreground/90 transition-all duration-500 transform group-hover:translate-y-[-2px]">
+                              {story.description}
+                            </p>
                           </div>
-                        </div>
-                      </CardContent>
-                      
-                      {/* Animated border on hover */}
-                      <div className="absolute inset-0 rounded-lg border-2 border-transparent group-hover:border-primary/20 transition-colors duration-500"></div>
-                    </Card>
+                          
+                          {/* Enhanced Footer */}
+                          <div className="flex items-center justify-between pt-4 border-t border-gradient-to-r from-transparent via-gray-200/50 to-transparent relative">
+                            <div className="flex items-center space-x-3">
+                              <div className="relative">
+                                <div className="w-7 h-7 bg-gradient-to-br from-primary/15 to-secondary/15 rounded-full flex items-center justify-center animate-pulse border border-primary/20">
+                                  <span className="text-xs font-bold text-primary">{index + 1}</span>
+                                </div>
+                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 animate-ping"></div>
+                              </div>
+                              <span className="text-xs text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300 font-medium">
+                                Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
+                              </span>
+                            </div>
+                            <div className="flex space-x-1.5">
+                              {PROFILE_DATA.personalStory.map((_, i) => (
+                                <div 
+                                  key={i} 
+                                  className={`w-2.5 h-2.5 rounded-full transition-all duration-500 transform ${
+                                    i === index 
+                                      ? 'bg-gradient-to-r from-primary to-secondary scale-125 shadow-md animate-pulse' 
+                                      : 'bg-gray-300 hover:bg-gray-400 hover:scale-110'
+                                  }`}
+                                  style={{ 
+                                    animationDelay: `${i * 150}ms`,
+                                    transform: i === index ? 'scale(1.25) rotate(45deg)' : undefined
+                                  }}
+                                ></div>
+                              ))}
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </div>
                   </CarouselItem>
                 );
               })}
