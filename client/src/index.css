@@ -132,6 +132,27 @@
   .animate-glow-pulse {
     animation: glowPulse 3s ease-in-out infinite;
   }
+  
+  /* Enhanced mobile touch interactions */
+  .touch-manipulation {
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Smooth active states for mobile */
+  .photo-item {
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+  }
+  
+  .photo-item:active {
+    transform: scale(0.98);
+  }
+  
+  /* Ensure lightbox is above everything */
+  .lightbox-overlay {
+    z-index: 9999;
+    -webkit-overflow-scrolling: touch;
+  }
 }
 
 @keyframes fadeIn {
