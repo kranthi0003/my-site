@@ -4,7 +4,7 @@ import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran Akkumahanthi",
-  tagline: "Software Engineer with 4 years of experience at Amazon and Couchbase, passionate about distributed systems and cloud technologies, committed to building meaningful connections.",
+  tagline: "Software Engineer with 4+ years of experience at Couchbase, Amazon, and Groww, passionate about distributed systems and cloud technologies, committed to building meaningful connections.",
   
   // Hero section image - Your professional headshot
   profileImage: profilePhoto,
@@ -31,8 +31,8 @@ export const PROFILE_DATA = {
   // Education & Experience
   education: [
     {
-      degree: "Bachelor of Engineering in Computer Science",
-      institution: "Gayatri Vidya Parishad College of Engineering (Autonomous)",
+      degree: "B.Tech in Computer Science Engineering",
+      institution: "GVPCOE, Vizag",
       period: "2017 - 2021",
       gpa: "First Class",
       specialization: "Computer Science and Engineering"
@@ -49,8 +49,14 @@ export const PROFILE_DATA = {
     {
       position: "Software Engineer",
       company: "Amazon",
-      period: "2020 - March 2024 (3.5 years)",
-      description: "Developed and maintained large-scale distributed systems and cloud solutions in Hyderabad"
+      period: "2022 - March 2024",
+      description: "Developed and maintained large-scale distributed systems and cloud solutions"
+    },
+    {
+      position: "Software Engineer",
+      company: "Groww",
+      period: "2021 - 2022",
+      description: "Worked on fintech solutions and trading platforms"
     }
   ],
 

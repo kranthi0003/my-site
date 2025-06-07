@@ -121,7 +121,7 @@ export default function AboutSection() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Weight:</span>
-                      <span className="font-medium">65kg (143 lbs)</span>
+                      <span className="font-medium">75kg</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Work:</span>
@@ -129,19 +129,15 @@ export default function AboutSection() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Languages:</span>
-                      <span className="font-medium">English, Malayalam</span>
+                      <span className="font-medium">Telugu, Hindi, English, (learning Tamil)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Diet:</span>
                       <span className="font-medium">Non-vegetarian</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Smoking:</span>
+                      <span className="text-muted-foreground">Smoking/Drinking:</span>
                       <span className="font-medium">No</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Drinking:</span>
-                      <span className="font-medium">Social</span>
                     </div>
                   </div>
                 </CardContent>
@@ -159,11 +155,7 @@ export default function AboutSection() {
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Caste:</span>
-                      <span className="font-medium">Brahmin</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Sub Caste:</span>
-                      <span className="font-medium">Namboodiri</span>
+                      <span className="font-medium">Patnaik (OC)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Gothram:</span>
@@ -175,27 +167,27 @@ export default function AboutSection() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Rasi:</span>
-                      <span className="font-medium">Mithuna</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Father's Name:</span>
-                      <span className="font-medium">Rajesh T</span>
+                      <span className="font-medium">Mithuna (Gemini)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Mother's Name:</span>
-                      <span className="font-medium">Leela Rajesh</span>
+                      <span className="font-medium">A Lakshmi</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Father's Occupation:</span>
-                      <span className="font-medium">Accountant</span>
+                      <span className="font-medium">Passed away</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Mother's Occupation:</span>
-                      <span className="font-medium">Teacher</span>
+                      <span className="font-medium">Homemaker</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Native Place:</span>
-                      <span className="font-medium">Perinthalmanna</span>
+                      <span className="font-medium">Visakhapatnam</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Siblings:</span>
+                      <span className="font-medium">0</span>
                     </div>
                   </div>
                 </CardContent>
@@ -213,11 +205,11 @@ export default function AboutSection() {
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Qualification:</span>
-                      <span className="font-medium">B.Tech in CSE</span>
+                      <span className="font-medium">B.Tech (CSE)</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">College:</span>
-                      <span className="font-medium">Cochin University</span>
+                      <span className="font-medium">GVPCOE, Vizag</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Year of Passing:</span>
@@ -225,19 +217,19 @@ export default function AboutSection() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Current Company:</span>
-                      <span className="font-medium">Amazon</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Previous Company:</span>
                       <span className="font-medium">Couchbase</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Experience:</span>
-                      <span className="font-medium">3+ years</span>
+                      <span className="text-muted-foreground">Previous Companies:</span>
+                      <span className="font-medium">Amazon, Groww</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Annual Income:</span>
-                      <span className="font-medium">₹45+ LPA</span>
+                      <span className="text-muted-foreground">Experience:</span>
+                      <span className="font-medium">4+ years</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-muted-foreground">Salary:</span>
+                      <span className="font-medium">₹30+ LPA</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Work Location:</span>
