@@ -170,10 +170,6 @@ export default function AboutSection() {
                       <span className="font-medium">Mithuna (Gemini)</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Mother's Name:</span>
-                      <span className="font-medium">A Lakshmi</span>
-                    </div>
-                    <div className="flex justify-between">
                       <span className="text-muted-foreground">Father's Occupation:</span>
                       <span className="font-medium">Passed away</span>
                     </div>
@@ -182,7 +178,7 @@ export default function AboutSection() {
                       <span className="font-medium">Homemaker</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-muted-foreground">Native Place:</span>
+                      <span className="text-muted-foreground">Native:</span>
                       <span className="font-medium">Visakhapatnam</span>
                     </div>
                     <div className="flex justify-between">
