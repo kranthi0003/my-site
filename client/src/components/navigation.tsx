@@ -17,6 +17,18 @@ export default function Navigation() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isOpen]);
+
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
@@ -84,8 +96,8 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-gradient-to-b from-orange-200/95 to-orange-300/95 backdrop-blur-xl shadow-2xl border-t border-orange-200/40 z-40 min-h-screen">
-            <div className="container mx-auto px-6 py-12">
+          <div className="md:hidden fixed top-full left-0 right-0 bottom-0 bg-gradient-to-b from-orange-200/95 to-orange-300/95 backdrop-blur-xl shadow-2xl border-t border-orange-200/40 z-40 overflow-y-auto">
+            <div className="container mx-auto px-6 py-8">
               {/* Profile section in mobile menu */}
               <div className="flex flex-col items-center mb-12">
                 <div className="w-24 h-24 rounded-full bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center font-bold text-2xl text-white shadow-2xl mb-4 border-4 border-white/30">
