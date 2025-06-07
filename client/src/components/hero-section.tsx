@@ -33,8 +33,8 @@ export default function HeroSection() {
             {/* Name section */}
             <div className="space-y-4">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="block mb-2 text-white/90">Hello, I'm</span>
-                <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
+                <span className="block mb-2 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
+                <span className="block font-extrabold bg-gradient-to-r from-orange-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-2xl">{PROFILE_DATA.name}</span>
               </h1>
               
               {/* Tagline below name */}
