@@ -208,7 +208,7 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               
               {/* Basics & Lifestyle */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white to-slate-50/40 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-slate-200/60">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white to-slate-50/40 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-slate-200/60" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(148, 163, 184, 0.1)'}}>
                 {/* Subtle border wrapper */}
                 <div className="absolute -inset-[1px] bg-gradient-to-r from-slate-200/30 via-slate-100/20 to-slate-200/30 rounded-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
                 
@@ -423,7 +423,7 @@ export default function AboutSection() {
               </Card>
 
               {/* Property & Assets Details */}
-              <Card className="group relative w-full bg-gradient-to-br from-white via-white to-slate-50/40 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-slate-200/60 col-span-full">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white to-slate-50/40 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border border-slate-200/60 col-span-full" style={{boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(148, 163, 184, 0.1)'}}>
                 {/* Subtle border wrapper */}
                 <div className="absolute -inset-[1px] bg-gradient-to-r from-slate-200/30 via-slate-100/20 to-slate-200/30 rounded-xl opacity-40 group-hover:opacity-60 transition-opacity duration-500"></div>
                 
