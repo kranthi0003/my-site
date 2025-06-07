@@ -4,13 +4,13 @@ import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran",
-  tagline: "Experienced Software Engineer building scalable solutions at Couchbase. Previously worked at Amazon and Groww. Passionate about technology, family values, and creating meaningful connections.",
+  tagline: "Through my journey at Amazon and Couchbase, I've learned that true success stems from humility, hard work, and honoring our heritage. Rooted in strong family values from Visakhapatnam, I embrace both modern opportunities and traditional wisdom. I aspire to create a loving home built on mutual respect, understanding, and shared dreams.",
   
   // Hero section image - Your professional headshot
   profileImage: profilePhoto,
   
   // About section
-  aboutDescription: "Through my journey at Amazon and Couchbase, I've learned that true success stems from humility, hard work, and honoring our heritage. Rooted in strong family values from Visakhapatnam, I embrace both modern opportunities and traditional wisdom. I aspire to create a loving home built on mutual respect, understanding, and shared dreams.",
+  aboutDescription: "Experienced Software Engineer building scalable solutions at Couchbase. Previously worked at Amazon and Groww. Passionate about technology, family values, and creating meaningful connections.",
   aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
   personalValues: [
