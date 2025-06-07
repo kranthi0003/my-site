@@ -67,12 +67,12 @@ export default function AboutSection() {
                       <div className="absolute -inset-0.5 bg-gradient-to-r from-primary/20 via-secondary/20 to-accent/20 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-all duration-700 animate-glow-pulse"></div>
                       
                       <Card className="relative h-full bg-white/95 backdrop-blur-md shadow-2xl border-2 border-transparent bg-gradient-to-br from-white via-white/95 to-primary/5 hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] overflow-hidden rounded-xl">
-                        {/* Dynamic background elements */}
-                        <div className="absolute inset-0 opacity-15">
-                          <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary/40 to-transparent rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '3s' }}></div>
-                          <div className="absolute bottom-6 left-6 w-6 h-6 bg-gradient-to-br from-secondary/40 to-transparent rounded-full animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
-                          <div className="absolute top-1/3 right-12 w-3 h-3 bg-gradient-to-br from-accent/50 to-transparent rounded-full animate-ping" style={{ animationDelay: '2s', animationDuration: '5s' }}></div>
-                          <div className="absolute bottom-1/3 left-12 w-4 h-4 bg-gradient-to-br from-primary/30 to-transparent rounded-full animate-pulse" style={{ animationDelay: '3s', animationDuration: '6s' }}></div>
+                        {/* Calm background elements */}
+                        <div className="absolute inset-0 opacity-10">
+                          <div className="absolute top-4 right-4 w-6 h-6 bg-gradient-to-br from-primary/30 to-transparent rounded-full"></div>
+                          <div className="absolute bottom-6 left-6 w-4 h-4 bg-gradient-to-br from-secondary/30 to-transparent rounded-full"></div>
+                          <div className="absolute top-1/3 right-12 w-2 h-2 bg-gradient-to-br from-accent/40 to-transparent rounded-full"></div>
+                          <div className="absolute bottom-1/3 left-12 w-3 h-3 bg-gradient-to-br from-primary/20 to-transparent rounded-full"></div>
                         </div>
                         
                         {/* Shimmer effect overlay */}
@@ -119,15 +119,11 @@ export default function AboutSection() {
                               {PROFILE_DATA.personalStory.map((_, i) => (
                                 <div 
                                   key={i} 
-                                  className={`w-2.5 h-2.5 rounded-full transition-all duration-500 transform ${
+                                  className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
                                     i === index 
-                                      ? 'bg-gradient-to-r from-primary to-secondary scale-125 shadow-md animate-pulse' 
-                                      : 'bg-gray-300 hover:bg-gray-400 hover:scale-110'
+                                      ? 'bg-gradient-to-r from-primary to-secondary scale-110' 
+                                      : 'bg-gray-300 hover:bg-gray-400'
                                   }`}
-                                  style={{ 
-                                    animationDelay: `${i * 150}ms`,
-                                    transform: i === index ? 'scale(1.25) rotate(45deg)' : undefined
-                                  }}
                                 ></div>
                               ))}
                             </div>
@@ -139,8 +135,8 @@ export default function AboutSection() {
                 );
               })}
             </CarouselContent>
-            {current > 1 && <CarouselPrevious className="left-4" />}
-            {current < count && <CarouselNext className="right-4" />}
+            {current > 1 && <CarouselPrevious className="-left-12 w-10 h-10 bg-white/90 border-2 border-primary/20 shadow-lg hover:bg-primary/10 hover:border-primary/40 transition-all duration-300" />}
+            {current < count && <CarouselNext className="-right-12 w-10 h-10 bg-white/90 border-2 border-primary/20 shadow-lg hover:bg-primary/10 hover:border-primary/40 transition-all duration-300" />}
           </Carousel>
         </div>
         
