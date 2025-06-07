@@ -29,7 +29,6 @@ export default function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed">
                 <span className="block mb-4 text-white/90">Hello, I'm</span>
                 <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
-                <span className="block text-lg md:text-xl lg:text-2xl font-normal text-white/80 mt-3">- {PROFILE_DATA.tagline}</span>
               </h1>
             </div>
             
