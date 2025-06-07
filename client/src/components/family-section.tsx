@@ -13,8 +13,12 @@ export default function FamilySection() {
   return (
     <section className="py-20 tamil-bg-family lotus-pattern">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">Family Background</h2>
+        <div className="text-center mb-16 relative">
+          <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 w-20 h-1 lotus-pattern opacity-35"></div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6 relative">
+            Family Background
+            <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 w-12 h-1 paisley-motif opacity-45"></div>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             I come from a loving and supportive family that has shaped my values and character.
           </p>

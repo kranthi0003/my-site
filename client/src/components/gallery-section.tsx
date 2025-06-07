@@ -26,11 +26,15 @@ export default function GallerySection({}: GallerySectionProps) {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-6">
+        <div className="text-center mb-16 animate-fade-in relative">
+          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-20 h-1 rangoli-dots opacity-30"></div>
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-secondary/10 rounded-full mb-6 temple-motif">
             <Expand className="text-secondary" size={24} />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">Photo Gallery</h2>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6 relative">
+            Photo Gallery
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 kolam-pattern opacity-40"></div>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A glimpse into my life, travels, and memorable moments that define who I am.
           </p>

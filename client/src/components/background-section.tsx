@@ -7,9 +7,12 @@ export default function BackgroundSection() {
   return (
     <section id="background" className="pt-24 pb-20 tamil-bg-background temple-motif">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
+        <div className="text-center mb-16 relative">
+          {/* Tamil decorative elements around title */}
+          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 w-24 h-2 temple-motif opacity-30"></div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6 relative">
             Professional & Educational Background
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-16 h-1 kolam-pattern opacity-40"></div>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A comprehensive overview of my educational journey and professional achievements.

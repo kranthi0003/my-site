@@ -13,8 +13,12 @@ export default function InterestsSection() {
   return (
     <section className="py-20 tamil-bg-interests paisley-motif">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">Interests & Hobbies</h2>
+        <div className="text-center mb-16 relative">
+          <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-18 h-1 rangoli-dots opacity-40"></div>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6 relative">
+            Interests & Hobbies
+            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-14 h-1 temple-motif opacity-50"></div>
+          </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Beyond my professional life, I enjoy a variety of activities that keep me balanced and fulfilled.
           </p>
