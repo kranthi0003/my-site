@@ -62,24 +62,57 @@ export default function AboutSection() {
                 
                 return (
                   <CarouselItem key={index} className="basis-full">
-                    <Card className="group h-full bg-white/90 backdrop-blur-sm shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 hover:scale-105 mx-2">
-                      <CardContent className="p-8 h-full flex flex-col">
-                        <div className="flex items-center mb-6">
-                          <div className="w-12 h-12 bg-gradient-to-br from-primary/20 to-primary/10 rounded-full flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
-                            <IconComponent className="text-primary" size={20} />
+                    <Card className="group relative h-full bg-gradient-to-br from-white via-white/95 to-primary/5 backdrop-blur-sm shadow-2xl border-0 hover:shadow-3xl transition-all duration-700 hover:scale-[1.02] mx-2 overflow-hidden">
+                      {/* Decorative background pattern */}
+                      <div className="absolute inset-0 opacity-5">
+                        <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-primary/30 to-transparent rounded-full blur-3xl"></div>
+                        <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-secondary/20 to-transparent rounded-full blur-2xl"></div>
+                      </div>
+                      
+                      <CardContent className="relative p-10 h-full flex flex-col">
+                        {/* Icon and Title Section */}
+                        <div className="flex items-start mb-8">
+                          <div className="relative mr-6">
+                            <div className="w-16 h-16 bg-gradient-to-br from-primary/15 via-primary/10 to-primary/5 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 shadow-lg">
+                              <IconComponent className="text-primary drop-shadow-sm" size={24} />
+                            </div>
+                            <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"></div>
                           </div>
-                          <h3 className="text-xl font-bold text-primary group-hover:text-primary/80 transition-colors">
-                            {story.title}
-                          </h3>
+                          <div className="flex-1">
+                            <h3 className="text-2xl font-bold text-primary mb-2 group-hover:text-primary/90 transition-colors duration-300 leading-tight">
+                              {story.title}
+                            </h3>
+                            <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary rounded-full opacity-60"></div>
+                          </div>
                         </div>
-                        <p className="text-muted-foreground leading-relaxed flex-grow text-sm">
-                          {story.description}
-                        </p>
-                        <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-100">
-                          <span className="text-xs text-muted-foreground">Chapter {index + 1} of {PROFILE_DATA.personalStory.length}</span>
-                          <div className="flex space-x-1">
+
+                        {/* Content Section */}
+                        <div className="flex-grow">
+                          <p className="text-muted-foreground leading-relaxed text-base font-medium tracking-wide">
+                            {story.description}
+                          </p>
+                        </div>
+                        
+                        {/* Footer Section */}
+                        <div className="flex justify-between items-center mt-8 pt-6 border-t border-gradient-to-r from-transparent via-gray-200 to-transparent">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full flex items-center justify-center">
+                              <span className="text-xs font-bold text-primary">{index + 1}</span>
+                            </div>
+                            <span className="text-sm font-medium text-muted-foreground">
+                              Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
+                            </span>
+                          </div>
+                          <div className="flex space-x-2">
                             {PROFILE_DATA.personalStory.map((_, i) => (
-                              <div key={i} className={`w-2 h-2 rounded-full ${i === index ? 'bg-primary' : 'bg-gray-300'}`}></div>
+                              <div 
+                                key={i} 
+                                className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
+                                  i === index 
+                                    ? 'bg-gradient-to-r from-primary to-secondary scale-125 shadow-md' 
+                                    : 'bg-gray-300 hover:bg-gray-400'
+                                }`}
+                              ></div>
                             ))}
                           </div>
                         </div>
