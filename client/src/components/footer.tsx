@@ -1,3 +1,4 @@
+import React from "react";
 import { PROFILE_DATA } from "@/lib/constants";
 
 export default function Footer() {

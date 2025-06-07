@@ -54,12 +54,12 @@ export default function Navigation() {
             <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 relative overflow-hidden group hover:scale-105 ${
               isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
             } ${
-              isScrolled ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 text-white shadow-2xl hover:shadow-orange-500/30' : 'bg-gradient-to-br from-white/40 to-white/20 text-white border-2 border-white/50 shadow-xl backdrop-blur-md hover:border-white/70'
+              isScrolled ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 text-white shadow-2xl hover:shadow-orange-500/30' : 'bg-gradient-to-br from-orange-500/90 via-orange-600/90 to-red-500/90 text-white border-2 border-white/70 shadow-2xl backdrop-blur-md hover:border-white/90'
             }`}>
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10 font-black text-lg tracking-tight">KK</div>
+              <div className="relative z-10 font-black text-lg tracking-tight drop-shadow-lg">KK</div>
               <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
-                isScrolled ? 'bg-gradient-to-br from-orange-300/30 to-red-300/30' : 'bg-gradient-to-br from-white/15 to-transparent'
+                isScrolled ? 'bg-gradient-to-br from-orange-300/30 to-red-300/30' : 'bg-gradient-to-br from-orange-400/20 to-red-400/20'
               }`}></div>
             </div>
             
@@ -88,11 +88,11 @@ export default function Navigation() {
               className={`md:hidden transition-all duration-400 rounded-2xl backdrop-blur-md hover:scale-110 transform border ${
                 isScrolled 
                   ? 'text-slate-800 bg-gradient-to-r from-orange-50/80 to-white/60 border-orange-200/40 hover:from-orange-500 hover:to-red-500 hover:text-white hover:border-orange-400 shadow-lg hover:shadow-xl' 
-                  : 'text-white bg-gradient-to-r from-white/20 to-white/10 border-white/30 hover:from-white/30 hover:to-white/20 hover:border-white/60 shadow-lg hover:shadow-xl'
+                  : 'text-white bg-gradient-to-r from-orange-500/80 to-red-500/80 border-white/50 hover:from-orange-600 hover:to-red-600 hover:border-white/70 shadow-2xl hover:shadow-xl'
               }`}
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isOpen ? <X className="h-6 w-6 drop-shadow-lg" /> : <Menu className="h-6 w-6 drop-shadow-lg" />}
             </Button>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { GraduationCap, Briefcase, Code, Award, Users } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";

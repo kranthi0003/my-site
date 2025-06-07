@@ -1,3 +1,4 @@
+import React from "react";
 import { Heart, Code, Users, MapPin } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 

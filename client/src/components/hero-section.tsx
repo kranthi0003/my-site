@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Code } from "lucide-react";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
