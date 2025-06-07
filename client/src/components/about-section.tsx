@@ -146,11 +146,11 @@ export default function AboutSection() {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   {/* Photo */}
-                  <div className="aspect-square overflow-hidden">
+                  <div className="aspect-[4/5] overflow-hidden">
                     <img
                       src={memory.photo}
                       alt={`${memory.year} memory`}
-                      className="w-full h-full object-cover object-center scale-110 transition-all duration-500 group-hover:scale-115"
+                      className="w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-105"
                     />
                   </div>
 
