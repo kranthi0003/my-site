@@ -49,15 +49,15 @@ export default function Navigation() {
           ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-orange-200/40' 
           : 'bg-gradient-to-r from-orange-50/10 via-white/15 to-orange-50/10 backdrop-blur-lg'
       }`}>
-        <div className="container mx-auto px-6 py-6">
+        <div className="container mx-auto px-6 py-3">
           <div className="flex justify-between items-center">
-            <div className={`w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl transition-all duration-500 relative overflow-hidden group hover:scale-105 ${
+            <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 relative overflow-hidden group hover:scale-105 ${
               isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
             } ${
               isScrolled ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 text-white shadow-2xl hover:shadow-orange-500/30' : 'bg-gradient-to-br from-white/40 to-white/20 text-white border-2 border-white/50 shadow-xl backdrop-blur-md hover:border-white/70'
             }`}>
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div className="relative z-10 font-black text-xl tracking-tight">KK</div>
+              <div className="relative z-10 font-black text-lg tracking-tight">KK</div>
               <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
                 isScrolled ? 'bg-gradient-to-br from-orange-300/30 to-red-300/30' : 'bg-gradient-to-br from-white/15 to-transparent'
               }`}></div>
@@ -68,7 +68,7 @@ export default function Navigation() {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`transition-all duration-400 font-bold relative group px-5 py-3 rounded-2xl backdrop-blur-md hover:scale-105 transform ${
+                  className={`transition-all duration-400 font-bold relative group px-4 py-2 rounded-2xl backdrop-blur-md hover:scale-105 transform ${
                     isScrolled 
                       ? 'text-slate-800 hover:text-white bg-gradient-to-r from-orange-50/80 to-white/60 border border-orange-200/40 hover:from-orange-500 hover:to-red-500 hover:border-orange-400 shadow-lg hover:shadow-xl' 
                       : 'text-white/95 hover:text-white bg-gradient-to-r from-white/20 to-white/10 border border-white/30 hover:from-white/30 hover:to-white/20 hover:border-white/60 shadow-lg hover:shadow-xl'
