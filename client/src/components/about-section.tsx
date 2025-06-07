@@ -294,11 +294,7 @@ export default function AboutSection() {
                       <p className="text-2xl font-bold text-purple-600">5 Units</p>
                       <p className="text-sm text-purple-600">3 Plots + 2 Flats</p>
                     </div>
-                    <div className="bg-orange-50 p-4 rounded-lg">
-                      <h4 className="font-semibold text-orange-700 mb-2">Liabilities</h4>
-                      <p className="text-2xl font-bold text-orange-600">₹0</p>
-                      <p className="text-sm text-orange-600">No loans</p>
-                    </div>
+
                   </div>
 
                   {/* Property Details Table */}
