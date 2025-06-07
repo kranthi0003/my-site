@@ -279,7 +279,7 @@ export default function AboutSection() {
                     <div className="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
                       <div className="w-4 h-4 bg-green-200 rounded-full"></div>
                     </div>
-                    Property & Financial Assets
+                    Assets & Income
                   </h3>
                   
                   {/* Financial Summary */}
