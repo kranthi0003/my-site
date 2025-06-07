@@ -291,8 +291,8 @@ export default function AboutSection() {
                     </div>
                     <div className="bg-purple-50 p-4 rounded-lg">
                       <h4 className="font-semibold text-purple-700 mb-2">Property Count</h4>
-                      <p className="text-2xl font-bold text-purple-600">5 Units</p>
-                      <p className="text-sm text-purple-600">3 Plots + 2 Flats</p>
+                      <p className="text-2xl font-bold text-purple-600">3 Units</p>
+                      <p className="text-sm text-purple-600">2 Residential plots + 1 2BHK flat</p>
                     </div>
 
                   </div>
