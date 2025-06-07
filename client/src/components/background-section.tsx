@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { GraduationCap, Briefcase, Code, Award, Users } from "lucide-react";
+import { GraduationCap, Briefcase, Code } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 
 export default function BackgroundSection() {
@@ -67,37 +67,7 @@ export default function BackgroundSection() {
           </Card>
         </div>
 
-        {/* Skills & Achievements */}
-        <Card className="mt-12 bg-white p-8 shadow-lg">
-          <CardContent className="p-0">
-            <h3 className="text-2xl font-bold text-primary mb-8 text-center">Skills & Achievements</h3>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="text-center">
-                <div className="bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Code className="text-primary text-xl" size={24} />
-                </div>
-                <h4 className="font-semibold text-primary mb-2">Technical Skills</h4>
-                <p className="text-muted-foreground text-sm">{PROFILE_DATA.skills.technical}</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-secondary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Award className="text-secondary text-xl" size={24} />
-                </div>
-                <h4 className="font-semibold text-primary mb-2">Certifications</h4>
-                <p className="text-muted-foreground text-sm">{PROFILE_DATA.skills.certifications}</p>
-              </div>
-              
-              <div className="text-center">
-                <div className="bg-accent/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <Users className="text-accent text-xl" size={24} />
-                </div>
-                <h4 className="font-semibold text-primary mb-2">Leadership</h4>
-                <p className="text-muted-foreground text-sm">{PROFILE_DATA.skills.leadership}</p>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+
       </div>
     </section>
   );
