@@ -79,7 +79,7 @@ export default function AboutSection() {
                         
                         <CardContent className="relative p-5 h-full flex flex-col z-10">
                           {/* Header with Enhanced Icon and Title */}
-                          <div className="flex items-start mb-4">
+                          <div className="flex items-center mb-4">
                             <div className="relative mr-4 flex-shrink-0">
                               {/* Simple icon container */}
                               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center transition-colors duration-300 border border-primary/20">
@@ -93,7 +93,7 @@ export default function AboutSection() {
                             </div>
                             
                             <div className="flex-1 min-w-0">
-                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2">
+                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2 leading-tight">
                                 {story.title}
                               </h3>
                             </div>
