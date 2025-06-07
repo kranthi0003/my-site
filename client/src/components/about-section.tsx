@@ -95,18 +95,18 @@ export default function AboutSection() {
         {/* Personal Details Grid */}
         <div className="animate-fade-in">
           <div className="container mx-auto px-4 sm:px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 justify-items-center">
               
               {/* Basics & Lifestyle */}
-              <Card className="w-full max-w-sm bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
-                <CardContent className="p-6">
+              <Card className="w-full max-w-lg bg-white/80 backdrop-blur-sm border-l-4 border-l-primary shadow-lg">
+                <CardContent className="p-8">
                   <h3 className="text-xl font-semibold text-primary mb-6 flex items-center">
                     <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center mr-3">
                       <div className="w-4 h-4 bg-primary/20 rounded-full"></div>
                     </div>
                     Basics & Lifestyle
                   </h3>
-                  <div className="space-y-3 text-sm">
+                  <div className="space-y-4 text-base">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Age:</span>
                       <span className="font-medium">25</span>
@@ -144,15 +144,15 @@ export default function AboutSection() {
               </Card>
 
               {/* Personal & Family */}
-              <Card className="w-full max-w-sm bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg">
-                <CardContent className="p-6">
+              <Card className="w-full max-w-lg bg-white/80 backdrop-blur-sm border-l-4 border-l-secondary shadow-lg">
+                <CardContent className="p-8">
                   <h3 className="text-xl font-semibold text-secondary mb-6 flex items-center">
                     <div className="w-8 h-8 bg-secondary/10 rounded-full flex items-center justify-center mr-3">
                       <div className="w-4 h-4 bg-secondary/20 rounded-full"></div>
                     </div>
                     Personal & Family
                   </h3>
-                  <div className="space-y-3 text-sm">
+                  <div className="space-y-4 text-base">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Caste:</span>
                       <span className="font-medium">Patnaik (OC)</span>
@@ -190,15 +190,15 @@ export default function AboutSection() {
               </Card>
 
               {/* Education & Career */}
-              <Card className="w-full max-w-sm bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
-                <CardContent className="p-6">
+              <Card className="w-full max-w-lg bg-white/80 backdrop-blur-sm border-l-4 border-l-accent shadow-lg">
+                <CardContent className="p-8">
                   <h3 className="text-xl font-semibold text-accent mb-6 flex items-center">
                     <div className="w-8 h-8 bg-accent/10 rounded-full flex items-center justify-center mr-3">
                       <div className="w-4 h-4 bg-accent/20 rounded-full"></div>
                     </div>
                     Education & Career
                   </h3>
-                  <div className="space-y-3 text-sm">
+                  <div className="space-y-4 text-base">
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Qualification:</span>
                       <span className="font-medium">B.Tech (CSE)</span>
