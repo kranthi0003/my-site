@@ -307,60 +307,36 @@ export default function AboutSection() {
                           <th className="border border-gray-200 px-3 py-2 text-left">Location</th>
                           <th className="border border-gray-200 px-3 py-2 text-left">Size/Area</th>
                           <th className="border border-gray-200 px-3 py-2 text-left">Current Value</th>
-                          <th className="border border-gray-200 px-3 py-2 text-left">Status</th>
-                          <th className="border border-gray-200 px-3 py-2 text-left">Rental Income</th>
+                          <th className="border border-gray-200 px-3 py-2 text-left">Source</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">Residential Plot</td>
-                          <td className="border border-gray-200 px-3 py-2">Perinthalmanna, Kerala</td>
-                          <td className="border border-gray-200 px-3 py-2">8 Cents</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">Plot</td>
+                          <td className="border border-gray-200 px-3 py-2">Tagarapuvalasa, Vizag</td>
+                          <td className="border border-gray-200 px-3 py-2">200 Sqyds</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹40 Lakhs</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Self</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">Plot</td>
+                          <td className="border border-gray-200 px-3 py-2">Simhachalam, Vizag</td>
+                          <td className="border border-gray-200 px-3 py-2">250 Sqyds</td>
+                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹50 Lakhs</td>
+                          <td className="border border-gray-200 px-3 py-2">
+                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Inherited</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td className="border border-gray-200 px-3 py-2 font-medium">Flat</td>
+                          <td className="border border-gray-200 px-3 py-2">PMPalem, Vizag</td>
+                          <td className="border border-gray-200 px-3 py-2">1100 sqft</td>
                           <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹45 Lakhs</td>
                           <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Owned</span>
+                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Self</span>
                           </td>
-                          <td className="border border-gray-200 px-3 py-2">-</td>
-                        </tr>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">Commercial Plot</td>
-                          <td className="border border-gray-200 px-3 py-2">Malappuram, Kerala</td>
-                          <td className="border border-gray-200 px-3 py-2">5 Cents</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹35 Lakhs</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Owned</span>
-                          </td>
-                          <td className="border border-gray-200 px-3 py-2">-</td>
-                        </tr>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">Agricultural Land</td>
-                          <td className="border border-gray-200 px-3 py-2">Tirur, Kerala</td>
-                          <td className="border border-gray-200 px-3 py-2">1.2 Acres</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹60 Lakhs</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-xs">Family</span>
-                          </td>
-                          <td className="border border-gray-200 px-3 py-2">₹15,000/month</td>
-                        </tr>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">2BHK Apartment</td>
-                          <td className="border border-gray-200 px-3 py-2">Whitefield, Bangalore</td>
-                          <td className="border border-gray-200 px-3 py-2">1,200 sqft</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹85 Lakhs</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded-full text-xs">Owned</span>
-                          </td>
-                          <td className="border border-gray-200 px-3 py-2">₹35,000/month</td>
-                        </tr>
-                        <tr>
-                          <td className="border border-gray-200 px-3 py-2 font-medium">3BHK Villa</td>
-                          <td className="border border-gray-200 px-3 py-2">Kochi, Kerala</td>
-                          <td className="border border-gray-200 px-3 py-2">2,500 sqft</td>
-                          <td className="border border-gray-200 px-3 py-2 font-medium text-green-600">₹1.2 Crores</td>
-                          <td className="border border-gray-200 px-3 py-2">
-                            <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full text-xs">Under Construction</span>
-                          </td>
-                          <td className="border border-gray-200 px-3 py-2">Expected ₹45,000/month</td>
                         </tr>
                       </tbody>
                     </table>
