@@ -10,7 +10,7 @@ export const PROFILE_DATA = {
   profileImage: profilePhoto,
   
   // About section
-  aboutDescription: "I'm Kranthi Kiran, a software engineer with a passion for building meaningful and scalable tech solutions — but before all that, I'm someone shaped by simple beginnings and steady values.",
+  aboutDescription: "Every engineer has a story that shaped their code. Mine began in the coastal city of Vizag and wound through moments of loss, growth, and discovery. Explore the chapters below to see how personal experiences forged my approach to building technology that matters.",
   aboutImage: "/attached_assets/IMG_5243_1749135607534.JPG",
   
   personalStory: [
