@@ -33,13 +33,13 @@ export default function AboutSection() {
         
         {/* Personal Story Carousel */}
         <div className="animate-slide-up mb-16">
-          <Carousel className="w-full max-w-4xl mx-auto" opts={{ align: "start", loop: true }}>
+          <Carousel className="w-full max-w-4xl mx-auto" opts={{ align: "start", loop: false }}>
             <CarouselContent>
               {PROFILE_DATA.personalStory.map((story, index) => {
                 const IconComponent = iconMap[story.title as keyof typeof iconMap];
                 
                 return (
-                  <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                  <CarouselItem key={index} className="basis-full">
                     <Card className="group h-full bg-white/90 backdrop-blur-sm shadow-xl border border-primary/10 hover:shadow-2xl transition-all duration-500 hover:scale-105 mx-2">
                       <CardContent className="p-8 h-full flex flex-col">
                         <div className="flex items-center mb-6">
@@ -53,13 +53,20 @@ export default function AboutSection() {
                         <p className="text-muted-foreground leading-relaxed flex-grow text-sm">
                           {story.description}
                         </p>
+                        <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-100">
+                          <span className="text-xs text-muted-foreground">Chapter {index + 1} of {PROFILE_DATA.personalStory.length}</span>
+                          <div className="flex space-x-1">
+                            {PROFILE_DATA.personalStory.map((_, i) => (
+                              <div key={i} className={`w-2 h-2 rounded-full ${i === index ? 'bg-primary' : 'bg-gray-300'}`}></div>
+                            ))}
+                          </div>
+                        </div>
                       </CardContent>
                     </Card>
                   </CarouselItem>
                 );
               })}
             </CarouselContent>
-            <CarouselPrevious className="left-4" />
             <CarouselNext className="right-4" />
           </Carousel>
         </div>
