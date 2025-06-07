@@ -154,41 +154,41 @@ export default function AboutSection() {
                     Basics & Lifestyle
                   </h3>
                   <div className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Age</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">25</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Age</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">25</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Date of Birth</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">03-Sep-1999</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Date of Birth</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">03-Sep-1999</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Height</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">5' 10" (177cm)</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Height</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">5' 10" (177cm)</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Weight</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">75kg</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Weight</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">75kg</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Work</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Software Engineer</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Work</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Software Engineer</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                        <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Diet</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Non-vegetarian</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                        <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Diet</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Non-vegetarian</p>
                       </div>
                     </div>
                     
-                    <div className="bg-gradient-to-r from-primary/5 to-secondary/5 p-5 rounded-xl border border-primary/10">
-                      <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Languages</span>
-                      <p className="font-bold text-gray-900 text-lg mt-2">Telugu, Hindi, English<br/><span className="text-primary font-medium">(learning Tamil)</span></p>
+                    <div className="bg-gradient-to-r from-primary/5 to-secondary/5 p-4 rounded-lg border border-primary/10">
+                      <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Languages</span>
+                      <p className="font-medium text-gray-900 text-sm mt-2">Telugu, Hindi, English<br/><span className="text-primary">(learning Tamil)</span></p>
                     </div>
                     
-                    <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-primary/20 transition-colors duration-300">
-                      <span className="text-primary/70 text-xs font-semibold uppercase tracking-wide">Smoking/Drinking</span>
-                      <p className="font-bold text-gray-900 text-lg mt-1">No</p>
+                    <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-primary/20 transition-colors duration-300">
+                      <span className="text-primary/70 text-xs font-medium uppercase tracking-wide">Smoking/Drinking</span>
+                      <p className="font-medium text-gray-900 text-sm mt-1">No</p>
                     </div>
                   </div>
                 </CardContent>
@@ -209,30 +209,30 @@ export default function AboutSection() {
                     Personal & Family
                   </h3>
                   <div className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-secondary/20 transition-colors duration-300">
-                        <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Caste</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Patnaik (OC)</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-secondary/20 transition-colors duration-300">
+                        <span className="text-secondary/70 text-xs font-medium uppercase tracking-wide">Caste</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Patnaik (OC)</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-secondary/20 transition-colors duration-300">
-                        <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Native</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Visakhapatnam</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-secondary/20 transition-colors duration-300">
+                        <span className="text-secondary/70 text-xs font-medium uppercase tracking-wide">Native</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Visakhapatnam</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-secondary/20 transition-colors duration-300 sm:col-span-2">
-                        <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Siblings</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Only Child</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-secondary/20 transition-colors duration-300 sm:col-span-2">
+                        <span className="text-secondary/70 text-xs font-medium uppercase tracking-wide">Siblings</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Only Child</p>
                       </div>
                     </div>
                     
-                    <div className="bg-gradient-to-r from-secondary/5 to-accent/5 p-5 rounded-xl border border-secondary/10">
+                    <div className="bg-gradient-to-r from-secondary/5 to-accent/5 p-4 rounded-lg border border-secondary/10">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Father's Occupation</span>
-                          <p className="font-bold text-gray-900 text-lg mt-1">Passed away</p>
+                          <span className="text-secondary/70 text-xs font-medium uppercase tracking-wide">Father's Occupation</span>
+                          <p className="font-medium text-gray-900 text-sm mt-1">Passed away</p>
                         </div>
                         <div>
-                          <span className="text-secondary/70 text-xs font-semibold uppercase tracking-wide">Mother's Occupation</span>
-                          <p className="font-bold text-gray-900 text-lg mt-1">Homemaker</p>
+                          <span className="text-secondary/70 text-xs font-medium uppercase tracking-wide">Mother's Occupation</span>
+                          <p className="font-medium text-gray-900 text-sm mt-1">Homemaker</p>
                         </div>
                       </div>
                     </div>
@@ -255,42 +255,42 @@ export default function AboutSection() {
                     Education & Career
                   </h3>
                   <div className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
-                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Qualification</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">B.Tech (CSE)</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Qualification</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">B.Tech (CSE)</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
-                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">College</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">GVPCOE, Vizag</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">College</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">GVPCOE, Vizag</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
-                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Year of Passing</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">2021</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Year of Passing</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">2021</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
-                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Experience</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">4+ years</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Experience</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">4+ years</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
-                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Salary</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">₹30+ LPA</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Salary</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">₹30+ LPA</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-accent/20 transition-colors duration-300">
-                        <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Work Location</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Bangalore</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-accent/20 transition-colors duration-300">
+                        <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Work Location</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Bangalore</p>
                       </div>
                     </div>
                     
-                    <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-5 rounded-xl border border-accent/10">
+                    <div className="bg-gradient-to-r from-accent/5 to-primary/5 p-4 rounded-lg border border-accent/10">
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                          <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Current Company</span>
-                          <p className="font-bold text-gray-900 text-lg mt-1">Couchbase</p>
+                          <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Current Company</span>
+                          <p className="font-medium text-gray-900 text-sm mt-1">Couchbase</p>
                         </div>
                         <div>
-                          <span className="text-accent/70 text-xs font-semibold uppercase tracking-wide">Previous Companies</span>
-                          <p className="font-bold text-gray-900 text-lg mt-1">Amazon, Groww</p>
+                          <span className="text-accent/70 text-xs font-medium uppercase tracking-wide">Previous Companies</span>
+                          <p className="font-medium text-gray-900 text-sm mt-1">Amazon, Groww</p>
                         </div>
                       </div>
                     </div>
@@ -313,22 +313,22 @@ export default function AboutSection() {
                     Astrology Details
                   </h3>
                   <div className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
-                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Gothram</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Bharadwaja</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-medium uppercase tracking-wide">Gothram</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Bharadwaja</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
-                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Star</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Ardra</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-medium uppercase tracking-wide">Star</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Ardra</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
-                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Rasi</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">Mithuna (Gemini)</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-medium uppercase tracking-wide">Rasi</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">Mithuna (Gemini)</p>
                       </div>
-                      <div className="bg-gray-50/50 p-4 rounded-xl border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
-                        <span className="text-purple-500/70 text-xs font-semibold uppercase tracking-wide">Time of Birth</span>
-                        <p className="font-bold text-gray-900 text-lg mt-1">10:20 PM</p>
+                      <div className="bg-gray-50/50 p-3 rounded-lg border border-gray-100 hover:border-purple-500/20 transition-colors duration-300">
+                        <span className="text-purple-500/70 text-xs font-medium uppercase tracking-wide">Time of Birth</span>
+                        <p className="font-medium text-gray-900 text-sm mt-1">10:20 PM</p>
                       </div>
                     </div>
                   </div>
