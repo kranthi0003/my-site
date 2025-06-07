@@ -140,7 +140,11 @@ export default function AboutSection() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
               
               {/* Basics & Lifestyle */}
-              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-primary/3 backdrop-blur-sm border border-primary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-primary/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
+                {/* Enhanced border wrapper */}
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-primary/20 to-primary/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/15 via-transparent to-primary/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
+                
                 {/* Card number badge */}
                 <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
                   <span className="text-sm font-bold text-white">1</span>
@@ -195,7 +199,11 @@ export default function AboutSection() {
               </Card>
 
               {/* Personal & Family */}
-              <Card className="group w-full bg-gradient-to-br from-white via-white/95 to-secondary/3 backdrop-blur-sm border border-secondary/20 shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.02] rounded-xl overflow-hidden">
+              <Card className="group relative w-full bg-gradient-to-br from-white via-white/98 to-secondary/5 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 hover:scale-[1.01] rounded-xl overflow-hidden border-2 border-transparent">
+                {/* Enhanced border wrapper */}
+                <div className="absolute -inset-[1px] bg-gradient-to-r from-secondary/40 via-secondary/20 to-secondary/40 rounded-xl opacity-60 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute -inset-[2px] bg-gradient-to-br from-secondary/15 via-transparent to-secondary/15 rounded-xl blur-sm opacity-0 group-hover:opacity-70 transition-opacity duration-700"></div>
+                
                 {/* Card number badge */}
                 <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-br from-secondary to-secondary/80 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300 z-10">
                   <span className="text-sm font-bold text-white">2</span>
