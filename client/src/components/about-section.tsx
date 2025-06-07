@@ -135,8 +135,8 @@ export default function AboutSection() {
                 );
               })}
             </CarouselContent>
-            {current > 1 && <CarouselPrevious className="-left-12 w-10 h-10 bg-white/90 border-2 border-primary/20 shadow-lg hover:bg-primary/10 hover:border-primary/40 transition-all duration-300" />}
-            {current < count && <CarouselNext className="-right-12 w-10 h-10 bg-white/90 border-2 border-primary/20 shadow-lg hover:bg-primary/10 hover:border-primary/40 transition-all duration-300" />}
+            {current > 1 && <CarouselPrevious className="-left-6 w-12 h-12 bg-white/95 border-2 border-primary/30 shadow-xl hover:bg-primary/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 z-10" />}
+            {current < count && <CarouselNext className="-right-6 w-12 h-12 bg-white/95 border-2 border-primary/30 shadow-xl hover:bg-primary/10 hover:border-primary/50 hover:scale-110 transition-all duration-300 z-10" />}
           </Carousel>
         </div>
         
