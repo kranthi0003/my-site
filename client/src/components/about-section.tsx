@@ -150,7 +150,7 @@ export default function AboutSection() {
                     <img
                       src={memory.photo}
                       alt={`${memory.year} memory`}
-                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover object-top transition-all duration-500 group-hover:scale-105"
                     />
                   </div>
 
