@@ -382,11 +382,11 @@ export default function AboutSection() {
                         </div>
                       </div>
 
-                      {/* Emergency Fund */}
+                      {/* PF */}
                       <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-lg p-4">
                         <div className="flex justify-between items-center">
                           <div>
-                            <h5 className="font-semibold text-cyan-800 text-lg">Emergency Fund</h5>
+                            <h5 className="font-semibold text-cyan-800 text-lg">PF</h5>
                           </div>
                           <div className="text-right">
                             <p className="text-2xl font-bold text-cyan-600">₹8 Lakhs</p>
