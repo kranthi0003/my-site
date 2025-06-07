@@ -106,38 +106,42 @@ export default function AboutSection() {
                     </div>
                     Basics & Lifestyle
                   </h3>
-                  <div className="space-y-4 text-base">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Age:</span>
-                      <span className="font-medium">25</span>
+                  <div className="space-y-5 text-base">
+                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Age</span>
+                        <p className="font-semibold text-gray-900">25</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Date of Birth</span>
+                        <p className="font-semibold text-gray-900">03-Sep-1999</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Height</span>
+                        <p className="font-semibold text-gray-900">5' 10" (177cm)</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Weight</span>
+                        <p className="font-semibold text-gray-900">75kg</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Work</span>
+                        <p className="font-semibold text-gray-900">Software Engineer</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Diet</span>
+                        <p className="font-semibold text-gray-900">Non-vegetarian</p>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Date of Birth:</span>
-                      <span className="font-medium">03-Sep-1999</span>
+                    
+                    <div className="pt-2 border-t border-gray-100">
+                      <span className="text-muted-foreground text-sm font-medium">Languages</span>
+                      <p className="font-semibold text-gray-900 mt-1">Telugu, Hindi, English<br/><span className="text-primary">(learning Tamil)</span></p>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Height:</span>
-                      <span className="font-medium">5' 10" (177cm)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Weight:</span>
-                      <span className="font-medium">75kg</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Work:</span>
-                      <span className="font-medium">Software Engineer</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Languages:</span>
-                      <span className="font-medium">Telugu, Hindi, English, (learning Tamil)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Diet:</span>
-                      <span className="font-medium">Non-vegetarian</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Smoking/Drinking:</span>
-                      <span className="font-medium">No</span>
+                    
+                    <div>
+                      <span className="text-muted-foreground text-sm font-medium">Smoking/Drinking</span>
+                      <p className="font-semibold text-gray-900">No</p>
                     </div>
                   </div>
                 </CardContent>
@@ -152,38 +156,45 @@ export default function AboutSection() {
                     </div>
                     Personal & Family
                   </h3>
-                  <div className="space-y-4 text-base">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Caste:</span>
-                      <span className="font-medium">Patnaik (OC)</span>
+                  <div className="space-y-5 text-base">
+                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Caste</span>
+                        <p className="font-semibold text-gray-900">Patnaik (OC)</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Gothram</span>
+                        <p className="font-semibold text-gray-900">Bharadwaja</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Star</span>
+                        <p className="font-semibold text-gray-900">Ardra</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Rasi</span>
+                        <p className="font-semibold text-gray-900">Mithuna (Gemini)</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Native</span>
+                        <p className="font-semibold text-gray-900">Visakhapatnam</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Siblings</span>
+                        <p className="font-semibold text-gray-900">0</p>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Gothram:</span>
-                      <span className="font-medium">Bharadwaja</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Star:</span>
-                      <span className="font-medium">Ardra</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Rasi:</span>
-                      <span className="font-medium">Mithuna (Gemini)</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Father's Occupation:</span>
-                      <span className="font-medium">Passed away</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Mother's Occupation:</span>
-                      <span className="font-medium">Homemaker</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Native:</span>
-                      <span className="font-medium">Visakhapatnam</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Siblings:</span>
-                      <span className="font-medium">0</span>
+                    
+                    <div className="pt-2 border-t border-gray-100">
+                      <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                        <div>
+                          <span className="text-muted-foreground text-sm font-medium">Father's Occupation</span>
+                          <p className="font-semibold text-gray-900">Passed away</p>
+                        </div>
+                        <div>
+                          <span className="text-muted-foreground text-sm font-medium">Mother's Occupation</span>
+                          <p className="font-semibold text-gray-900">Homemaker</p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -198,38 +209,44 @@ export default function AboutSection() {
                     </div>
                     Education & Career
                   </h3>
-                  <div className="space-y-4 text-base">
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Qualification:</span>
-                      <span className="font-medium">B.Tech (CSE)</span>
+                  <div className="space-y-5 text-base">
+                    <div className="grid grid-cols-2 gap-y-4 gap-x-6">
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Qualification</span>
+                        <p className="font-semibold text-gray-900">B.Tech (CSE)</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">College</span>
+                        <p className="font-semibold text-gray-900">GVPCOE, Vizag</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Year of Passing</span>
+                        <p className="font-semibold text-gray-900">2021</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Experience</span>
+                        <p className="font-semibold text-gray-900">4+ years</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Salary</span>
+                        <p className="font-semibold text-gray-900">₹30+ LPA</p>
+                      </div>
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Work Location</span>
+                        <p className="font-semibold text-gray-900">Bangalore</p>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">College:</span>
-                      <span className="font-medium">GVPCOE, Vizag</span>
+                    
+                    <div className="pt-2 border-t border-gray-100">
+                      <div>
+                        <span className="text-muted-foreground text-sm font-medium">Current Company</span>
+                        <p className="font-semibold text-gray-900">Couchbase</p>
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Year of Passing:</span>
-                      <span className="font-medium">2021</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Current Company:</span>
-                      <span className="font-medium">Couchbase</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Previous Companies:</span>
-                      <span className="font-medium">Amazon, Groww</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Experience:</span>
-                      <span className="font-medium">4+ years</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Salary:</span>
-                      <span className="font-medium">₹30+ LPA</span>
-                    </div>
-                    <div className="flex justify-between">
-                      <span className="text-muted-foreground">Work Location:</span>
-                      <span className="font-medium">Bangalore</span>
+                    
+                    <div>
+                      <span className="text-muted-foreground text-sm font-medium">Previous Companies</span>
+                      <p className="font-semibold text-gray-900">Amazon, Groww</p>
                     </div>
                   </div>
                 </CardContent>
