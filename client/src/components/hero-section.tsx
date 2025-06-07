@@ -29,6 +29,7 @@ export default function HeroSection() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-relaxed">
                 <span className="block mb-4 text-white/90">Hello, I'm</span>
                 <span className="block text-white font-extrabold bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">{PROFILE_DATA.name}</span>
+                <span className="block text-lg md:text-xl lg:text-2xl font-normal text-white/80 mt-3">- {PROFILE_DATA.tagline}</span>
               </h1>
             </div>
             
@@ -79,15 +80,8 @@ export default function HeroSection() {
               </div>
             </div>
 
-            {/* Tagline and Buttons - Now below the photo */}
+            {/* Buttons - Now below the photo */}
             <div className="space-y-8">
-              <div className="relative">
-                <p className="text-2xl md:text-3xl lg:text-4xl font-bold leading-relaxed max-w-4xl mx-auto bg-gradient-to-r from-white via-yellow-100 to-white bg-clip-text text-transparent p-6 rounded-2xl shadow-2xl border border-white/30 backdrop-blur-md bg-white/10">
-                  {PROFILE_DATA.tagline}
-                </p>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 via-yellow-300/20 to-orange-400/20 rounded-2xl blur-xl -z-10"></div>
-              </div>
-              
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Button
                   onClick={() => scrollTo('about')}
