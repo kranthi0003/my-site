@@ -100,11 +100,11 @@ export default function HeroSection() {
 
             {/* Buttons - Now below the photo */}
             <div className="space-y-6">
-              <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button
                   onClick={() => scrollTo('about')}
-                  className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-12 py-6 rounded-2xl font-bold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-110 hover:shadow-2xl hover:shadow-orange-500/50 text-lg border-0 overflow-hidden group hover:-translate-y-1"
-                  size="lg"
+                  className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-orange-500/40 text-base border-0 overflow-hidden group hover:-translate-y-1"
+                  size="default"
                 >
                   <span className="relative z-10 transition-all duration-300">Peek Into My World 👀</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -113,8 +113,8 @@ export default function HeroSection() {
                 <Button
                   onClick={() => scrollTo('contact')}
                   variant="outline"
-                  className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-12 py-6 rounded-2xl font-bold hover:bg-white/20 hover:border-white hover:shadow-2xl hover:shadow-white/30 transition-all duration-500 text-lg group overflow-hidden transform hover:scale-110 hover:-translate-y-1"
-                  size="lg"
+                  className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-8 py-3 rounded-xl font-semibold hover:bg-white/20 hover:border-white hover:shadow-xl hover:shadow-white/25 transition-all duration-500 text-base group overflow-hidden transform hover:scale-105 hover:-translate-y-1"
+                  size="default"
                 >
                   <span className="relative z-10 transition-all duration-300">Say Hello! 👋</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
