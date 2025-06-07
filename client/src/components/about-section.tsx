@@ -137,44 +137,49 @@ export default function AboutSection() {
         {/* Memory Years Grid */}
         <div className="animate-fade-in mb-16">
           {/* Simple Frame Container with overflow visible for tags */}
-          <div className="relative max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow-lg border-2 border-primary/20 overflow-visible">
-            <div className="grid grid-cols-2 gap-4">
-              {PROFILE_DATA.memoryYears.map((memory, index) => {
-                // Define tag position for each year - properly positioned at corners
-                const tagPositions = {
-                  "2022": "top-2 left-2",
-                  "2023": "top-2 right-2", 
-                  "2024": "bottom-2 left-2",
-                  "2025": "bottom-2 right-2"
-                };
-
-                return (
-                  <div
-                    key={memory.year}
-                    className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
-                    style={{ animationDelay: `${index * 0.1}s` }}
-                  >
-                    {/* Year Badge positioned inside photo corners */}
-                    <div className={`absolute ${tagPositions[memory.year as keyof typeof tagPositions]} z-30`}>
-                      <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-lg">
-                        {memory.year}
-                      </div>
-                    </div>
-
-                    {/* Photo */}
-                    <div className="aspect-square overflow-hidden">
-                      <img
-                        src={memory.photo}
-                        alt={`${memory.year} memory`}
-                        className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
-                      />
-                    </div>
-
-                    {/* Simple hover overlay */}
-                    <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+          <div className="relative max-w-3xl mx-auto p-8 bg-white rounded-2xl shadow-lg border-2 border-primary/20">
+            <div className="grid grid-cols-2 gap-4 relative">
+              {PROFILE_DATA.memoryYears.map((memory, index) => (
+                <div
+                  key={memory.year}
+                  className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] bg-white"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  {/* Photo */}
+                  <div className="aspect-square overflow-hidden">
+                    <img
+                      src={memory.photo}
+                      alt={`${memory.year} memory`}
+                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                    />
                   </div>
-                );
-              })}
+
+                  {/* Simple hover overlay */}
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"></div>
+                </div>
+              ))}
+              
+              {/* Year Tags positioned at grid corners - outside photos */}
+              <div className="absolute -top-3 -left-3 z-40">
+                <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-lg">
+                  2022
+                </div>
+              </div>
+              <div className="absolute -top-3 -right-3 z-40">
+                <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-lg">
+                  2023
+                </div>
+              </div>
+              <div className="absolute -bottom-3 -left-3 z-40">
+                <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-lg">
+                  2024
+                </div>
+              </div>
+              <div className="absolute -bottom-3 -right-3 z-40">
+                <div className="bg-primary text-white px-2 py-1 rounded-md font-bold text-xs shadow-lg">
+                  2025
+                </div>
+              </div>
             </div>
           </div>
         </div>
