@@ -28,7 +28,7 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10 min-h-screen flex items-center">
-        <div className="w-full pt-20 pb-16">
+        <div className="w-full pt-8 pb-16">
           <div className="text-center space-y-12 animate-fade-in">
             {/* Name section */}
             <div className="space-y-4">
