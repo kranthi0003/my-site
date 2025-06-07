@@ -80,7 +80,7 @@ export default function HeroSection() {
                   </div>
                   
                   {/* Refined Moon - cleaner with subtle details */}
-                  <div className="absolute inset-1 animate-spin" style={{ animationDuration: '20s', animationDirection: 'reverse' }}>
+                  <div className="absolute inset-1 animate-spin" style={{ animationDuration: '20s' }}>
                     <div className="absolute top-1/2 -right-2 transform -translate-y-1/2 w-2.5 h-2.5 bg-gradient-to-br from-slate-200 to-slate-300 rounded-full shadow-sm shadow-slate-400/30">
                       <div className="absolute inset-0 rounded-full bg-white/20 scale-110 animate-pulse" style={{ animationDuration: '5s' }}></div>
                       <div className="absolute top-0.5 left-0.5 w-0.5 h-0.5 bg-slate-300 rounded-full opacity-40"></div>
