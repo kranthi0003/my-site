@@ -78,19 +78,42 @@ export default function AboutSection() {
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
                         
                         <CardContent className="relative p-5 h-full flex flex-col z-10">
-                          {/* Header with Icon and Title */}
-                          <div className="flex items-center mb-3">
-                            <div className="relative mr-3">
-                              <div className="w-10 h-10 bg-gradient-to-br from-primary/20 via-primary/15 to-primary/10 rounded-full flex items-center justify-center group-hover:scale-125 group-hover:rotate-12 transition-all duration-700 animate-float shadow-lg">
-                                <IconComponent className="text-primary group-hover:text-primary/90 transition-colors duration-300" size={18} />
+                          {/* Header with Enhanced Icon and Title */}
+                          <div className="flex items-start mb-4">
+                            <div className="relative mr-4 flex-shrink-0">
+                              {/* Glowing icon container */}
+                              <div className="w-14 h-14 bg-gradient-to-br from-primary/25 via-secondary/20 to-accent/25 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-xl border border-white/20">
+                                <IconComponent className="text-primary group-hover:text-white transition-colors duration-300" size={24} />
                               </div>
-                              <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 to-secondary/30 rounded-full blur opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
+                              {/* Enhanced glow effect */}
+                              <div className="absolute -inset-2 bg-gradient-to-r from-primary/20 via-secondary/15 to-accent/20 rounded-2xl blur-md opacity-0 group-hover:opacity-80 transition-opacity duration-500"></div>
+                              
+                              {/* Chapter number badge */}
+                              <div className="absolute -top-2 -right-2 w-7 h-7 bg-gradient-to-br from-orange-400 to-orange-600 rounded-full flex items-center justify-center shadow-lg border-2 border-white group-hover:scale-110 transition-transform duration-300">
+                                <span className="text-xs font-bold text-white">{index + 1}</span>
+                              </div>
                             </div>
-                            <div className="flex-1">
-                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 transform group-hover:translate-x-1 line-clamp-2">
+                            
+                            <div className="flex-1 min-w-0">
+                              <h3 className="text-lg font-bold text-primary group-hover:text-primary/90 transition-colors duration-300 line-clamp-2 mb-2">
                                 {story.title}
                               </h3>
-                              <div className="w-0 group-hover:w-12 h-0.5 bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-500 mt-1"></div>
+                              {/* Progress indicator */}
+                              <div className="flex items-center space-x-1 mb-1">
+                                {Array.from({ length: 5 }, (_, i) => (
+                                  <div 
+                                    key={i}
+                                    className={`h-1 rounded-full transition-all duration-500 ${
+                                      i <= index 
+                                        ? 'bg-gradient-to-r from-primary to-secondary w-3 group-hover:w-4' 
+                                        : 'bg-gray-200 w-2'
+                                    }`}
+                                  ></div>
+                                ))}
+                              </div>
+                              <p className="text-xs text-muted-foreground font-medium">
+                                Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
+                              </p>
                             </div>
                           </div>
 
@@ -101,26 +124,15 @@ export default function AboutSection() {
                             </p>
                           </div>
                           
-                          {/* Enhanced Footer */}
-                          <div className="flex items-center justify-between pt-3 border-t border-gradient-to-r from-transparent via-gray-200/50 to-transparent relative mt-auto">
-                            <div className="flex items-center space-x-2">
-                              <div className="relative">
-                                <div className="w-6 h-6 bg-gradient-to-br from-primary/15 to-secondary/15 rounded-full flex items-center justify-center animate-pulse border border-primary/20">
-                                  <span className="text-xs font-bold text-primary">{index + 1}</span>
-                                </div>
-                                <div className="absolute -inset-1 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full opacity-0 group-hover:opacity-50 transition-opacity duration-300 animate-ping"></div>
-                              </div>
-                              <span className="text-xs text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300 font-medium">
-                                Chapter {index + 1} of {PROFILE_DATA.personalStory.length}
-                              </span>
-                            </div>
-                            <div className="flex space-x-1">
+                          {/* Clean Footer */}
+                          <div className="mt-auto pt-4 border-t border-gray-100">
+                            <div className="flex justify-center space-x-2">
                               {PROFILE_DATA.personalStory.map((_, i) => (
                                 <div 
                                   key={i} 
                                   className={`w-2 h-2 rounded-full transition-all duration-300 ${
                                     i === index 
-                                      ? 'bg-gradient-to-r from-primary to-secondary scale-110' 
+                                      ? 'bg-gradient-to-r from-primary to-secondary scale-125 shadow-md' 
                                       : 'bg-gray-300 hover:bg-gray-400'
                                   }`}
                                 ></div>
