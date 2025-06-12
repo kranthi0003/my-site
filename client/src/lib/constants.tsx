@@ -105,8 +105,8 @@ export const PROFILE_DATA = {
       alt: "Personal lifestyle photo"
     },
     {
-      url: "/attached_assets/new-portrait.jpg",
-      alt: "Portrait with glasses"
+      url: "@assets/Snapchat-1059745354.jpg",
+      alt: "Candid moment"
     },
     {
       url: "@assets/Snapchat-1445693840.jpg",
@@ -128,7 +128,7 @@ export const PROFILE_DATA = {
     },
     {
       year: "2023", 
-      photo: "/attached_assets/new-portrait.jpg",
+      photo: "/attached_assets/Snapchat-240699289.jpg",
       title: "Growth Journey",
       description: "Expanding horizons and experiences"
     },
