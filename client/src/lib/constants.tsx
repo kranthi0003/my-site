@@ -1,7 +1,6 @@
 // This file contains all the personal data for the bio website
 // Replace all values with actual personal information
 import profilePhoto from "@assets/IMG_20220826_165143_835_1749135163637.jpg";
-import newPortrait from "@assets/Snapchat-1037974668_Original_1749744538149.jpg";
 
 export const PROFILE_DATA = {
   name: "Kranthi Kiran",
@@ -102,19 +101,19 @@ export const PROFILE_DATA = {
   // Photo Gallery - Replace with actual personal photos
   galleryImages: [
     {
-      url: "@assets/IMG_5243_1749135607534.JPG",
+      url: "/attached_assets/IMG_5243_1749135607534.JPG",
       alt: "Personal lifestyle photo"
     },
     {
-      url: newPortrait,
+      url: "/attached_assets/Snapchat-1037974668_Original_1749744538149.jpg",
       alt: "Candid moment"
     },
     {
-      url: "@assets/Snapchat-1445693840.jpg",
+      url: "/attached_assets/Snapchat-1445693840.jpg",
       alt: "Travel memory"
     },
     {
-      url: "@assets/Snapchat-240699289.jpg",
+      url: "/attached_assets/Snapchat-240699289.jpg",
       alt: "Life experience"
     }
   ],
