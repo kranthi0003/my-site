@@ -34,7 +34,7 @@ export default function ContactSection() {
 
   return (
     <section id="contact" className="pt-24 pb-20 hero-gradient text-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-6 transform-none">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">Get In Touch</h2>
           <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -42,7 +42,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
           <div className="space-y-8">
             <div className="flex items-center space-x-4">
               <div className="bg-accent p-3 rounded-full">
@@ -99,10 +99,10 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
+          <Card className="bg-white/10 backdrop-blur-sm border-white/20 w-full">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <h3 className="text-2xl font-bold mb-6 text-left">Send a Message</h3>
+              <form onSubmit={handleSubmit} className="space-y-6 w-full">
                 <div>
                   <label className="block text-sm font-medium opacity-90 mb-2">Your Name</label>
                   <Input
