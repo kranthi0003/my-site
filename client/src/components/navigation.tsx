@@ -48,7 +48,7 @@ export default function Navigation() {
       <div className="fixed top-0 w-full z-[60] bg-gradient-to-r from-orange-500/90 to-red-500/90 backdrop-blur-sm">
         <div className="text-center py-1.5 px-4">
           <p className="text-white text-xs md:text-sm font-medium animate-pulse">
-            🚧 Site Development in Progress 🚧 ✨ Stay tuned for updates! ✨
+            🚧 Site Development in Progress 🚧
           </p>
         </div>
       </div>
