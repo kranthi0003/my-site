@@ -51,20 +51,20 @@ export const PROFILE_DATA = {
     {
       position: "Software Engineer",
       company: "Couchbase",
-      period: "April 2024 - Present",
+      period: "2025 Apr - Present",
       description: "Currently working on database and cloud technologies in Bangalore"
     },
     {
       position: "Software Engineer",
-      company: "Amazon",
-      period: "2022 - March 2024",
-      description: "Developed and maintained large-scale distributed systems and cloud solutions"
+      company: "Groww",
+      period: "2025 Jan - 2025 Mar",
+      description: "Worked on fintech solutions and trading platforms"
     },
     {
       position: "Software Engineer",
-      company: "Groww",
-      period: "2021 - 2022",
-      description: "Worked on fintech solutions and trading platforms"
+      company: "Amazon",
+      period: "2021 Mar - 2024 Dec",
+      description: "Developed and maintained large-scale distributed systems and cloud solutions"
     }
   ],
 
