@@ -12,17 +12,17 @@ export default function BackgroundSection() {
       ...item,
       type: 'education' as const,
       icon: GraduationCap,
-      color: 'from-blue-500 to-purple-600',
-      bgColor: 'bg-blue-50',
-      borderColor: 'border-blue-200'
+      color: 'from-orange-500 to-amber-600',
+      bgColor: 'bg-orange-50',
+      borderColor: 'border-orange-200'
     })),
     ...PROFILE_DATA.experience.map(item => ({
       ...item,
       type: 'experience' as const,
       icon: Briefcase,
-      color: 'from-orange-500 to-red-600',
-      bgColor: 'bg-orange-50',
-      borderColor: 'border-orange-200'
+      color: 'from-red-500 to-orange-600',
+      bgColor: 'bg-red-50',
+      borderColor: 'border-red-200'
     }))
   ].sort((a, b) => {
     // Sort by start year (extract from period)
@@ -31,19 +31,19 @@ export default function BackgroundSection() {
   });
 
   return (
-    <section id="background" className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/30 relative overflow-hidden">
+    <section id="background" className="py-24 bg-gradient-to-br from-orange-50/40 via-amber-50/60 to-red-50/40 relative overflow-hidden">
       {/* Background decorations */}
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-blue-200/20 to-purple-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-br from-orange-200/20 to-red-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }}></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-br from-orange-200/20 to-amber-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s' }}></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-br from-red-200/20 to-orange-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s', animationDelay: '2s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-orange-700 to-red-600 bg-clip-text text-transparent mb-4">
             Professional Timeline
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-orange-700 max-w-3xl mx-auto leading-relaxed">
             Journey through my educational milestones and professional achievements
           </p>
         </div>
@@ -56,8 +56,8 @@ export default function BackgroundSection() {
                 onClick={() => setActiveTab('education')}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeTab === 'education'
-                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg transform scale-105'
-                    : 'text-slate-600 hover:text-slate-800 hover:bg-slate-100'
+                    ? 'bg-gradient-to-r from-orange-500 to-amber-600 text-white shadow-lg transform scale-105'
+                    : 'text-orange-700 hover:text-orange-800 hover:bg-orange-100'
                 }`}
               >
                 <GraduationCap size={20} />
@@ -67,8 +67,8 @@ export default function BackgroundSection() {
                 onClick={() => setActiveTab('experience')}
                 className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                   activeTab === 'experience'
-                    ? 'bg-gradient-to-r from-orange-500 to-red-600 text-white shadow-lg transform scale-105'
-                    : 'text-slate-600 hover:text-slate-800 hover:bg-slate-100'
+                    ? 'bg-gradient-to-r from-red-500 to-orange-600 text-white shadow-lg transform scale-105'
+                    : 'text-orange-700 hover:text-orange-800 hover:bg-orange-100'
                 }`}
               >
                 <Briefcase size={20} />
@@ -82,7 +82,7 @@ export default function BackgroundSection() {
         <div className="max-w-4xl mx-auto">
           <div className="relative">
             {/* Timeline line */}
-            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-300 via-purple-300 to-orange-300 rounded-full opacity-30"></div>
+            <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-300 via-amber-300 to-red-300 rounded-full opacity-40"></div>
             
             {/* Timeline items */}
             <div className="space-y-8">
@@ -127,7 +127,7 @@ export default function BackgroundSection() {
                               <div className="space-y-2">
                                 {item.gpa && (
                                   <div className="flex items-center space-x-2">
-                                    <Award size={16} className="text-blue-500" />
+                                    <Award size={16} className="text-orange-500" />
                                     <span className="text-sm text-slate-600">GPA: {item.gpa}</span>
                                   </div>
                                 )}
@@ -153,12 +153,12 @@ export default function BackgroundSection() {
         {/* Combined Timeline View (Hidden on mobile) */}
         <div className="mt-16 hidden lg:block">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold text-slate-800 mb-2">Complete Journey</h3>
-            <p className="text-slate-600">Chronological overview of all achievements</p>
+            <h3 className="text-2xl font-bold text-orange-800 mb-2">Complete Journey</h3>
+            <p className="text-orange-700">Chronological overview of all achievements</p>
           </div>
           
           <div className="relative max-w-6xl mx-auto">
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-300 via-purple-300 to-orange-300 rounded-full opacity-30"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-300 via-amber-300 to-red-300 rounded-full opacity-40"></div>
             
             <div className="space-y-12">
               {allTimelineItems.map((item, index) => {
