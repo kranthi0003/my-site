@@ -124,10 +124,10 @@ export default function GallerySection({}: GallerySectionProps) {
                     <button
                       key={index}
                       onClick={() => goToSlide(index)}
-                      className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                      className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-3 transition-all duration-300 ${
                         index === currentSlide 
-                          ? 'border-accent scale-110 shadow-lg' 
-                          : 'border-gray-200 hover:border-accent/50 hover:scale-105'
+                          ? 'border-orange-500 scale-110 shadow-xl ring-2 ring-orange-300 ring-opacity-50' 
+                          : 'border-gray-300 hover:border-orange-300 hover:scale-105'
                       }`}
                     >
                       <img
