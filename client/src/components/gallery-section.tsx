@@ -58,8 +58,7 @@ export default function GallerySection({}: GallerySectionProps) {
           <div className="relative rounded-2xl overflow-hidden animate-fade-in p-1.5"
                style={{ 
                  background: 'linear-gradient(45deg, #fb923c, #f59e0b, #dc2626, #ea580c, #fb923c)',
-                 boxShadow: '0 25px 50px -12px rgba(251, 146, 60, 0.5), 0 0 40px rgba(251, 146, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)',
-                 animation: 'pulse 4s ease-in-out infinite'
+                 boxShadow: '0 25px 50px -12px rgba(251, 146, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
                }}>
             <div className="relative bg-gradient-to-br from-white via-orange-50/40 to-amber-50 rounded-xl overflow-hidden"
                  style={{
