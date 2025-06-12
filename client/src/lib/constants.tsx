@@ -135,6 +135,18 @@ export const PROFILE_DATA = {
     {
       url: "/attached_assets/SAVE_20201222_081837_Original_1749745896358.jpg",
       alt: "College friends group photo"
+    },
+    {
+      url: "/attached_assets/20220711_190719_Original_1749746316517.jpg",
+      alt: "Stylish pose in blue striped shirt"
+    },
+    {
+      url: "/attached_assets/IMG_0741_Original_1749746320027.jpg",
+      alt: "Sweet moment with mother"
+    },
+    {
+      url: "/attached_assets/Snapchat-1037974668_Original_1749746345804.jpg",
+      alt: "Artistic black and white portrait"
     }
   ],
 
