@@ -32,8 +32,8 @@ export default function Navigation() {
   const navItems = [
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
-    { label: "Background", href: "#background" },
     { label: "Gallery", href: "#gallery" },
+    { label: "Background", href: "#background" },
     { label: "Contact", href: "#contact" }
   ];
 
