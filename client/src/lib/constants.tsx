@@ -101,22 +101,6 @@ export const PROFILE_DATA = {
   // Photo Gallery - Replace with actual personal photos
   galleryImages: [
     {
-      url: "/attached_assets/IMG_5243_1749135607534.JPG",
-      alt: "Personal lifestyle photo"
-    },
-    {
-      url: "/attached_assets/Snapchat-1059745354.jpg",
-      alt: "Candid moment"
-    },
-    {
-      url: "/attached_assets/Snapchat-1445693840.jpg",
-      alt: "Travel memory"
-    },
-    {
-      url: "/attached_assets/Snapchat-240699289.jpg",
-      alt: "Life experience"
-    },
-    {
       url: "/attached_assets/IMG_20230124_204423_794 Copy_1749745799360.JPG",
       alt: "Casual car selfie with a smile"
     },
@@ -146,7 +130,7 @@ export const PROFILE_DATA = {
     },
     {
       url: "/attached_assets/IMG_2149_1749303865824.jpg",
-      alt: "New Year family moment in nature"
+      alt: "Beautiful portrait moment"
     },
     {
       url: "/attached_assets/SAVE_20201222_081837_Original_1749745896358.jpg",
