@@ -166,18 +166,10 @@ export default function GallerySection({}: GallerySectionProps) {
                 onTouchEnd={(e) => e.stopPropagation()}
               />
               <button
-                className="absolute top-2 right-2 sm:top-4 sm:right-4 w-12 h-12 sm:w-10 sm:h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center text-2xl sm:text-3xl font-bold transition-all duration-200 hover:scale-110 backdrop-blur-sm border-2 border-white/20"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  closeLightbox();
-                }}
-                onTouchEnd={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  closeLightbox();
-                }}
+                className="absolute top-4 right-4 w-14 h-14 bg-black/70 hover:bg-black/90 text-white rounded-full flex items-center justify-center text-3xl font-bold transition-all duration-200 hover:scale-110 backdrop-blur-md border-2 border-white/30 z-50 shadow-lg"
+                onClick={closeLightbox}
                 aria-label="Close lightbox"
+                type="button"
               >
                 ×
               </button>
