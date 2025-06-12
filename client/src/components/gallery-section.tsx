@@ -57,11 +57,11 @@ export default function GallerySection({}: GallerySectionProps) {
         <div className="max-w-4xl mx-auto">
           <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in">
             {/* Main Slide */}
-            <div className="relative aspect-[16/10] overflow-hidden">
+            <div className="relative aspect-[4/3] overflow-hidden">
               <img
                 src={PROFILE_DATA.galleryImages[currentSlide].url}
                 alt={PROFILE_DATA.galleryImages[currentSlide].alt}
-                className="w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+                className="w-full h-full object-contain cursor-pointer transition-transform duration-300 hover:scale-105 bg-gray-50"
                 onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
               />
               
