@@ -105,7 +105,7 @@ export const PROFILE_DATA = {
       alt: "Personal lifestyle photo"
     },
     {
-      url: "/attached_assets/Screenshot%202025-06-12%20at%209.48.45%20PM_1749745182119.jpg",
+      url: "/attached_assets/new-portrait.jpg",
       alt: "Portrait with glasses"
     },
     {
