@@ -101,19 +101,19 @@ export const PROFILE_DATA = {
   // Photo Gallery - Replace with actual personal photos
   galleryImages: [
     {
-      url: "/attached_assets/IMG_5243_1749135607534.JPG",
+      url: "@assets/IMG_5243_1749135607534.JPG",
       alt: "Personal lifestyle photo"
     },
     {
-      url: "/attached_assets/Snapchat-1037974668_Original_1749744538149.jpg?v=12345",
+      url: "@assets/Snapchat-1059745354.jpg",
       alt: "Candid moment"
     },
     {
-      url: "/attached_assets/Snapchat-1445693840.jpg",
+      url: "@assets/Snapchat-1445693840.jpg",
       alt: "Travel memory"
     },
     {
-      url: "/attached_assets/Snapchat-240699289.jpg",
+      url: "@assets/Snapchat-240699289.jpg",
       alt: "Life experience"
     }
   ],
@@ -128,7 +128,7 @@ export const PROFILE_DATA = {
     },
     {
       year: "2023", 
-      photo: "/attached_assets/Snapchat-1037974668_Original_1749744538149.jpg",
+      photo: "/attached_assets/Snapchat-240699289.jpg",
       title: "Growth Journey",
       description: "Expanding horizons and experiences"
     },
