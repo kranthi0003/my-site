@@ -129,10 +129,6 @@ export const PROFILE_DATA = {
       alt: "Working late night coding session"
     },
     {
-      url: "/attached_assets/IMG_2149_1749303865824.jpg",
-      alt: "Beautiful portrait moment"
-    },
-    {
       url: "/attached_assets/SAVE_20201222_081837_Original_1749745896358.jpg",
       alt: "College friends group photo"
     },
