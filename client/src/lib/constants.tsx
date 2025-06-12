@@ -145,7 +145,7 @@ export const PROFILE_DATA = {
       alt: "Working late night coding session"
     },
     {
-      url: "/attached_assets/20240101_170645_1749745877806.jpg",
+      url: "/attached_assets/IMG_2149_1749303865824.jpg",
       alt: "New Year family moment in nature"
     },
     {
