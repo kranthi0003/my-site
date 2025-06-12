@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { Expand } from "lucide-react";
+import { Expand, ChevronLeft, ChevronRight } from "lucide-react";
 import { PROFILE_DATA } from "@/lib/constants";
 
 interface GallerySectionProps {}
 
 export default function GallerySection({}: GallerySectionProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const openLightbox = (imageUrl: string) => {
     setSelectedImage(imageUrl);
@@ -15,6 +16,18 @@ export default function GallerySection({}: GallerySectionProps) {
   const closeLightbox = () => {
     setSelectedImage(null);
     document.body.style.overflow = 'unset';
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % PROFILE_DATA.galleryImages.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + PROFILE_DATA.galleryImages.length) % PROFILE_DATA.galleryImages.length);
+  };
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
   };
 
   return (
@@ -40,48 +53,79 @@ export default function GallerySection({}: GallerySectionProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 sm:gap-8 max-w-4xl mx-auto">
-          {PROFILE_DATA.galleryImages.map((image, index) => (
-            <div
-              key={index}
-              className={`relative overflow-hidden rounded-2xl shadow-xl cursor-pointer card-hover group bg-white photo-item touch-manipulation active:scale-[0.98] ${
-                index % 3 === 0 ? 'animate-slide-in-left' : 
-                index % 3 === 1 ? 'animate-scale-in' : 'animate-slide-in-right'
-              }`}
-              style={{ animationDelay: `${index * 0.1}s` }}
-              onClick={() => openLightbox(image.url)}
-              role="button"
-              tabIndex={0}
-              aria-label={`View ${image.alt} in full size`}
-            >
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={image.url}
-                  alt={image.alt}
-                  className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-active:scale-105"
-                  loading="lazy"
-                />
-              </div>
+        {/* Slideshow Container */}
+        <div className="max-w-4xl mx-auto">
+          <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in">
+            {/* Main Slide */}
+            <div className="relative aspect-[16/10] overflow-hidden">
+              <img
+                src={PROFILE_DATA.galleryImages[currentSlide].url}
+                alt={PROFILE_DATA.galleryImages[currentSlide].alt}
+                className="w-full h-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+                onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
+              />
               
-              {/* Enhanced overlay for mobile */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-30 sm:opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-all duration-300">
+              {/* Overlay with expand icon */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer"
+                   onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}>
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="bg-white/30 sm:bg-white/20 backdrop-blur-sm rounded-full p-3 sm:p-4 scale-90 sm:scale-100 group-hover:scale-110 group-active:scale-125 transition-transform duration-200">
-                    <Expand className="text-white drop-shadow-lg" size={20} />
+                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 hover:scale-110 transition-transform duration-200">
+                    <Expand className="text-white drop-shadow-lg" size={24} />
                   </div>
                 </div>
-                
-                {/* Image caption */}
-                <div className="absolute bottom-4 left-4 right-4">
-                  <p className="text-white text-sm font-medium drop-shadow-lg">{image.alt}</p>
-                </div>
               </div>
               
-              {/* Border accent and mobile tap feedback */}
-              <div className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-accent/50 transition-colors duration-300"></div>
-              <div className="absolute inset-0 bg-primary/10 opacity-0 group-active:opacity-100 transition-opacity duration-100 rounded-2xl sm:hidden"></div>
+              {/* Navigation Arrows */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-3 transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+                aria-label="Previous image"
+              >
+                <ChevronLeft size={24} />
+              </button>
+              
+              <button
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white rounded-full p-3 transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+                aria-label="Next image"
+              >
+                <ChevronRight size={24} />
+              </button>
+              
+              {/* Image Counter */}
+              <div className="absolute top-4 right-4 bg-black/50 text-white px-3 py-1 rounded-full text-sm backdrop-blur-sm">
+                {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
+              </div>
             </div>
-          ))}
+            
+            {/* Caption */}
+            <div className="p-6 bg-white">
+              <h3 className="text-lg font-semibold text-primary mb-2">
+                {PROFILE_DATA.galleryImages[currentSlide].alt}
+              </h3>
+              
+              {/* Thumbnail Navigation */}
+              <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+                {PROFILE_DATA.galleryImages.map((image, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-all duration-200 ${
+                      index === currentSlide 
+                        ? 'border-accent shadow-lg scale-105' 
+                        : 'border-gray-200 hover:border-accent/50 hover:scale-105'
+                    }`}
+                  >
+                    <img
+                      src={image.url}
+                      alt={image.alt}
+                      className="w-full h-full object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
 
