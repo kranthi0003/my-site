@@ -115,6 +115,42 @@ export const PROFILE_DATA = {
     {
       url: "@assets/Snapchat-240699289.jpg",
       alt: "Life experience"
+    },
+    {
+      url: "@assets/IMG_20230124_204423_794 Copy_1749745799360.JPG",
+      alt: "Casual car selfie with a smile"
+    },
+    {
+      url: "@assets/Picsart_22-12-05_16-41-50-162_Original_1749745827086.jpg",
+      alt: "Traditional celebration with family"
+    },
+    {
+      url: "@assets/Picsart_23-07-09_22-20-43-676_Original_1749745830750.jpg",
+      alt: "Group photo with friends at event"
+    },
+    {
+      url: "@assets/IMG-20220403-WA0002_Original_1749745835900.jpg",
+      alt: "Friends dining out together"
+    },
+    {
+      url: "@assets/Picsart_23-09-16_10-02-55-398_Original_1749745844004.jpg",
+      alt: "Professional portrait with vintage filter"
+    },
+    {
+      url: "@assets/Snapchat-306668410_Original_1749745850482.jpg",
+      alt: "Evening hangout with friends"
+    },
+    {
+      url: "@assets/Snapchat-666691257_Original_1749745856367.jpg",
+      alt: "Working late night coding session"
+    },
+    {
+      url: "@assets/20240101_170645_1749745877806.jpg",
+      alt: "New Year family moment in nature"
+    },
+    {
+      url: "@assets/SAVE_20201222_081837_Original_1749745896358.jpg",
+      alt: "College friends group photo"
     }
   ],
 
