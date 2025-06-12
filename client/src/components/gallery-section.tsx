@@ -31,48 +31,19 @@ export default function GallerySection({}: GallerySectionProps) {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-br from-orange-50 via-amber-50 to-red-50 relative overflow-hidden">
-      {/* Enhanced Background decorations */}
+    <section className="py-24 bg-gradient-to-br from-background via-secondary/10 to-accent/10 relative overflow-hidden">
+      {/* Simple Background decorations */}
       <div className="absolute inset-0">
-        <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-to-br from-orange-200/30 to-amber-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '6s' }}></div>
-        <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-br from-red-200/30 to-orange-300/30 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '8s', animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-gradient-to-br from-amber-200/20 to-yellow-300/20 rounded-full blur-3xl animate-pulse" style={{ animationDuration: '7s', animationDelay: '4s' }}></div>
-        
-        {/* Tamil Cultural Patterns */}
-        <div className="absolute top-20 right-20 w-32 h-32 opacity-10">
-          <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 rounded-full"></div>
-          <div className="absolute inset-4 bg-gradient-to-br from-amber-300 to-orange-400 rounded-full"></div>
-          <div className="absolute inset-8 bg-gradient-to-br from-yellow-300 to-amber-400 rounded-full"></div>
-        </div>
-        
-        <div className="absolute bottom-32 left-16 w-24 h-24 opacity-15 transform rotate-45">
-          <div className="w-full h-full bg-gradient-to-br from-red-400 to-orange-500 rounded-lg"></div>
-          <div className="absolute inset-2 bg-gradient-to-br from-orange-300 to-amber-400 rounded-lg"></div>
-        </div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-secondary/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center mb-16 animate-fade-in relative">
-          {/* Decorative top element */}
-          <div className="absolute -top-8 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <div className="w-3 h-3 bg-orange-400 rounded-full animate-bounce"></div>
-            <div className="w-3 h-3 bg-amber-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-            <div className="w-3 h-3 bg-red-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-          </div>
-          
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-400 to-red-500 rounded-full mb-8 shadow-2xl transform hover:scale-110 transition-all duration-300">
-            <Expand className="text-white" size={28} />
-          </div>
-          
-          <h2 className="text-5xl lg:text-6xl font-bold bg-gradient-to-r from-orange-600 via-red-500 to-amber-600 bg-clip-text text-transparent mb-8 relative">
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
             Photo Gallery
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-2 bg-gradient-to-r from-orange-400 via-red-400 to-amber-400 rounded-full opacity-60"></div>
-            {/* Sparkle effects */}
-            <div className="absolute -top-4 -right-8 w-4 h-4 bg-yellow-400 rounded-full animate-ping"></div>
-            <div className="absolute -bottom-2 -left-6 w-3 h-3 bg-orange-400 rounded-full animate-pulse"></div>
           </h2>
-          
-          <p className="text-2xl font-semibold text-orange-700 max-w-3xl mx-auto leading-relaxed bg-white/70 px-8 py-4 rounded-full shadow-lg border-2 border-orange-200">
+          <p className="text-xl text-muted-foreground">
             Family & Friends
           </p>
         </div>
