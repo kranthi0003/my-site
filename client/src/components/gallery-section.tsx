@@ -118,14 +118,9 @@ export default function GallerySection({}: GallerySectionProps) {
               </div>
             </div>
             
-            {/* Caption */}
+            {/* Thumbnail Navigation */}
             <div className="p-6 bg-white">
-              <h3 className="text-lg font-semibold text-primary mb-2">
-                {PROFILE_DATA.galleryImages[currentSlide].alt}
-              </h3>
-              
-              {/* Thumbnail Navigation */}
-              <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+              <div className="flex gap-2 overflow-x-auto pb-2">
                 {PROFILE_DATA.galleryImages.map((image, index) => (
                   <button
                     key={index}
