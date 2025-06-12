@@ -438,86 +438,81 @@ export default function AboutSection() {
                   <span className="text-sm font-semibold text-slate-700">5</span>
                 </div>
                 
-                <CardContent className="p-8 relative">
-                  <h3 className="text-xl font-bold text-slate-800/90 mb-8 flex items-center">
+                <CardContent className="p-6 relative">
+                  <h3 className="text-xl font-bold text-slate-800/90 mb-6 flex items-center">
                     <div className="w-10 h-10 bg-gradient-to-br from-slate-100/90 to-slate-50/70 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300 shadow-sm border border-slate-200/50">
                       <svg className="w-5 h-5 text-amber-600/80" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
                       </svg>
                     </div>
-                    Income & Financial Portfolio
+                    Income/Assets
                   </h3>
                   
                   {/* Financial Summary */}
-                  <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 mb-10">
-                    <div className="bg-gradient-to-br from-green-50/80 to-emerald-50/60 p-6 rounded-xl border border-green-100/80 shadow-sm">
-                      <h4 className="font-semibold text-green-800 mb-3 text-lg">Annual Salary</h4>
-                      <p className="text-2xl font-bold text-green-900 mb-1">₹30+ LPA</p>
-                      <p className="text-sm font-medium text-green-700">₹2.5L+ per month</p>
+                  <div className="grid md:grid-cols-2 gap-6 mb-8">
+                    <div className="bg-gradient-to-br from-green-50/60 to-emerald-50/40 p-4 rounded-lg border border-green-100/60">
+                      <h4 className="font-semibold text-green-800 mb-2">Salary</h4>
+                      <p className="text-xl font-bold text-green-900">₹30+ LPA</p>
+                      <p className="text-sm font-medium text-green-700">₹2L/month</p>
                     </div>
-                    <div className="bg-gradient-to-br from-blue-50/80 to-sky-50/60 p-6 rounded-xl border border-blue-100/80 shadow-sm">
-                      <h4 className="font-semibold text-blue-800 mb-3 text-lg">Total Properties</h4>
-                      <p className="text-2xl font-bold text-blue-900 mb-1">₹1.35 CR</p>
-                      <p className="text-sm font-medium text-blue-700">3 Properties</p>
-                    </div>
-                    <div className="bg-gradient-to-br from-purple-50/80 to-violet-50/60 p-6 rounded-xl border border-purple-100/80 shadow-sm">
-                      <h4 className="font-semibold text-purple-800 mb-3 text-lg">Investments</h4>
-                      <p className="text-2xl font-bold text-purple-900 mb-1">₹40+ Lakhs</p>
-                      <p className="text-sm font-medium text-purple-700">Stocks, FD, Insurance</p>
+                    <div className="bg-gradient-to-br from-blue-50/60 to-sky-50/40 p-4 rounded-lg border border-blue-100/60">
+                      <h4 className="font-semibold text-blue-800 mb-2">Property Count</h4>
+                      <p className="text-xl font-bold text-blue-900">3 Units</p>
+                      <p className="text-sm font-medium text-blue-700">2 Residential plots + 2BHK flat</p>
                     </div>
                   </div>
 
                   {/* Property Details Cards */}
-                  <div className="mb-10">
-                    <h4 className="font-semibold text-gray-800 mb-6 text-lg">Property Portfolio</h4>
-                    <div className="grid md:grid-cols-1 gap-4">
+                  <div>
+                    <h4 className="font-semibold text-gray-700 mb-6">Property Portfolio</h4>
+                    <div className="space-y-3">
                       {/* Property 1 */}
-                      <div className="bg-gradient-to-br from-purple-50/60 to-violet-50/40 border border-purple-100/60 rounded-xl p-6 shadow-sm">
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                      <div className="bg-gradient-to-br from-purple-50/40 to-violet-50/30 border border-purple-100/50 rounded-lg p-4">
+                        <div className="flex justify-between items-center">
                           <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-3">
-                              <span className="text-sm font-semibold text-purple-800 bg-purple-100/80 px-3 py-1 rounded-full">Residential Plot</span>
-                              <span className="text-sm font-medium text-purple-700 bg-purple-50 px-2 py-1 rounded">Self-Purchased</span>
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs font-medium text-purple-800 bg-purple-100/60 px-2 py-1 rounded">Plot</span>
+                              <span className="text-xs font-medium text-purple-700">Self</span>
                             </div>
-                            <h5 className="font-bold text-purple-900 text-lg mb-2">Tagarapuvalasa, Vizag</h5>
-                            <p className="text-sm font-medium text-purple-700 mb-1">200 Square Yards</p>
+                            <h5 className="font-semibold text-purple-900">Tagarapuvalasa, Vizag</h5>
+                            <p className="text-sm font-medium text-purple-700">200 Square Yards</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-purple-900">₹40 Lakhs</p>
+                            <p className="font-bold text-purple-900">₹40 Lakhs</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Property 2 */}
-                      <div className="bg-gradient-to-br from-orange-50/60 to-amber-50/40 border border-orange-100/60 rounded-xl p-6 shadow-sm">
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                      <div className="bg-gradient-to-br from-orange-50/40 to-amber-50/30 border border-orange-100/50 rounded-lg p-4">
+                        <div className="flex justify-between items-center">
                           <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-3">
-                              <span className="text-sm font-semibold text-orange-800 bg-orange-100/80 px-3 py-1 rounded-full">Residential Plot</span>
-                              <span className="text-sm font-medium text-orange-700 bg-orange-50 px-2 py-1 rounded">Inherited</span>
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs font-medium text-orange-800 bg-orange-100/60 px-2 py-1 rounded">Plot</span>
+                              <span className="text-xs font-medium text-orange-700">Inherited</span>
                             </div>
-                            <h5 className="font-bold text-orange-900 text-lg mb-2">Simhachalam, Vizag</h5>
-                            <p className="text-sm font-medium text-orange-700 mb-1">250 Square Yards</p>
+                            <h5 className="font-semibold text-orange-900">Simhachalam, Vizag</h5>
+                            <p className="text-sm font-medium text-orange-700">250 Square Yards</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-orange-900">₹50 Lakhs</p>
+                            <p className="font-bold text-orange-900">₹50 Lakhs</p>
                           </div>
                         </div>
                       </div>
 
                       {/* Property 3 */}
-                      <div className="bg-gradient-to-br from-teal-50/60 to-cyan-50/40 border border-teal-100/60 rounded-xl p-6 shadow-sm">
-                        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4">
+                      <div className="bg-gradient-to-br from-teal-50/40 to-cyan-50/30 border border-teal-100/50 rounded-lg p-4">
+                        <div className="flex justify-between items-center">
                           <div className="flex-1">
-                            <div className="flex items-center gap-3 mb-3">
-                              <span className="text-sm font-semibold text-teal-800 bg-teal-100/80 px-3 py-1 rounded-full">2BHK Apartment</span>
-                              <span className="text-sm font-medium text-teal-700 bg-teal-50 px-2 py-1 rounded">Self-Purchased</span>
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs font-medium text-teal-800 bg-teal-100/60 px-2 py-1 rounded">2BHK Flat</span>
+                              <span className="text-xs font-medium text-teal-700">Self</span>
                             </div>
-                            <h5 className="font-bold text-teal-900 text-lg mb-2">PMPalem, Vizag</h5>
-                            <p className="text-sm font-medium text-teal-700 mb-1">1,100 Square Feet</p>
+                            <h5 className="font-semibold text-teal-900">PMPalem, Vizag</h5>
+                            <p className="text-sm font-medium text-teal-700">1,100 Square Feet</p>
                           </div>
                           <div className="text-right">
-                            <p className="text-2xl font-bold text-teal-900">₹45 Lakhs</p>
+                            <p className="font-bold text-teal-900">₹45 Lakhs</p>
                           </div>
                         </div>
                       </div>
