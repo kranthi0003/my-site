@@ -128,7 +128,7 @@ export const PROFILE_DATA = {
     },
     {
       year: "2023", 
-      photo: "/attached_assets/Snapchat-240699289.jpg",
+      photo: "/attached_assets/new-portrait.jpg",
       title: "Growth Journey",
       description: "Expanding horizons and experiences"
     },
