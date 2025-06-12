@@ -10,20 +10,20 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="hero-gradient min-h-screen text-white relative overflow-hidden">
-      {/* Tamil-inspired decorative elements */}
+      {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-32 left-20 w-24 h-24 tamil-ornament rounded-lg rotate-45"></div>
+        <div className="absolute top-32 left-20 w-24 h-24 bg-accent/30 rounded-lg rotate-45"></div>
         <div className="absolute bottom-40 right-10 w-16 h-16 bg-accent rounded-full opacity-60"></div>
-        <div className="absolute top-1/2 right-1/4 w-12 h-12 tamil-ornament rounded-lg rotate-12"></div>
+        <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-accent/40 rounded-lg rotate-12"></div>
         <div className="absolute top-20 right-20 w-8 h-8 bg-yellow-400 rounded-full opacity-40"></div>
-        <div className="absolute bottom-20 left-10 w-10 h-10 tamil-ornament rounded-full"></div>
+        <div className="absolute bottom-20 left-10 w-10 h-10 bg-accent/50 rounded-full"></div>
       </div>
       
       {/* Separate Namaskaram greeting positioned higher */}
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center pt-40 animate-fade-in">
-          <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ fontFamily: 'Noto Sans Tamil, Noto Sans Telugu, sans-serif', letterSpacing: '1px' }}>
-            வணக்கம் (నమస్కారం) 🙏
+          <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
+            Welcome 🙏
           </div>
         </div>
       </div>

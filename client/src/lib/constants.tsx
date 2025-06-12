@@ -100,7 +100,7 @@ export const PROFILE_DATA = {
     },
     {
       title: "Music",
-      description: "Listening to diverse genres from Tamil classical to contemporary hits",
+      description: "Listening to diverse genres from classical to contemporary hits",
       icon: "Music",
       color: "from-purple-500 to-pink-600"
     },

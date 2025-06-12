@@ -32,17 +32,17 @@ export default function AboutSection() {
   };
 
   return (
-    <section id="about" className="py-24 relative overflow-hidden tamil-bg-about kolam-pattern">
-      {/* Background Elements with Tamil Cultural Symbols */}
+    <section id="about" className="py-24 relative overflow-hidden bg-gradient-to-br from-orange-50 to-amber-50">
+      {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 left-10 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"></div>
         
-        {/* Tamil Cultural Decorative Elements */}
-        <div className="absolute top-32 left-20 w-16 h-16 temple-motif opacity-20 rounded-full"></div>
-        <div className="absolute bottom-32 right-24 w-20 h-20 kolam-pattern opacity-15 rounded-full"></div>
-        <div className="absolute top-1/2 left-1/4 w-12 h-12 lotus-pattern opacity-25 rounded-full"></div>
-        <div className="absolute top-3/4 right-1/3 w-14 h-14 paisley-motif opacity-20 rounded-full"></div>
+        {/* Decorative Elements */}
+        <div className="absolute top-32 left-20 w-16 h-16 bg-accent/10 opacity-20 rounded-full"></div>
+        <div className="absolute bottom-32 right-24 w-20 h-20 bg-primary/10 opacity-15 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-accent/15 opacity-25 rounded-full"></div>
+        <div className="absolute top-3/4 right-1/3 w-14 h-14 bg-primary/15 opacity-20 rounded-full"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
@@ -262,7 +262,7 @@ export default function AboutSection() {
                     
                     <div className="pt-2 border-t border-gray-100">
                       <span className="text-muted-foreground text-sm font-medium">Languages</span>
-                      <p className="font-semibold text-gray-900 mt-1">Telugu, Hindi, English<br/><span className="text-gray-600">(learning Tamil)</span></p>
+                      <p className="font-semibold text-gray-900 mt-1">Telugu, Hindi, English</p>
                     </div>
                     
                     <div>
