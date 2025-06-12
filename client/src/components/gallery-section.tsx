@@ -49,7 +49,7 @@ export default function GallerySection({}: GallerySectionProps) {
             <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-16 h-1 kolam-pattern opacity-40"></div>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A glimpse into my life, travels, and memorable moments that define who I am.
+            Family & Friends
           </p>
         </div>
 
