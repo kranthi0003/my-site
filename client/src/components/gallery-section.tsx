@@ -55,14 +55,34 @@ export default function GallerySection({}: GallerySectionProps) {
 
         {/* Slideshow Container */}
         <div className="max-w-4xl mx-auto">
-          <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden animate-fade-in">
+          <div className="relative bg-gradient-to-br from-orange-50 via-white to-amber-50 rounded-2xl shadow-2xl overflow-hidden animate-fade-in">
+            {/* Animated Background Elements */}
+            <div className="absolute inset-0 opacity-30">
+              <div className="absolute top-4 left-4 w-20 h-20 bg-gradient-to-br from-orange-200/40 to-amber-200/40 rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '4s' }}></div>
+              <div className="absolute bottom-6 right-6 w-16 h-16 bg-gradient-to-br from-red-200/40 to-orange-200/40 rounded-full animate-pulse" style={{ animationDelay: '2s', animationDuration: '4s' }}></div>
+              <div className="absolute top-1/3 right-12 w-12 h-12 bg-gradient-to-br from-amber-200/40 to-yellow-200/40 rounded-full animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
+              <div className="absolute bottom-1/3 left-8 w-8 h-8 bg-gradient-to-br from-orange-300/40 to-red-300/40 rounded-full animate-pulse" style={{ animationDelay: '3s', animationDuration: '4s' }}></div>
+              
+              {/* Floating Kolam-inspired patterns */}
+              <div className="absolute top-8 right-20 w-6 h-6 opacity-20 animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3s' }}>
+                <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-400 rounded-sm transform rotate-45"></div>
+              </div>
+              <div className="absolute bottom-12 left-16 w-4 h-4 opacity-20 animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3s' }}>
+                <div className="w-full h-full bg-gradient-to-br from-amber-400 to-orange-400 rounded-sm transform rotate-45"></div>
+              </div>
+            </div>
+            
             {/* Main Slide */}
-            <div className="relative aspect-[4/3] overflow-hidden">
+            <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-orange-50/50 to-amber-50/80 backdrop-blur-sm">
               <img
                 src={PROFILE_DATA.galleryImages[currentSlide].url}
                 alt={PROFILE_DATA.galleryImages[currentSlide].alt}
-                className="w-full h-full object-contain cursor-pointer transition-transform duration-300 hover:scale-105 bg-gray-50"
+                className="w-full h-full object-contain cursor-pointer transition-all duration-500 hover:scale-105 hover:brightness-110"
                 onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
+                style={{ 
+                  filter: 'drop-shadow(0 8px 16px rgba(0,0,0,0.1))',
+                  transition: 'all 0.5s ease-in-out'
+                }}
               />
               
               {/* Overlay with expand icon */}
