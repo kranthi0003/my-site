@@ -77,24 +77,40 @@ export const PROFILE_DATA = {
   // Interests & Hobbies
   interests: [
     {
-      title: "Tamil Culture (தமிழ் கலாச்சாரம்)",
-      description: "Learning Tamil language, appreciating classical music, and understanding traditions",
-      icon: "Heart"
+      title: "Cooking",
+      description: "Experimenting with traditional South Indian recipes and modern cuisine",
+      icon: "ChefHat",
+      color: "from-orange-500 to-red-600"
     },
     {
-      title: "Technology & Innovation",
+      title: "Cricket",
+      description: "Passionate follower of cricket matches and love playing with friends",
+      icon: "Trophy",
+      color: "from-green-500 to-blue-600"
+    },
+    {
+      title: "Formula 1",
+      description: "Avid F1 fan, following races and analyzing driver performances",
+      icon: "Car",
+      color: "from-red-500 to-orange-600"
+    },
+    {
+      title: "Music",
+      description: "Listening to diverse genres from Tamil classical to contemporary hits",
+      icon: "Music",
+      color: "from-purple-500 to-pink-600"
+    },
+    {
+      title: "Travelling",
+      description: "Exploring new destinations, cultures, and creating memorable experiences",
+      icon: "MapPin",
+      color: "from-blue-500 to-teal-600"
+    },
+    {
+      title: "Technology",
       description: "Staying updated with latest tech trends and building innovative solutions",
-      icon: "Code"
-    },
-    {
-      title: "Family Time",
-      description: "Spending quality time with family and building meaningful relationships",
-      icon: "Users"
-    },
-    {
-      title: "Travel & Culture",
-      description: "Exploring different cultures, especially South Indian traditions and heritage",
-      icon: "MapPin"
+      icon: "Code",
+      color: "from-indigo-500 to-purple-600"
     }
   ],
 
