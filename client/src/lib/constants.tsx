@@ -105,8 +105,8 @@ export const PROFILE_DATA = {
       alt: "Personal lifestyle photo"
     },
     {
-      url: "@assets/Snapchat-1059745354.jpg",
-      alt: "Candid moment"
+      url: "@assets/Screenshot 2025-06-12 at 9.48.45 PM_1749745182119.jpg",
+      alt: "Portrait with glasses"
     },
     {
       url: "@assets/Snapchat-1445693840.jpg",
