@@ -78,7 +78,7 @@ export const PROFILE_DATA = {
   interests: [
     {
       title: "Cooking",
-      description: "Experimenting with traditional South Indian recipes and modern cuisine",
+      description: "Experimenting with traditional South Indian recipes and modern cuisine. Follow my culinary journey at @chips2nuts",
       icon: "ChefHat",
       color: "from-orange-500 to-red-600"
     },
