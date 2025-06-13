@@ -79,10 +79,10 @@ export default function GallerySection({}: GallerySectionProps) {
                   className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
                 />
                 
-                {/* Navigation Arrows - at frame edges */}
+                {/* Navigation Arrows - lighter */}
                 <button
                   onClick={prevSlide}
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-r-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
                   aria-label="Previous image"
                 >
                   <ChevronLeft size={20} />
@@ -90,7 +90,7 @@ export default function GallerySection({}: GallerySectionProps) {
                 
                 <button
                   onClick={nextSlide}
-                  className="absolute right-0 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-l-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
                   aria-label="Next image"
                 >
                   <ChevronRight size={20} />
@@ -104,15 +104,15 @@ export default function GallerySection({}: GallerySectionProps) {
                 >
                   <Expand size={16} />
                 </button>
+                
+                {/* Slide Counter - lighter */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/80 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-md border border-primary/20">
+                  {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
+                </div>
               </div>
             
-              {/* Slide Counter */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/90 text-primary px-3 py-1 rounded-full text-sm font-medium shadow-md border border-primary/20">
-                {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
-              </div>
-              
               {/* Thumbnail Navigation - themed */}
-              <div className="p-6 pt-8 bg-gradient-to-r from-white via-primary/2 to-white">
+              <div className="p-6 bg-gradient-to-r from-white via-primary/2 to-white">
                 <div className="flex gap-3 overflow-x-auto pb-2">
                   {PROFILE_DATA.galleryImages.map((image, index) => (
                     <button
