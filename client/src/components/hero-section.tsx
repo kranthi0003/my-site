@@ -9,7 +9,7 @@ export default function HeroSection() {
   const scrollTo = useSmoothScroll();
 
   return (
-    <section id="home" className="hero-gradient h-screen text-white relative overflow-hidden flex items-center">
+    <section id="home" className="hero-gradient min-h-screen text-white relative overflow-hidden flex items-center" style={{ minHeight: 'calc(100vh - env(safe-area-inset-top))' }}>
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-16 h-16 bg-accent/30 rounded-lg rotate-45"></div>
@@ -19,8 +19,8 @@ export default function HeroSection() {
         <div className="absolute bottom-16 left-10 w-8 h-8 bg-accent/50 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 w-full">
-        <div className="text-center space-y-12 md:space-y-16 animate-fade-in pt-20 md:pt-16">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 w-full max-w-screen-xl">
+        <div className="text-center space-y-8 sm:space-y-12 md:space-y-16 animate-fade-in pt-16 sm:pt-20 md:pt-16">
           {/* Text Group - Separated sections */}
           <div className="space-y-6">
             {/* Namaskaram greeting - positioned below navigation */}
@@ -30,14 +30,14 @@ export default function HeroSection() {
             
             {/* Name section - tight grouping */}
             <div className="space-y-1">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight px-2">
                 <span className="block mb-1 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
                 <span className="block font-extrabold bg-gradient-to-r from-orange-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-2xl">{PROFILE_DATA.name}</span>
               </h1>
               
               {/* Tagline below name */}
               <div className="text-center relative mt-2">
-                <p className="text-base md:text-lg font-medium text-white/50 relative z-10 px-4">
+                <p className="text-sm sm:text-base md:text-lg font-medium text-white/50 relative z-10 px-4">
                   Traveller by heart, Techie by skill
                 </p>
               </div>
@@ -48,7 +48,7 @@ export default function HeroSection() {
           <div className="flex justify-center animate-slide-up">
             <div className="relative">
               {/* Frame Container */}
-              <div className="relative w-56 h-56 lg:w-64 lg:h-64 p-2">
+              <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 p-2">
                 {/* Elegant Multi-Layer Frame */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-200/20 via-orange-300/15 to-amber-400/20 p-1">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-white/70 via-white/50 to-white/30 p-1">
