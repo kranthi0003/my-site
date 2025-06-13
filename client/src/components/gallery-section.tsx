@@ -31,64 +31,58 @@ export default function GallerySection({}: GallerySectionProps) {
   };
 
   return (
-    <section id="gallery" className="py-24 bg-gradient-to-br from-background via-secondary/10 to-accent/10 relative overflow-hidden">
-      {/* Simple Background decorations */}
-      <div className="absolute inset-0">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-secondary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-10 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
+    <section id="gallery" className="py-24 bg-gradient-to-br from-orange-50 to-amber-50 relative overflow-hidden">
+      {/* Background Elements matching other sections */}
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-10 right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-10 w-48 h-48 bg-secondary/5 rounded-full blur-3xl"></div>
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-32 left-20 w-16 h-16 bg-accent/10 opacity-20 rounded-full"></div>
+        <div className="absolute bottom-32 right-24 w-20 h-20 bg-primary/10 opacity-15 rounded-full"></div>
+        <div className="absolute top-1/2 left-1/4 w-12 h-12 bg-accent/15 opacity-25 rounded-full"></div>
+        <div className="absolute top-3/4 right-1/3 w-14 h-14 bg-primary/15 opacity-20 rounded-full"></div>
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-4">
-            Photo Gallery
-          </h2>
-          <p className="text-xl text-muted-foreground">
-            Family & Friends
-          </p>
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">Photo Gallery</h2>
         </div>
 
-        {/* Enhanced Vibrant Slideshow Container */}
-        <div className="max-w-4xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden animate-fade-in p-1.5"
-               style={{ 
-                 background: 'linear-gradient(45deg, #fb923c, #f59e0b, #dc2626, #ea580c, #fb923c)',
-                 boxShadow: '0 25px 50px -12px rgba(251, 146, 60, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2)'
-               }}>
-            <div className="relative bg-gradient-to-br from-white via-orange-50/40 to-amber-50 rounded-xl overflow-hidden"
-                 style={{
-                   background: 'linear-gradient(135deg, #ffffff, rgba(255,237,213,0.4), #fef3c7)',
-                   boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.05), 0 1px 2px rgba(251, 146, 60, 0.1)'
-                 }}>
+        {/* Gallery Container matching theme */}
+        <div className="max-w-4xl mx-auto animate-fade-in">
+          <div className="relative group">
+            {/* Subtle border wrapper */}
+            <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-secondary/30 to-accent/40 rounded-xl opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
+            <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 rounded-xl blur-[1px] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
+            
+            <div className="relative bg-gradient-to-br from-white via-white/98 to-primary/3 backdrop-blur-sm shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 overflow-hidden rounded-xl ring-1 ring-primary/10 hover:ring-primary/20">
+              {/* Inner border highlight */}
+              <div className="absolute inset-[1px] rounded-xl bg-gradient-to-br from-white/80 via-transparent to-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               
-              {/* Animated Background Elements */}
-              <div className="absolute inset-0 opacity-30">
-                <div className="absolute top-4 left-4 w-20 h-20 bg-gradient-to-br from-orange-200/40 to-amber-200/40 rounded-full animate-pulse" style={{ animationDelay: '0s', animationDuration: '4s' }}></div>
-                <div className="absolute bottom-6 right-6 w-16 h-16 bg-gradient-to-br from-red-200/40 to-orange-200/40 rounded-full animate-pulse" style={{ animationDelay: '2s', animationDuration: '4s' }}></div>
-                <div className="absolute top-1/3 right-12 w-12 h-12 bg-gradient-to-br from-amber-200/40 to-yellow-200/40 rounded-full animate-pulse" style={{ animationDelay: '1s', animationDuration: '4s' }}></div>
-                <div className="absolute bottom-1/3 left-8 w-8 h-8 bg-gradient-to-br from-orange-300/40 to-red-300/40 rounded-full animate-pulse" style={{ animationDelay: '3s', animationDuration: '4s' }}></div>
-                
-                {/* Floating Kolam-inspired patterns */}
-                <div className="absolute top-8 right-20 w-6 h-6 opacity-20 animate-bounce" style={{ animationDelay: '0.5s', animationDuration: '3s' }}>
-                  <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-400 rounded-sm transform rotate-45"></div>
-                </div>
-                <div className="absolute bottom-12 left-16 w-4 h-4 opacity-20 animate-bounce" style={{ animationDelay: '1.5s', animationDuration: '3s' }}>
-                  <div className="w-full h-full bg-gradient-to-br from-amber-400 to-orange-400 rounded-sm transform rotate-45"></div>
-                </div>
+              {/* Background pattern */}
+              <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500">
+                <div className="absolute top-6 right-6 w-8 h-8 border border-primary/20 rounded-full"></div>
+                <div className="absolute bottom-8 left-8 w-6 h-6 border border-secondary/20 rounded-full"></div>
+                <div className="absolute top-1/3 right-16 w-3 h-3 bg-gradient-to-br from-accent/30 to-transparent rounded-full"></div>
+                <div className="absolute bottom-1/3 left-16 w-4 h-4 bg-gradient-to-br from-primary/25 to-transparent rounded-full"></div>
               </div>
+              
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
             
               {/* Main Slide */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-orange-50/50 to-amber-50/80 backdrop-blur-sm">
+              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-6">
                 <img
                   src={PROFILE_DATA.galleryImages[currentSlide].url}
                   alt={PROFILE_DATA.galleryImages[currentSlide].alt}
-                  className="w-full h-full object-contain transition-all duration-500 ease-in-out"
+                  className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
                 />
                 
-                {/* Navigation Arrows */}
+                {/* Navigation Arrows - themed */}
                 <button
                   onClick={prevSlide}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg"
                   aria-label="Previous image"
                 >
                   <ChevronLeft size={24} />
@@ -96,38 +90,38 @@ export default function GallerySection({}: GallerySectionProps) {
                 
                 <button
                   onClick={nextSlide}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg"
                   aria-label="Next image"
                 >
                   <ChevronRight size={24} />
                 </button>
                 
-                {/* Expand Button */}
+                {/* Expand Button - themed */}
                 <button
                   onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
-                  className="absolute top-4 right-4 w-10 h-10 bg-black/50 hover:bg-black/70 text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 backdrop-blur-sm"
+                  className="absolute top-4 right-4 w-10 h-10 bg-accent/90 hover:bg-accent text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg"
                   aria-label="Expand image"
                 >
                   <Expand size={18} />
                 </button>
                 
-                {/* Slide Counter */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm backdrop-blur-sm">
+                {/* Slide Counter - themed */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-primary/90 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
                   {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
                 </div>
               </div>
             
-              {/* Thumbnail Navigation */}
-              <div className="p-6 bg-white">
-                <div className="flex gap-2 overflow-x-auto pb-2">
+              {/* Thumbnail Navigation - themed */}
+              <div className="p-6 bg-gradient-to-r from-white via-primary/2 to-white">
+                <div className="flex gap-3 overflow-x-auto pb-2">
                   {PROFILE_DATA.galleryImages.map((image, index) => (
                     <button
                       key={index}
                       onClick={() => goToSlide(index)}
-                      className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-3 transition-all duration-300 ${
+                      className={`flex-shrink-0 w-16 h-12 rounded-lg overflow-hidden border-2 transition-all duration-300 ${
                         index === currentSlide 
-                          ? 'border-orange-500 scale-110 shadow-xl ring-2 ring-orange-300 ring-opacity-50' 
-                          : 'border-gray-300 hover:border-orange-300 hover:scale-105'
+                          ? 'border-primary scale-110 shadow-xl ring-2 ring-primary/30' 
+                          : 'border-gray-300 hover:border-primary/60 hover:scale-105'
                       }`}
                     >
                       <img
