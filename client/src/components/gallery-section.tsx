@@ -72,41 +72,41 @@ export default function GallerySection({}: GallerySectionProps) {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
             
               {/* Main Slide */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-6">
+              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-2">
                 <img
                   src={PROFILE_DATA.galleryImages[currentSlide].url}
                   alt={PROFILE_DATA.galleryImages[currentSlide].alt}
-                  className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
+                  className="w-full h-full object-cover transition-all duration-500 ease-in-out rounded-lg"
                 />
                 
-                {/* Navigation Arrows - themed */}
+                {/* Navigation Arrows - lighter */}
                 <button
                   onClick={prevSlide}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg"
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
                   aria-label="Previous image"
                 >
-                  <ChevronLeft size={24} />
+                  <ChevronLeft size={20} />
                 </button>
                 
                 <button
                   onClick={nextSlide}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-primary/90 hover:bg-primary text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg"
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
                   aria-label="Next image"
                 >
-                  <ChevronRight size={24} />
+                  <ChevronRight size={20} />
                 </button>
                 
-                {/* Expand Button - themed */}
+                {/* Expand Button - lighter */}
                 <button
                   onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
-                  className="absolute top-4 right-4 w-10 h-10 bg-accent/90 hover:bg-accent text-white rounded-full flex items-center justify-center transition-all duration-200 hover:scale-110 shadow-lg"
+                  className="absolute top-4 right-4 w-10 h-10 bg-white/80 hover:bg-white text-accent/70 hover:text-accent rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-accent/20"
                   aria-label="Expand image"
                 >
-                  <Expand size={18} />
+                  <Expand size={16} />
                 </button>
                 
-                {/* Slide Counter - themed */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-primary/90 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg">
+                {/* Slide Counter - lighter */}
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/80 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-md border border-primary/20">
                   {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
                 </div>
               </div>
