@@ -67,7 +67,7 @@ export default function GallerySection({}: GallerySectionProps) {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-3">Photo Gallery</h2>
-          <p className="text-lg text-gray-600 font-medium">Family & Friends 👨‍👩‍👧‍👦 👫</p>
+          <p className="text-lg text-gray-600 font-medium">Family & Friends 🖤</p>
         </div>
 
         {/* Gallery Container matching theme - Fixed height structure */}
