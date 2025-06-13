@@ -1,36 +1,10 @@
-import React, { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
-import { useToast } from "@/hooks/use-toast";
 import { PROFILE_DATA } from "@/lib/constants";
 
 export default function ContactSection() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast({
-      title: "Thank you for your message!",
-      description: "I will get back to you soon.",
-    });
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
 
   return (
     <section id="contact" className="pt-24 pb-20 hero-gradient text-white">
@@ -42,113 +16,73 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div className="space-y-8">
-            <div className="flex items-center space-x-4">
-              <div className="bg-accent p-3 rounded-full">
-                <Mail className="text-primary text-xl" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Email</h3>
-                <p className="opacity-90">{PROFILE_DATA.contact.email}</p>
-              </div>
-            </div>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Email Card */}
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <CardContent className="p-6 text-center">
+                <div className="bg-accent p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                  <Mail className="text-primary text-2xl" size={28} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Email</h3>
+                <p className="opacity-90 text-lg break-all">{PROFILE_DATA.contact.email}</p>
+              </CardContent>
+            </Card>
 
-            <div className="flex items-center space-x-4">
-              <div className="bg-accent p-3 rounded-full">
-                <Phone className="text-primary text-xl" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Phone</h3>
-                <p className="opacity-90">{PROFILE_DATA.contact.phone}</p>
-              </div>
-            </div>
+            {/* Phone Card */}
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <CardContent className="p-6 text-center">
+                <div className="bg-accent p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                  <Phone className="text-primary text-2xl" size={28} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Phone</h3>
+                <p className="opacity-90 text-lg">{PROFILE_DATA.contact.phone}</p>
+              </CardContent>
+            </Card>
 
-            <div className="flex items-center space-x-4">
-              <div className="bg-accent p-3 rounded-full">
-                <MapPin className="text-primary text-xl" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Location</h3>
-                <p className="opacity-90">{PROFILE_DATA.contact.location}</p>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="bg-accent p-3 rounded-full">
-                <FaLinkedin className="text-primary text-xl" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">LinkedIn</h3>
-                <a href={PROFILE_DATA.contact.linkedin} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline">
-                  akkiran003
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="bg-accent p-3 rounded-full">
-                <FaInstagram className="text-primary text-xl" size={24} />
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Instagram</h3>
-                <a href={PROFILE_DATA.contact.instagram} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline">
-                  kranthi.kirannn
-                </a>
-              </div>
-            </div>
+            {/* Location Card */}
+            <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+              <CardContent className="p-6 text-center">
+                <div className="bg-accent p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                  <MapPin className="text-primary text-2xl" size={28} />
+                </div>
+                <h3 className="text-xl font-semibold mb-2">Location</h3>
+                <p className="opacity-90 text-lg">{PROFILE_DATA.contact.location}</p>
+              </CardContent>
+            </Card>
           </div>
 
-          <Card className="bg-white/10 backdrop-blur-sm border-white/20">
-            <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-6">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="block text-sm font-medium opacity-90 mb-2">Your Name</label>
-                  <Input
-                    type="text"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-accent"
-                    placeholder="Enter your name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium opacity-90 mb-2">Email Address</label>
-                  <Input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-accent"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium opacity-90 mb-2">Message</label>
-                  <Textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="bg-white/20 border-white/30 text-white placeholder:text-white/70 focus:border-accent resize-none"
-                    placeholder="Your message..."
-                    required
-                  />
-                </div>
-                <Button
-                  type="submit"
-                  className="w-full bg-accent text-primary font-semibold hover:bg-accent/90"
-                  size="lg"
-                >
-                  Send Message
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          {/* Social Media Section */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold text-center mb-8">Connect on Social Media</h3>
+            <div className="flex justify-center gap-8">
+              {/* LinkedIn Card */}
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-accent p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                    <FaLinkedin className="text-primary text-2xl" size={28} />
+                  </div>
+                  <h4 className="text-lg font-semibold mb-2">LinkedIn</h4>
+                  <a href={PROFILE_DATA.contact.linkedin} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline text-lg">
+                    akkiran003
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Instagram Card */}
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 hover:bg-white/15 transition-all duration-300 hover:scale-105">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-accent p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                    <FaInstagram className="text-primary text-2xl" size={28} />
+                  </div>
+                  <h4 className="text-lg font-semibold mb-2">Instagram</h4>
+                  <a href={PROFILE_DATA.contact.instagram} target="_blank" rel="noopener noreferrer" className="opacity-90 hover:text-accent underline text-lg">
+                    kranthi.kirannn
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>
