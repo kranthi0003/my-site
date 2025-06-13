@@ -20,21 +20,21 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10 w-full">
-        <div className="text-center space-y-8 animate-fade-in">
+        <div className="text-center space-y-12 md:space-y-16 animate-fade-in">
           {/* Namaskaram greeting at top */}
-          <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
+          <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
             నమస్కారం 🙏
           </div>
           
           {/* Name section */}
-          <div className="space-y-3">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-              <span className="block mb-1 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
+          <div className="space-y-6">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
+              <span className="block mb-3 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
               <span className="block font-extrabold bg-gradient-to-r from-orange-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-2xl">{PROFILE_DATA.name}</span>
             </h1>
             
             {/* Tagline below name */}
-            <div className="text-center relative">
+            <div className="text-center relative mt-8">
               <p className="text-base md:text-lg font-medium text-white/50 relative z-10 px-4">
                 Traveller by heart, Techie by skill
               </p>
@@ -87,11 +87,11 @@ export default function HeroSection() {
           </div>
 
           {/* Buttons - More relaxed spacing */}
-          <div className="space-y-4">
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="space-y-6 mt-12">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
               <Button
                 onClick={() => scrollTo('about')}
-                className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-6 py-2 rounded-xl font-semibold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-orange-500/40 text-sm border-0 overflow-hidden group hover:-translate-y-1"
+                className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-orange-500/40 text-sm border-0 overflow-hidden group hover:-translate-y-1"
                 size="sm"
               >
                 <span className="relative z-10 transition-all duration-300">Peek Into My World 👀</span>
@@ -101,7 +101,7 @@ export default function HeroSection() {
               <Button
                 onClick={() => scrollTo('contact')}
                 variant="outline"
-                className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-6 py-2 rounded-xl font-semibold hover:bg-white/20 hover:border-white hover:shadow-xl hover:shadow-white/25 transition-all duration-500 text-sm group overflow-hidden transform hover:scale-105 hover:-translate-y-1"
+                className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-8 py-3 rounded-xl font-semibold hover:bg-white/20 hover:border-white hover:shadow-xl hover:shadow-white/25 transition-all duration-500 text-sm group overflow-hidden transform hover:scale-105 hover:-translate-y-1"
                 size="sm"
               >
                 <span className="relative z-10 transition-all duration-300">Say Hello! 👋</span>
