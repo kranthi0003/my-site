@@ -44,11 +44,11 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Profile Image - Smaller */}
+          {/* Profile Image - Increased size */}
           <div className="flex justify-center animate-slide-up">
             <div className="relative">
-              {/* Compact Frame Container */}
-              <div className="relative w-48 h-48 lg:w-56 lg:h-56 p-2">
+              {/* Frame Container */}
+              <div className="relative w-56 h-56 lg:w-64 lg:h-64 p-2">
                 {/* Elegant Multi-Layer Frame */}
                 <div className="absolute inset-0 rounded-full bg-gradient-to-br from-amber-200/20 via-orange-300/15 to-amber-400/20 p-1">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-white/70 via-white/50 to-white/30 p-1">
