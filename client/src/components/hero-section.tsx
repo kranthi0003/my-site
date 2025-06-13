@@ -9,7 +9,7 @@ export default function HeroSection() {
   const scrollTo = useSmoothScroll();
 
   return (
-    <section id="home" className="hero-gradient text-white relative overflow-hidden py-12 md:py-16">
+    <section id="home" className="hero-gradient h-screen text-white relative overflow-hidden flex items-center">
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-16 h-16 bg-accent/30 rounded-lg rotate-45"></div>
@@ -20,14 +20,14 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10 w-full">
-        <div className="text-center space-y-6 animate-fade-in">
+        <div className="text-center space-y-8 animate-fade-in">
           {/* Namaskaram greeting at top */}
           <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
             నమస్కారం 🙏
           </div>
           
           {/* Name section */}
-          <div className="space-y-2">
+          <div className="space-y-3">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               <span className="block mb-1 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
               <span className="block font-extrabold bg-gradient-to-r from-orange-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-2xl">{PROFILE_DATA.name}</span>
@@ -86,8 +86,8 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Buttons - Compact */}
-          <div className="space-y-3">
+          {/* Buttons - More relaxed spacing */}
+          <div className="space-y-4">
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
                 onClick={() => scrollTo('about')}
