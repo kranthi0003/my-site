@@ -9,7 +9,7 @@ export default function HeroSection() {
   const scrollTo = useSmoothScroll();
 
   return (
-    <section id="home" className="hero-gradient text-white relative overflow-hidden flex items-center responsive-container">
+    <section id="home" className="hero-gradient min-h-screen text-white relative overflow-hidden flex items-center" style={{ minHeight: 'calc(100vh - env(safe-area-inset-top))' }}>
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-20 w-16 h-16 bg-accent/30 rounded-lg rotate-45"></div>
@@ -90,11 +90,11 @@ export default function HeroSection() {
           </div>
 
           {/* Buttons - More relaxed spacing */}
-          <div className="space-y-6 mt-8 sm:mt-12">
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center px-4">
+          <div className="space-y-6 mt-12">
+            <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
               <Button
                 onClick={() => scrollTo('about')}
-                className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-6 sm:px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-orange-500/40 text-sm border-0 overflow-hidden group hover:-translate-y-1 w-full sm:w-auto"
+                className="relative bg-gradient-to-r from-orange-500 via-red-500 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold hover:from-orange-600 hover:via-red-600 hover:to-pink-600 transition-all duration-500 transform hover:scale-105 hover:shadow-xl hover:shadow-orange-500/40 text-sm border-0 overflow-hidden group hover:-translate-y-1"
                 size="sm"
               >
                 <span className="relative z-10 transition-all duration-300">Peek Into My World 👀</span>
@@ -104,7 +104,7 @@ export default function HeroSection() {
               <Button
                 onClick={() => scrollTo('contact')}
                 variant="outline"
-                className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-6 sm:px-8 py-3 rounded-xl font-semibold hover:bg-white/20 hover:border-white hover:shadow-xl hover:shadow-white/25 transition-all duration-500 text-sm group overflow-hidden transform hover:scale-105 hover:-translate-y-1 w-full sm:w-auto"
+                className="relative border-2 border-white/50 text-white bg-white/5 backdrop-blur-md px-8 py-3 rounded-xl font-semibold hover:bg-white/20 hover:border-white hover:shadow-xl hover:shadow-white/25 transition-all duration-500 text-sm group overflow-hidden transform hover:scale-105 hover:-translate-y-1"
                 size="sm"
               >
                 <span className="relative z-10 transition-all duration-300">Say Hello! 👋</span>
