@@ -20,9 +20,9 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10 w-full">
-        <div className="text-center space-y-12 md:space-y-16 animate-fade-in">
-          {/* Namaskaram greeting at top */}
-          <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block relative z-[70]" style={{ letterSpacing: '1px' }}>
+        <div className="text-center space-y-8 md:space-y-12 animate-fade-in pt-20 md:pt-16">
+          {/* Namaskaram greeting - positioned below navigation */}
+          <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
             నమస్కారం 🙏
           </div>
           
