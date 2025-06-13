@@ -53,54 +53,40 @@ export default function Navigation() {
         </div>
       </div>
       
-      <nav className={`fixed top-[24px] w-full z-50 transition-all duration-700 ease-out ${
+      <nav className={`fixed top-[24px] w-full z-50 transition-all duration-500 tamil-script-bg ${
         isScrolled 
-          ? 'bg-white/98 backdrop-blur-xl shadow-lg border-b border-primary/20' 
-          : 'bg-white/10 backdrop-blur-md'
+          ? 'bg-white/95 backdrop-blur-xl shadow-2xl border-b border-orange-200/40' 
+          : 'bg-gradient-to-r from-orange-50/10 via-white/15 to-orange-50/10 backdrop-blur-lg'
       }`}>
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-6 py-3">
           <div className="flex justify-between items-center">
-            {/* Enhanced Logo */}
-            <div className={`w-14 h-14 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 relative overflow-hidden group hover:scale-110 cursor-pointer ${
+            <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg transition-all duration-500 relative overflow-hidden group hover:scale-105 ${
               isOpen ? 'opacity-0 pointer-events-none' : 'opacity-100'
             } ${
-              isScrolled 
-                ? 'bg-gradient-to-br from-primary via-primary/90 to-secondary text-white shadow-lg hover:shadow-primary/30' 
-                : 'bg-white/90 text-primary border-2 border-white/50 shadow-lg backdrop-blur-sm hover:bg-white hover:border-white/80'
+              isScrolled ? 'bg-gradient-to-br from-orange-500 via-orange-600 to-red-500 text-white shadow-2xl hover:shadow-orange-500/30' : 'bg-gradient-to-br from-orange-500/90 via-orange-600/90 to-red-500/90 text-white border-2 border-white/70 shadow-2xl backdrop-blur-md hover:border-white/90'
             }`}>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400"></div>
-              <div className="relative z-10 font-black text-lg tracking-tight drop-shadow-sm">KK</div>
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/20 to-transparent opacity-0 group-hover:opacity-60 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative z-10 font-black text-lg tracking-tight drop-shadow-lg">KK</div>
+              <div className={`absolute inset-0 rounded-full transition-all duration-300 ${
+                isScrolled ? 'bg-gradient-to-br from-orange-300/30 to-red-300/30' : 'bg-gradient-to-br from-orange-400/20 to-red-400/20'
+              }`}></div>
             </div>
             
-            {/* Enhanced Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-2">
+            <div className="hidden md:flex space-x-1">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`relative group px-6 py-3 rounded-xl font-semibold transition-all duration-500 transform hover:scale-105 active:scale-95 ${
+                  className={`transition-all duration-300 font-medium relative group px-5 py-2.5 hover:scale-[1.02] transform ${
                     isScrolled 
-                      ? 'text-slate-700 hover:text-primary bg-transparent hover:bg-primary/5 hover:shadow-md' 
-                      : 'text-white/90 hover:text-white bg-white/5 hover:bg-white/15 border border-white/20 hover:border-white/40 backdrop-blur-sm'
+                      ? 'text-slate-700 hover:text-orange-600 bg-transparent hover:bg-orange-50/70' 
+                      : 'text-white/90 hover:text-white bg-transparent hover:bg-white/10'
                   }`}
                 >
-                  <span className="relative z-10 text-sm tracking-wide">{item.label}</span>
-                  
-                  {/* Animated background */}
-                  <div className={`absolute inset-0 rounded-xl transition-all duration-500 opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 ${
-                    isScrolled 
-                      ? 'bg-gradient-to-r from-primary/10 via-primary/5 to-secondary/10 shadow-sm' 
-                      : 'bg-gradient-to-r from-white/20 via-white/10 to-white/5 backdrop-blur-lg'
-                  }`}></div>
-                  
-                  {/* Shimmer effect */}
-                  <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  
-                  {/* Bottom indicator */}
-                  <div className={`absolute bottom-1 left-1/2 w-0 h-0.5 rounded-full transition-all duration-400 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2 ${
-                    isScrolled ? 'bg-primary' : 'bg-white'
-                  }`}></div>
+                  <span className="relative z-10 tracking-wide">{item.label}</span>
+                  <span className={`absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-full transition-all duration-300 ${
+                    isScrolled ? 'bg-orange-500' : 'bg-white'
+                  }`}></span>
                 </button>
               ))}
             </div>
