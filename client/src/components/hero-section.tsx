@@ -21,14 +21,14 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-6 relative z-10 w-full">
         <div className="text-center space-y-12 md:space-y-16 animate-fade-in pt-20 md:pt-16">
-          {/* Text Group - Much closer spacing */}
-          <div className="space-y-1">
+          {/* Text Group - Separated sections */}
+          <div className="space-y-6">
             {/* Namaskaram greeting - positioned below navigation */}
-            <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block mb-2" style={{ letterSpacing: '1px' }}>
+            <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
               నమస్కారం 🙏
             </div>
             
-            {/* Name section */}
+            {/* Name section - tight grouping */}
             <div className="space-y-1">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 <span className="block mb-1 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
