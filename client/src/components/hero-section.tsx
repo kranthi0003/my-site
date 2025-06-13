@@ -23,7 +23,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center pt-40 animate-fade-in">
           <div className="text-lg md:text-xl font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
-            Welcome 🙏
+            స్వాగతం 🙏
           </div>
         </div>
       </div>
