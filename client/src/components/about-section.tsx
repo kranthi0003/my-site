@@ -490,22 +490,43 @@ export default function AboutSection() {
                     </div>
                   </div>
 
-                  {/* Investment Overview */}
+                  {/* Investment Portfolio */}
                   <div>
                     <h4 className="font-semibold text-gray-700 mb-4">Investment Portfolio</h4>
-                    <div className="bg-gradient-to-br from-blue-50/40 to-indigo-50/30 border border-blue-100/50 rounded-lg p-4">
-                      <div className="grid grid-cols-3 gap-4 text-center">
-                        <div>
-                          <h5 className="font-semibold text-blue-900 text-sm">Stocks</h5>
-                          <div className="w-3 h-3 bg-blue-600 rounded-full mx-auto mt-1"></div>
+                    <div className="space-y-3">
+                      {/* Stock Investments */}
+                      <div className="bg-gradient-to-br from-rose-50/40 to-pink-50/30 border border-rose-100/50 rounded-lg p-3">
+                        <div className="flex justify-between items-center">
+                          <div>
+                            <h5 className="font-semibold text-rose-900">Stock Investments</h5>
+                          </div>
+                          <div className="text-right">
+                            <p className="font-bold text-rose-900">₹25 Lakhs</p>
+                          </div>
                         </div>
-                        <div>
-                          <h5 className="font-semibold text-emerald-900 text-sm">FD/PF</h5>
-                          <div className="w-3 h-3 bg-emerald-600 rounded-full mx-auto mt-1"></div>
+                      </div>
+
+                      {/* FD/PF */}
+                      <div className="bg-gradient-to-br from-emerald-50/40 to-green-50/30 border border-emerald-100/50 rounded-lg p-3">
+                        <div className="flex justify-between items-center">
+                          <div>
+                            <h5 className="font-semibold text-emerald-900">FD/PF</h5>
+                          </div>
+                          <div className="text-right">
+                            <p className="font-bold text-emerald-900">₹15 Lakhs</p>
+                          </div>
                         </div>
-                        <div>
-                          <h5 className="font-semibold text-indigo-900 text-sm">Insurance</h5>
-                          <div className="w-3 h-3 bg-indigo-600 rounded-full mx-auto mt-1"></div>
+                      </div>
+
+                      {/* Insurance */}
+                      <div className="bg-gradient-to-br from-indigo-50/40 to-blue-50/30 border border-indigo-100/50 rounded-lg p-3">
+                        <div className="flex justify-between items-center">
+                          <div>
+                            <h5 className="font-semibold text-indigo-900">Insurance</h5>
+                          </div>
+                          <div className="text-right">
+                            <p className="font-bold text-indigo-900">₹1 CR</p>
+                          </div>
                         </div>
                       </div>
                     </div>
