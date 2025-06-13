@@ -367,7 +367,7 @@ export default function AboutSection() {
                       </div>
                       <div>
                         <span className="text-muted-foreground text-sm font-medium">Work Location</span>
-                        <p className="font-semibold text-gray-900">Vizag</p>
+                        <p className="font-semibold text-gray-900">Bangalore</p>
                       </div>
                     </div>
                     
@@ -464,7 +464,7 @@ export default function AboutSection() {
                           <span className="text-xs font-medium text-purple-800 bg-purple-100/60 px-2 py-1 rounded">Plot</span>
                           <span className="text-xs font-medium text-purple-700">Self</span>
                         </div>
-                        <h5 className="font-semibold text-purple-900">Tagarapuvalasa, Vizag</h5>
+                        <h5 className="font-semibold text-purple-900">Vizag</h5>
                         <p className="text-sm font-medium text-purple-700">200 sqyds</p>
                       </div>
 
@@ -474,7 +474,7 @@ export default function AboutSection() {
                           <span className="text-xs font-medium text-orange-800 bg-orange-100/60 px-2 py-1 rounded">Plot</span>
                           <span className="text-xs font-medium text-orange-700">Inherited</span>
                         </div>
-                        <h5 className="font-semibold text-orange-900">Simhachalam, Vizag</h5>
+                        <h5 className="font-semibold text-orange-900">Vizag</h5>
                         <p className="text-sm font-medium text-orange-700">250 sqyds</p>
                       </div>
 
@@ -484,7 +484,7 @@ export default function AboutSection() {
                           <span className="text-xs font-medium text-teal-800 bg-teal-100/60 px-2 py-1 rounded">2BHK Flat</span>
                           <span className="text-xs font-medium text-teal-700">Self</span>
                         </div>
-                        <h5 className="font-semibold text-teal-900">PMPalem, Vizag</h5>
+                        <h5 className="font-semibold text-teal-900">Vizag</h5>
                         <p className="text-sm font-medium text-teal-700">1,100 sq ft</p>
                       </div>
                     </div>
