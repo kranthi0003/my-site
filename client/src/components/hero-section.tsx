@@ -20,24 +20,27 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-6 relative z-10 w-full">
-        <div className="text-center space-y-8 md:space-y-12 animate-fade-in pt-20 md:pt-16">
-          {/* Namaskaram greeting - positioned below navigation */}
-          <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
-            నమస్కారం 🙏
-          </div>
-          
-          {/* Name section */}
-          <div className="space-y-6">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
-              <span className="block mb-3 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
-              <span className="block font-extrabold bg-gradient-to-r from-orange-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-2xl">{PROFILE_DATA.name}</span>
-            </h1>
+        <div className="text-center space-y-12 md:space-y-16 animate-fade-in pt-20 md:pt-16">
+          {/* Text Group - Closer spacing */}
+          <div className="space-y-4">
+            {/* Namaskaram greeting - positioned below navigation */}
+            <div className="text-base md:text-lg font-medium opacity-95 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full inline-block" style={{ letterSpacing: '1px' }}>
+              నమస్కారం 🙏
+            </div>
             
-            {/* Tagline below name */}
-            <div className="text-center relative mt-8">
-              <p className="text-base md:text-lg font-medium text-white/50 relative z-10 px-4">
-                Traveller by heart, Techie by skill
-              </p>
+            {/* Name section */}
+            <div className="space-y-3">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
+                <span className="block mb-2 text-white font-semibold drop-shadow-lg">Hello, I'm</span>
+                <span className="block font-extrabold bg-gradient-to-r from-orange-300 via-yellow-200 to-white bg-clip-text text-transparent drop-shadow-2xl">{PROFILE_DATA.name}</span>
+              </h1>
+              
+              {/* Tagline below name */}
+              <div className="text-center relative mt-4">
+                <p className="text-base md:text-lg font-medium text-white/50 relative z-10 px-4">
+                  Traveller by heart, Techie by skill
+                </p>
+              </div>
             </div>
           </div>
 
