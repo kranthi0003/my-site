@@ -117,13 +117,13 @@ export default function GallerySection({}: GallerySectionProps) {
                     className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
                   />
                   
-                  {/* Expand Button - lighter */}
+                  {/* Expand Button - improved visibility */}
                   <button
                     onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
-                    className="absolute top-4 right-4 w-10 h-10 bg-white/80 hover:bg-white text-accent/70 hover:text-accent rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-accent/20"
+                    className="absolute top-4 right-4 w-12 h-12 bg-white/95 hover:bg-white text-primary hover:text-primary/80 rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border-2 border-primary/30 hover:border-primary/50"
                     aria-label="Expand image"
                   >
-                    <Expand size={16} />
+                    <Expand size={18} strokeWidth={2.5} />
                   </button>
                   
                   {/* Slide Counter - lighter */}
