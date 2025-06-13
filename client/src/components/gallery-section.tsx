@@ -72,11 +72,11 @@ export default function GallerySection({}: GallerySectionProps) {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
             
               {/* Main Slide */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-2">
+              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-3">
                 <img
                   src={PROFILE_DATA.galleryImages[currentSlide].url}
                   alt={PROFILE_DATA.galleryImages[currentSlide].alt}
-                  className="w-full h-full object-cover transition-all duration-500 ease-in-out rounded-lg"
+                  className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
                 />
                 
                 {/* Navigation Arrows - lighter */}
