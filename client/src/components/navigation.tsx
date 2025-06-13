@@ -47,8 +47,8 @@ export default function Navigation() {
       {/* Development Progress Banner */}
       <div className="fixed top-0 w-full z-[60] bg-gradient-to-r from-orange-500/90 to-red-500/90 backdrop-blur-sm">
         <div className="text-center py-1.5 px-4">
-          <p className="text-white text-xs md:text-sm font-medium animate-pulse">
-            🚧 Site Development in Progress 🚧
+          <p className="text-white text-xs md:text-sm font-medium">
+            🚧 Dev in Progress • Made for Mobile View 📱
           </p>
         </div>
       </div>
