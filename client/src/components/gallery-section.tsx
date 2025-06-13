@@ -106,8 +106,8 @@ export default function GallerySection({}: GallerySectionProps) {
                 </button>
               </div>
             
-              {/* Slide Counter - half inside/outside frame */}
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-lg border border-primary/30 z-10">
+              {/* Slide Counter - on the frame border */}
+              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/95 text-primary px-3 py-1 rounded-full text-xs font-medium shadow-lg border border-primary/30 z-10">
                 {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
               </div>
               
