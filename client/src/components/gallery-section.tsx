@@ -74,7 +74,7 @@ export default function GallerySection({}: GallerySectionProps) {
           {/* External Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border border-primary/20 z-10"
+            className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border border-primary/20 z-10"
             aria-label="Previous image"
           >
             <ChevronLeft size={20} />
@@ -82,7 +82,7 @@ export default function GallerySection({}: GallerySectionProps) {
           
           <button
             onClick={nextSlide}
-            className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border border-primary/20 z-10"
+            className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border border-primary/20 z-10"
             aria-label="Next image"
           >
             <ChevronRight size={20} />
