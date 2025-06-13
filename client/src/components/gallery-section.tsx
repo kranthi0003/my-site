@@ -106,13 +106,13 @@ export default function GallerySection({}: GallerySectionProps) {
                 </button>
               </div>
             
-              {/* Slide Counter - on the frame border */}
-              <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 bg-white/95 text-primary px-3 py-1 rounded-full text-xs font-medium shadow-lg border border-primary/30 z-10">
+              {/* Slide Counter - positioned between main image and thumbnails */}
+              <div className="absolute -bottom-3 left-1/2 transform -translate-x-1/2 bg-white/95 text-primary px-3 py-1 rounded-full text-xs font-medium shadow-lg border border-primary/30 z-20">
                 {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
               </div>
               
               {/* Thumbnail Navigation - themed */}
-              <div className="p-6 pt-8 bg-gradient-to-r from-white via-primary/2 to-white">
+              <div className="p-6 pt-6 bg-gradient-to-r from-white via-primary/2 to-white">
                 <div className="flex gap-3 overflow-x-auto pb-2">
                   {PROFILE_DATA.galleryImages.map((image, index) => (
                     <button
