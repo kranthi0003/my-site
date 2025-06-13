@@ -452,6 +452,7 @@ export default function AboutSection() {
                   <div className="bg-gradient-to-br from-green-50/60 to-emerald-50/40 p-6 rounded-lg border border-green-100/60 mb-6">
                     <h4 className="font-semibold text-green-800 mb-3">Annual Income</h4>
                     <p className="text-2xl font-bold text-green-900">₹30+ LPA</p>
+                    <p className="text-sm font-medium text-green-700">₹2L/month</p>
                   </div>
 
                   {/* Property Portfolio - Clean Design */}
