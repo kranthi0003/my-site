@@ -367,7 +367,7 @@ export default function AboutSection() {
                       </div>
                       <div>
                         <span className="text-muted-foreground text-sm font-medium">Work Location</span>
-                        <p className="font-semibold text-gray-900">Bangalore</p>
+                        <p className="font-semibold text-gray-900">Vizag</p>
                       </div>
                     </div>
                     
@@ -445,117 +445,67 @@ export default function AboutSection() {
                         <path d="M5,6H23V18H5V6M14,9A3,3 0 0,1 17,12A3,3 0 0,1 14,15A3,3 0 0,1 11,12A3,3 0 0,1 14,9M9,8A2,2 0 0,1 7,10V14A2,2 0 0,1 9,16H19A2,2 0 0,1 21,14V10A2,2 0 0,1 19,8H9Z"/>
                       </svg>
                     </div>
-                    Income/Assets
+                    Income & Assets
                   </h3>
                   
-                  {/* Financial Summary */}
-                  <div className="grid md:grid-cols-2 gap-6 mb-8">
-                    <div className="bg-gradient-to-br from-green-50/60 to-emerald-50/40 p-4 rounded-lg border border-green-100/60">
-                      <h4 className="font-semibold text-green-800 mb-2">Salary</h4>
-                      <p className="text-xl font-bold text-green-900">₹30+ LPA</p>
-                      <p className="text-sm font-medium text-green-700">₹2L/month</p>
-                    </div>
-                    <div className="bg-gradient-to-br from-blue-50/60 to-sky-50/40 p-4 rounded-lg border border-blue-100/60">
-                      <h4 className="font-semibold text-blue-800 mb-2">Property Count</h4>
-                      <p className="text-xl font-bold text-blue-900">3 Units</p>
-                      <p className="text-sm font-medium text-blue-700">2 Residential plots + 2BHK flat</p>
-                    </div>
+                  {/* Clean Income Section */}
+                  <div className="bg-gradient-to-br from-green-50/60 to-emerald-50/40 p-6 rounded-lg border border-green-100/60 mb-6">
+                    <h4 className="font-semibold text-green-800 mb-3">Annual Income</h4>
+                    <p className="text-2xl font-bold text-green-900">₹30+ LPA</p>
                   </div>
 
-                  {/* Property Details Cards */}
-                  <div>
-                    <h4 className="font-semibold text-gray-700 mb-6">Property Portfolio</h4>
-                    <div className="space-y-3">
+                  {/* Property Portfolio - Clean Design */}
+                  <div className="mb-6">
+                    <h4 className="font-semibold text-gray-700 mb-4">Property Portfolio</h4>
+                    <div className="grid gap-3">
                       {/* Property 1 */}
                       <div className="bg-gradient-to-br from-purple-50/40 to-violet-50/30 border border-purple-100/50 rounded-lg p-4">
-                        <div className="flex justify-between items-center">
-                          <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs font-medium text-purple-800 bg-purple-100/60 px-2 py-1 rounded">Plot</span>
-                              <span className="text-xs font-medium text-purple-700">Self</span>
-                            </div>
-                            <h5 className="font-semibold text-purple-900">Tagarapuvalasa, Vizag</h5>
-                            <p className="text-sm font-medium text-purple-700">200 Square Yards</p>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-bold text-purple-900">₹40 Lakhs</p>
-                          </div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xs font-medium text-purple-800 bg-purple-100/60 px-2 py-1 rounded">Plot</span>
+                          <span className="text-xs font-medium text-purple-700">Self</span>
                         </div>
+                        <h5 className="font-semibold text-purple-900">Tagarapuvalasa, Vizag</h5>
+                        <p className="text-sm font-medium text-purple-700">200 sqyds</p>
                       </div>
 
                       {/* Property 2 */}
                       <div className="bg-gradient-to-br from-orange-50/40 to-amber-50/30 border border-orange-100/50 rounded-lg p-4">
-                        <div className="flex justify-between items-center">
-                          <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs font-medium text-orange-800 bg-orange-100/60 px-2 py-1 rounded">Plot</span>
-                              <span className="text-xs font-medium text-orange-700">Inherited</span>
-                            </div>
-                            <h5 className="font-semibold text-orange-900">Simhachalam, Vizag</h5>
-                            <p className="text-sm font-medium text-orange-700">250 Square Yards</p>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-bold text-orange-900">₹50 Lakhs</p>
-                          </div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xs font-medium text-orange-800 bg-orange-100/60 px-2 py-1 rounded">Plot</span>
+                          <span className="text-xs font-medium text-orange-700">Inherited</span>
                         </div>
+                        <h5 className="font-semibold text-orange-900">Simhachalam, Vizag</h5>
+                        <p className="text-sm font-medium text-orange-700">250 sqyds</p>
                       </div>
 
                       {/* Property 3 */}
                       <div className="bg-gradient-to-br from-teal-50/40 to-cyan-50/30 border border-teal-100/50 rounded-lg p-4">
-                        <div className="flex justify-between items-center">
-                          <div className="flex-1">
-                            <div className="flex items-center gap-2 mb-1">
-                              <span className="text-xs font-medium text-teal-800 bg-teal-100/60 px-2 py-1 rounded">2BHK Flat</span>
-                              <span className="text-xs font-medium text-teal-700">Self</span>
-                            </div>
-                            <h5 className="font-semibold text-teal-900">PMPalem, Vizag</h5>
-                            <p className="text-sm font-medium text-teal-700">1,100 Square Feet</p>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-bold text-teal-900">₹45 Lakhs</p>
-                          </div>
+                        <div className="flex items-center gap-2 mb-2">
+                          <span className="text-xs font-medium text-teal-800 bg-teal-100/60 px-2 py-1 rounded">2BHK Flat</span>
+                          <span className="text-xs font-medium text-teal-700">Self</span>
                         </div>
+                        <h5 className="font-semibold text-teal-900">PMPalem, Vizag</h5>
+                        <p className="text-sm font-medium text-teal-700">1,100 sq ft</p>
                       </div>
                     </div>
                   </div>
 
-                  {/* Investment Portfolio */}
-                  <div className="mt-8">
+                  {/* Investment Overview */}
+                  <div>
                     <h4 className="font-semibold text-gray-700 mb-4">Investment Portfolio</h4>
-                    <div className="space-y-2">
-                      {/* Stock Investments */}
-                      <div className="bg-gradient-to-br from-rose-50/40 to-pink-50/30 border border-rose-100/50 rounded-lg p-3">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <h5 className="font-semibold text-rose-900">Stock Investments</h5>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-bold text-rose-900">₹25 Lakhs</p>
-                          </div>
+                    <div className="bg-gradient-to-br from-blue-50/40 to-indigo-50/30 border border-blue-100/50 rounded-lg p-4">
+                      <div className="grid grid-cols-3 gap-4 text-center">
+                        <div>
+                          <h5 className="font-semibold text-blue-900 text-sm">Stocks</h5>
+                          <div className="w-3 h-3 bg-blue-600 rounded-full mx-auto mt-1"></div>
                         </div>
-                      </div>
-
-                      {/* FD/PF */}
-                      <div className="bg-gradient-to-br from-emerald-50/40 to-green-50/30 border border-emerald-100/50 rounded-lg p-3">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <h5 className="font-semibold text-emerald-900">FD/PF</h5>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-bold text-emerald-900">₹15 Lakhs</p>
-                          </div>
+                        <div>
+                          <h5 className="font-semibold text-emerald-900 text-sm">FD/PF</h5>
+                          <div className="w-3 h-3 bg-emerald-600 rounded-full mx-auto mt-1"></div>
                         </div>
-                      </div>
-
-                      {/* Insurance */}
-                      <div className="bg-gradient-to-br from-indigo-50/40 to-blue-50/30 border border-indigo-100/50 rounded-lg p-3">
-                        <div className="flex justify-between items-center">
-                          <div>
-                            <h5 className="font-semibold text-indigo-900">Insurance</h5>
-                          </div>
-                          <div className="text-right">
-                            <p className="font-bold text-indigo-900">₹1 CR</p>
-                          </div>
+                        <div>
+                          <h5 className="font-semibold text-indigo-900 text-sm">Insurance</h5>
+                          <div className="w-3 h-3 bg-indigo-600 rounded-full mx-auto mt-1"></div>
                         </div>
                       </div>
                     </div>
