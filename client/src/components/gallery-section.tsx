@@ -49,19 +49,19 @@ export default function GallerySection({}: GallerySectionProps) {
           <h2 className="text-4xl lg:text-5xl font-bold text-primary mb-6">Photo Gallery</h2>
         </div>
 
-        {/* Gallery Container matching theme */}
+        {/* Gallery Container matching theme - Fixed height structure */}
         <div className="max-w-4xl mx-auto animate-fade-in">
-          <div className="relative group">
+          <div className="relative group min-h-0">
             {/* Subtle border wrapper */}
             <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-secondary/30 to-accent/40 rounded-xl opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
             <div className="absolute -inset-[2px] bg-gradient-to-br from-primary/20 via-transparent to-secondary/20 rounded-xl blur-[1px] opacity-0 group-hover:opacity-80 transition-all duration-700"></div>
             
-            <div className="relative bg-gradient-to-br from-white via-white/98 to-primary/3 backdrop-blur-sm shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 overflow-hidden rounded-xl ring-1 ring-primary/10 hover:ring-primary/20">
+            <div className="relative bg-gradient-to-br from-white via-white/98 to-primary/3 backdrop-blur-sm shadow-xl border border-white/50 hover:shadow-2xl transition-all duration-500 rounded-xl ring-1 ring-primary/10 hover:ring-primary/20 flex flex-col">
               {/* Inner border highlight */}
               <div className="absolute inset-[1px] rounded-xl bg-gradient-to-br from-white/80 via-transparent to-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
               
               {/* Background pattern */}
-              <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500">
+              <div className="absolute inset-0 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity duration-500 pointer-events-none">
                 <div className="absolute top-6 right-6 w-8 h-8 border border-primary/20 rounded-full"></div>
                 <div className="absolute bottom-8 left-8 w-6 h-6 border border-secondary/20 rounded-full"></div>
                 <div className="absolute top-1/3 right-16 w-3 h-3 bg-gradient-to-br from-accent/30 to-transparent rounded-full"></div>
@@ -69,50 +69,52 @@ export default function GallerySection({}: GallerySectionProps) {
               </div>
               
               {/* Shimmer effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1200 opacity-0 group-hover:opacity-100 pointer-events-none"></div>
             
-              {/* Main Slide */}
-              <div className="relative aspect-[4/3] overflow-hidden bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-3">
-                <img
-                  src={PROFILE_DATA.galleryImages[currentSlide].url}
-                  alt={PROFILE_DATA.galleryImages[currentSlide].alt}
-                  className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
-                />
-                
-                {/* Navigation Arrows - lighter */}
-                <button
-                  onClick={prevSlide}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
-                  aria-label="Previous image"
-                >
-                  <ChevronLeft size={20} />
-                </button>
-                
-                <button
-                  onClick={nextSlide}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
-                  aria-label="Next image"
-                >
-                  <ChevronRight size={20} />
-                </button>
-                
-                {/* Expand Button - lighter */}
-                <button
-                  onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
-                  className="absolute top-4 right-4 w-10 h-10 bg-white/80 hover:bg-white text-accent/70 hover:text-accent rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-accent/20"
-                  aria-label="Expand image"
-                >
-                  <Expand size={16} />
-                </button>
-                
-                {/* Slide Counter - lighter */}
-                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/80 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-md border border-primary/20">
-                  {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
+              {/* Main Slide Container - Fixed height */}
+              <div className="relative bg-gradient-to-br from-white/80 via-primary/5 to-accent/5 backdrop-blur-sm p-3 flex-shrink-0">
+                <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px]">
+                  <img
+                    src={PROFILE_DATA.galleryImages[currentSlide].url}
+                    alt={PROFILE_DATA.galleryImages[currentSlide].alt}
+                    className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
+                  />
+                  
+                  {/* Navigation Arrows - lighter */}
+                  <button
+                    onClick={prevSlide}
+                    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
+                    aria-label="Previous image"
+                  >
+                    <ChevronLeft size={20} />
+                  </button>
+                  
+                  <button
+                    onClick={nextSlide}
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
+                    aria-label="Next image"
+                  >
+                    <ChevronRight size={20} />
+                  </button>
+                  
+                  {/* Expand Button - lighter */}
+                  <button
+                    onClick={() => openLightbox(PROFILE_DATA.galleryImages[currentSlide].url)}
+                    className="absolute top-4 right-4 w-10 h-10 bg-white/80 hover:bg-white text-accent/70 hover:text-accent rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-accent/20"
+                    aria-label="Expand image"
+                  >
+                    <Expand size={16} />
+                  </button>
+                  
+                  {/* Slide Counter - lighter */}
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/80 text-primary px-4 py-2 rounded-full text-sm font-medium shadow-md border border-primary/20">
+                    {currentSlide + 1} / {PROFILE_DATA.galleryImages.length}
+                  </div>
                 </div>
               </div>
             
-              {/* Thumbnail Navigation - themed */}
-              <div className="p-6 bg-gradient-to-r from-white via-primary/2 to-white">
+              {/* Thumbnail Navigation - Always visible */}
+              <div className="p-6 bg-gradient-to-r from-white via-primary/2 to-white flex-shrink-0">
                 <div className="flex gap-3 overflow-x-auto pb-2">
                   {PROFILE_DATA.galleryImages.map((image, index) => (
                     <button
