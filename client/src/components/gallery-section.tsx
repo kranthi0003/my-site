@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, Expand, X } from 'lucide-react';
 import { PROFILE_DATA } from '@/lib/constants';
 
@@ -7,6 +7,7 @@ interface GallerySectionProps {}
 export default function GallerySection({}: GallerySectionProps) {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const thumbnailContainerRef = useRef<HTMLDivElement>(null);
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % PROFILE_DATA.galleryImages.length);
@@ -21,6 +22,25 @@ export default function GallerySection({}: GallerySectionProps) {
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
   };
+
+  // Auto-scroll thumbnails to keep current one visible
+  useEffect(() => {
+    if (thumbnailContainerRef.current) {
+      const container = thumbnailContainerRef.current;
+      const thumbnailWidth = 64 + 12; // w-16 (64px) + gap-3 (12px)
+      const scrollPosition = currentSlide * thumbnailWidth;
+      const containerWidth = container.clientWidth;
+      const maxScroll = container.scrollWidth - containerWidth;
+      
+      // Calculate optimal scroll position to center the current thumbnail
+      const targetScroll = Math.max(0, Math.min(maxScroll, scrollPosition - containerWidth / 2 + thumbnailWidth / 2));
+      
+      container.scrollTo({
+        left: targetScroll,
+        behavior: 'smooth'
+      });
+    }
+  }, [currentSlide]);
 
   const openLightbox = (imageUrl: string) => {
     setSelectedImage(imageUrl);
@@ -115,7 +135,7 @@ export default function GallerySection({}: GallerySectionProps) {
             
               {/* Thumbnail Navigation - Always visible */}
               <div className="p-6 bg-gradient-to-r from-white via-primary/2 to-white flex-shrink-0">
-                <div className="flex gap-3 overflow-x-auto pb-2">
+                <div ref={thumbnailContainerRef} className="flex gap-3 overflow-x-auto pb-2">
                   {PROFILE_DATA.galleryImages.map((image, index) => (
                     <button
                       key={index}
