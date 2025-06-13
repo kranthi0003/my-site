@@ -70,7 +70,24 @@ export default function GallerySection({}: GallerySectionProps) {
         </div>
 
         {/* Gallery Container matching theme - Fixed height structure */}
-        <div className="max-w-4xl mx-auto animate-fade-in">
+        <div className="max-w-4xl mx-auto animate-fade-in relative">
+          {/* External Navigation Arrows */}
+          <button
+            onClick={prevSlide}
+            className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border border-primary/20 z-10"
+            aria-label="Previous image"
+          >
+            <ChevronLeft size={20} />
+          </button>
+          
+          <button
+            onClick={nextSlide}
+            className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/90 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-lg border border-primary/20 z-10"
+            aria-label="Next image"
+          >
+            <ChevronRight size={20} />
+          </button>
+
           <div className="relative group min-h-0">
             {/* Subtle border wrapper */}
             <div className="absolute -inset-[1px] bg-gradient-to-r from-primary/40 via-secondary/30 to-accent/40 rounded-xl opacity-60 group-hover:opacity-100 transition-all duration-500"></div>
@@ -99,23 +116,6 @@ export default function GallerySection({}: GallerySectionProps) {
                     alt={PROFILE_DATA.galleryImages[currentSlide].alt}
                     className="w-full h-full object-contain transition-all duration-500 ease-in-out rounded-lg"
                   />
-                  
-                  {/* Navigation Arrows - lighter */}
-                  <button
-                    onClick={prevSlide}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
-                    aria-label="Previous image"
-                  >
-                    <ChevronLeft size={20} />
-                  </button>
-                  
-                  <button
-                    onClick={nextSlide}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 w-12 h-12 bg-white/80 hover:bg-white text-primary/70 hover:text-primary rounded-full flex items-center justify-center transition-all duration-200 hover:scale-105 shadow-md border border-primary/20"
-                    aria-label="Next image"
-                  >
-                    <ChevronRight size={20} />
-                  </button>
                   
                   {/* Expand Button - lighter */}
                   <button
