@@ -72,21 +72,18 @@ export default function Navigation() {
               }`}></div>
             </div>
             
-            <div className="hidden md:flex space-x-1">
+            <div className="hidden md:flex space-x-3">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`transition-all duration-500 font-normal relative group px-4 py-2 rounded-lg ${
+                  className={`transition-all duration-300 font-light relative group px-6 py-3 rounded-full ${
                     isScrolled 
-                      ? 'text-slate-600 hover:text-slate-800 bg-transparent hover:bg-slate-50' 
-                      : 'text-white/80 hover:text-white/95 bg-transparent hover:bg-white/8'
+                      ? 'text-gray-500 hover:text-gray-700 bg-gray-50/50 hover:bg-gray-100/70' 
+                      : 'text-white/70 hover:text-white/90 bg-white/5 hover:bg-white/10'
                   }`}
                 >
-                  <span className="relative z-10 tracking-normal">{item.label}</span>
-                  <span className={`absolute bottom-1 left-1/2 transform -translate-x-1/2 w-0 h-0.5 group-hover:w-3/4 transition-all duration-500 rounded-full ${
-                    isScrolled ? 'bg-slate-400' : 'bg-white/60'
-                  }`}></span>
+                  <span className="relative z-10 text-sm">{item.label}</span>
                 </button>
               ))}
             </div>
