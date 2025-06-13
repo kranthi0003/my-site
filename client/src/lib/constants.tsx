@@ -194,42 +194,7 @@ export const PROFILE_DATA = {
     }
   ],
 
-  // Family & Friends data for the new section
-  familyMembers: [
-    {
-      name: "Mother",
-      relation: "Family 👩‍👦",
-      photo: "/attached_assets/IMG_0741_Original_1749746320027.jpg"
-    }
-  ],
 
-  friendsPhotos: [
-    {
-      photo: "/attached_assets/Picsart_22-12-05_16-41-50-162_Original_1749745827086.jpg",
-      caption: "Traditional celebration",
-      description: "Traditional celebration with family"
-    },
-    {
-      photo: "/attached_assets/Picsart_23-07-09_22-20-43-676_Original_1749745830750.jpg", 
-      caption: "Group hangout",
-      description: "Group photo with friends at event"
-    },
-    {
-      photo: "/attached_assets/IMG-20220403-WA0002_Original_1749745835900.jpg",
-      caption: "Dining out",
-      description: "Friends dining out together"
-    },
-    {
-      photo: "/attached_assets/Snapchat-306668410_Original_1749745850482.jpg",
-      caption: "Evening hangout", 
-      description: "Evening hangout with friends"
-    },
-    {
-      photo: "/attached_assets/SAVE_20201222_081837_Original_1749745896358.jpg",
-      caption: "College friends",
-      description: "College friends group photo"
-    }
-  ],
 
   // Contact Information - Replace with actual contact details
   contact: {

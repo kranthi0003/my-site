@@ -33,7 +33,6 @@ export default function Navigation() {
     { label: "Home", href: "#home" },
     { label: "About", href: "#about" },
     { label: "Gallery", href: "#gallery" },
-    { label: "Family & Friends", href: "#family-friends" },
     { label: "Background", href: "#background" },
     { label: "Contact", href: "#contact" }
   ];
