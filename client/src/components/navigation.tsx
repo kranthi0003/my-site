@@ -72,18 +72,28 @@ export default function Navigation() {
               }`}></div>
             </div>
             
-            <div className="hidden md:flex space-x-3">
+            <div className="hidden md:flex space-x-2">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className={`transition-all duration-300 font-light relative group px-6 py-3 rounded-full ${
+                  className={`transition-all duration-400 font-medium relative group px-5 py-2.5 rounded-xl overflow-hidden ${
                     isScrolled 
-                      ? 'text-gray-500 hover:text-gray-700 bg-gray-50/50 hover:bg-gray-100/70' 
-                      : 'text-white/70 hover:text-white/90 bg-white/5 hover:bg-white/10'
+                      ? 'text-gray-600 hover:text-white bg-white/70 hover:bg-gradient-to-r hover:from-orange-500 hover:to-red-500 border border-orange-200/50 hover:border-orange-400 shadow-md hover:shadow-lg hover:scale-105' 
+                      : 'text-white/80 hover:text-white bg-white/10 hover:bg-white/20 border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl hover:scale-105 backdrop-blur-md'
                   }`}
                 >
-                  <span className="relative z-10 text-sm">{item.label}</span>
+                  {/* Shimmer effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 opacity-0 group-hover:opacity-100"></div>
+                  
+                  {/* Glow effect */}
+                  <div className={`absolute inset-0 rounded-xl transition-all duration-400 opacity-0 group-hover:opacity-100 ${
+                    isScrolled 
+                      ? 'bg-gradient-to-r from-orange-500/20 to-red-500/20' 
+                      : 'bg-gradient-to-r from-white/10 to-white/5'
+                  }`}></div>
+                  
+                  <span className="relative z-10 text-sm font-semibold">{item.label}</span>
                 </button>
               ))}
             </div>
@@ -91,14 +101,26 @@ export default function Navigation() {
             <Button
               variant="ghost"
               size="icon"
-              className={`md:hidden transition-all duration-400 rounded-2xl backdrop-blur-md hover:scale-110 transform border ${
+              className={`md:hidden transition-all duration-500 rounded-xl backdrop-blur-md hover:scale-110 transform border-2 relative overflow-hidden group ${
                 isScrolled 
-                  ? 'text-slate-800 bg-gradient-to-r from-orange-50/80 to-white/60 border-orange-200/40 hover:from-orange-500 hover:to-red-500 hover:text-white hover:border-orange-400 shadow-lg hover:shadow-xl' 
-                  : 'text-white bg-gradient-to-r from-orange-500/80 to-red-500/80 border-white/50 hover:from-orange-600 hover:to-red-600 hover:border-white/70 shadow-2xl hover:shadow-xl'
-              }`}
+                  ? 'text-slate-700 bg-gradient-to-br from-white/80 to-orange-50/60 border-orange-300/60 hover:from-orange-500 hover:to-red-500 hover:text-white hover:border-orange-500 shadow-lg hover:shadow-xl' 
+                  : 'text-white bg-gradient-to-br from-orange-500/90 to-red-500/90 border-white/60 hover:from-orange-600 hover:to-red-600 hover:border-white/80 shadow-xl hover:shadow-2xl'
+              } w-11 h-11`}
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X className="h-6 w-6 drop-shadow-lg" /> : <Menu className="h-6 w-6 drop-shadow-lg" />}
+              {/* Shimmer effect */}
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 opacity-0 group-hover:opacity-100"></div>
+              
+              {/* Glow effect */}
+              <div className={`absolute inset-0 rounded-xl transition-all duration-400 opacity-0 group-hover:opacity-100 ${
+                isScrolled 
+                  ? 'bg-gradient-to-br from-orange-400/30 to-red-400/30' 
+                  : 'bg-gradient-to-br from-white/20 to-white/10'
+              }`}></div>
+              
+              <div className="relative z-10">
+                {isOpen ? <X className="h-5 w-5 drop-shadow-lg" /> : <Menu className="h-5 w-5 drop-shadow-lg" />}
+              </div>
             </Button>
           </div>
         </div>
